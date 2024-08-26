@@ -1,0 +1,134 @@
+# BetterRTP plugin by SuperRonanCraft! (Join my Public Server mc.RonanCraft.net) #
+# Need help? go to https://ronancraft.net/discord! #
+
+Language-File: en.yml
+
+Settings:
+  Queue:
+    Enabled: true # Allows betterrtp to automatically queue up safe rtp locations prior to players executing `/rtp`
+  Respect:
+    Pueblos: false
+    SaberFactions: false
+    HuskTowns: false
+    # # Respect WorldGuard areas (https://dev.bukkit.org/projects/worldguard)
+    WorldGuard: true
+    # # Respect GriefPrevention areas (https://www.spigotmc.org/resources/griefprevention.1884/)
+    GriefPrevention: false
+    # # Respect Towny areas (https://www.spigotmc.org/resources/towny.72694/)
+    Towny: false
+    # # Respect RedProtect areas (https://www.spigotmc.org/resources/redprotect.15841/)
+    RedProtect: false
+    # # Respect FactionsUUID areas (https://www.spigotmc.org/resources/factionsuuid.1035/)
+    FactionsUUID: false
+    # # Respect Lands areas (https://www.spigotmc.org/resources/lands.53313/)
+    Lands: false
+    # # Respect Residence areas (https://www.spigotmc.org/resources/residence.11480/)
+    Residence: false
+    # # Respect KingdomsX areas (https://www.spigotmc.org/resources/kingdomsx.77670/)
+    KingdomsX: false
+    # # Respect hClaims areas (https://www.spigotmc.org/resources/hclaims.90540/)
+    hClaims: false
+    # # Respect GriefDefender areas (https://www.spigotmc.org/resources/griefdefender.68900/)
+    GriefDefender: false
+    # # Respect UltimateClaims areas (https://songoda.com/marketplace/product/ultimateclaims-the-ultimate-claiming-plugin.65)
+    UltimateClaims: false
+  
+  # # Output to console some debugging info
+  Debugger: false
+  # # Amount of chunks to preload around a safe location
+  PreloadRadius: 2
+  # # Maximum amount of tries before BetterRTP gives up and sends a NotSafeMessage #
+  MaxAttempts: 100
+  RtpOnFirstJoin: # Will execute as console to override delays
+    Enabled: false # Make the player rtp when joining the server for the first time
+    World: world # World to first rtp in
+    SetAsRespawn: false # Save this first rtp as players new spawn point
+  Cooldown:
+    PerWorld: false
+    Enabled: true # Enabled or disabled cooldown timer
+    LockAfter: 0 # Lock the player in an infinite cooldown after # rtp's (0 to disable)
+    Time: 30 # in SECONDS
+  # # Time between command and actually rtp'ing, time is in SECONDS. Set to "0" to disable delay timer #
+  Delay:
+    Enabled: true
+    Time: 5
+    CancelOnMove: true
+  DisableUpdater: false
+
+Default:
+  MaxY: 3000
+  MinY: 50
+  UseWorldBorder: false
+  # # "Biomes: []" means all biomes are allowed! #
+  # # Biomes are optional, more biomes at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html #
+  Biomes: []
+  MaxRadius: 13000
+  MinRadius: 1000
+  # # If "UseWorldBorder" is set to true above, Center X and Z will be ignored! #
+  CenterX: 0
+  CenterZ: 0
+  Shape: square
+
+# # Blocks BetterRTP will NOT teleport onto. More Blocks at: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html #
+BlacklistedBlocks:
+- stationary_water
+- stationary_lava
+- water
+- flowing_water
+- lava
+- flowing_lava
+- cactus
+- void_air
+- bedrock
+
+# # Worlds to NOT allow /rtp in, unless there is an override to another enabled world #
+DisabledWorlds:
+- spawn
+
+# # Worlds you want to have a custom min/max and spawn center in #
+# # [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
+CustomWorlds:
+- world:
+    UseWorldBorder: true
+    MaxRadius: 1000
+    MinRadius: 250
+    CenterX: 0
+    CenterZ: 0
+    Price: 0
+- world_nether:
+    UseWorldBorder: true
+    MaxRadius: 6000
+    MinRadius: 600
+    CenterX: 123
+    CenterZ: -123
+
+# # Override a world and rtp a player executing the command in one world, to another
+Overrides:
+- master_world: world
+- creative_world: world
+
+WorldType: # Available types are NORMAL, NETHER
+  - world: NORMAL
+  - world_nether: NETHER
+  - world_the_end: NORMAL
+
+PermissionGroup: # Player requires "betterrtp.group.<world_name>" to trigger these configs
+  Enabled: false
+  Groups:
+  - vip:
+    - Build_World:
+        MaxRadius: 10000
+        MinRadius: 1000
+        Price: 100
+    - Survival_World:
+        UseWorldBorder: false
+        MaxRadius: 5000
+        MinRadius: 1000
+        CenterX: 10
+        CenterZ: 10
+        Price: 10
+  - vip2:
+    - Build_World:
+        MaxRadius: 25000
+        MinRadius: 10000
+        Price: 15

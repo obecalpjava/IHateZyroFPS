@@ -1,0 +1,4 @@
+Settings:
+  date_format: hh:mm:ss dd.MM.yy
+  use_mvdwplaceholderapi: false
+  use_placeholderapi: true

@@ -1,0 +1,47 @@
+# En: Don't touch this value
+# Fr: Ne pas modifier cette valeur 
+version: 0.9
+metrics: true
+MaxPulses: 10
+Delay: 100
+NotifyAdmins: true
+DropItems: false
+CreateSignWhenClockIsBreak: true
+Sign:
+  Line1: '&4&lMINERIVAL'
+  Line2: '&cRedstone clocks'
+  Line3: '&care not permitted!'
+  Line4: ''
+IgnoreWorlds: redstoneWorld/survival
+IgnoreRegions: redstone/admins
+plotSquaredSupport: true
+worldGuardSupport: true
+checkedClock:
+  comparator: true
+  observer: true
+  piston: true
+  redstoneAndRepeater: true
+AutomaticallyBreakDetectedClock: true
+SummonLigthningAtRedstoneLocation: false
+teleportCMD: tp $x $y $z $world
+checkTPS:
+  minimumTPS: -1
+  maximumTPS: -1
+  intervalInSecond: 15
+disableRedstoneClockCheckAbove: 255
+Msg:
+  default:
+    prefix: '&c&lARSC &8➟ &c'
+    error: '&r &c&lARSC &8➟ &c'
+    no_permission: '&c&lARSC &8➟ &cYou don''t have permission to do that!'
+    command_use: '&c&lARSC &8➟ &7Command usage: &c/arc $command'
+  message:
+    MsgToAdmin: '&fRedstone clock disabled at &cx:$X y:$Y Z:$Z&f. Located in &c$World&f.'
+    unknownCmd: Unknown command. Type "/help" for help.
+    reloadSuccess: Reload Success! Redstone listener and third party plugin are not
+      affected!!!
+    newValueInConfig: The new value of $setting is $value
+    RedStoneClockListHeader: 'RedstoneClockList: $page'
+    RedStoneClockListFooter: ''
+  Exception:
+    duplicate_object: This list already contains this redstone

@@ -1,0 +1,1682 @@
+# Create as many tags as you want here.
+# Just make sure you FOLLOW the format.
+# Tags will appear in the same order.
+Tags:
+  Scary:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#ff1010S#fc1d1dc#f82929a#f53636r#f14242y&8]'
+    Displayname: '#ff1010S#fc1d1dc#f82929a#f53636r#f14242y&f Tag &7[Halloween Exclusive]'
+    Permission: tag.scary
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Halloween & Monthly Crate'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Witch:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#b50bffW#b114f2i#ad1ce5t#a925d8c#a52dcbh&8]'
+    Displayname: '#b50bffW#b114f2i#ad1ce5t#a925d8c#a52dcbh&f Tag &7[Halloween Exclusive]'
+    Permission: tag.witch
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Halloween & Monthly Crate'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Spooky:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#ea53ffS#ee63cfp#f2739fo#f78470o#fb9440k#ffa410y&8]'
+    Displayname: '#ea53ffS#ee63cfp#f2739fo#f78470o#fb9440k#ffa410y&f Tag &7[Halloween Exclusive]'
+    Permission: tag.spooky
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Halloween & Monthly Crate'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Pumpkin:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#ff8710P#fd8c15u#fa921am#f89720p#f69c25k#f3a22ai#f1a72fn&8]'
+    Displayname: '#ff8710P#fd8c15u#fa921am#f89720p#f69c25k#f3a22ai#f1a72fn&f Tag &7[Halloween Exclusive]'
+    Permission: tag.pumpkin
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Halloween & Monthly Crate'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Halloween:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#ff7f00H#ff8406a#ff880cl#ff8d12l#ff9118o#ff961dw#ff9a23e#ff9f29e#ffa32fn&8]'
+    Displayname: '#ff7f00H#ff8406a#ff880cl#ff8d12l#ff9118o#ff961dw#ff9a23e#ff9f29e#ffa32fn&f Tag &7[Halloween Exclusive]'
+    Permission: tag.halloween
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Halloween & Monthly Crate'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Scream:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#fb0e0eS#fb1616c#fc1d1dr#fc2525e#fd2c2ca#fd3434m&8]'
+    Displayname: '#fb0e0eS#fb1616c#fc1d1dr#fc2525e#fd2c2ca#fd3434m&f Tag &7[Halloween Exclusive]'
+    Permission: tag.scream
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Halloween & Monthly Crate'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Champ:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#ffcc04C#ffd204h#ffd903a#ffdf03m#ffe602p#ffec02i#fff301o#fff901n&8]'
+    Displayname: '#ffcc04C#ffd204h#ffd903a#ffdf03m#ffe602p#ffec02i#fff301o#fff901n&f Tag &7[Season Winner Exclusive]'
+    Permission: tag.champ
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Win a Final Season Event'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Baller:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#22FF3CBaller&8]'
+    Displayname: '#22FF3CBaller &fTag &7[Voting Exclusive]'
+    Permission: tag.baller
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Voting Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  GenZ:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#06DDFFGenZ&8]'
+    Displayname: '#06DDFFGenZ &fTag &7[Voting Exclusive]'
+    Permission: tag.genz
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Voting Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  Bot:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#A94EFFBot&8]'
+    Displayname: '#A94EFFBot &fTag &7[Voting Exclusive]'
+    Permission: tag.bot
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Voting Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  Sniper:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF4343Sniper&8]'
+    Displayname: '#FF4343Sniper &fTag &7[Ranger Exclusive]'
+    Permission: tag.sniper
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Ranger Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  PvP:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FFCB39PvP&8]'
+    Displayname: '#FFCB39PvP &fTag &7[Shaman Exclusive]'
+    Permission: tag.pvp
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Shaman Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  NPC:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#27A1FFNPC&8]'
+    Displayname: '#27A1FFNPC &fTag &7[Sage Exclusive]'
+    Permission: tag.npc
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Sage Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  NoLife:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF1DF2NoLife&8]'
+    Displayname: '#FF1DF2NoLife &fTag &7[Noble Exclusive]'
+    Permission: tag.nolife
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Noble Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  Magician:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF3737Magician&8]'
+    Displayname: '#FF3737Magician &fTag &7[Wizard Exclusive]'
+    Permission: tag.magician
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Wizard Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+  TopG:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#DD8738TopG&8]'
+    Displayname: '#DD8738TopG &fTag &7[Sorcerer Exclusive]'
+    Permission: tag.topg
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Sorcerer Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Comp:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#1B8DFFComp&8]'
+    Displayname: '#1B8DFFComp &7Tag'
+    Permission: tag.comp
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Legend:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#D106FFLegend&8]'
+    Displayname: '#D106FFLegend &7Tag'
+    Permission: tag.legend
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Egirl:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF00F0Egirl&8]'
+    Displayname: '#FF00F0Egirl &7Tag'
+    Permission: tag.egirl
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Eboy:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#00FBFFEboy&8]'
+    Displayname: '#00FBFFEboy &7Tag'
+    Permission: tag.eboy
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  King:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FBE600King&8]'
+    Displayname: '#FBE600King &7Tag'
+    Permission: tag.king
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Queen:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FBCC15Queen&8]'
+    Displayname: '#FBCC15Queen &7Tag'
+    Permission: tag.queen
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Killer:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FB2C2CKiller&8]'
+    Displayname: '#FB2C2CKiller &7Tag'
+    Permission: tag.killer
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Toxic:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#0DC800Toxic&8]'
+    Displayname: '#0DC800Toxic &7Tag'
+    Permission: tag.toxic
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  $$$:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#00FF0F$$$&8]'
+    Displayname: '#00FF0F$$$ &7Tag'
+    Permission: tag.$$$
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  L:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF0E0E#L&8]'
+    Displayname: '#FF0E0E#L &7Tag'
+    Permission: tag.l
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  W:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#3EFF00#W&8]'
+    Displayname: '#3EFF00#W &7Tag'
+    Permission: tag.w
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  1:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FFCB00#1&8]'
+    Displayname: '#FFCB00#1 &7Tag'
+    Permission: tag.1
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  GG:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF13B9GG&8]'
+    Displayname: '#FF13B9GG &7Tag'
+    Permission: tag.gg
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  EZ:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF5A5AEZ&8]'
+    Displayname: '#FF5A5AEZ &7Tag'
+    Permission: tag.ez
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&cYou don''t have permission to use this tag!'
+    Not-enough-money-message: '&cYou don''t have enough money to purchase this tag!'
+  Beauty:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#00CAFBB#32B8FBe#65A5FCa#9793FCu#CA80FDt#FC6EFDy&8]'
+    Displayname: '#00CAFBB#32B8FBe#65A5FCa#9793FCu#CA80FDt#FC6EFDy&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.beauty
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Fruity:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FB0000F#D53300r#AF6600u#8A9900i#64CC00t#3EFF00y&8]'
+    Displayname: '#FB0000F#D53300r#AF6600u#8A9900i#64CC00t#3EFF00y&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.fruity
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Loyal:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#00BEFFL#2ECED7o#5BDFAFy#89EF87a#B6FF5Fl&8]'
+    Displayname: '#00BEFFL#2ECED7o#5BDFAFy#89EF87a#B6FF5Fl&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.loyal
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Traper:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FF1B1BT#FF2424r#FF2C2Ca#FF3535p#FF3D3Dp#FF4646e#FF4E4Er&8]'
+    Displayname: '#FF1B1BT#FF2424r#FF2C2Ca#FF3535p#FF3D3Dp#FF4646e#FF4E4Er&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.trapper
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Ratio:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#09fbb6R#0ef4c7a#13ecd9t#18e5eai#1dddfbo&8]'
+    Displayname: '#09fbb6R#0ef4c7a#13ecd9t#18e5eai#1dddfbo&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.ratio
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Voter:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#00FF3CV#0FF92Eo#1DF31Ft#2CEC11e#3AE602r&8]'
+    Displayname: '#00FF3CV#0FF92Eo#1DF31Ft#2CEC11e#3AE602r&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.voter
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  NoGrass:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#11FF00##12F500N#13EB00o#14E100G#14D800r#15CE00a#16C400s#17BA00s&8]'
+    Displayname: '#11FF00##12F500N#13EB00o#14E100G#14D800r#15CE00a#16C400s#17BA00s&f Tag&7 [Season 4 Exclusive]'
+    Permission: tag.nograss
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Grinder:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#02DDFFG#02D3F4r#02C9E8i#02C0DDn#01B6D1d#01ACC6e#01A2BAr&8]'
+    Displayname: '#02DDFFG#02D3F4r#02C9E8i#02C0DDn#01B6D1d#01ACC6e#01A2BAr&f Tag &7[Season 4 Exclusive]'
+    Permission: tag.grinder
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Season 4 Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Nitro:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[&dNitro&8]'
+    Displayname: '&dNitro&f Tag &7[Discord Exclusive]'
+    Permission: tag.nitro
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Purchase at /coin shop'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Summer:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FBF500S#FBE30Bu#FCD016m#FCBE20m#FDAB2Be#FD9936r&8]'
+    Displayname: '#FBF500S#FBE30Bu#FCD016m#FCBE20m#FDAB2Be#FD9936r&f Tag &7[Summer Exclusive]'
+    Permission: tag.summer
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Summer Loot Box'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Unicorn:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#00D9FBU#2ABFFBn#54A5FCi#7E8CFCc#A872FCo#D258FDr#FC3EFDn&8]'
+    Displayname: '#00D9FBU#2ABFFBn#54A5FCi#7E8CFCc#A872FCo#D258FDr#FC3EFDn&f Tag &7[Summer Exclusive]'
+    Permission: tag.unicorn
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Summer Loot Box'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Snorkel:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#2187EBS#359AECn#4AADECo#5EC0EDr#72D3EEk#87E6EEe#9BF9EFl&8]'
+    Displayname: '#2187EBS#359AECn#4AADECo#5EC0EDr#72D3EEk#87E6EEe#9BF9EFl&f Tag &7[Summer Exclusive]'
+    Permission: tag.snorkel
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Summer Loot Box'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Tropical:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#6cff00T#67f906r#62f20co#5dec12p#57e617i#52e01dc#4dd923a#48d329l&8]'
+    Displayname: '#6cff00T#67f906r#62f20co#5dec12p#57e617i#52e01dc#4dd923a#48d329l&f Tag &7[Summer Exclusive]'
+    Permission: tag.tropical
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Only in the Summer Loot Box'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  November:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FFA100N#FEA700o#FEAD00v#FDB300e#FDB900m#FCBF00b#FCC500e#FBCB00r&8]'
+    Displayname: '#FFA100N#FEA700o#FEAD00v#FDB300e#FDB900m#FCBF00b#FCC500e#FBCB00r &fTag &7[Monthly Exclusive]'
+    Permission: tag.november
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Monthly Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Turkey:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FFB000T#FFB000u#FFB000r#FFB000k#FFB000e#FFB000y&8]'
+    Displayname: '#FFB000T#FFB000u#FFB000r#FFB000k#FFB000e#FFB000y &fTag &7[Monthly Exclusive]'
+    Permission: tag.turkey
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Monthly Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+  Banana:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FBD300B#FBD704a#FCDB08n#FCDE0Ba#FDE20Fn#FDE613a&8]'
+    Displayname: '#FBD300B#FBD704a#FCDB08n#FCDE0Ba#FDE20Fn#FDE613a &fTag &7[Monthly Exclusive]'
+    Permission: tag.banana
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Monthly Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
+
+  Live:
+    Material: NAME_TAG
+    Custom-model-data: 0
+    Texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMwZmVhNDQzNDlmMDczZjNmOTNjZTg2ZWM5ZWVlODJmODRhMWM1ZTI5NjdlYjFjMTliN2MzNWY5YTVlNWY5OSJ9fX0=
+    Pattern: '{BlockEntityTag:{Patterns:[{Color:11,Pattern:"flo"},{Color:15,Pattern:"mr"},{Color:15,Pattern:"cbo"},{Color:1,Pattern:"mc"},{Color:15,Pattern:"tt"}]}}'
+    Dyeable: false
+    Default-color: '&6'
+    Hide-flags: true
+    Tag: '&8[#FB1F1F● Live&8]'
+    Displayname: '#FB1F1F● Live &fTag &7[Streamer Exclusive]'
+    Permission: tag.live
+    Price: 0
+    Unbreakable: false
+    Lore:
+      Locked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &cLocked'
+      - ''
+      - '&e➥ Streamer Exclusive'
+      Unlocked:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &aUnlocked'
+      - ''
+      - '&e&l➥ CLICK TO SELECT'
+      Selected:
+      - '&8Official Tag'
+      - ''
+      - '&8❖ &fTag: &dEquipped'
+      - '{DYEABLE}'
+      - ''
+      - '&aSelected.'
+    No-permission-message: '&7You don''t have permission to use this tag!'
+    Not-enough-money-message: '&7You don''t have enough money to purchase this tag!'
