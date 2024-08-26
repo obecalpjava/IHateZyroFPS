@@ -1,0 +1,4715 @@
+messages:
+  help:
+    message:
+    - '&4&lLOOTBOXES HELP MENU'
+    - '&f'
+    - '&f/lootbox give <player> <id> (amount) &7- Gives a lootbox'
+    - '&f/lootbox preview (player) &7- Shows all lootboxes'
+    - '&f/lootbox display <id> (player) &7- Previews a lootbox'
+    - '&f/lootbox reload &7- Reloads the plugin'
+    - '&f'
+  not-found:
+    message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329c6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cThere is no lootbox with that ID!'
+  granted:
+    message: '&aYou granted %amount% lootboxes of {type} for {player}.'
+  receive-grant:
+    message: '&aYou received %amount% lootboxes of {type}.'
+  only-who-receive:
+    message: '&cThis lootbox can only be opened by the owner of it.'
+  reloaded:
+    message: '&cYou reloaded the configuration.'
+  player-not-found:
+    message: '&cThat player doesn''t exists!'
+  no-permission:
+    message: '&cYou don''t have permission for this lootbox.'
+  in-cooldown:
+    message: '&d&lLootboxes &8➟ &cYou don''t have permission to open this lootbox. Please wait a {time}.'
+
+settings:
+  mongo:
+    auth-db: admin
+    hostname: 10.0.0.1
+    port: 27017
+    username: admin
+    password: Gk6M9FhjEZJeREcU
+    database: gold
+    collection: lootboxes
+  old-item-support: false
+  previewMenu:
+    title: MineRival ➟ Lootboxes
+    rows: 5
+    lootboxes:
+      VoteParty: 29
+      Ranger: 10
+      Shaman: 11
+      Sage: 12
+      Noble: 14
+      Wizard: 15
+      Event: 30
+      Sorcerer: 16
+      Monthly: 33
+      Armory: 32
+      Grinder: 31
+  filler-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&f'
+
+lootboxes:
+  VoteParty:
+    permission: lootboxes.type.voteparty
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: VoteParty Lootbox
+      rows: 3
+    number-of-picks: 3
+    is-claimable: false
+    broadcast-claim: false
+    claim-message:
+      message: '&#E817CB&lVoteParty &8➟ &d{player_name} &#FF33C7claimed a Vote Party lootbox! &5/lootbox'
+    # in seconds
+    cooldown: 0
+    lootbox-show-item:
+      name: '&#f452d6&lVOTEPARTY &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fAttend a &#f452d6&lVOTEPARTY'
+      - '&fto get this lootbox.'
+      - ''
+      - '&e[→] Right Click &fto Preview'
+    lootbox-receive-item:
+      name: '&#f452d6&lVOTEPARTY &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#f452d6&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+    items:
+      '1':
+        name: '&#1EE220&lRANGER&f Rank &7[Permanent]'
+        material: CREEPER_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 0.2
+        commands:
+        - voucher give RangerRank 1 {player_name}
+      '2':
+        name: '&#1EE220&lRANGER&f Rank &7[7 Days]'
+        material: CREEPER_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 1
+        commands:
+        - voucher give RangerRank7d 1 {player_name}
+      '3':
+        name: '&#F6FF00&lPrime &fKey'
+        material: YELLOW_DYE
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 7
+        commands:
+        - excellentcrates key give {player_name} prime 1
+      '4':
+        name: '&#0BFF0A&lx3 Vote &fKey'
+        material: LIME_DYE
+        amount: 3
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 8
+        commands:
+        - excellentcrates key give {player_name} vote 3
+      '5':
+        name: '&#0BFF0A&lVote &fKey'
+        material: LIME_DYE
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 15
+        commands:
+        - excellentcrates key give {player_name} vote 1
+      '6':
+        name: '&#22FF3CBaller &fTag &7[Voting Exclusive]'
+        material: NAME_TAG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 5
+        commands:
+        - voucher give BallerTag 1 {player_name}
+      '7':
+        name: '&#06DDFFGenZ &fTag &7[Voting Exclusive]'
+        material: NAME_TAG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 5
+        commands:
+        - voucher give GenzTag 1 {player_name}
+      '8':
+        name: '&#A94EFFBot &fTag &7[Voting Exclusive]'
+        material: NAME_TAG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 5
+        commands:
+        - voucher give BotTag 1 {player_name}
+      '9':
+        name: '&#F2FB00&l500 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 3
+        commands:
+        - coins give {player_name} 500
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#F2FB00&l500 Coins&d reward from a &#f452d6&lVOTEPARTY &#f452d6Lootbox!
+      
+      '10':
+        name: '&#F2FB00&l250 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 4
+        commands:
+        - coins give {player_name} 250
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#F2FB00&l250 Coins&d reward from a &#f452d6&lVOTEPARTY &#f452d6Lootbox!
+      
+      '11':
+        name: '&#F2FB00&l100 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 8
+        commands:
+        - coins give {player_name} 100
+      '12':
+        name: '&#EF2626&lx3 Hearts'
+        material: RED_DYE
+        amount: 3
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 6
+        commands:
+        - hearts heartcapsule {player_name} 3
+      '13':
+        name: '&#EF2626&lx1 Heart'
+        material: RED_DYE
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 10
+        commands:
+        - hearts heartcapsule {player_name} 1
+      '14':
+        name: '&#3EFF00&l$2,500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - eco give {player_name} 2500
+      '15':
+        name: '&#3EFF00&l$1,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 12
+        commands:
+        - eco give {player_name} 1000
+      '16':
+        name: '&#3EFF00&l$500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - eco give {player_name} 500
+      '17':
+        name: '&bx2 Diamond Blocks'
+        material: DIAMOND_BLOCK
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give {player_name} diamond_block 2 0
+      '18':
+        name: '&ex4 Gold Blocks'
+        material: GOLD_BLOCK
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 12
+        commands:
+        - give {player_name} gold_block 4 0
+      '19':
+        name: '&fIron Helmet'
+        material: iron_helmet
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_helmet 1 0 protection:1 unbreaking:1
+      '20':
+        name: '&fIron Chestplate'
+        material: iron_chestplate
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_chestplate 1 0 protection:1 unbreaking:1
+      '21':
+        name: '&fIron Leggings'
+        material: iron_leggings
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_leggings 1 0 protection:1 unbreaking:1
+      '22':
+        name: '&fIron Boots'
+        material: iron_boots
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_boots 1 0 protection:1 unbreaking:1
+      '23':
+        name: '&fIron Sword'
+        material: iron_sword
+        enchantments:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_sword 1 0 sharpness:1 unbreaking:1
+      '24':
+        name: '&fIron Pickaxe'
+        material: iron_pickaxe
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_pickaxe 1 0 efficiency:1 unbreaking:1
+      '25':
+        name: '&fIron Axe'
+        material: iron_axe
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_axe 1 0 efficiency:1 unbreaking:1
+      '26':
+        name: '&fIron Shovel'
+        material: iron_shovel
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} iron_shovel 1 0 efficiency:1 unbreaking:1
+      '27':
+        name: '&fx6 Iron Blocks'
+        material: IRON_BLOCK
+        amount: 6
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#f452d6➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 14
+        commands:
+        - give {player_name} iron_block 6 0
+  
+  Ranger:
+    permission: lootboxes.type.ranger
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Ranger Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#1EE220&lRANGER &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: true
+    slot: 11
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#1EE220&lRANGER &crankto  open this.'
+    lootbox-show-item:
+      name: '&#1EE220&lRANGER &fLootbox'
+      material: LIME_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fOnly &#1EE220&lRANGER &franks'
+      - '&fcan get this lootbox.'
+      - ''
+      - '&e[←] Left Click &fto Receive'
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#1EE220&lRANGER &fLootbox'
+      material: LIME_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#1EE220&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#EF9B44&lSHAMAN&f Rank &7[7 Days]'
+        material: HOGLIN_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 0.5
+        commands:
+        - voucher give ShamanRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#EF9B44&lSHAMAN&f Rank &7[7 Days]&d reward from a &#1EE220&lRANGER &#f452d6Lootbox!
+      
+      '2':
+        name: '&#1EE220&lRANGER&f Rank &7[7 Days]'
+        material: CREEPER_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 1
+        commands:
+        - voucher give RangerRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#1EE220&lRANGER&f Rank &7[7 Days]&d reward from a &#1EE220&lRANGER &#f452d6Lootbox!
+      
+      '3':
+        name: '&#00CAFB&lx1 Epic&f Key'
+        material: LIGHT_BLUE_DYE
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 5
+        commands:
+        - crate key give {player_name} epic 1
+      '4':
+        name: '&#F6FF00&lx2 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} prime 2
+      '5':
+        name: '&#F6FF00&lPrime &fKey'
+        material: YELLOW_DYE
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 7
+        commands:
+        - excellentcrates key give {player_name} prime 1
+      '6':
+        name: '&#F2FB00&l150 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 3
+        commands:
+        - coins give {player_name} 150
+      '7':
+        name: '&#F2FB00&l100 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 5
+        commands:
+        - coins give {player_name} 100
+      '8':
+        name: '&a&l$5,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 10
+        commands:
+        - eco give {player_name} 5000
+      '9':
+        name: '&a&l$2,500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 13
+        commands:
+        - eco give {player_name} 2500
+      '10':
+        name: '&#FF4343Sniper &fTag &7[Ranger Exclusive]'
+        material: NAME_TAG
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 2
+        commands:
+        - voucher give SniperTag 1 {player_name}
+      '11':
+        name: '&6Totem of Undying'
+        material: TOTEM_OF_UNDYING
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 7
+        commands:
+        - essentials:give {player_name} TOTEM_OF_UNDYING 1 0
+      '12':
+        name: '&bDiamond'
+        material: DIAMOND
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give {player_name} diamond 1 0
+      '13':
+        name: '&ex4 Gold Blocks'
+        material: GOLD_BLOCK
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give {player_name} gold_block 4 0
+      '14':
+        name: '&fx2 Iron Blocks'
+        material: IRON_BLOCK
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 12
+        commands:
+        - give {player_name} iron_block 2 0
+      '15':
+        name: '&7x4 Obsidian'
+        material: OBSIDIAN
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} obsidian 4 0
+      '16':
+        name: '&dx4 End Crystals'
+        material: END_CRYSTAL
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} end_crystal 4 0
+      '17':
+        name: '&dx8 Experience Bottle'
+        material: EXPERIENCE_BOTTLE
+        amount: 8
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give {player_name} experience_bottle 8 0
+      '18':
+        name: '&#981F1Fx1 Enchanting Table'
+        material: ENCHANTING_TABLE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} ENCHANTING_TABLE 4 0
+      '19':
+        name: '&fIron Helmet'
+        material: iron_helmet
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 19
+        commands:
+        - give {player_name} iron_helmet 1 0 protection:2 unbreaking:2 name:&#1EE220&lRanger&f_Helmet
+      '20':
+        name: '&fIron Chestplate'
+        material: iron_chestplate
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} iron_chestplate 1 0 protection:2 unbreaking:2 name:&#1EE220&lRanger&f_Chestplate
+      '21':
+        name: '&fIron Leggings'
+        material: iron_leggings
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} iron_leggings 1 0 protection:2 unbreaking:2 name:&#1EE220&lRanger&f_Leggings
+      '22':
+        name: '&fIron Boots'
+        material: iron_boots
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} iron_boots 1 0 protection:2 unbreaking:2 name:&#1EE220&lRanger&f_Boots
+      '23':
+        name: '&fIron Sword'
+        material: iron_sword
+        enchantments:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} iron_sword 1 0 sharpness:1 unbreaking:2 name:&#1EE220&lRanger&f_Sword
+      '24':
+        name: '&fIron Pickaxe'
+        material: iron_pickaxe
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} iron_pickaxe 1 0 efficiency:1 unbreaking:2 name:&#1EE220&lRanger&f_Pickaxe
+      '25':
+        name: '&fIron Axe'
+        material: iron_axe
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} iron_axe 1 0 efficiency:1 unbreaking:2 name:&#1EE220&lRanger&f_Axe
+      '26':
+        name: '&fIron Shovel'
+        material: iron_shovel
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} iron_shovel 1 0 efficiency:1 unbreaking:2 name:&#1EE220&lRanger&f_Shovel
+      '27':
+        name: '&#A77D3ABow'
+        material: bow
+        enchantments:
+        - minecraft:power:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} bow 1 0 power:1 unbreaking:2 name:&#1EE220&lRanger&f_Bow
+  
+  Shaman:
+    permission: lootboxes.type.shaman
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Shaman Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#EF9B44&lSHAMAN &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: true
+    slot: 12
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#EF9B44&lSHAMAN &crank to open this.'
+    lootbox-show-item:
+      name: '&#EF9B44&lSHAMAN &fLootbox'
+      material: ORANGE_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fOnly &#EF9B44&lSHAMAN &franks'
+      - '&fcan get this lootbox.'
+      - ''
+      - '&e[←] Left Click &fto Receive'
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#EF9B44&lSHAMAN &fLootbox'
+      material: ORANGE_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#EF9B44&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#FFCC31&lSAGE&f Rank &7[7 Days]'
+        material: OCELOT_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 0.5
+        commands:
+        - voucher give SageRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FFCC31&lSAGE&f Rank &7[7 Days]&d reward from a &#EF9B44&lSHAMAN &#f452d6Lootbox!
+      
+      '2':
+        name: '&#EF9B44&lSHAMAN&f Rank &7[7 Days]'
+        material: HOGLIN_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 1
+        commands:
+        - voucher give ShamanRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#EF9B44&lSHAMAN&f Rank &7[7 Days]&d reward from a &#EF9B44&lSHAMAN &#f452d6Lootbox!
+      '3':
+        name: '&#00CAFB&lx2 Epic&f Key'
+        material: light_blue_dye
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 3
+        commands:
+        - excellentcrates key give {player_name} epic 2
+      '4':
+        name: '&#00CAFB&lx1 Epic&f Key'
+        material: light_blue_dye
+        amount: 1
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} epic 1
+      '5':
+        name: '&#F6FF00&lx2 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} prime 2
+      '6':
+        name: '&#F2FB00&l250 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 3
+        commands:
+        - coins give {player_name} 250
+      '7':
+        name: '&#F2FB00&l200 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 5
+        commands:
+        - coins give {player_name} 200
+      '8':
+        name: '&#3EFF00&l$10,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 12
+        commands:
+        - eco give {player_name} 10000
+      '9':
+        name: '&#3EFF00&l$7,500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 15
+        commands:
+        - eco give {player_name} 7500
+      
+      '10':
+        name: '&dShulker Box'
+        material: shulker_box
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 12
+        commands:
+        - give {player_name} shulker_box 1 0
+      
+      '11':
+        name: '&bx3 Diamond'
+        material: diamond
+        amount: 3
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 12
+        commands:
+        - give {player_name} diamond 3 0
+      '12':
+        name: '&ex6 Gold Blocks'
+        material: GOLD_BLOCK
+        amount: 6
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 11
+        commands:
+        - give {player_name} gold_block 6 0
+      '13':
+        name: '&fx4 Iron Blocks'
+        material: IRON_BLOCK
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give {player_name} iron_block 4 0
+      '14':
+        name: '&7x8 Obsidian'
+        material: OBSIDIAN
+        amount: 8
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} obsidian 8 0
+      '15':
+        name: '&dx8 End Crystal'
+        material: end_crystal
+        amount: 8
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} end_crystal 8 0
+      '16':
+        name: '&dx16 Experience Bottle'
+        material: experience_bottle
+        amount: 16
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 8
+        commands:
+        - give {player_name} experience_bottle 16 0
+      '17':
+        name: '&#FFCB39PvP &fTag &7[Shaman Exclusive]'
+        material: NAME_TAG
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#1EE220➥ /buy'
+        chance: 2
+        commands:
+        - voucher give PvPTag 1 {player_name}
+      '18':
+        name: '&fShield'
+        material: shield
+        enchantments:
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 15
+        commands:
+        - give {player_name} shield 1 0 unbreaking:1 name:&#EF9B44&lShaman&f_Shield
+      '19':
+        name: '&bDiamond Helmet'
+        material: diamond_helmet
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_helmet 1 0 protection:2 unbreaking:2 name:&#EF9B44&lShaman&f_Helmet
+      '20':
+        name: '&bDiamond Chestplate'
+        material: diamond_chestplate
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_chestplate 1 0 protection:2 unbreaking:2 name:&#EF9B44&lShaman&f_Chestplate
+      '21':
+        name: '&bDiamond Leggings'
+        material: diamond_leggings
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_leggings 1 0 protection:2 unbreaking:2 name:&#EF9B44&lShaman&f_Leggings
+      '22':
+        name: '&bDiamond Boots'
+        material: diamond_boots
+        enchantments:
+        - minecraft:protection:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_boots 1 0 protection:2 unbreaking:2 name:&#EF9B44&lShaman&f_Boots
+      '23':
+        name: '&bDiamond Sword'
+        material: diamond_sword
+        enchantments:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_sword 1 0 sharpness:2 unbreaking:2 name:&#EF9B44&lShaman&f_Sword
+      '24':
+        name: '&bDiamond Pickaxe'
+        material: diamond_pickaxe
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_pickaxe 1 0 efficiency:2 unbreaking:2 name:&#EF9B44&lShaman&f_Pickaxe
+      '25':
+        name: '&bDiamond Axe'
+        material: diamond_axe
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_axe 1 0 efficiency:2 unbreaking:2 name:&#EF9B44&lShaman&f_Axe
+      '26':
+        name: '&bDiamond Shovel'
+        material: diamond_shovel
+        enchantments:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_shovel 1 0 efficiency:2 unbreaking:2 name:&#EF9B44&lShaman&f_Shovel
+      '27':
+        name: '&#A77D3ABow'
+        material: bow
+        enchantments:
+        - minecraft:power:2
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#EF9B44➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} bow 1 0 power:2 unbreaking:2 name:&#EF9B44&lShaman&f_Bow
+  
+  Sage:
+    permission: lootboxes.type.sage
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Sage Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#FFCC31&lSAGE &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: true
+    slot: 13
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#FFCC31&lSAGE &crank to open this.'
+    lootbox-show-item:
+      name: '&#FFCC31&lSAGE &fLootbox'
+      material: YELLOW_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fOnly &#FFCC31&lSAGE &franks'
+      - '&fcan get this lootbox.'
+      - ''
+      - '&e[←] Left Click &fto Receive'
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#FFCC31&lSAGE &fLootbox'
+      material: YELLOW_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#FFCC31&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#43D6FD&lNOBLE&f Rank &7[7 Days]'
+        material: ALLAY_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 0.5
+        commands:
+        - voucher give NobleRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#43D6FD&lNOBLE&f Rank &7[7 Days]&d reward from a &#FFCC31&lSAGE &#f452d6Lootbox!
+      
+      '2':
+        name: '&#FFCC31&lSAGE&f Rank &7[7 Days]'
+        material: OCELOT_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 1
+        commands:
+        - voucher give SageRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FFCC31&lSAGE&f Rank &7[7 Days]&d reward from a &#FFCC31&lSAGE &#f452d6Lootbox!
+      
+      '3':
+        name: '&#FB1D1D&lRival&f Key'
+        material: red_dye
+        amount: 1
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} rival 1
+      '4':
+        name: '&#00CAFB&lx2 Epic&f Key'
+        material: light_blue_dye
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} epic 2
+      '5':
+        name: '&#F6FF00&lx2 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} prime 2
+      '6':
+        name: '&#F2FB00&l300 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 3
+        commands:
+        - coins give {player_name} 300
+      '7':
+        name: '&#F2FB00&l275 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 5
+        commands:
+        - coins give {player_name} 275
+      '8':
+        name: '&#3EFF00&l$20,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 7
+        commands:
+        - eco give {player_name} 20000
+      '9':
+        name: '&#3EFF00&l$15,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 10
+        commands:
+        - eco give {player_name} 15000
+      '10':
+        name: '&fx2 Netherite Ingot'
+        material: netherite_ingot
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - give {player_name} netherite_ingot 2 0
+      
+      '11':
+        name: '&bDiamond Block'
+        material: DIAMOND_BLOCK
+        amount: 6
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - give {player_name} diamond_block 1 0
+      
+      '12':
+        name: '&fx6 Iron Blocks'
+        material: IRON_BLOCK
+        amount: 6
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give {player_name} iron_block 6 0
+      '13':
+        name: '&7x12 Obsidian'
+        material: OBSIDIAN
+        amount: 12
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 12
+        commands:
+        - give {player_name} obsidian 12 0
+      '14':
+        name: '&dx12 End Crystal'
+        material: end_crystal
+        amount: 12
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 12
+        commands:
+        - give {player_name} end_crystal 12 0
+      '15':
+        name: '&#27A1FFNPC &fTag &7[Sage Exclusive]'
+        material: NAME_TAG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - voucher give NPCTag 1 {player_name}
+      '16':
+        name: '&#00ABFB&lChicken &fSpawner'
+        material: SPAWNER
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners give {player_name} chicken 1
+      '17':
+        name: '&#00ABFB&lSpawner Wrench &7[3 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - spawners wrench {player_name} 3
+      '18':
+        name: '&fElytra'
+        material: elytra
+        enchantments:
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 7
+        commands:
+        - give {player_name} elytra 1 0 unbreaking:2
+      '19':
+        name: '&bDiamond Helmet'
+        material: diamond_helmet
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_helmet 1 0 protection:3 unbreaking:3 name:&#FFCC31&lSage&f_Helmet
+      '20':
+        name: '&bDiamond Chestplate'
+        material: diamond_chestplate
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_chestplate 1 0 protection:3 unbreaking:3 name:&#FFCC31&lSage&f_Chestplate
+      '21':
+        name: '&bDiamond Leggings'
+        material: diamond_leggings
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_leggings 1 0 protection:3 unbreaking:3 name:&#FFCC31&lSage&f_Leggings
+      '22':
+        name: '&bDiamond Boots'
+        material: diamond_boots
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_boots 1 0 protection:3 unbreaking:3 name:&#FFCC31&lSage&f_Boots
+      '23':
+        name: '&bDiamond Sword'
+        material: diamond_sword
+        enchantments:
+        - minecraft:sharpness:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_sword 1 0 sharpness:3 unbreaking:3 fire_aspect:1 name:&#FFCC31&lSage&f_Sword
+      '24':
+        name: '&bDiamond Pickaxe'
+        material: diamond_pickaxe
+        enchantments:
+        - minecraft:efficiency:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_pickaxe 1 0 efficiency:3 unbreaking:3 fortune:2 name:&#FFCC31&lSage&f_Pickaxe
+      '25':
+        name: '&bDiamond Axe'
+        material: diamond_axe
+        enchantments:
+        - minecraft:efficiency:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} diamond_axe 1 0 efficiency:3 unbreaking:3 name:&#FFCC31&lSage&f_Axe
+      '26':
+        name: '&bDiamond Shovel'
+        material: diamond_shovel
+        enchantments:
+        - minecraft:efficiency:2
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} diamond_shovel 1 0 efficiency:3 unbreaking:3 name:&#FFCC31&lSage&f_Shovel
+      '27':
+        name: '&#A77D3ABow'
+        material: bow
+        enchantments:
+        - minecraft:flame:1
+        - minecraft:power:3
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFCC31➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} bow 1 0 flame:1 power:3 unbreaking:3 name:&#FFCC31&lSage&f_Bow
+  
+  Noble:
+    permission: lootboxes.type.noble
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Noble Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#43D6FD&lNOBLE &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: true
+    slot: 14
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#43D6FD&lNOBLE &crank to open this.'
+    lootbox-show-item:
+      name: '&#43D6FD&lNOBLE &fLootbox'
+      material: LIGHT_BLUE_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fOnly &#43D6FD&lNOBLE &franks'
+      - '&fcan get this lootbox.'
+      - ''
+      - '&e[←] Left Click &fto Receive'
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#43D6FD&lNOBLE &fLootbox'
+      material: LIGHT_BLUE_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#43D6FD&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#FD3939&lWIZARD&f Rank &7[7 Days]'
+        material: STRIDER_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 0.5
+        commands:
+        - voucher give WizardRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FD3939&lWIZARD&f Rank &7[7 Days]&d reward from a &#43D6FD&lNOBLE &#f452d6Lootbox!
+      
+      '2':
+        name: '&#43D6FD&lNOBLE&f Rank &7[7 Days]'
+        material: ALLAY_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 1
+        commands:
+        - voucher give NobleRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#43D6FD&lNOBLE&f Rank &7[7 Days]&d reward from a &#43D6FD&lNOBLE &#f452d6Lootbox!
+      
+      '3':
+        name: '&#FB1D1D&lx2 Rival&f Key'
+        material: red_dye
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 4
+        commands:
+        - excellentcrates key give {player_name} rival 2
+      '4':
+        name: '&#00CAFB&lx2 Epic&f Key'
+        material: LIGHT_BLUE_DYE
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 5
+        commands:
+        - crate key give {player_name} epic 2
+      '5':
+        name: '&#F6FF00&lx2 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} prime 2
+      '6':
+        name: '&#F2FB00&l400 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 3
+        commands:
+        - coins give {player_name} 400
+      '7':
+        name: '&#F2FB00&l350 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 5
+        commands:
+        - coins give {player_name} 350
+      '8':
+        name: '&#3EFF00&l$30,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 7
+        commands:
+        - eco give {player_name} 30000
+      '9':
+        name: '&#3EFF00&l$25,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 10
+        commands:
+        - eco give {player_name} 25000
+      '10':
+        name: '&7x1 Netherite Block'
+        material: NETHERITE_BLOCK
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - give {player_name} netherite_block 1 0
+      
+      '11':
+        name: '&bx2 Diamond Block'
+        material: DIAMOND_BLOCK
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 7
+        commands:
+        - give {player_name} diamond_block 2 0
+      
+      '12':
+        name: '&#FF1DF2NoLife &fTag &7[Noble Exclusive]'
+        material: NAME_TAG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - voucher give NoLifeTag 1 {player_name}
+      '13':
+        name: '&7x16 Obsidian'
+        material: OBSIDIAN
+        amount: 16
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 8
+        commands:
+        - give {player_name} obsidian 16 0
+      '14':
+        name: '&dx16 End Crystals'
+        material: end_crystal
+        amount: 16
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} end_crystal 16 0
+      '15':
+        name: '&#00ABFB&lCow &fSpawner'
+        material: SPAWNER
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners give {player_name} cow 1
+      '16':
+        name: '&#00ABFB&lSpawner Wrench &7[5 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 6
+        commands:
+        - spawners wrench {player_name} 5
+      '17':
+        name: '&fTrident'
+        material: trident
+        enchantments:
+        - minecraft:impaling:3
+        - minecraft:loyalty:2
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 3
+        commands:
+        - give {player_name} trident 1 0 impaling:3 loyalty:2 unbreaking:2
+      '18':
+        name: '&fElytra'
+        material: elytra
+        enchantments:
+        - minecraft:impaling:3
+        - minecraft:loyalty:2
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 3
+        commands:
+        - give {player_name} elytra 1 0 unbreaking:3
+      '19':
+        name: '&7&lNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:2 unbreaking:2 name:&#43D6FD&lNoble&f_Helmet
+      '20':
+        name: '&7&lNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:2 unbreaking:2 name:&#43D6FD&lNoble&f_Chestplate
+      '21':
+        name: '&7&lNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:2 unbreaking:2 name:&#43D6FD&lNoble&f_Leggings
+      '22':
+        name: '&7&lNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:2 unbreaking:2 name:&#43D6FD&lNoble&f_Boots
+      '23':
+        name: '&7&lNetherite Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:sharpness:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:2 unbreaking:2 name:&#43D6FD&lNoble&f_Sword
+      '24':
+        name: '&7&lNetherite Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:efficiency:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 15
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:2 unbreaking:2 name:&#43D6FD&lNoble&f_Pickaxe
+      '25':
+        name: '&7&lNetherite Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:efficiency:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_axe 1 0 efficiency:2 unbreaking:2 name:&#43D6FD&lNoble&f_Axe
+      '26':
+        name: '&7&lNetherite Shovel'
+        material: netherite_shovel
+        enchantments:
+        - minecraft:efficiency:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_shovel 1 0 eefficiency:2 unbreaking:2 name:&#43D6FD&lNoble&f_Shovel
+      '27':
+        name: '&#A77D3ACrossbow'
+        material: crossbow
+        enchantments:
+        - minecraft:quick_charge:1
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#43D6FD➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} crossbow 1 0 quick_charge:1 unbreaking:2 name:&#43D6FD&lNoble&f_Crossbow
+  Wizard:
+    permission: lootboxes.type.wizard
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Wizard Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls&8➟ &d{player_name} &#FF33C7claimed a &#FD3939&lWIZARD &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: true
+    slot: 15
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#FD3939&lWIZARD &crank to open this.'
+    lootbox-show-item:
+      name: '&#FD3939&lWIZARD &fLootbox'
+      material: RED_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fOnly &#FD3939&lWIZARD &franks'
+      - '&fcan get this lootbox.'
+      - ''
+      - '&e[←] Left Click &fto Receive'
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#FD3939&lWIZARD &fLootbox'
+      material: RED_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#FD3939&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#FD3939&lWIZARD&f Rank &7[7 Days]'
+        material: STRIDER_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 1
+        commands:
+        - voucher give WizardRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FD3939&lWIZARD&f Rank &7[7 Days]&d reward from a &#FD3939&lWIZARD &#f452d6Lootbox!
+      
+      '2':
+        name: '&#43D6FD&lNOBLE&f Rank &7[30 Days]'
+        material: ALLAY_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 2
+        commands:
+        - voucher give NobleRank30d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#43D6FD&lNOBLE&f Rank &7[30 Days]&d reward from a &#43D6FD&lNOBLE &#f452d6Lootbox!
+      
+      '3':
+        name: '&#FB1D1D&lx3 Rival&f Key'
+        material: red_dye
+        amount: 3
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 2
+        commands:
+        - excellentcrates key give {player_name} rival 3
+      '4':
+        name: '&#00CAFB&lx3 Epic&f Key'
+        material: LIGHT_BLUE_DYE
+        amount: 3
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 4
+        commands:
+        - crate key give {player_name} epic 3
+      '5':
+        name: '&#F6FF00&lx3 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 3
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 6
+        commands:
+        - excellentcrates key give {player_name} prime 3
+      '6':
+        name: '&#F2FB00&l500 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 2
+        commands:
+        - coins give {player_name} 500
+      '7':
+        name: '&#F2FB00&l450 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 4
+        commands:
+        - coins give {player_name} 450
+      '8':
+        name: '&#3EFF00&l$50,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 5
+        commands:
+        - eco give {player_name} 50000
+      '9':
+        name: '&#3EFF00&l$40,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 7
+        commands:
+        - eco give {player_name} 40000
+      '10':
+        name: '&7x2 Netherite Block'
+        material: NETHERITE_BLOCK
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - give {player_name} netherite_block 2 0
+      '11':
+        name: '&#FF3737Magician &fTag &7[Wizard Exclusive]'
+        material: name_tag
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - voucher give MagicianTag 1 {player_name}
+      
+      '12':
+        name: '&7x24 Obsidian'
+        material: OBSIDIAN
+        amount: 24
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 8
+        commands:
+        - give {player_name} obsidian 24 0
+      
+      '13':
+        name: '&dx24 End Crystals'
+        material: end_crystal
+        amount: 24
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 13
+        commands:
+        - give {player_name} end_crystal 24 0
+      '14':
+        name: '&#00ABFB&lSkeleton &fSpawner'
+        material: SPAWNER
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners give {player_name} skeleton 1
+      '15':
+        name: '&#00ABFB&lSpawner Wrench &7[8 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners wrench {player_name} 8
+      '16':
+        name: '&#fbbc2e&lSell Wand &7[100 Uses - 1x Multiplier]'
+        material: GOLDEN_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 3
+        commands:
+        - dsw sellwand {player_name} default 1 1 100
+      '17':
+        name: '&fTrident'
+        material: trident
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        enchantments:
+        - minecraft:loyalty:3
+        - minecraft:impaling:5
+        - minecraft:unbreaking:3
+        chance: 13
+        commands:
+        - give {player_name} trident 1 0 loyalty:3 impaling:5 unbreaking:3 name:&#FD3939&lWizard&f_Trident
+      '18':
+        name: '&flytra'
+        material: Elytra
+        enchantments:
+        - minecraft:mending:1
+        - minecraft:unbreaking:3
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} elytra 1 0 mending:1 unbreaking:3 name:&#FD3939&lWizard&f_Elytra
+      '19':
+        name: '&7&lNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:respiration:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:4 respiration:2 unbreaking:3 name:&#FD3939&lWizard&f_Helmet
+      '20':
+        name: '&7&lNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:blast_protection:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:4 unbreaking:3 blast_protection:2 name:&#FD3939&lWizard&f_Chestplate
+      '21':
+        name: '&7&lNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:fire_protection:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 15
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:4 fire_protection:2 unbreaking:3 name:&#FD3939&lWizard&f_Leggings
+      '22':
+        name: '&7&lNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:feather_falling:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 15
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:4 feather_falling:3 unbreaking:3 name:&#FD3939&lWizard&f_Boots
+      '23':
+        name: '&7&lNetherite Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:fire_aspect:2
+        - minecraft:unbreaking:3
+        - minecraft:sharpness:4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:4 unbreaking:3 fire_aspect:2 name:&#FD3939&lWizard&f_Sword
+      '24':
+        name: '&7&lNetherite Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 17
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:5 fortune:3 unbreaking:3 name:&#FD3939&lWizard&f_Pickaxe
+      '25':
+        name: '&7&lNetherite Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_axe 1 0 efficiency:5 fortune:3 unbreaking:3 name:&#FD3939&lWizard&f_Axe
+      '26':
+        name: '&7&lNetherite Shovel'
+        material: netherite_shovel
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} netherite_shovel 1 0 efficiency:5 fortune:3 unbreaking:3 name:&#FD3939&lWizard&f_Shovel
+      '27':
+        name: '&#A77D3ACrossbow'
+        material: crossbow
+        enchantments:
+        - minecraft:multishot:1
+        - minecraft:quick_charge:2
+        - minecraft:piercing:4
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FD3939➥ /buy'
+        chance: 18
+        commands:
+        - give {player_name} crossbow 1 0 multishot:1 quick_charge:2 piercing:4 unbreaking:3 name:&#FD3939&lWizard&f_Crossbow
+  Sorcerer:
+    permission: lootboxes.type.sorcerer
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Sorcerer Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: true
+    slot: 14
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &crank to open this.'
+    lootbox-show-item:
+      name: '&#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR&f Lootbox'
+      material: BLUE_SHULKER_BOX
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fOnly &#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &franks'
+      - '&fcan get this lootbox.'
+      - ''
+      - '&e[←] Left Click &fto Receive'
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#069ffb&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR&f Rank &7[7 Days]'
+        material: WARDEN_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 0.1
+        commands:
+        - voucher give SorcererRank7d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR&f Rank &7[7 Days] reward!
+      '2':
+        name: '&#FD3939&lWIZARD&f Rank &7[30 Days]'
+        material: STRIDER_SPAWN_EGG
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 0.75
+        commands:
+        - voucher give WizardRank30d 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FD3939&lWIZARD&f Rank &7[30 Days] reward!
+      '3':
+        name: '&#FB1D1D&lx4 Rival&f Key'
+        material: red_dye
+        amount: 4
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 2
+        commands:
+        - excellentcrates key give {player_name} rival 4
+      '4':
+        name: '&#00CAFB&lx4 Epic&f Key'
+        material: LIGHT_BLUE_DYE
+        amount: 4
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 3
+        commands:
+        - crate key give {player_name} epic 4
+      '5':
+        name: '&#F6FF00&lx4 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 4
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 5
+        commands:
+        - excellentcrates key give {player_name} prime 4
+      '6':
+        name: '&#F2FB00&l600 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 2
+        commands:
+        - coins give {player_name} 600
+      '7':
+        name: '&#F2FB00&l550 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 4
+        commands:
+        - coins give {player_name} 550
+      '8':
+        name: '&#3EFF00&l$75,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 3
+        commands:
+        - eco give {player_name} 75000
+      '9':
+        name: '&#3EFF00&l$60,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 6
+        commands:
+        - eco give {player_name} 60000
+      '10':
+        name: '&7x3 Netherite Blocks'
+        material: NETHERITE_BLOCK
+        amount: 3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 6
+        commands:
+        - give {player_name} netherite_block 3 0
+      '11':
+        name: '&#DD8738TopG &fTag &7[Sorcerer Exclusive]'
+        material: name_tag
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - voucher give TopGTag 1 {player_name}
+      '12':
+        name: '&7x32 Obsidian'
+        material: OBSIDIAN
+        amount: 32
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 8
+        commands:
+        - give {player_name} obsidian 32 0
+      '13':
+        name: '&dx32 End Crystals'
+        material: end_crystal
+        amount: 32
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 8
+        commands:
+        - give {player_name} end_crystal 32 0
+      '14':
+        name: '&#00ABFB&lBlaze &fSpawner'
+        material: SPAWNER
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners give {player_name} blaze 1
+      '15':
+        name: '&#00ABFB&lSpawner Wrench &7[12 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners wrench {player_name} 12
+      '16':
+        name: '&#fbbc2e&lSell Wand &7[150 Uses - 1x Multiplier]'
+        material: GOLDEN_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 3
+        commands:
+        - dsw sellwand {player_name} default 1 1 150
+      '17':
+        name: '&#1E989BTrident'
+        material: trident
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        enchantments:
+        - minecraft:channeling:1
+        - minecraft:mending:1
+        - minecraft:unbreaking:3
+        - minecraft:loyalty:3
+        - minecraft:impaling:5
+        chance: 12
+        commands:
+        - give {player_name} trident 1 0 channeling:1 mending:1 loyalty:3 impaling:5 unreaking:3 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Trident
+      '18':
+        name: '&#D5D5D5Elytra'
+        material: Elytra
+        enchantments:
+        - minecraft:mending:1
+        - minecraft:unbreaking:3
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 7
+        commands:
+        - give {player_name} elytra 1 0 mending:1 unbreaking:3 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Elytra
+      '19':
+        name: '&7&lNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:blast_protection:3
+        - minecraft:aqua_affinity:1
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:4 fire_protection:2 unbreaking:3 blast_protection:3 mending:1 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Helmet
+      '20':
+        name: '&7&lNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:blast_protection:3
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:4 mending:1 unbreaking:3 blast_protection:3 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Chestplate
+      '21':
+        name: '&7&lNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:mending:1
+        - minecraft:fire_protection:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:4 fire_protection:3 unbreaking:3 mending:1 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Leggings
+      '22':
+        name: '&7&lNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:feather_falling:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:4 feather_falling:4 unbreaking:3 mending:1 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Boots
+      '23':
+        name: '&7&lNetherite Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:fire_aspect:2
+        - minecraft:unbreaking:3
+        - minecraft:mending:1
+        - minecraft:sharpness:5
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 14
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:5 mending:1 unbreaking:3 fire_aspect:2 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Sword
+      '24':
+        name: '&7&lNetherite Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:mending:1
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:5 fortune:3 mending:1 unbreaking:3 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Pickaxe
+      '25':
+        name: '&7&lNetherite Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:mending:1
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_axe 1 0 efficiency:5 fortune:3 unbreaking:3 mending:1 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Axe
+      '26':
+        name: '&7&lNetherite Shovel'
+        material: netherite_shovel
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:mending:1
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} netherite_shovel 1 0 efficiency:5 unbreaking:3 mending:1 fortune:3 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Shovel
+      '27':
+        name: '&#A77D3ACrossbow'
+        material: crossbow
+        enchantments:
+        - minecraft:multishot:1
+        - minecraft:quick_charge:2
+        - minecraft:mending:1
+        - minecraft:piercing:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#069ffb➥ /buy'
+        chance: 16
+        commands:
+        - give {player_name} crossbow 1 0 multishot:1 quick_charge:2 piercing:3 unbreaking:3 mending:1 name:&#069ffb&lS&#0797fc&lo&#0890fc&lr&#0988fd&lc&#0b81fd&le&#0c79fe&lr&#0d72fe&le&#0e6aff&lr&f_Crossbow
+  Event:
+    type: SPINNING
+    hologram:
+    - '&#00AC7C&lEVENT &flootbox'
+    - ''
+    - '&7Win @ /koth'
+    - ''
+    - '%item%'
+    meta:
+      radius: 3.0
+      radPerSec: 3.0
+      secondsRan: 30
+      secondsStayingAfter: 10
+      ticksPerChange: 8
+    permission: lootboxes.type.event
+    preview-menu:
+      title: Preview Rewards...
+      rows: 4
+    menu:
+      title: Event Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls&8➟ &d{player_name} &#FF33C7claimed a &#00AC7C&lEVENT &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: false
+    slot: 15
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#FD3939&lWIZARD &crank to open this.'
+    lootbox-show-item:
+      name: '&#00AC7C&lEVENT &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fGet an &#00AC7C&lEVENT &flootbox'
+      - '&fby winning koth event.'
+      - ''
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#00AC7C&lEVENT &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#00AC7C&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    godItems:
+      '1':
+        name: '&#00AC7C&lEvent&f Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:4 unbreaking:4 name:&#00AC7C&lEvent&f_Helmet
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Helmet&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '2':
+        name: '&#00AC7C&lEvent&f Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:5 unbreaking:5 fire_protection:2 name:&#00AC7C&lEvent&f_Chestplate
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Chestplate&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '3':
+        name: '&#00AC7C&lEvent&f Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:5 unbreaking:5 fire_protection:2 name:&#00AC7C&lEvent&f_Leggings
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Leggings&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '4':
+        name: '&#00AC7C&lEvent&f Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:5 unbreaking:5 fire_protection:2 name:&#00AC7C&lEvent&f_Boots
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Boots&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '5':
+        name: '&#00AC7C&lEvent&f Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:sharpness:5
+        - minecraft:looting:3
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:5 unbreaking:4 looting:3 mending:1 name:&#00AC7C&lEvent&f_Sword
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Sword&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '6':
+        name: '&#00AC7C&lEvent&f Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        - minecraft:fortune:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:5 unbreaking:4 mending:1 fortune:3 name:&#00AC7C&lEvent&f_Pickaxe
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Pickaxe&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '7':
+        name: '&#00AC7C&lEvent&f Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        - minecraft:fortune:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_axe 1 0 efficiency:5 unbreaking:4 mending:1 fortune:3 name:&#00AC7C&lEvent&f_Axe
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Axe&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '8':
+        name: '&#00AC7C&lEvent&f Shovel'
+        material: netherite_shovel
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:unbreaking:4
+        - minecraft:mending:1
+        - minecraft:fortune:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} netherite_shovel 1 0 efficiency:5 unbreaking:4 mending:1 fortune:3 name:&#00AC7C&lEvent&f_Shovel
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Shovel from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '9':
+        name: '&#00AC7C&lEvent&f Crossbow'
+        material: crossbow
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:quick_charge:4
+        - minecraft:piercing:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 18
+        commands:
+        - give {player_name} crossbow 1 0 quick_charge:4 unbreaking:3 mending:1 piercing:4 name:&#00AC7C&lEvent&f_Crossbow
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00AC7C&lEvent&f Crossbow from an &#00AC7C&lEVENT &#f452d6Lootbox!
+    items:
+      '1':
+        name: '&x&F&B&1&D&1&D&l2x Rival &fKeys'
+        material: RED_DYE
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 2
+        commands:
+        - excellentcrates key give {player_name} rival 2
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FB1D1D&l2x Rival &fKeys&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '2':
+        name: '&x&F&B&1&D&1&D&l1x Rival &fKeys'
+        material: RED_DYE
+        amount: 1
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 3
+        commands:
+        - excellentcrates key give {player_name} rival 1
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FB1D1D&l1x Rival &fKeys&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '3':
+        name: '&x&0&0&C&A&F&B&l3x Epic &fKeys'
+        material: LIGHT_BLUE_DYE
+        amount: 3
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 1.5
+        commands:
+        - excellentcrates key give {player_name} epic 3
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00CAFB&l3x Epic &fKeys&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '4':
+        name: '&x&0&0&C&A&F&B&l2x Epic &fKeys'
+        material: LIGHT_BLUE_DYE
+        amount: 2
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 2.75
+        commands:
+        - excellentcrates key give {player_name} epic 2
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#00CAFB&l2x Epic &fKeys&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '5':
+        name: '&x&F&6&F&F&0&0&l4x Prime &fKeys'
+        material: YELLOW_DYE
+        amount: 4
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 1.5
+        commands:
+        - excellentcrates key give {player_name} prime 4
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#F6FF00&l4x Prime &fKeys&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '6':
+        name: '&x&F&6&F&F&0&0&l3x Prime &fKeys'
+        material: YELLOW_DYE
+        amount: 3
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 2.5
+        commands:
+        - excellentcrates key give {player_name} prime 3
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#F6FF00&l3x Prime &fKeys&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '7':
+        name: '&#FBAA1F&l/FEED&f Command &7[Permanent]'
+        material: CARROT
+        amount: 1
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 2
+        commands:
+        - voucher give FeedCommand 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#FBAA1F&l/FEED&f Command &7[Permanent]&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '8':
+        name: '&#8601FB&l/WARP END&f Command &7[Permanent]'
+        material: END_PORTAL_FRAME
+        amount: 1
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 2
+        commands:
+        - voucher give EndCommand 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#8601FB&l/WARP END&f Command &7[Permanent]&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+      '9':
+        name: '&#13ce03&l/&#14d903&lS&#15e504&lE&#16f004&lL&#17fb04&lL&f Command &7[Permanent]'
+        material: CHEST
+        amount: 1
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /koth'
+        chance: 2
+        commands:
+        - voucher give SellCommand 1 {player_name}
+        - ebc &d&lLootbox &8➟ &#DD2295{player_name} &dwon the &#13ce03&l/&#14d903&lS&#15e504&lE&#16f004&lL&#17fb04&lL&f Command &7[Permanent]&d reward from an &#00AC7C&lEVENT &#f452d6Lootbox!
+  Armory:
+    permission: lootboxes.type.armory
+    preview-menu:
+      title: Preview Rewards...
+      rows: 5
+    menu:
+      title: Armory Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#18a9fb&lA&#1baefb&lR&#1eb3fb&lM&#22b8fc&lO&#25bdfc&lR&#28c2fc&lY &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: false
+    slot: 14
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need to buy the &#18a9fb&lA&#1baefb&lR&#1eb3fb&lM&#22b8fc&lO&#25bdfc&lR&#28c2fc&lY &cbox to open this.'
+    lootbox-show-item:
+      name: '&#18a9fb&lA&#1baefb&lR&#1eb3fb&lM&#22b8fc&lO&#25bdfc&lR&#28c2fc&lY &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fBuy the &#18a9fb&lA&#1baefb&lR&#1eb3fb&lM&#22b8fc&lO&#25bdfc&lR&#28c2fc&lY &fbox'
+      - '&fto get this lootbox.'
+      - ''
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#18a9fb&lA&#1baefb&lR&#1eb3fb&lM&#22b8fc&lO&#25bdfc&lR&#28c2fc&lY &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#18a9fb&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&bNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:aqua_affinity:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:5 aqua_affinity:1 unbreaking:3
+      '2':
+        name: '&bNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:blast_protection:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:5 unbreaking:3 blast_protection:3
+      '3':
+        name: '&bNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:fire_protection:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:5 fire_protection:3 unbreaking:3
+      '4':
+        name: '&bNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:feather_falling:4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:5 feather_falling:4 unbreaking:3
+      '5':
+        name: '&bNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:5 unbreaking:3
+      '6':
+        name: '&bNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:5 unbreaking:3
+      '7':
+        name: '&bNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:5 unbreaking:3
+      '8':
+        name: '&bNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:5 unbreaking:3
+      '9':
+        name: '&e1x Enchanted Golden Apples'
+        material: enchanted_golden_apple
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} enchanted_golden_apple 1 0
+      '10':
+        name: '&bNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:3 unbreaking:2
+      '11':
+        name: '&bNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:3 unbreaking:2
+      '12':
+        name: '&bNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:3 unbreaking:2
+      '13':
+        name: '&bNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:3
+        - minecraft:unbreaking:2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:3 unbreaking:2
+      '14':
+        name: '&bNetherite Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:2 unbreaking:1
+      '15':
+        name: '&bNetherite Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:2 unbreaking:1
+      '16':
+        name: '&bNetherite Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:2 unbreaking:1
+      '17':
+        name: '&bNetherite Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:2
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:2 unbreaking:1
+      '18':
+        name: '&e2x Enchanted Golden Apples'
+        material: enchanted_golden_apple
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 4
+        commands:
+        - give {player_name} enchanted_golden_apple 2 0
+      '19':
+        name: '&bNetherite Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:fire_aspect:2
+        - minecraft:unbreaking:3
+        - minecraft:looting:3
+        - minecraft:sharpness:5
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:5 looting:3 unbreaking:3 fire_aspect:2
+      '20':
+        name: '&bNetherite Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:sharpness:6
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 6
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:6 unbreaking:3
+      '21':
+        name: '&bNetherite Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:efficiency:4
+        - minecraft:fortune:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:4 unbreaking:3 fortune:3
+      '22':
+        name: '&bNetherite Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:efficiency:4
+        - minecraft:silk_touch:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:4 unbreaking:3 silk_touch:1
+      '23':
+        name: '&bNetherite Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:efficiency:4
+        - minecraft:fortune:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:4 unbreaking:3 fortune:3
+      '24':
+        name: '&bNetherite Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:sharpness:5
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_axe 1 0 sharpness:5
+      '25':
+        name: '&bCrossbow'
+        material: crossbow
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:multishot:1
+        - minecraft:quick_charge:3
+        - minecraft:piercing:4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} crossbow 1 0 piercing:4 unbreaking:3 quick_shot:3 multishot:1
+      '26':
+        name: '&bTrident'
+        material: trident
+        enchantments:
+        - minecraft:unbreaking:3
+        - minecraft:loyalty:2
+        - minecraft:impaling:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} trident 1 0 impaling:3 unbreaking:3 loyalty:2
+      '27':
+        name: '&e4x Enchanted Golden Apples'
+        material: enchanted_golden_apple
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#18a9fb➥ /buy'
+        chance: 2
+        commands:
+        - give {player_name} enchanted_golden_apple 4 0
+  Monthly:
+    permission: lootboxes.type.monthly
+    preview-menu:
+      title: Preview Rewards...
+      rows: 6
+    menu:
+      title: November Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: false
+    slot: 14
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &crank to open this.'
+    lootbox-show-item:
+      name: '&#FFA100&lN&#FEA700&lO&#FEAD00&lV&#FDB300&lE&#FDB900&lM&#FCBF00&lB&#FCC500&lE&#FBCB00&lR &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fBuy this &#FFA100&lN&#FEA700&lO&#FEAD00&lV&#FDB300&lE&#FDB900&lM&#FCBF00&lB&#FCC500&lE&#FBCB00&lR &fbox'
+      - '&fto get this lootbox.'
+      - ''
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#FFA100&lN&#FEA700&lO&#FEAD00&lV&#FDB300&lE&#FDB900&lM&#FCBF00&lB&#FCC500&lE&#FBCB00&lR &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#FFA100&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      ' 1':
+        name: '&#00ABFB&lMagma Cube &fSpawner'
+        material: spawner
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#00AC7C➥ /buy'
+        chance: 3
+        commands:
+        - spawners:spawners give {player_name} MAGMA_CUBE 1
+      '2':
+        name: '&#00ABFB&lIron Golem &fSpawner'
+        material: spawner
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2.5
+        commands:
+        - spawners:spawners give {player_name} IRON_GOLEM 1
+      '3':
+        name: '&#00ABFB&l3x Blaze &fSpawner'
+        material: spawner
+        amount: 3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2
+        commands:
+        - spawners:spawners give {player_name} BLAZE 33
+      '4':
+        name: '&#FB1D1D&l5x Rival&f Key'
+        material: red_dye
+        amount: 5
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2
+        commands:
+        - excellentcrates key give {player_name} rival 5
+      '5':
+        name: '&#00CAFB&lx5 Epic&f Key'
+        material: light_blue_dye
+        amount: 5
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 3
+        commands:
+        - excellentcrates key give {player_name} epic 5
+      '6':
+        name: '&#F6FF00&lx5 Prime &fKey'
+        material: YELLOW_DYE
+        amount: 5
+        enchantments:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 4
+        commands:
+        - excellentcrates key give {player_name} prime 5
+      '7':
+        name: '&b4x Beacon'
+        material: BEACON
+        amount: 4
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} beacon 4 0
+      '8':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr &fStick'
+        material: STICK
+        amount: 1
+        enchantments:
+        - minecraft:knockback:3
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 3
+        commands:
+        - give {player_name} stick 1 0 knockback:3 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Stick
+      '9':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr &fRod'
+        material: BLAZE_ROD
+        amount: 1
+        enchantments:
+        - minecraft:fire_aspect:3
+        - minecraft:sharpness:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 3
+        commands:
+        - give {player_name} blaze_rod 1 0 fire_aspect:3 sharpness:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Rod
+      '10':
+        name: '&#FFA100N&#FEA700o&#FEAD00v&#FDB300e&#FDB900m&#FCBF00b&#FCC500e&#FBCB00r &fTag &7[Monthly Exclusive]'
+        material: NAME_TAG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2
+        commands:
+        - voucher give NovmemberTag 1 {player_name}
+      '11':
+        name: '&#FFB000T&#FFB000u&#FFB000r&#FFB000k&#FFB000e&#FFB000y &fTag &7[Monthly Exclusive]'
+        material: NAME_TAG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2
+        commands:
+        - voucher give TurkeyTag 1 {player_name}
+      '12':
+        name: '&#FBD300B&#FBD704a&#FCDB08n&#FCDE0Ba&#FDE20Fn&#FDE613a &fTag &7[Monthly Exclusive]'
+        material: NAME_TAG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2
+        commands:
+        - voucher give BananaTag 1 {player_name}
+      '13':
+        name: '&e2x Enchanted Golden Apples'
+        material: ENCHANTED_GOLDEN_APPLE
+        amount: 2
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 4
+        commands:
+        - give {player_name} enchanted_golden_apple 2 0
+      '14':
+        name: '&e16x Golden Apples'
+        material: GOLDEN_APPLE
+        amount: 16
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 6
+        commands:
+        - give {player_name} golden_apple 16 0
+      '15':
+        name: '&#FD3939&lWIZARD&f Rank &7[Permanent]'
+        material: STRIDER_SPAWN_EGG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 0.2
+        commands:
+        - voucher give WizardRank 1 {player_name}
+      '16':
+        name: '&#FD3939&lWIZARD&f Rank &7[30 Days]'
+        material: STRIDER_SPAWN_EGG
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 0.7
+        commands:
+        - voucher give WizardRank30d 1 {player_name}
+      '17':
+        name: '&c64x TNT'
+        material: TNT
+        amount: 64
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} tnt 64 0
+      '18':
+        name: '&#FF7115&lT&#FF7115&lh&#FF7115&la&#FF7115&ln&#FF7115&lk&#FF7115&ls&#FF7115&lg&#FF7115&li&#FF7115&lv&#FF7115&li&#FF7115&ln&#FF7115&lg &#FF7115&lT&#FF7115&lu&#FF7115&lr&#FF7115&lk&#FF7115&le&#FF7115&ly'
+        material: COOKED_CHICKEN
+        amount: 1
+        enchantments:
+        - minecraft:knockback:10
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 3
+        commands:
+        - give {player_name} cooked_chicken 1 0 knockback:10 name:&#FF7115&lT&#FF7115&lh&#FF7115&la&#FF7115&ln&#FF7115&lk&#FF7115&ls&#FF7115&lg&#FF7115&li&#FF7115&lv&#FF7115&li&#FF7115&ln&#FF7115&lg &#FF7115&lT&#FF7115&lu&#FF7115&lr&#FF7115&lk&#FF7115&le&#FF7115&ly
+      '19':
+        name: '&78x Netherite Blocks'
+        material: NETHERITE_BLOCK
+        amount: 8
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 6
+        commands:
+        - give {player_name} netherite_block 8 0
+      '20':
+        name: '&#00ABFB&lSpawner Wrench &7[10 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 2
+        commands:
+        - spawners wrench {player_name} 10
+      '21':
+        name: '&#fbbc2e&lSell Wand &7[500 Uses - 1x Multiplier]'
+        material: GOLDEN_HOE
+        amount: 1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 3
+        commands:
+        - dsw sellwand {player_name} default 1 1 500
+      '22':
+        name: '&#3EFF00&l$200,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 4
+        commands:
+        - eco give {player_name} 200000
+      '23':
+        name: '&#3EFF00&l$150,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 6
+        commands:
+        - eco give {player_name} 150000
+      '24':
+        name: '&#F2FB00&l750 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 2
+        commands:
+        - coins give {player_name} 750
+      '25':
+        name: '&#F2FB00&l500 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 4
+        commands:
+        - coins give {player_name} 500
+      '26':
+        name: '&d32x End Crystal'
+        material: END_CRYSTAL
+        amount: 32
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} end_crystal 32 0
+      '27':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Trident'
+        material: trident
+        enchantments:
+        - minecraft:impaling:5
+        - minecraft:loyalty:3
+        - minecraft:unbreaking:2
+        - minecraft:channeling:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 4
+        commands:
+        - give {player_name} trident 1 0 impaling:5 loyalty:3 unbreaking:2 channeling:1 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Trident
+      '28':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Helmet'
+        material: netherite_helmet
+        enchantments:
+        - minecraft:protection:4
+        - minecraft:unbreaking:3
+        - minecraft:aqua_affinity:1
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 15
+        commands:
+        - give {player_name} netherite_helmet 1 0 protection:5 aqua_affinity:1 unbreaking:3 mending:1 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Helmet
+      '29':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Chestplate'
+        material: netherite_chestplate
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:blast_protection:3
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} netherite_chestplate 1 0 protection:5 blast_protection:3 unbreaking:3 mending:1 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Chestplate
+      '30':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Leggings'
+        material: netherite_leggings
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:fire_protection:3
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 11
+        commands:
+        - give {player_name} netherite_leggings 1 0 protection:5 fire_protection:3 mending:1 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Leggings
+      '31':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Boots'
+        material: netherite_boots
+        enchantments:
+        - minecraft:protection:5
+        - minecraft:unbreaking:3
+        - minecraft:feather_falling:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 13
+        commands:
+        - give {player_name} netherite_boots 1 0 protection:5 feather_falling:4 mending:1 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Boots
+      '32':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:fire_aspect:2
+        - minecraft:unbreaking:3
+        - minecraft:sharpness:4
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:4 unbreaking:3 mending:1 fire_aspect:2 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Sword
+      '33':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Pickaxe'
+        material: netherite_pickaxe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:unbreaking:3
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 6
+        commands:
+        - give {player_name} netherite_pickaxe 1 0 efficiency:5 fortune:3 mending:1 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Pickaxe
+      '34':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:unbreaking:3
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 7
+        commands:
+        - give {player_name} netherite_axe 1 0 efficiency:5 fortune:3 mending:1 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Axe
+      '35':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Shovel'
+        material: netherite_shovel
+        enchantments:
+        - minecraft:efficiency:5
+        - minecraft:fortune:3
+        - minecraft:unbreaking:3
+        - minecraft:mending:1
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 7
+        commands:
+        - give {player_name} netherite_shovel 1 0 efficiency:5 fortune:3 mending:1 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Shovel
+      '36':
+        name: '&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f Crossbow'
+        material: crossbow
+        enchantments:
+        - minecraft:multishot:1
+        - minecraft:quick_charge:2
+        - minecraft:piercing:4
+        - minecraft:unbreaking:3
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#FFA100➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} crossbow 1 0 multishot:1 quick_charge:2 piercing:4 unbreaking:3 name:&#FFA100&lN&#FEA700&lo&#FEAD00&lv&#FDB300&le&#FDB900&lm&#FCBF00&lb&#FCC500&le&#FBCB00&lr&f_Crossbow
+  
+  
+  Grinder:
+    permission: lootboxes.type.grinder
+    preview-menu:
+      title: Preview Rewards...
+      rows: 4
+    menu:
+      title: Grinder Lootbox
+      rows: 3
+    number-of-picks: 3
+    claim-message:
+      message: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &d{player_name} &#FF33C7claimed a &#922ae4&lG&#9a2ce6&lR&#a22fe8&lI&#aa31ea&lN&#b234ec&lD&#ba36ee&lE&#c239f0&lR &#FF33C7lootbox! &eGet your own at store.minerival.org'
+    # in seconds
+    cooldown: 86400
+    is-claimable: false
+    slot: 14
+    in-cooldown: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou are currently on cooldown. Please wait &7{time}&c.'
+    broadcast-claim: true
+    no-permission: '&#D500C0&lL&#DA0EC2&lo&#DF1BC4&lo&#E329C6&lt&#E836C8&lb&#ED44C9&lo&#F251CB&lx&#F65FCD&le&#FB6CCF&ls &8➟ &cYou don''t have permission to open this lootbox. You need the &#922ae4&lG&#9a2ce6&lR&#a22fe8&lI&#aa31ea&lN&#b234ec&lD&#ba36ee&lE&#c239f0&lR &crank to open this.'
+    lootbox-show-item:
+      name: '&#922ae4&lG&#9a2ce6&lR&#a22fe8&lI&#aa31ea&lN&#b234ec&lD&#ba36ee&lE&#c239f0&lR &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fBuy this &#922ae4&lG&#9a2ce6&lR&#a22fe8&lI&#aa31ea&lN&#b234ec&lD&#ba36ee&lE&#c239f0&lR &fbox'
+      - '&fto get this lootbox.'
+      - ''
+      - '&e[→] Right Click &fto Preview'
+      glow: false
+    lootbox-receive-item:
+      name: '&#922ae4&lG&#9a2ce6&lR&#a22fe8&lI&#aa31ea&lN&#b234ec&lD&#ba36ee&lE&#c239f0&lR &fLootbox'
+      material: ENDER_CHEST
+      lore:
+      - '&8Lootbox Item'
+      - ''
+      - '&fType &#922ae4&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - ''
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&b12x Lapis Blocks'
+        material: lapis_block
+        amount: 12
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} lapis_block 12 0
+      '2':
+        name: '&b32x Lapis Blocks'
+        material: lapis_block
+        amount: 32
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 6
+        commands:
+        - give {player_name} lapis_block 32 0
+      '3':
+        name: '&b64x Lapis Blocks'
+        material: lapis_block
+        amount: 64
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 4
+        commands:
+        - give {player_name} lapis_block 64 0
+      '4':
+        name: '&aLevels Voucher &7[30 Levels]'
+        material: experience_bottle
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 10
+        commands:
+        - voucher give Level30 1 {player_name}
+      '5':
+        name: '&aLevels Voucher &7[60 Levels]'
+        material: experience_bottle
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 6
+        commands:
+        - voucher give Level60 1 {player_name}
+      '6':
+        name: '&aLevels Voucher &7[90 Levels]'
+        material: experience_bottle
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 2
+        commands:
+        - voucher give Level90 1 {player_name}
+      '7':
+        name: '&78x Hopper'
+        material: hopper
+        amount: 8
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 12
+        commands:
+        - give {player_name} hopper 8 0
+      '8':
+        name: '&716x Hopper'
+        material: hopper
+        amount: 16
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} hopper 16 0
+      '9':
+        name: '&732x Hopper'
+        material: hopper
+        amount: 32
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} hopper 32 0
+      '10':
+        name: '&d6x Enchanting Tables'
+        material: enchanting_table
+        amount: 6
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 8
+        commands:
+        - give {player_name} enchanting_table 6 0
+      '11':
+        name: '&664x Books'
+        material: book
+        amount: 64
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 10
+        commands:
+        - give {player_name} book 64 0
+      '12':
+        name: '&616x Books'
+        material: bookshelf
+        amount: 16
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 5
+        commands:
+        - give {player_name} bookshelf 16 0
+      '13':
+        name: '&#00ABFB&lBlaze &fSpawner'
+        material: spawner
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 3
+        commands:
+        - spawners:spawners give {player_name} BLAZE 1
+      '14':
+        name: '&#00ABFB&lSkeleton &fSpawner'
+        material: spawner
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 3
+        commands:
+        - spawners:spawners give {player_name} SKELETON 1
+      '15':
+        name: '&#00ABFB&lCreeper &fSpawner'
+        material: spawner
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 2
+        commands:
+        - spawners:spawners give {player_name} CREEPER 1
+      '16':
+        name: '&#00ABFB&lZombie &fSpawner'
+        material: spawner
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 3
+        commands:
+        - spawners:spawners give {player_name} ZOMBIE 1
+      '17':
+        name: '&#FB1370&lGrinder&f Sword'
+        material: netherite_sword
+        enchantments:
+        - minecraft:looting:5
+        - minecraft:unbreaking:4
+        - minecraft:sharpness:3
+        - minecraft:smite:5
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 2
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:3 unbreaking:4 smite:5 looting:5 name:&#FB1370&lGrinder&f_Sword
+      '18':
+        name: '&#FB1370&lGrinder&f Axe'
+        material: netherite_axe
+        enchantments:
+        - minecraft:looting:5
+        - minecraft:unbreaking:4
+        - minecraft:sharpness:3
+        - minecraft:smite:5
+        lore:
+        - '&8Loot Box Preview'
+        - ''
+        - '&fGet a Loot Box!'
+        - '&#922ae4➥ /buy'
+        chance: 2
+        commands:
+        - give {player_name} netherite_sword 1 0 sharpness:3 unbreaking:4 smite:5 looting:5 name:&#FB1370&lGrinder&f_Axe
+
+debug:
+  check-cooldowns: false
