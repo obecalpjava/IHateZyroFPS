@@ -1,0 +1,375 @@
+messages:
+  withdraw:
+    message: '&6&lMines &8➟ &7Congratulations, you have withdrawn &6${reward}!'
+    sound:
+      id: minecraft:block.note_block.bell
+
+sounds:
+  lost:
+    id: minecraft:block.end_gateway.spawn
+    volume: 1.0
+    pitch: 1.0
+  continue:
+    id: minecraft:entity.experience_orb.pickup
+    volume: 1.0
+    pitch: 1.2
+
+options:
+  startingTnt: 10
+  maxBet: 500000
+  multipliers:
+  - 1.05
+  - 1.1
+  - 1.15
+  - 1.2
+  - 1.5
+  - 1.55
+  - 1.6
+  - 1.65
+  - 1.7
+  - 2
+  - 2.25
+  - 2.5
+  - 2.75
+  - 3
+  - 3.25
+  - 3.5
+  - 3.75
+  - 4
+  - 4.5
+  - 5
+
+addMenu:
+  title: Mines (${amount})
+  rows: 3
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&f'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+  '1':
+    material: PAPER
+    name: '&a&l+500'
+    money: 500
+    slots:
+    - 10
+  '2':
+    material: PAPER
+    name: '&a&l+3,000'
+    money: 3000
+    slots:
+    - 11
+  '3':
+    material: PAPER
+    name: '&a&l+10,000'
+    money: 10000
+    slots:
+    - 12
+  '4':
+    material: PAPER
+    name: '&a&l+25,000'
+    money: 25000
+    slots:
+    - 13
+  '5':
+    material: PAPER
+    name: '&a&l+50,000'
+    money: 50000
+    slots:
+    - 14
+  '6':
+    material: PAPER
+    name: '&a&l+100,000'
+    money: 100000
+    slots:
+    - 15
+  '7':
+    material: PAPER
+    name: '&a&l+250,000'
+    money: 250000
+    slots:
+    - 16
+
+removeMenu:
+  title: Mines (${amount})
+  rows: 3
+  filler:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&f'
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+  '1':
+    material: PAPER
+    name: '&c&l-500'
+    money: 500
+    slots:
+    - 10
+  '2':
+    material: PAPER
+    name: '&c&l-3,000'
+    money: 3000
+    slots:
+    - 11
+  '3':
+    material: PAPER
+    name: '&c&l-10,000'
+    money: 10000
+    slots:
+    - 12
+  '4':
+    material: PAPER
+    name: '&c&l-25,000'
+    money: 25000
+    slots:
+    - 13
+  '5':
+    material: PAPER
+    name: '&c&l-50,000'
+    money: 50000
+    slots:
+    - 14
+  '6':
+    material: PAPER
+    name: '&c&l-100,000'
+    money: 100000
+    slots:
+    - 15
+  '7':
+    material: PAPER
+    name: '&c&l-250,000'
+    money: 250000
+    slots:
+    - 16
+
+menu:
+  title: Mines | Don't hit the TNT!
+  rows: 6
+  tntSlots:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  specialItems:
+    replaceBets:
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&f'
+    tntOnBoard:
+      material: TNT
+      name: '&c&lTNT On the Board'
+      lore:
+      - '&f'
+      - '&7TNT on the board:'
+      - '&7 ➟ &f{amount}'
+      slots:
+      - 10
+    deductFromBet:
+      material: RED_DYE
+      name: '&c&lDeduct from bet'
+      lore:
+      - '&f'
+      - '&7Click to remove from your bet!'
+      slots:
+      - 18
+    addToBet:
+      material: LIME_DYE
+      name: '&a&lAdd to bet'
+      lore:
+      - '&f'
+      - '&7Click to add to your bet!'
+      slots:
+      - 20
+    totalBet:
+      material: LIGHT_BLUE_DYE
+      name: '&b&lTotal bet'
+      lore:
+      - '&f'
+      - '&7Your total bet'
+      - '&7 ➟ &f${amount}'
+      slots:
+      - 19
+    playerBalance:
+      slots:
+      - 28
+      material: RAW_GOLD
+      name: '&e&lBalance'
+      lore:
+      - '&f'
+      - '&7Your balance'
+      - '&7 ➟ &f$%vault_eco_balance_commas%'
+    earnings:
+      slots:
+      - 46
+      material: SUNFLOWER
+      name: '&e&lEarnings'
+      lore:
+      - '&f'
+      - '&7Your earnings'
+      - '&7 ➟ &f${reward}'
+      - '&f'
+      - '&7Your profits'
+      - '&7 ➟ &f${profit}'
+      - '&f'
+      - '&7Click to withdraw!'
+    bombItem:
+      material: TNT
+      name: '&cTNT'
+      lore:
+      - '&f'
+      - '&cBetter luck next time!'
+    unknownItem:
+      material: LIGHT_GRAY_CONCRETE_POWDER
+      name: '&6Unchecked'
+      lore:
+      - '&f'
+      - '&7This slot is unknown.'
+      - '&7Your potential reward is: &f${reward}'
+    safeItem:
+      material: DIAMOND
+      name: '&bDiamond'
+  fillerSlots:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&f'
+    # 0 through 53
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+  fillerSlots2:
+    material: BARRIER
+    slots:
+    - 3
+    - 12
+    - 21
+    - 30
+    - 39
+    - 48
+    name: '&f'

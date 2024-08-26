@@ -1,0 +1,445 @@
+#-------------------------------------------------------------------------------------------------------------------#
+#							  MyCommand Commands config file (last update v5.7.2)									#
+#																													#
+#  Plugin Documentation : https://dev.bukkit.org/projects/mycommand/pages/getstarted    							#
+#  Spigot https://www.spigotmc.org/resources/mycommand.22272/  Bukkit : https://dev.bukkit.org/projects/mycommand/	#
+#																													#
+#	How to make a command :	(See an example command below)															#
+#		First, decide your command name placing it in the first row (no duplicates!)  "mycommand:"					#
+#		Now set the "command:" field. This will trigger the command. Don't forget the '/' before your command.		#
+#		Now choose your command type from a predefined list and put it after the "type" field						#
+#	COMMAND TYPE LIST :																								#
+#		TEXT , BROADCAST_TEXT, RAW_TEXT , BROADCAST_RAW_TEXT, ALIAS , RUN_COMMAND , RUN_CONSOLE , RUN_COMMAND_TASK  #
+#       RUN_COMMAND_RANDOM , RUN_CONSOLE_RANDOM , RUN_AS_OPERATOR , ADD_PERMISSION , ADD_COST , WARMUP , COOLDOWN   #
+#       WARMUP_AND_COOLDOWN , BLOCK_PATTERN ,  BAR_API_TEXT , BAR_API_BROADCAST_TEXT , CALL_URL , EXP_BAR			#
+#       ICON_MENU , MERCHANT , SCOREBOARD , BUNGEE_TP , TITLE, BROADCAST_TITLE , ACTION_BAR , BROADCAST_ACTION_BAR	#
+#		HOLOGRAPHIC_TEXT , BROADCAST_HOLOGRAPHIC_TEXT , LIVE_CHAT , BOOK , RAW_BOOK, ANVIL_GUI , SIGN_MENU 			#
+#																													#
+#	If your command is "TEXT" type, you can put multiple line of text below this parameter							#
+#	You can do the same thing with the "RUN_COMMAND" type, but instead of text, puts commands in this list			#
+#	For delayed command(s) add $delay$ before the command in runcmd Example : - $delay$/list						#
+#	Set delay time with delaytimer: 5 (5 = seconds) | 																#
+#   If you are using the Vault plugin, you can put the "cost: 123.0" with this line. 								#
+#	You can customize your permission node by placing "permission-node:" field in a command							#
+#	Change the permission error message with "permission-error:" or create a command without permission required	#
+#   with "permission-required: false". Custom error-message for invalid args, use "error-message:"					#
+#   You can use itemcost : 'ID:AMOUNT' for set a cost with items. 													#
+#   Register REAL commands putting "register: true" below the command. Those are recognized from other plugins.    	#
+#   With register commands you can use the "tab_completer: - Hi - Hello!"											#
+#   For Scripts and more features, find more on the bukkitdev page													#
+#-------------------------------------------------------------------------------------------------------------------#
+storeTabComplete:
+  command: /store 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+discordTabComplete:
+  command: /discord 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+twitterTabComplete:
+  command: /twitter 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+applyTabComplete:
+  command: /apply 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+sorcererTabComplete:
+  command: /sorcerer 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+spinsTabComplete:
+  command: /spin 
+  type: RUN_COMMAND
+  runcmd:
+  - '/dailyreward'
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+staffappTabComplete:
+  command: /staffapp
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+gambleTabComplete:
+  command: /gamble
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+mediaappTabComplete:
+  command: /mediaapp
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+websiteTabComplete:
+  command: /website
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+voteTabComplete:
+  command: /vote
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+lifestealComplete:
+  command: /lifesteal
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+playtimelevelsTabComplete:
+  command: /playtimelevels
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+backpack:
+  command: /backpack
+  type: RUN_COMMAND
+  runcmd:
+  - '/pv 1'
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+rankupsTabComplete:
+  command: /rankups
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+levelsTabComplete:
+  command: /levels
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+coinshopTabComplete:
+  command: /coin shop 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+teamsTabComplete:
+  command: /teams
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+sellC:
+  command: /sell 
+  type: RUN_COMMAND
+  runcmd:
+  - '/sellgui'
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+ranksTabComplete:
+  command: /ranks 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+buyTabComplete:
+  command: /buy 
+  type: RUN_COMMAND
+  runcmd:
+  - ''
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+erules:
+  command: /erules
+  type: RUN_COMMAND
+  runcmd:
+  - '/rules'
+  required_args: 0
+  permission-required: false
+  register: true
+  tab_completer:
+rtp:
+  command: /rtp 
+  type: RUN_COMMAND
+  runcmd:
+  - '/betterrtp:rtp world world'
+  permission-required: false
+  register: true  
+rules:
+  command: /rules
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#fffd13%&lS$hex%#fff91c%&lE$hex%#fff424%&lR$hex%#fff02d%&lV$hex%#ffeb36%&lE$hex%#ffe73f%&lR $hex%#ffe347%&lR$hex%#ffde50%&lU$hex%#ffda59%&lL$hex%#ffd561%&lE$hex%#ffd16a%&lS'
+      - '&r'
+      - '&7Make sure to read up on our $hex%#FFFAB6%rules&7! By playing'
+      - '&7on $hex%#FFFAB6%MineRival&7 you $hex%#FFFAB6%acknowledge&7 that you have $hex%#FFFAB6%read'
+      - '&7and $hex%#FFFAB6%understand&7 the rules of the server.'
+      - '&r'
+      - '$hex%#FFF08D%➥ &lREAD: $hex%#fffd13%https://minerival.net/rules'
+      - '&r'
+  permission-required: false
+  register: true
+  tab_completer:
+store:
+  command: /store
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#d931fb%&lS$hex%#dd36f8%&lE$hex%#e03cf6%&lR$hex%#e441f3%&lV$hex%#e746f0%&lE$hex%#eb4cee%&lR $hex%#ef51eb%&lS$hex%#f256e8%&lT$hex%#f65be5%&lO$hex%#f961e3%&lR$hex%#fd66e0%&lE'
+      - '&r'
+      - '&7Every purchase of in-game goods such as $hex%#F6CCFB%ranks&7, $hex%#F6CCFB%crate keys&7,'
+      - '&7and $hex%#F6CCFB%coins&7 directly supports the server! Donating helps us'
+      - '&7keep the server online & maintained well!'
+      - '&r'
+      - '$hex%#FBC0EC%➥ &lSTORE.MINERIVAL.ORG'
+      - '&r'
+  permission-required: false
+  tab_completer:
+discord:
+  command: /discord
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#7289da%&lDISCORD'
+      - '&r'
+      - '&7Join our $hex%#BAC0DA%Discord &7server to participate in'
+      - '$hex%#BAC0DA%events&7, $hex%#BAC0DA%giveaways&7, and so $hex%#BAC0DA%much more&7!'
+      - '&r'
+      - '$hex%#9EADDA%➥ &lDISCORD.GG/MINERIVALMC'
+      - '&r'
+  required_args: 0
+  permission-required: false
+  tab_completer:
+twitter:
+  command: /twitter
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#7289da%&l$hex%#1bdad4%&lT$hex%#21d6d5%&lW$hex%#26d2d6%&lI$hex%#2cced7%&lT$hex%#31cad8%&lT$hex%#37c6d9%&lE$hex%#3cc2da%&lR'
+      - '&r'
+      - '&7Follow us on $hex%#B4DAD9%Twitter &7to be informed about issues&7,'
+      - '&7participate in $hex%#B4DAD9%giveaways&7, and information about $hex%#B4DAD9%updates&7!'
+      - '&r'
+      - '$hex%#8FDAD8%➥ &lTWITTER.COM/MINERIVAL'
+      - '&r'
+  required_args: 0
+  permission-required: false
+  tab_completer:
+apply:
+  command: /apply
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#d500c0%&lA$hex%#e000ca%&lP$hex%#ea00d3%&lP$hex%#f500dd%&lL$hex%#ff00e6%&lY'
+      - '&r'
+      - '&7Want to apply for our $hex%#FB6CCF%media team&7 or our $hex%#FB6CCF%staff team?&7'
+      - '$hex%#FB6CCF%Join our Discord&7, check the $hex%#FB6CCF%#applications channel &7and'
+      - '$hex%#FB6CCF%make a ticket&7 to apply for Helper or Media rank. Good luck!'
+      - '&r'
+      - '$hex%#FB6CCF%➥ &ldiscord.gg/minerivalmc'
+      - '&r'
+  permission-required: false
+  tab_completer:
+staffapp:
+  command: /staffapp
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#ff1700%&lS$hex%#ff1904%&lT$hex%#ff1b07%&lA$hex%#ff1d0b%&lF$hex%#ff200e%&lF $hex%#ff2212%&lA$hex%#ff2415%&lP$hex%#ff2619%&lP$hex%#ff281d%&lL$hex%#ff2a20%&lI$hex%#ff2c24%&lC$hex%#ff2e27%&lA$hex%#ff312b%&lT$hex%#ff332e%&lI$hex%#ff3532%&lO$hex%#ff3735%&lN$hex%#ff3939%&lS'
+      - '&r'
+      - '&7Are you looking to be part of our $hex%#FFC3C3%staff team&7? You''re in $hex%#FFC3C3%luck&7!'
+      - '&7Applications are $hex%#FFC3C3%OPEN&7 to join our team of brilliant'
+      - '&7individuals who help protect $hex%#FFC3C3%MineRival&7!'
+      - '&r'
+      - '$hex%#FF9A9A%➥ &ldiscord.gg/minerivalmc'
+      - '&r'
+  required_args: 0
+  permission-required: false
+  tab_completer:
+mediaapp:
+  command: /mediaapp
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#b42aff%&lM$hex%#b42fff%&lE$hex%#b534ff%&lD$hex%#b539ff%&lI$hex%#b53eff%&lA $hex%#b643ff%&lA$hex%#b648ff%&lP$hex%#b64dff%&lP$hex%#b753ff%&lL$hex%#b758ff%&lI$hex%#b75dff%&lC$hex%#b762ff%&lA$hex%#b867ff%&lT$hex%#b86cff%&lI$hex%#b871ff%&lO$hex%#b976ff%&lN$hex%#b97bff%&lS'
+      - '&r'
+      - '&7Are you looking to be part of our $hex%#E6CAFF%media team&7? You''re in $hex%#E6CAFF%luck&7!'
+      - '&7You can apply by making a $hex%#E6CAFF%ticket&7 in our $hex%#E6CAFF%Discord&7 server to'
+      - '&7join our team who help bring attention to $hex%#E6CAFF%MineRival&7!'
+      - '&r'
+      - '$hex%#D4A4FF%➥ &ldiscord.gg/minerivalmc'
+      - '&r'
+  permission-required: false
+  tab_completer:
+website:
+  command: /website
+  type: TEXT
+  text:
+      - '&r'
+      - '$hex%#1CDCE3%&lWEBSITE'
+      - '&r'
+      - '&7Our website is home to our $hex%#1CDCE3%rules&7 and our $hex%#1CDCE3%webstore&7!'
+      - '&7You need to be $hex%#1CDCE3%familiar &7with our rules, and our webstore'
+      - '&7helps keep the server $hex%#1CDCE3%running&7!'
+      - '&r'
+      - '$hex%#1CDCE3%➥ &lhttps://minerival.net'
+      - '&r'
+  permission-required: false
+  tab_completer:
+freeze:
+  command: /freeze
+  type: RUN_COMMAND
+  runcmd:
+  - '/vulcan freeze $arg1'
+  permission-required: false
+  tab_completer:
+death-hub:
+  command: /hubsend
+  type: BUNGEE_TP
+  server_name: Hub
+  permission-required: false
+death-hub-forward:
+  command: /hubsendnow
+  type: RUN_COMMAND
+  runcmd:
+  - '/hubsend'
+  required_args: 0
+  register: true
+  permission-required: false
+bounty-forward:
+  command: /bounty
+  type: RUN_COMMAND
+  runcmd:
+  - '/bounty list'
+  required_args: 0
+  register: true
+  permission-required: false
+reboot-1:
+  command: /executable-reboot-1
+  type: BROADCAST_TEXT
+  text:
+  - ''
+  - '$hex%#D32727%⛨ $hex%#FB3D3D%&lAUTOMATIC SERVER REBOOT $hex%#D32727%⛨'
+  - ''
+  - '&fAn $hex%#FF5353%automatic reboot &fis now in progress!'
+  - '&fVarious new $hex%#FF5353%updates&f, $hex%#FF5353%fixes&f, and $hex%#FF5353%more&f have been implemented, so'
+  - '&fyour experience on our network is as fluid and playable as possible!'
+  - ''
+  - '$hex%#FF6464%➥ &lREBOOTING IN: 5 MINUTES'
+  - ''
+  permission-required: true
+reboot-2:
+  command: /executable-reboot-2
+  type: BROADCAST_TEXT
+  text:
+  - ''
+  - '$hex%#D32727%⛨ $hex%#FB3D3D%&lAUTOMATIC SERVER REBOOT $hex%#D32727%⛨'
+  - ''
+  - '&fAn $hex%#FF5353%automatic reboot &fis now in progress!'
+  - '&fVarious new $hex%#FF5353%updates&f, $hex%#FF5353%fixes&f, and $hex%#FF5353%more&f have been implemented, so'
+  - '&fyour experience on our network is as fluid and playable as possible!'
+  - ''
+  - '$hex%#FF6464%➥ &lREBOOTING IN: 3 MINUTES'
+  - ''
+  permission-required: true
+reboot-3:
+  command: /executable-reboot-3
+  type: BROADCAST_TEXT
+  text:
+  - ''
+  - '$hex%#D32727%⛨ $hex%#FB3D3D%&lAUTOMATIC SERVER REBOOT $hex%#D32727%⛨'
+  - ''
+  - '&fAn $hex%#FF5353%automatic reboot &fis now in progress!'
+  - '&fVarious new $hex%#FF5353%updates&f, $hex%#FF5353%fixes&f, and $hex%#FF5353%more&f have been implemented, so'
+  - '&fyour experience on our network is as fluid and playable as possible!'
+  - ''
+  - '$hex%#FF6464%➥ &lREBOOTING IN: 1 MINUTE'
+  - ''
+  permission-required: true
+reboot-4:
+  command: /executable-reboot-4
+  type: BROADCAST_TEXT
+  text:
+  - ''
+  - '$hex%#D32727%⛨ $hex%#FB3D3D%&lAUTOMATIC SERVER REBOOT $hex%#D32727%⛨'
+  - ''
+  - '&fAn $hex%#FF5353%automatic reboot &fis now in progress!'
+  - '&fVarious new $hex%#FF5353%updates&f, $hex%#FF5353%fixes&f, and $hex%#FF5353%more&f have been implemented, so'
+  - '&fyour experience on our network is as fluid and playable as possible!'
+  - ''
+  - '$hex%#FF6464%➥ &lREBOOTING IN: 30 SECONDS &7[Final Warning]'
+  - ''
+  permission-required: true
+koth-command:
+  command: /executable-koth
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+  - /zkoth now redkoth
+  - /zkoth now bluekoth
+  - /zkoth now yellowkoth
+  permission-required: true

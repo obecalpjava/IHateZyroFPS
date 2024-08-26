@@ -1,0 +1,58 @@
+{
+  "enableDebug": true,
+  "enableDebugTime": false,
+  "auctionLore": [
+    "",
+    "§8❖ §fSeller§7: §d%seller%",
+    "§8❖ §fHighest Bidder§7: §a%player%",
+    "§8❖ §fCurrent Price§7: §b$%price%",
+    "§8❖ §fExpire§7: §c%expire%",
+    "",
+    "§e§l➥ CLICK TO BID"
+  ],
+  "noone": "No One",
+  "permissionBidItemTimeInSeconds": {
+    "minerival.auction.time.default": 900,
+    "minerival.auction.time.first": 1200,
+    "minerival.auction.time.second": 1800,
+    "minerival.auction.time.third": 2700,
+    "minerival.auction.time.fourth": 3600,
+    "minerival.auction.time.fifth": 7200,
+    "minerival.auction.time.sixth": 10800
+  },
+  "permissionBidItemLimit": {
+    "minerival.auction.limit.default": 2,
+    "minerival.auction.limit.first": 4,
+    "minerival.auction.limit.second": 6,
+    "minerival.auction.limit.third": 8,
+    "minerival.auction.limit.fourth": 10,
+    "minerival.auction.limit.fifth": 12
+  },
+  "expireItemTimeInSeconds": 86400,
+  "autoSaveSeconds": 900,
+  "maxPrice": 1000000,
+  "minPrice": 10,
+  "bidBroadcastInformation": 25000,
+  "blacklistMaterials": [
+    "BEDROCK",
+    "COMMAND_BLOCK",
+    "SHULKER_BOX",
+    "WHITE_SHULKER_BOX",
+    "ORANGE_SHULKER_BOX",
+    "MAGENTA_SHULKER_BOX",
+    "LIGHT_BLUE_SHULKER_BOX",
+    "YELLOW_SHULKER_BOX",
+    "LIME_SHULKER_BOX",
+    "PINK_SHULKER_BOX",
+    "GRAY_SHULKER_BOX",
+    "LIGHT_GRAY_SHULKER_BOX",
+    "CYAN_SHULKER_BOX",
+    "PURPLE_SHULKER_BOX",
+    "BLUE_SHULKER_BOX",
+    "BROWN_SHULKER_BOX",
+    "GREEN_SHULKER_BOX",
+    "RED_SHULKER_BOX",
+    "BLACK_SHULKER_BOX"
+  ],
+  "adminRemovePermission": "minerival.auction.remove"
+}

@@ -1,0 +1,9 @@
+block-removal-time: 60 # seconds
+placeable-blocks:
+- OBSIDIAN
+- RESPAWN_ANCHOR
+denied-interactions:
+- SAPLING
+- BUCKET
+- WATER_BUCKET
+- BONE_MEAL

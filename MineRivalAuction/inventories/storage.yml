@@ -1,0 +1,51 @@
+name: "&8Storage"
+size: 27
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item: 
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 19-21
+      - 23-25
+  next:
+    type: NEXT
+    isPermanent: true
+    slot: 26
+    item:
+      material: ARROW
+      name: "&fNext"
+    else:
+      slot: 26
+      type: NONE
+      isPermanent: true
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: "&e" 
+  previous:
+    type: PREVIOUS
+    isPermanent: true
+    slot: 18
+    item:
+      material: ARROW
+      name: "&fPrevious"
+    else:
+      slot: 18
+      type: NONE
+      isPermanent: true
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: "&e"
+  auction:
+    isPermanent: true
+    type: MINERIVAL_STORAGE
+    slots:
+      - 0-17 
+  cancel:
+    type: BACK
+    slot: 22
+    item: 
+      material: BARRIER
+      name: "&cBack"            

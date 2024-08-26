@@ -1,0 +1,173 @@
+messages:
+  prefix:
+    type: TCHAT
+    message: '#09AEFB&lBidding&8 ➟ '
+  teleport:
+    move:
+      type: TCHAT
+      message: '&cYou must not move!'
+    message:
+      type: TCHAT
+      message: '&7Teleportation in &3%second% &7seconds!'
+    error:
+      type: TCHAT
+      message: '&cYou already have a teleportation in progress!'
+    success:
+      type: TCHAT
+      message: '&7Teleportation done!'
+  inventory:
+    'null':
+      type: TCHAT
+      message: '&cImpossible to find the inventory with the id &6%id%&c.'
+    clone:
+      'null':
+        type: TCHAT
+        message: '&cThe inventory clone is null!'
+    open:
+      error:
+        type: TCHAT
+        message: '&cAn error occurred with the opening of the inventory &6%id%&c.'
+    button:
+      previous:
+        type: TCHAT
+        message: '&f» &7Previous page'
+      next:
+        type: TCHAT
+        message: '&f» &7Next page'
+  time:
+    day:
+      type: TCHAT
+      message: '%02d %day% %02d %hour% %02d %minute% %02d %second%'
+    hour:
+      type: TCHAT
+      message: '%02d %hour% %02d minute(s) %02d %second%'
+      simple:
+        type: TCHAT
+        message: '%02d:%02d:%02d'
+    minute:
+      type: TCHAT
+      message: '%02d %minute% %02d %second%'
+    second:
+      type: TCHAT
+      message: '%02d %second%'
+  format:
+    second:
+      type: TCHAT
+      message: second
+    seconds:
+      type: TCHAT
+      message: seconds
+    minute:
+      type: TCHAT
+      message: minute
+    minutes:
+      type: TCHAT
+      message: minutes
+    hour:
+      type: TCHAT
+      message: hour
+    hours:
+      type: TCHAT
+      message: hours
+    day:
+      type: TCHAT
+      message: d
+    days:
+      type: TCHAT
+      message: days
+  command:
+    syntaxe:
+      error:
+        type: TCHAT
+        message: '&cYou must execute the command like this&7: &f%syntax%'
+      help:
+        type: TCHAT
+        message: '&f%syntax% &7» &7%description%'
+    'no':
+      permission:
+        type: TCHAT
+        message: '&cYou do not have permission to run this command.'
+      console:
+        type: TCHAT
+        message: '&cOnly one player can execute this command.'
+      arg:
+        type: TCHAT
+        message: '&cImpossible to find the command with its arguments.'
+  reload:
+    type: TCHAT
+    message: '&aYou have just reloaded the configuration files.'
+  description:
+    sell:
+      type: TCHAT
+      message: Lists the item in your hand at a starting price
+    reload:
+      type: TCHAT
+      message: Reload config files
+  auction:
+    expire:
+      seller:
+        error:
+          type: TCHAT
+          message: '&cYour item did not sell! Do &f/bid &cto get your items.'
+        success:
+          type: TCHAT
+          message: '&7You have just completed a sale! &f%player% &7has just got &f%amount%
+            %item% &7for &b$%price%&7.'
+      player:
+        success:
+          type: TCHAT
+          message: '&7You have just won &f%amount% %item% &7for &b$%price%&7 from
+            &f%seller%&7! Do &f/bid &7to get your items.'
+      broadcast:
+        type: TCHAT
+        message: '&f%player% &7has just won &f%amount% %item% &7for &b$%price% &7in
+          a bidding! &f(/bid)'
+    sell:
+      items:
+        error:
+          type: TCHAT
+          message: '&cYou cannot sell more than &f%max% &citems. Purchase a rank for
+            more slots @ &7&ostore.minerival.org'
+      max:
+        price:
+          type: TCHAT
+          message: '&cYou can''t put more than &f%max%&c for the price.'
+      min:
+        price:
+          type: TCHAT
+          message: '&cYou can''t put less than &f%min%&c for the price.'
+      'no':
+        holding:
+          item:
+            type: TCHAT
+            message: '&cYou can''t sell nothing.'
+      success:
+        type: TCHAT
+        message: '&fYou just put &fx&f%amount% &7%item% &fon sale for &b$%price%&7.'
+      blacklist:
+        type: TCHAT
+        message: '&cYou cannot sell this item.'
+    bid:
+      error:
+        money:
+          type: TCHAT
+          message: '&cYou dont have enough money.'
+      success:
+        player:
+          type: TCHAT
+          message: '&7You have just bid &f$%amount%&7!'
+        seller:
+          type: TCHAT
+          message: '&f%player% &7has just bid &f$%amount% &7on one of your items!
+            &8(&7New price &f$%price%&8)'
+    admin:
+      remove:
+        type: TCHAT
+        message: '&cYou have just deleted &fx%amount% %item% &citem from &3%player%&c.'
+    full:
+      inventory:
+        type: TCHAT
+        message: '&cYour inventory is full.'
+    outbid:
+      type: TCHAT
+      message: '&f%player% &cjust outbid you on an item.'

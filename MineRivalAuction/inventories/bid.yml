@@ -1,0 +1,114 @@
+name: "&8Bid"
+size: 27
+items:
+  slots:
+    type: NONE_SLOT
+    item: 
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0-3
+      - 5-9
+      - 17-21
+      - 23-26
+  cancel:
+    type: BACK
+    slot: 22
+    item: 
+      material: BARRIER
+      name: "&cBack"
+  show:
+    type: MINERIVAL_SHOW
+    slot:  4
+  bid1:
+    type: MINERIVAL_BID
+    slot: 10
+    amount: 100
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $100"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_100%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"
+  bid2:
+    type: MINERIVAL_BID
+    slot: 11
+    amount: 250
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $250"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_250%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"    
+  bid3:
+    type: MINERIVAL_BID
+    slot: 12
+    amount: 500
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $500"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_500%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"       
+  bid4:
+    type: MINERIVAL_BID
+    slot: 13
+    amount: 1000
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $1,000"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_1000%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"    
+  bid5:
+    type: MINERIVAL_BID
+    slot: 14
+    amount: 5000
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $5,000"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_5000%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"
+  bid6:
+    type: MINERIVAL_BID
+    slot: 15
+    amount: 10000
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $10,000"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_10000%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"
+  bid7:
+    type: MINERIVAL_BID
+    slot: 16
+    amount: 50000
+    item:
+      material: GOLD_BLOCK
+      name: "#FBCB22&lAdd $50,000"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&8❖ &fNew Price: &a$%minerivalauction_newprice_50000%"
+        - ""
+        - "&e➥ &lCLICK TO ADD"
+    

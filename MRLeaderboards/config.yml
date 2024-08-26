@@ -1,0 +1,120 @@
+# MySQL Credentials
+mysql:
+  ip: '10.0.0.1'
+  port: '3306'
+  user: 'ls-leaderboard-g'
+  pass: 'zL*b@$7z4KE4'
+  db: 'ls-leaderboard-g'
+  max-connections: 2
+
+recalculation-delay: 20 # How often in seconds to recalculate leaderboards, please keep in mind that money and playerpoint balances are fetched/updated right before the recalculation
+
+gui:
+  size: 27
+  title: '&8Leaderboard'
+  filler:
+    material: 'BLACK_STAINED_GLASS_PANE'
+    name: ' '
+    lore: ' '
+  items:
+    kills:
+      position: 10
+      material: 'DIAMOND_SWORD'
+      name: '§x§f§b§1§a§1§a&lTop Player Kills'
+      lore:
+        - ' '
+        - '§x§f§b§3§6§3§6#1 &7| &f{kills_name_1}&7: &c{kills_value_1}'
+        - '§x§f§b§3§6§3§6#2 &7| &f{kills_name_2}&7: &c{kills_value_2}'
+        - '§x§f§b§3§6§3§6#3 &7| &f{kills_name_3}&7: &c{kills_value_3}'
+        - '§x§f§b§3§6§3§6#4 &7| &f{kills_name_4}&7: &c{kills_value_4}'
+        - '§x§f§b§3§6§3§6#5 &7| &f{kills_name_5}&7: &c{kills_value_5}'
+        - '§x§f§b§3§6§3§6#6 &7| &f{kills_name_6}&7: &c{kills_value_6}'
+        - '§x§f§b§3§6§3§6#7 &7| &f{kills_name_7}&7: &c{kills_value_7}'
+        - '§x§f§b§3§6§3§6#8 &7| &f{kills_name_8}&7: &c{kills_value_8}'
+        - '§x§f§b§3§6§3§6#9 &7| &f{kills_name_9}&7: &c{kills_value_9}'
+        - '§x§f§b§3§6§3§6#10 &7| &f{kills_name_10}&7: &c{kills_value_10}'
+        - ' '
+        - '§x§f§b§3§6§3§6#{kills_self_position} &7| &f{kills_self_name}&7: &c{kills_self_value}'
+    deaths:
+      position: 11
+      material: 'WITHER_SKELETON_SKULL'
+      name: '§x§b§8§6§d§f§b&lTop Player Deaths'
+      lore:
+        - ' '
+        - '§x§b§2§7§f§f§b#1 &7| &f{deaths_name_1}&7: §x§f§b§7§9§f§a{deaths_value_1}'
+        - '§x§b§2§7§f§f§b#2 &7| &f{deaths_name_2}&7: §x§f§b§7§9§f§a{deaths_value_2}'
+        - '§x§b§2§7§f§f§b#3 &7| &f{deaths_name_3}&7: §x§f§b§7§9§f§a{deaths_value_3}'
+        - '§x§b§2§7§f§f§b#4 &7| &f{deaths_name_4}&7: §x§f§b§7§9§f§a{deaths_value_4}'
+        - '§x§b§2§7§f§f§b#5 &7| &f{deaths_name_5}&7: §x§f§b§7§9§f§a{deaths_value_5}'
+        - '§x§b§2§7§f§f§b#6 &7| &f{deaths_name_6}&7: §x§f§b§7§9§f§a{deaths_value_6}'
+        - '§x§b§2§7§f§f§b#7 &7| &f{deaths_name_7}&7: §x§f§b§7§9§f§a{deaths_value_7}'
+        - '§x§b§2§7§f§f§b#8 &7| &f{deaths_name_8}&7: §x§f§b§7§9§f§a{deaths_value_8}'
+        - '§x§b§2§7§f§f§b#9 &7| &f{deaths_name_9}&7: §x§f§b§7§9§f§a{deaths_value_9}'
+        - '§x§b§2§7§f§f§b#10 &7| &f{deaths_name_10}&7: §x§f§b§7§9§f§a{deaths_value_10}'
+        - ' '
+        - '§x§b§2§7§f§f§b#{deaths_self_position} &7| &f{deaths_self_name}&7: §x§f§b§7§9§f§a{deaths_self_value}'
+    money:
+      position: 12
+      material: 'EMERALD'
+      name: '§x§1§d§f§b§2§6&lTop Player Balances'
+      lore:
+        - ' '
+        - '§x§4§f§f§b§6§0#1 &7| &f{money_name_1}&7: &a{money_value_1}'
+        - '§x§4§f§f§b§6§0#2 &7| &f{money_name_2}&7: &a{money_value_2}'
+        - '§x§4§f§f§b§6§0#3 &7| &f{money_name_3}&7: &a{money_value_3}'
+        - '§x§4§f§f§b§6§0#4 &7| &f{money_name_4}&7: &a{money_value_4}'
+        - '§x§4§f§f§b§6§0#5 &7| &f{money_name_5}&7: &a{money_value_5}'
+        - '§x§4§f§f§b§6§0#6 &7| &f{money_name_6}&7: &a{money_value_6}'
+        - '§x§4§f§f§b§6§0#7 &7| &f{money_name_7}&7: &a{money_value_7}'
+        - '§x§4§f§f§b§6§0#8 &7| &f{money_name_8}&7: &a{money_value_8}'
+        - '§x§4§f§f§b§6§0#9 &7| &f{money_name_9}&7: &a{money_value_9}'
+        - '§x§4§f§f§b§6§0#10 &7| &f{money_name_10}&7: &a{money_value_10}'
+        - ' '
+        - '§x§4§f§f§b§6§0#{money_self_position} &7| &f{money_self_name}&7: &a{money_self_value}'
+    coins:
+      position: 13
+      material: 'SUNFLOWER'
+      name: '§x§f§b§c§7§2§9&lTop Player Coins'
+      lore:
+        - ' '
+        - '§x§f§b§8§c§1§8#1 &7| &f{coins_name_1}&7: &e{coins_value_1}'
+        - '§x§f§b§8§c§1§8#2 &7| &f{coins_name_2}&7: &e{coins_value_2}'
+        - '§x§f§b§8§c§1§8#3 &7| &f{coins_name_3}&7: &e{coins_value_3}'
+        - '§x§f§b§8§c§1§8#4 &7| &f{coins_name_4}&7: &e{coins_value_4}'
+        - '§x§f§b§8§c§1§8#5 &7| &f{coins_name_5}&7: &e{coins_value_5}'
+        - '§x§f§b§8§c§1§8#6 &7| &f{coins_name_6}&7: &e{coins_value_6}'
+        - '§x§f§b§8§c§1§8#7 &7| &f{coins_name_7}&7: &e{coins_value_7}'
+        - '§x§f§b§8§c§1§8#8 &7| &f{coins_name_8}&7: &e{coins_value_8}'
+        - '§x§f§b§8§c§1§8#9 &7| &f{coins_name_9}&7: &e{coins_value_9}'
+        - '§x§f§b§8§c§1§8#10 &7| &f{coins_name_10}&7: &e{coins_value_10}'
+        - ' '
+        - '§x§f§b§8§c§1§8#{coins_self_position} &7| &f{coins_self_name}&7: &e{coins_self_value}'
+    time:
+      position: 14
+      material: 'CLOCK'
+      name: '§x§3§6§8§5§f§b&lTop Player Playtime'
+      lore:
+        - ' '
+        - '§x§5§9§c§1§f§b#1 &7| &f{time_name_1}&7: §x§7§9§e§4§f§b{time_value_1}'
+        - '§x§5§9§c§1§f§b#2 &7| &f{time_name_2}&7: §x§7§9§e§4§f§b{time_value_2}'
+        - '§x§5§9§c§1§f§b#3 &7| &f{time_name_3}&7: §x§7§9§e§4§f§b{time_value_3}'
+        - '§x§5§9§c§1§f§b#4 &7| &f{time_name_4}&7: §x§7§9§e§4§f§b{time_value_4}'
+        - '§x§5§9§c§1§f§b#5 &7| &f{time_name_5}&7: §x§7§9§e§4§f§b{time_value_5}'
+        - '§x§5§9§c§1§f§b#6 &7| &f{time_name_6}&7: §x§7§9§e§4§f§b{time_value_6}'
+        - '§x§5§9§c§1§f§b#7 &7| &f{time_name_7}&7: §x§7§9§e§4§f§b{time_value_7}'
+        - '§x§5§9§c§1§f§b#8 &7| &f{time_name_8}&7: §x§7§9§e§4§f§b{time_value_8}'
+        - '§x§5§9§c§1§f§b#9 &7| &f{time_name_9}&7: §x§7§9§e§4§f§b{time_value_9}'
+        - '§x§5§9§c§1§f§b#10 &7| &f{time_name_10}&7: §x§7§9§e§4§f§b{time_value_10}'
+        - ' '
+        - '§x§5§9§c§1§f§b#{time_self_position} &7| &f{time_self_name}&7: §x§7§9§e§4§f§b{time_self_value}'
+    stats:
+      position: 16
+      material: 'PLAYER_HEAD'
+      name: '§x§f§b§3§d§9§8&lYour Player Stats'
+      lore:
+        - ' '
+        - '§x§f§b§6§5§d§1#{kills_self_position} &7| &fKills&7: §x§f§b§9§d§e§c{kills_self_value}'
+        - '§x§f§b§6§5§d§1#{deaths_self_position} &7| &fDeaths&7: §x§f§b§9§d§e§c{deaths_self_value}'
+        - '§x§f§b§6§5§d§1#{money_self_position} &7| &fBalance&7: §x§f§b§9§d§e§c{money_self_value}'
+        - '§x§f§b§6§5§d§1#{coins_self_position} &7| &fCoins&7: §x§f§b§9§d§e§c{coins_self_value}'
+        - '§x§f§b§6§5§d§1#{time_self_position} &7| &fPlaytime&7: §x§f§b§9§d§e§c{time_self_value}'

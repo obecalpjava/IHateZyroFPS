@@ -1,0 +1,24 @@
+name: "&8Confirm Your Bidding"
+size: 27
+items:
+  confirm:
+    type: MINERIVAL_CONFIRM
+    slot: 12
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b%minerivalauction_confirm_duration%"
+  cancel:
+    closeInventory: true
+    slot: 14
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cCancel"

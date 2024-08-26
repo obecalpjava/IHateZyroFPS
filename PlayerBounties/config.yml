@@ -1,0 +1,108 @@
+#
+#        ___   _        _    __   __  ___   ___
+#       | _ \ | |      /_\   \ \ / / | __| | _ \
+#       |  _/ | |__   / _ \   \ V /  | _|  |   /
+#       |_|   |____| /_/ \_\   |_|   |___| |_|_\
+#  ___    ___    _   _   _  _   _____   ___   ___   ___
+# | _ )  / _ \  | | | | | \| | |_   _| |_ _| | __| / __|
+# | _ \ | (_) | | |_| | | .` |   | |    | |  | _|  \__ \
+# |___/  \___/   \___/  |_|\_|   |_|   |___| |___| |___/
+#
+#              />__________________________________
+#     [########[]_________________________________/
+#              \>
+#
+
+config:
+  # If enabled, checks to see if you are using the latest version of PlayerBounties
+  checkForUpdates: true
+
+  # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  # MySQL Support not yet finished. This feature will be added in a future update.
+  # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  # If enabled, player bounties will be managed through a MySQL database instead of the bounties.yml flat file
+  # I highly recommend restarting the server when switching between MySQL and flat file mode.
+  # MySQL:
+  #  enabled: false
+  #  host: "localhost"
+  #  port: "3306"
+  #  database: "playerbounties"
+  #  username: "root"
+  #  password: ""
+  #  useSSL: false
+
+  # Defines what currency symbol is shown when using %symbol% in messages.yml
+  currencySymbol: "$"
+
+  # Defines the minimum amount needed to create a brand new bounty.
+  createBountyMinimum: 250.00
+
+  # Defines the minimum amount needed to increase an existing bounty.
+  updateBountyMinimum: 250.00
+
+  # If enabled, a message will be broadcast on the server to notify players that a bounty has been created.
+  broadcastOnBountyCreation: true
+
+  # If enabled, a message will be broadcast on the server to notify players that an existing bounty has been increased.
+  broadcastOnBountyIncrease: true
+
+  # If enabled, a message will be broadcast on the server to notify players that a bounty has been claimed.
+  broadcastOnBountyClaim: true
+
+  # Defines list of worlds where the bounty cannot be claimed.
+  bountyClaimWorldBlacklist:
+    - ""
+
+  # Configuration options for the /bounty list GUI
+  GUI:
+    # Defines what the inventory title will be.
+    title: "Bounties"
+
+    # Defines the default item that will be placed if there is no bounty to list at that slot.
+    defaultItem:
+      material: GRAY_STAINED_GLASS_PANE
+      displayName: "§x§f§b§1§5§1§5&lNo Bounties!"
+      lore:
+        - ""
+        - "&7There are no bounties available"
+        - "&7at this time. Check again later!"
+
+    # Defines the item that can be clicked to navigate to the previous GUI page.
+    previousPageItem:
+      material: RED_SHULKER_BOX
+      displayName: "&7[←] &cPrevious Page"
+      lore:
+        -
+
+    # Defines the item that can be clicked to navigate to the next GUI page.
+    nextPageItem:
+      material: LIME_SHULKER_BOX
+      displayName: "&aNext Page &7[→]"
+      lore:
+        -
+
+    # Defines the page not available item.
+    pageNotAvailableItem:
+      material: BARRIER
+      displayName: "&7[✘] §x§f§b§4§a§4§aNo More Pages."
+      lore:
+        -
+
+    # Defines the more information item.
+    moreInformationItem:
+      material: BOOK
+      displayName: "§x§2§7§d§5§f§b&lInformation"
+      lore:
+        - ""
+        - "§x§2§7§d§5§f§b&lHow To Set A Bounty?"
+        - "&7Place a bounty of a friend or enemy!"
+        - "&8❖ &f/bounty create <player> <amount>"
+        - ""
+        - "§x§2§7§d§5§f§b&lHow To Increase A Bounty?"
+        - "&7Increase a players bounty!"
+        - "&8❖ &f/bounty create <player> <amount>"
+
+    # Defines the player head item.
+    playerHeadItem:
+      displayName: "§x§2§7§d§5§f§b&lBOUNTY: &f%target%"
+      loreColor: "&7"

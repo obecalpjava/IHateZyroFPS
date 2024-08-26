@@ -1,0 +1,42 @@
+# Whitelist of worlds to enable the plugin in. Includes all worlds by default
+enabledWorlds:
+- world
+- world_nether
+- world_the_end
+
+# Disable or enable natural phantom spawn
+allowNaturalSpawn: false
+
+# Only apply nerf actions below to naturally spawned phantoms? A non natural spawn would be a spawnegg
+onlyNerfNatural: false
+
+# Mute phantom sound (This isn't fully working yet. Only mute some of the phantom sounds)
+muteSound: false
+
+# Disable phantom AI. Causes them to hover in one position and not move.
+disableAI: false
+
+# Phantom damage to player modifier. PhantomDamage * damageModifier = Damage to player
+damageModifier: 1.0
+
+# Set phantom health, default is 20. If you set it to 0 they die instantly.
+health: 20.0
+
+# Should all phantoms have a fixed size?
+fixedSize:
+  enabled: false
+  # How big should phantoms be?
+  value: 1
+
+# Database configuration (default off)
+# The database is used to remember if the player toggled phantoms on or off.
+database:
+  enabled: false
+  type: mysql
+  name: nerfphantoms
+  host: localhost
+  port: 3306
+  username: root
+  password: '123456'
+
+

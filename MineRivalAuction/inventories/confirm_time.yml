@@ -1,0 +1,247 @@
+name: "&8Confirm Your Bidding"
+size: 27
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item: 
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0-26
+      - 17
+      - 19-25
+      - 
+  cancel:
+    closeInventory: true
+    slot: 26
+    item:
+      material: BARRIER
+      name: "&cCancel"
+  timedefault:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 900
+    slot: 10
+    permission: "minerival.auction.time.default"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b15 Minutes"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+  time1:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 1200
+    slot: 11
+    permission: "minerival.auction.time.first"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b20 Minutes"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+    else:
+      type: NONE
+      slot: 11
+      refreshOnClick: true
+      item:
+       material: RED_CONCRETE
+       name: "#FB1515&lNo Permission!"
+       lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fOnly #FB1515Ranger&f Rank has"
+        - "&faccess to this time." 
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b20 Minutes"
+
+  time2:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 1800
+    slot: 12
+    permission: "minerival.auction.time.second"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b30 Minutes"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+    else:
+      type: NONE
+      slot: 12
+      refreshOnClick: true
+      item:
+       material: RED_CONCRETE
+       name: "#FB1515&lNo Permission!"
+       lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fOnly #FB1515Shaman&f Rank has"
+        - "&faccess to this time." 
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b30 Minutes"
+
+  time3:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 2700
+    slot: 13
+    permission: "minerival.auction.time.third"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b45 Minutes"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+    else:
+      type: NONE
+      slot: 13
+      refreshOnClick: true
+      item:
+       material: RED_CONCRETE
+       name: "#FB1515&lNo Permission!"
+       lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fOnly #FB1515Sage&f Rank has"
+        - "&faccess to this time." 
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b45 Minutes"        
+
+  time4:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 3600
+    slot: 14
+    permission: "minerival.auction.time.fourth"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b1 Hour"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+    else:
+      type: NONE
+      slot: 14
+      refreshOnClick: true
+      item:
+       material: RED_CONCRETE
+       name: "#FB1515&lNo Permission!"
+       lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fOnly #FB1515Noble&f Rank has"
+        - "&faccess to this time." 
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b1 Hours"
+
+  time5:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 7200
+    slot: 15
+    permission: "minerival.auction.time.fifth"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b2 Hours"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+    else:
+      type: NONE
+      slot: 15
+      refreshOnClick: true
+      item:
+       material: RED_CONCRETE
+       name: "#FB1515&lNo Permission!"
+       lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fOnly #FB1515Wizard&f Rank has"
+        - "&faccess to this time." 
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b2 Hours"  
+  time6:
+    type: MINERIVAL_CONFIRM_TIME
+    seconds: 10800
+    slot: 16
+    permission: "minerival.auction.time.sixth"
+    item:
+      material: LIME_CONCRETE
+      name: "#36EA32&lConfirm Bid"
+      lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fPlease note that you will not be able"
+        - "&fto remove the item after you" 
+        - "&fhave put it on sale."
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b3 Hours"
+        - ""
+        - "&e➥ &lCLICK TO BID"
+    else:
+      type: NONE
+      slot: 16
+      refreshOnClick: true
+      item:
+       material: RED_CONCRETE
+       name: "#FB1515&lNo Permission!"
+       lore:
+        - "&8Bidding Menu"
+        - ""
+        - "&fOnly #FB1515Sorcerer&f Rank has"
+        - "&faccess to this time." 
+        - ""
+        - "&8❖ &fPrice: &a$%minerivalauction_confirm_price%"
+        - "&8❖ &fDuration: &b3 Hours"

@@ -1,0 +1,92 @@
+name: "Bidding [%page%/%maxPage%]"
+size: 45
+items:
+  slots:
+    type: NONE_SLOT
+    isPermanent: true
+    item: 
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0-9
+      - 17
+      - 26
+      - 35
+      - 18
+      - 27
+      - 36
+      - 37
+      - 38
+      - 39
+      - 41
+      - 40
+      - 43
+      - 42
+  next:
+    type: NEXT
+    isPermanent: true
+    slot: 44
+    item:
+      material: ARROW
+      name: "&aNext Page &7[→]"
+    else:
+      slot: 44
+      type: NONE
+      isPermanent: true
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: "&e" 
+  previous:
+    type: PREVIOUS
+    isPermanent: true
+    slot: 36
+    item:
+      material: ARROW
+      name: "&7[←] &cPrevious Page"
+    else:
+      slot: 36
+      type: NONE
+      isPermanent: true
+      item:
+        material: GRAY_STAINED_GLASS_PANE
+        name: "&e"
+  auction:
+    isPermanent: true
+    type: MINERIVAL_AUCTION
+    slots:
+      - 10-16
+      - 19-25
+      - 28-34
+  storage:
+    isPermanent: true
+    type: INVENTORY
+    plugin: "MineRivalAuction"
+    inventory: "storage"
+    slot: 39
+    item:
+      material: NETHER_STAR
+      name: "#09AEFB&lYour Items"
+      lore:
+      - '&8Bidding Menu'
+      - ''
+      - '&fClaim your old listed'
+      - '&fitems and loot here!'
+      - ''
+      - '&e➥ &lCLICK TO OPEN'     
+  info:
+    isPermanent: true
+    type: NONE
+    plugin: "MineRivalAuction"
+    inventory: "help"
+    slot: 41
+    item:
+      material: BOOK
+      name: "#09AEFB&lInformation"
+      lore:
+      - '&8Bidding Menu'
+      - '&r'
+      - '&fOnly the top bidder wins. If you bid'
+      - '&fbut lose, your money wont be taken!'
+      - '&r'
+      - '#09AEFBHow To:'
+      - "&8❖ &fCommand: #09AEFB/bid sell <price>"
