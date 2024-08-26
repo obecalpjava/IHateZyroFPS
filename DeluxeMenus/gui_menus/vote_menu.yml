@@ -1,0 +1,166 @@
+# ==============================================================
+# A NOTE WHEN EDITING THIS OR ANY DeluxeMenus CONFIGURATION FILE:
+# This config is sensitive to yaml formatting errors
+# KEEP A BACKUP WHEN EDITING YOUR FILE BEFORE UPLOADING TO YOUR SERVER!!!
+# Make sure every String you modify or add is enclosed in 'apostrophes'
+# ==============================================================
+menu_title: '&8Voting Sites'
+open_command:
+- vote
+size: 27
+open_commands:
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: LIME_SHULKER_BOX
+    data: 0
+    amount: 1
+    slot: 11
+    priority: 1
+    display_name: '&a&lVoting Rewards'
+    lore:
+    - '&8Vote Information'
+    - ''
+    - '&#3BE408Rewards:'
+    - '&8❖ &f4x Vote Keys'
+    - '&8❖ &f$400 In-Game Money'
+    - ''
+    - '&c&lNOTICE&c:'
+    - '&7If you''re a bedrock player'
+    - '&7include an "_" before your'
+    - '&7name instead of all spaces!'
+    - ''
+    - '&e➥ &lCLICK FOR VOTE LINK'
+    left_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link List:'
+    - '[message]'
+    - '[message]&8❖ &7https://bit.ly/MRVote1'
+    - '[message]&8❖ &7https://bit.ly/MRVote2'
+    - '[message]&8❖ &7https://bit.ly/MRVote3'
+    - '[message]&8❖ &7https://bit.ly/MRVote4'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link List:'
+    - '[message]'
+    - '[message]&8❖ &7https://bit.ly/MRVote1'
+    - '[message]&8❖ &7https://bit.ly/MRVote2'
+    - '[message]&8❖ &7https://bit.ly/MRVote3'
+    - '[message]&8❖ &7https://bit.ly/MRVote4'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: BOOK
+    data: 0
+    amount: 1
+    slot: 13
+    priority: 1
+    display_name: '&a&lVote Link #1'
+    lore:
+    - '&8Vote Link'
+    - ''
+    - '&#3BE408Rewards:'
+    - '&8❖ &f1x Vote Keys'
+    - '&8❖ &f$100 In-Game Money'
+    - ''
+    - '&e➥ &lCLICK FOR VOTE LINK'
+    left_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #1:'
+    - '[message]&8❖ &7https://bit.ly/MRVote1'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #1:'
+    - '[message]&8❖ &7https://bit.ly/MRVote1'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: BOOK
+    data: 0
+    amount: 1
+    slot: 14
+    priority: 1
+    display_name: '&a&lVote Link #2'
+    lore:
+    - '&8Vote Link'
+    - ''
+    - '&#3BE408Rewards:'
+    - '&8❖ &f1x Vote Keys'
+    - '&8❖ &f$100 In-Game Money'
+    - ''
+    - '&e➥ &lCLICK FOR VOTE LINK'
+    left_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #2:'
+    - '[message]&8❖ &7https://bit.ly/MRVote2'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #2:'
+    - '[message]&8❖ &7https://bit.ly/MRVote2'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: BOOK
+    data: 0
+    amount: 1
+    slot: 15
+    priority: 1
+    display_name: '&a&lVote Link #3'
+    lore:
+    - '&8Vote Link'
+    - ''
+    - '&#3BE408Rewards:'
+    - '&8❖ &f1x Vote Keys'
+    - '&8❖ &f$100 In-Game Money'
+    - ''
+    - '&e➥ &lCLICK FOR VOTE LINK'
+    left_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #3:'
+    - '[message]&8❖ &7https://bit.ly/MRVote3'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #3:'
+    - '[message]&8❖ &7https://bit.ly/MRVote3'
+    - '[message]'
+    - '[close]'
+  '5':
+    material: BOOK
+    data: 0
+    amount: 1
+    slot: 16
+    priority: 1
+    display_name: '&a&lVote Link #4'
+    lore:
+    - '&8Vote Link'
+    - ''
+    - '&#3BE408Rewards:'
+    - '&8❖ &f1x Vote Keys'
+    - '&8❖ &f$100 In-Game Money'
+    - ''
+    - '&e➥ &lCLICK FOR VOTE LINK'
+    left_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #4:'
+    - '[message]&8❖ &7https://bit.ly/MRVote4'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &a&lVoting Link #4:'
+    - '[message]&8❖ &7https://bit.ly/MRVote4'
+    - '[message]'
+    - '[close]'

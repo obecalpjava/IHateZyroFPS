@@ -1,0 +1,83 @@
+# DeluxeMenus 1.13.7-DEV-152 main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: true
+gui_menus:
+  profile_main:
+    file: profile_main.yml
+  profile_stats:
+    file: profile_stats.yml
+  profile_currency:
+    file: profile_currency.yml
+  buy_menu:
+    file: buy_menu.yml
+  coinshop_chatcolors:
+    file: coinshop_chatcolors.yml
+  coinshop_cratekeys:
+    file: coinshop_cratekeys.yml
+  coinshop_main_menu:
+    file: coinshop_main_menu.yml
+  coinshop_playertags:
+    file: coinshop_playertags.yml
+  coinshop_ranks:
+    file: coinshop_ranks.yml
+  lifesteal_menu:
+    file: lifesteal_menu.yml
+  ranks_menu:
+    file: ranks_menu.yml
+  store_coins:
+    file: store_coins.yml
+  store_keys:
+    file: store_keys.yml
+  store_lootboxes:
+    file: store_lootboxes.yml
+  store_punishments:
+    file: store_punishments.yml
+  store_ranks:
+    file: store_ranks.yml
+  store_bundles:
+    file: store_bundles.yml
+  store_commands:
+    file: store_commands.yml
+  guilds_menu:
+    file: guilds_menu.yml
+  vote_menu:
+    file: vote_menu.yml
+  playtimelevels_menu:
+    file: playtimelevels_menu.yml
+  playtimelevels_menu2:
+    file: playtimelevels_menu2.yml
+  playtimelevels_menu3:
+    file: playtimelevels_menu3.yml
+  playtimelevels_menu4:
+    file: playtimelevels_menu4.yml
+  gamble_menu:
+    file: gamble_menu.yml
+  kits_menu:
+    file: kits_menu.yml
+  supplydrops:
+    file: supplydrops.yml
+  duelsmenu:
+    file: duelsmenu.yml
+  koth:
+    file: koth.yml
+  whatsnew:
+    file: whatsnew.yml
+  market:
+    file: market.yml
+  details:
+    file: details.yml
+  cosmetics:
+    file: cosmetics.yml
+  voteparty:
+    file: voteparty.yml
+  freerewards:
+    file: freerewards.yml
+  keystore:
+    file: keystore.yml
+  prestige:
+    file: prestige_menu.yml
+

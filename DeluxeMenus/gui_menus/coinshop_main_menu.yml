@@ -1,0 +1,133 @@
+menu_title: '&8Coins | Main Menu'
+open_command:
+  - coinshop
+  - coin
+  - coin shop
+  - coinstore
+  - coin store
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: name_tag
+    slot: 10
+    display_name: '&#ab00fb&lP&#b400fa&ll&#bd00f9&la&#c600f8&ly&#cf00f7&le&#d900f7&lr &#e200f6&lT&#eb00f5&la&#f400f4&lg&#fd00f3&ls'
+    lore:
+    - '&8Coinshop Category'
+    - ''
+    - '&fPlayer Tags will display next'
+    - '&fto your name in chat.'
+    - ''
+    - '&e➥ &lCLICK TO BROWSE'
+    left_click_commands:
+    - '[openguimenu] coinshop_playertags'
+    right_click_commands:
+    - '[openguimenu] coinshop_playertags'
+  '2':
+    material: tripwire_hook
+    amount: 1
+    slot: 11
+    display_name: '&#b90000&lC&#c20000&lr&#ca0000&la&#d30000&lt&#db0000&le &#e40000&lK&#ec0000&le&#f50000&ly&#fd0000&ls'
+    lore:
+    - '&8Coinshop Category'
+    - ''
+    - '&fCrate Keys are used to'
+    - '&fopen crates for a reward.'
+    - ''
+    - '&e➥ &lCLICK TO BROWSE'
+    left_click_commands:
+    - '[openguimenu] coinshop_cratekeys'
+    right_click_commands:
+    - '[openguimenu] coinshop_cratekeys'
+  '3':
+    material: light_blue_dye
+    amount: 1
+    slot: 12
+    display_name: '&#0085ff&lC&#0092ff&lh&#00a0ff&la&#00adfe&lt &#00bafe&lC&#00c8fe&lo&#00d5fe&ll&#00e2fd&lo&#00f0fd&lr&#00fdfd&ls'
+    lore:
+    - '&8Coinshop Category'
+    - ''
+    - '&fChat colors change the color'
+    - '&fof your chat messages.'
+    - ''
+    - '&e➥ &lCLICK TO BROWSE'
+    left_click_commands:
+    - '[openguimenu] coinshop_chatcolors'
+    right_click_commands:
+    - '[openguimenu] coinshop_chatcolors'
+  'ranks':
+    material: book
+    amount: 1
+    slot: 13
+    display_name: '&#ef0000&lL&#f00404&li&#f10808&lf&#f20c0c&le&#f31111&ls&#f41515&lt&#f51919&le&#f51d1d&la&#f62121&ll &#f72525&lR&#f82a2a&la&#f92e2e&ln&#fa3232&lk&#fb3636&ls'
+    lore:
+    - '&8Coinshop Category'
+    - ''
+    - '&fRanks include many unique'
+    - '&ffeatures and goodies.'
+    - ''
+    - '&e➥ &lCLICK TO BROWSE'
+    left_click_commands:
+    - '[openguimenu] coinshop_ranks'
+    right_click_commands:
+    - '[openguimenu] coinshop_ranks'
+  '4':
+    material: sunflower
+    amount: 1
+    slot: 15
+    display_name: '&#ffd600&lC&#ffd900&lo&#fedb00&li&#fede00&ln&#fde000&ls &#fde300&lI&#fce600&ln&#fce800&lf&#fbeb00&lo&#fbed00&lr&#faf000&lm&#faf300&la&#f9f500&lt&#f9f800&li&#f8fa00&lo&#f8fd00&ln'
+    lore:
+    - '&8Coinshop Information'
+    - ''
+    - '&#FBFF31&lWhat Are Coins?'
+    - '&fCoins are a virtual currency'
+    - '&fused to buy tags, crate keys,'
+    - '&fand chat colors.'
+    - ''
+    - '&#FBFF31&lHow Can I Obtain Coins?'
+    - '&fYou can &fbuy coins from our webstore,'
+    - '&fwin them in crates, or from playtime'
+    - '&flevels to get coins.'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#CD0A0B&lVisit Our Webstore:'
+    - '[message] &e➥ &estore.minerival.org'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#CD0A0B&lVisit Our Webstore:'
+    - '[message] &e➥ &estore.minerival.org'
+    - '[message]'
+    - '[close]'
+  '5':
+    material: book
+    amount: 1
+    slot: 16
+    display_name: '&#0da000&lW&#0ca801&le&#0bb102&lb&#09b903&ls&#08c204&lt&#07ca05&lo&#06d305&lr&#05db06&le &#04e407&lL&#02ec08&li&#01f509&ln&#00fd0a&lk'
+    lore:
+    - '&8Coinshop Information'
+    - ''
+    - '&fWant to buy coins?'
+    - '&fCheck out the webstore!'
+    - ''
+    - '&e➥ &lCLICK FOR STORE'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#CD0A0B&lVisit Our Webstore:'
+    - '[message] &e➥ &estore.minerival.org'
+    - '[message]'
+    - '[player] buy'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#CD0A0B&lVisit Our Webstore:'
+    - '[message] &e➥ &estore.minerival.org'
+    - '[message]'
+    - '[player] buy'
+    - '[close]'

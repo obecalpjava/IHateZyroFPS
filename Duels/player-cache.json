@@ -1,0 +1,20 @@
+{
+  "ca260e17-710e-41d5-98b9-422a33613126": {
+    "items": {
+      "INVENTORY": { },
+      "ARMOR": { }
+    },
+    "effects": [ ],
+    "health": 18.0,
+    "hunger": 20,
+    "location": {
+      "world": "world",
+      "x": 0.5,
+      "y": 71.0,
+      "z": 0.5,
+      "pitch": 0.09997854,
+      "yaw": -179.613
+    },
+    "extra": [ ]
+  }
+}

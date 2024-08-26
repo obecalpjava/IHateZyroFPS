@@ -1,0 +1,366 @@
+menu_title: '&8Coins | Ranks'
+open_command: /coinshopranks
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+###################################################################################################
+  Ares-can_purchase:
+    material: book
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '5000'
+    display_name: '&#1EE220&lRANGER&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &65,000 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#1EE220&lRANGER&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 5000'
+    - '[console] lp user %player_name% parent addtemp ranger 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp ranger 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp ranger 30d server=lifesteal-hub'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#1EE220&lRANGER&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 5000'
+    - '[console] lp user %player_name% parent addtemp ranger 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp ranger 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp ranger 30d server=lifesteal-hub'
+    - '[close]'
+  Ares-cannot_purchase:
+    material: book
+    slot: 11
+    priority: 2
+    display_name: '&#1EE220&lRANGER&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &65,000 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#1EE220&lRANGER&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#1EE220&lRANGER&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  Apollo-can_purchase:
+    material: book
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '7500'
+    display_name: '&#EF9B44&lSHAMAN&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &67,500 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#EF9B44&lSHAMAN&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 7500'
+    - '[console] lp user %player_name% parent addtemp shaman 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp shaman 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp shaman 30d server=lifesteal-hub'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#EF9B44&lSHAMAN&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 7500'
+    - '[console] lp user %player_name% parent addtemp shaman 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp shaman 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp shaman 30d server=lifesteal-hub'
+    - '[close]'
+  Apollo-cannot_purchase:
+    material: book
+    slot: 12
+    priority: 2
+    display_name: '&#EF9B44&lSHAMAN&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &67,500 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#EF9B44&lSHAMAN&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#EF9B44&lSHAMAN&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  Hades-can_purchase:
+    material: book
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '12500'
+    display_name: '&#FFCC31&lSAGE&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &612,500 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#FFCC31&lSAGE&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 12500'
+    - '[console] lp user %player_name% parent addtemp sage 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp sage 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp sage 30d server=lifesteal-hub'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#FFCC31&lSAGE&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 12500'
+    - '[console] lp user %player_name% parent addtemp sage 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp sage 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp sage 30d server=lifesteal-hub'
+    - '[close]'
+  Hades-cannot_purchase:
+    material: book
+    slot: 13
+    priority: 2
+    display_name: '&#FFCC31&lSAGE&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &612,500 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#FFCC31&lSAGE&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#FFCC31&lSAGE&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  Poseidon-can_purchase:
+    material: book
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '20000'
+    display_name: '&#43D6FD&lNOBLE&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &620,000 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#43D6FD&lNOBLE&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 20000'
+    - '[console] lp user %player_name% parent addtemp noble 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp noble 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp noble 30d server=lifesteal-hub'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#43D6FD&lNOBLE&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 20000'
+    - '[console] lp user %player_name% parent addtemp noble 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp noble 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp noble 30d server=lifesteal-hub'
+    - '[close]'
+  Poseidon-cannot_purchase:
+    material: book
+    slot: 14
+    priority: 2
+    display_name: '&#43D6FD&lNOBLE&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &620,000 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#43D6FD&lNOBLE&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#43D6FD&lNOBLE&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  Zeus-can_purchase:
+    material: book
+    slot: 15
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '30000'
+    display_name: '&#FD3939&lWIZARD&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &630,000 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#FD3939&lWIZARD&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 30000'
+    - '[console] lp user %player_name% parent addtemp wizard 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp wizard 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp wizard 30d server=lifesteal-hub'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &#FD3939&lWIZARD&f Rank&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 30000'
+    - '[console] lp user %player_name% parent addtemp wizard 30d server=lifesteal-ruby'
+    - '[console] lp user %player_name% parent addtemp wizard 30d server=lifesteal-gold'
+    - '[console] lp user %player_name% parent addtemp wizard 30d server=lifesteal-hub'
+    - '[close]'
+  Zeus-cannot_purchase:
+    material: book
+    slot: 15
+    priority: 2
+    display_name: '&#FD3939&lWIZARD&f Rank &7[30 Days]'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &630,000 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#FD3939&lWIZARD&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &#FD3939&lWIZARD&f Rank&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] coinshop_main_menu'
+    right_click_commands:
+    - '[openguimenu] coinshop_main_menu'

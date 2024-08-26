@@ -1,0 +1,959 @@
+menu_title: '&8Coins ➟ Player Tags'
+open_command: /coinshoptags
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-25'
+    display_name: ' '
+###################################################################################################
+  king-can_purchase:
+    material: name_tag
+    slot: 1
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&e&lKing Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &e&lKing Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.king server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &e&lKing Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.king server=lifesteal'
+    - '[close]'
+  king-cannot_purchase:
+    material: name_tag
+    slot: 1
+    priority: 2
+    display_name: '&e&lKing Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &e&lKing Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &e&lKing Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  queen-can_purchase:
+    material: name_tag
+    slot: 2
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&e&lQueen Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &e&lQueen Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.queen server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &e&lQueen Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.queen server=lifesteal'
+    - '[close]'
+  queen-cannot_purchase:
+    material: name_tag
+    slot: 2
+    priority: 2
+    display_name: '&e&lQueen Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &e&lQueen Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &e&lQueen Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  killer-can_purchase:
+    material: name_tag
+    slot: 3
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&c&lKiller Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &c&lKiller Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.killer server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &c&lKiller Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.killer server=lifesteal'
+    - '[close]'
+  killer-cannot_purchase:
+    material: name_tag
+    slot: 3
+    priority: 2
+    display_name: '&c&lKiller Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &c&lKiller Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &c&lKiller Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  toxic-can_purchase:
+    material: name_tag
+    slot: 4
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&2&lToxic Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &2&lToxic Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.toxic server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &2&lToxic Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.toxic server=lifesteal'
+    - '[close]'
+  toxic-cannot_purchase:
+    material: name_tag
+    slot: 4
+    priority: 2
+    display_name: '&2&lToxic Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &2&lToxic Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &2&lToxic Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  comp-can_purchase:
+    material: name_tag
+    slot: 5
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&6&lComp Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &6&lComp Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.comp server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &6&lComp Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.comp server=lifesteal'
+    - '[close]'
+  comp-cannot_purchase:
+    material: name_tag
+    slot: 5
+    priority: 2
+    display_name: '&6&lComp Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &6&lComp Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &6&lComp Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  legend-can_purchase:
+    material: name_tag
+    slot: 6
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&5&lLegend Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &5&lLegend Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.legend server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &5&lLegend Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.legend server=lifesteal'
+    - '[close]'
+  legend-cannot_purchase:
+    material: name_tag
+    slot: 6
+    priority: 2
+    display_name: '&5&lLegend Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &5&lLegend Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &5&lLegend Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  egirl-can_purchase:
+    material: name_tag
+    slot: 7
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&d&lEgirl Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &d&lEgirl Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.egirl server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &d&lEgirl Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.egirl server=lifesteal'
+    - '[close]'
+  egirl-cannot_purchase:
+    material: name_tag
+    slot: 7
+    priority: 2
+    display_name: '&d&lEgirl Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &d&lEgirl Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &d&lEgirl Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  eboy-can_purchase:
+    material: name_tag
+    slot: 10
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&b&lEboy Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &b&lEboy Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.eboy server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &b&lEboy Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.eboy server=lifesteal'
+    - '[close]'
+  eboy-cannot_purchase:
+    material: name_tag
+    slot: 10
+    priority: 2
+    display_name: '&b&lEboy Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &b&lEboy Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &b&lEboy Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  $$$-can_purchase:
+    material: name_tag
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&a&l$$$ Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &a&l$$$ Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.$$$ server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &a&l$$$ Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.$$$ server=lifesteal'
+    - '[close]'
+  $$$-cannot_purchase:
+    material: name_tag
+    slot: 11
+    priority: 2
+    display_name: '&a&l$$$ Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &a&l$$$ Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &a&l$$$ Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  L-can_purchase:
+    material: name_tag
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&c&l#L Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &c&l#L Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.l server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &c&l#L Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.l server=lifesteal'
+    - '[close]'
+  L-cannot_purchase:
+    material: name_tag
+    slot: 12
+    priority: 2
+    display_name: '&c&l#L Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &c&l#L Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &c&l#L Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  W-can_purchase:
+    material: name_tag
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&a&l#W Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &a&l#W Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.w server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &a&l#W Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.w server=lifesteal'
+    - '[close]'
+  W-cannot_purchase:
+    material: name_tag
+    slot: 13
+    priority: 2
+    display_name: '&a&l#W Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &a&l#W Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &a&l#W Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  1-can_purchase:
+    material: name_tag
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&6&l#1 Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &6&l#1 Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.1 server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &6&l#1 Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.1 server=lifesteal'
+    - '[close]'
+  1-cannot_purchase:
+    material: name_tag
+    slot: 14
+    priority: 2
+    display_name: '&6&l#1 Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &6&l#1 Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &6&l#1 Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  gg-can_purchase:
+    material: name_tag
+    slot: 15
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&d&lGG Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &d&lGG Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.gg server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &d&lGG Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.gg server=lifesteal'
+    - '[close]'
+  gg-cannot_purchase:
+    material: name_tag
+    slot: 15
+    priority: 2
+    display_name: '&d&lGG Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &d&lGG Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &d&lGG Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  ez-can_purchase:
+    material: name_tag
+    slot: 16
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '650'
+    display_name: '&4&lEZ Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &4&lEZ Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.ez server=lifesteal'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &4&lEZ Tag&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fEquip in the &a/tags &fmenu!'
+    - '[message] '
+    - '[console] coins take %player_name% 650'
+    - '[console] lp user %player_name% permission set tag.ez server=lifesteal'
+    - '[close]'
+  ez-cannot_purchase:
+    material: name_tag
+    slot: 16
+    priority: 2
+    display_name: '&4&lEZ Tag'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6650 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &4&lEZ Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &4&lEZ Tag&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] coinshop_main_menu'
+    right_click_commands:
+    - '[openguimenu] coinshop_main_menu'

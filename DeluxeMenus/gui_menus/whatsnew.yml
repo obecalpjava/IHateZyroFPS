@@ -1,0 +1,107 @@
+menu_title: 'What''s New?'
+open_command:
+- season
+- whatsnew
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: beacon
+    slot: 10
+    display_name: '&#009fff&lL&#00a1ff&li&#00a4ff&lf&#01a6ff&le&#01a9ff&ls&#01abff&lt&#01adff&le&#02b0ff&la&#02b2ff&ll &#02b4ff&lM&#02b7ff&le&#03b9ff&lr&#03bcff&lg&#03beff&le'
+    lore:
+    - ''
+    - '&7Goodbye&f Red&7,&f Blue&7, and&f Green&7, welcome &#F6FF09Gold&7 &&#FB1D1D Ruby&7!'
+    - '&fConquer&7 the server on the newest Lifesteal gamemodes!'
+    - '&7Never seen before, but who will win... who will be the &fChampion&7?'
+    - '&7'
+    - '&7This &fseason&7 has taken &fmonths&7 to be completed!'
+    - '&7We hope you enjoy the most &fcompetitve&7 season yet!'
+    left_click_commands:
+    - '[player] rtp'
+    - '[close]'
+    right_click_commands:
+    - '[player] rtp'
+    - '[close]'
+  '2':
+    material: barrier
+    slot: 11
+    display_name: '&#ff0000&lB&#ff0404&lu&#ff0909&lg&#ff0d0d&ls &#ff1111&l& &#ff1616&lG&#ff1a1a&ll&#ff1e1e&li&#ff2323&lt&#ff2727&lc&#ff2b2b&lh&#ff3030&le&#ff3434&ls'
+    lore:
+    - ''
+    - '&7It''s a brand &fnew&7 season, but a new season means'
+    - '&7there''ll be some &fglitches&7 & &fbugs&7! If you encounter'
+    - '&7one, please &freport&7 it to us, we''ll &faward&7 you!'
+    - ''
+    - '&7Found one? Report it in &fdiscord.gg/minerivalmc'
+    - '&7&oCreate a bug report ticket!'
+    left_click_commands:
+    - '[player] discord'
+    - '[close]'
+    right_click_commands:
+    - '[player] discord'
+    - '[close]'
+  '3':
+    material: command_block
+    slot: 12
+    display_name: '&#ff7f00&lN&#ff8302&le&#ff8705&lw &#ff8b07&lC&#ff8f0a&lo&#ff930c&lm&#ff960e&lm&#ff9a11&la&#ff9e13&ln&#ffa216&ld&#ffa618&ls'
+    lore:
+    - ''
+    - '&7These are the best new &fcommands&7 to use!'
+    - ''
+    - '&8❖ &f/Market&7 - Open the server market place!'
+    - '&8❖ &f/Profile&7 - Checkout your personal profile!'
+    - '&8❖ &f/Quests&7 - Complete quests for weekly rewards!'
+    - '&8❖ &f/Lootbox&7 - Check out brand new loot boxes!'
+    - '&8❖ &f/Levels&7 - Unlock free rewards with play time!'
+    - '&8❖ &f/Gamble&7 - Test your odds, go win some money!'
+    - '&8❖ &f/Details&7 - Understand the server details!'
+    - '&8❖ &f/Store&7 - Want store items? Go check it out!'
+    - '&8❖ &f/Prestige&7 - Upgrade to a max of 60 hearts!'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '4':
+    material: crafting_table
+    slot: 14
+    display_name: '&#ff46e9&lQ&#fd4ced&lu&#fb52f2&le&#f958f6&ls&#f75efb&lt&#f564ff&ls'
+    lore:
+    - ''
+    - '&7Complete &fdaily quests&7 to unlock exclusive rewards!'
+    - '&7Each quest is only there for a &flimited time&7, good luck!'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '6':
+    material: soul_campfire
+    slot: 15
+    display_name: '&#2ebafb&lT&#2cbdfb&le&#2ac1fb&la&#29c4fb&lm&#27c8fb&ls &#25cbfb&lR&#23cefb&le&#21d2fb&lv&#20d5fb&la&#1ed9fb&lm&#1cdcfb&lp'
+    lore:
+    - ''
+    - '&7Build a &fbetter&7 team than ever on MineRival!'
+    - '&7Utilize the new features and &fconquer&7 the server!'
+    left_click_commands:
+    - '[player] team'
+    - '[close]'
+    right_click_commands:
+    - '[player] team'
+    - '[close]'
+  '7':
+    material: dragon_egg
+    slot: 16
+    display_name: '&#fe00d2&lD&#f500ca&lr&#eb00c2&la&#e200ba&lg&#d800b3&lo&#cf00ab&ln &#c500a3&lE&#bc009b&lg&#b20093&lg'
+    lore:
+    - ''
+    - '&7The most &fvaluable&7 item on the server...'
+    - '&7Only &fone&7 player can have it, will it be you?'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'

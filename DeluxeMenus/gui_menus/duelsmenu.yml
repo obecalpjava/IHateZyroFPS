@@ -1,0 +1,50 @@
+menu_title: '&8Duels | Help Menu'
+size: 27
+open_command:
+- duels
+#register_command: true
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+#############################################################################################
+  commands:
+    material: 'OAK_SIGN'
+    slot: 11
+    display_name: '&#33d7fb&lD&#39d9fb&lu&#3fdbfb&le&#44ddfc&ll&#4adefc&ls &#50e0fc&lC&#56e2fc&lo&#5be4fc&lm&#61e6fc&lm&#67e8fd&la&#6de9fd&ln&#72ebfd&ld&#78edfd&ls'
+    lore:
+    - ''
+    - '&7These are all the useful &fcommands &7for duels!'
+    - ''
+    - '&8❖ &f/duel <player> &7- Duel a player without betting!'
+    - '&8❖ &f/duel <player> <amount> &7- Duel some cash with a player!'
+    - '&8❖ &f/duel [accept | deny] <player> &7- Accept a players duel!'
+    - '&8❖ &f/duel stats <name> &7- Check a players statistics!'
+    - '&8❖ &f/duel toggle &7- Enable or disable duel requests!'
+    - ''
+    - '&c&lUNDER MAINTENANCE!'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+  info:
+    material: 'MAP'
+    slot: 15
+    display_name: '&#d951fb&lD&#da55fb&lu&#db59fb&le&#dc5dfb&ll&#dc61fc&ls &#dd65fc&lI&#de69fc&ln&#df6dfc&lf&#e070fc&lo&#e174fc&lr&#e278fc&lm&#e37cfc&la&#e380fd&lt&#e484fd&li&#e588fd&lo&#e68cfd&ln'
+    lore:
+    - ''
+    - '&7Duel your &Ffriends &7or &Fenemies, &7win'
+    - '&7for &fcash&7, or just have some fun!'
+    - ''
+    - '&8❖ &7Find an opponent to fight!'
+    - '&8❖ &7To duel, type: &f/duel <player>'
+    - ''
+    - '&8❖ &7Duel with an amount!'
+    - '&8❖ &7Bet with: &f/duel <player> <amount>'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true

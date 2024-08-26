@@ -1,0 +1,479 @@
+#########################################################################################
+#                                                                                       #
+# DeluxeSellwands, a premium resource by Norska @ https://norska.dev                    #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome/                                                #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the enchantments.yml file of DeluxeSellwands.                         #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+settings:
+
+   enabled: true
+   
+   tokens:
+      # Note: How the currency will display in various places.
+      name: "tokens"
+      # Note: Enchantments will only work when the total value sold is above the value defined below. This is to prevent farming by selling cheap/easily-accessible items.
+      enchantmentsWhenValueAbove: 10000
+      # Note: Commands for players to check their balance, etc.
+      playerCommands:
+          enabled: true
+          settings:
+             # Note: CHANGING COMMANDS REQUIRES A FULL SERVER RESTART.
+             commands:
+             - 'WANDTOKENS'
+             - 'WANDTOKEN'
+             # Note: Whether or not the balance command is enabled.
+             balanceCommand:
+                enabled: true
+             # Note: Whether or not the send command is enabled.
+             sendCommand:
+                enabled: true
+      # Note: Cost placeholder for when the enchantment is fully upgraded.
+      costWhenFullyUpgraded: "N/A (Fully Upgraded)"
+      # Note: Enchantment placeholder when there are no enchantments bought.
+      enchantmentsWhenNotEnchanted: "&7&oNot enchanted!"
+   
+   # Note: You can add as many levels/formats as you want.   
+   levelFormat:
+      0: "Not Purchased"
+      1: "I"
+      2: "II"
+      3: "III"
+      4: "IV"
+      5: "V"
+      
+   gui:
+      # Types: SHIFT-LEFTCLICK, SHIFT-RIGHTCLICK
+      openWith: "SHIFT-LEFTCLICK"
+      layout:
+      - '~~~~~~~~~'
+      - '~~12345~~'
+      - '~~~~~~~~~'
+      # Placeholders: {PREFIX}
+      title: "{PREFIX} &f» &0Enchants..."
+      # Note: Item types are all enchantments (in CAPS), and "FILLER".
+      items:
+         '~':
+            settings:
+               type: "FILLER"
+            # Placeholders: {1} = Current Level, {2} = Max Level, {3} = token cost, {4} = details
+            name: "&7"
+            lore: []
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: "BLACK_STAINED_GLASS_PANE"
+            materialData: 0
+            customModelData: 0
+            glow: false
+            itemflags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+                  
+         '1':
+            settings:
+               type: "TOKENFINDER"
+            # Placeholders: {1} = Current Level, {2} = Max Level, {3} = token cost, {4} = details
+            name: "&7Token Greed Enchantment"
+            lore:
+            - ''
+            - '&eCurrent Level: &f{1}'
+            - ''
+            - '&cCost: &f{3}'
+            - ''
+            - '&aInformation:'
+            - ' &7• Chance to find tokens while'
+            - ' &7using sellwand to sell chests!'
+            - ''
+            - '{4}'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: "CUSTOM_SKULL-b0a7b94c4e581b699159d48846ec091392506237c89a97c93248a0d8abc916d5"
+            materialData: 0
+            customModelData: 0
+            glow: false
+            itemflags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'     
+            
+         '2':
+            settings:
+               type: "EXPFINDER"
+            # Placeholders: {1} = Current Level, {2} = Max Level, {3} = token cost, {4} = details
+            name: "&7EXP Greed Enchantment"
+            lore:
+            - ''
+            - '&eCurrent Level: &f{1}'
+            - ''
+            - '&cCost: &f{3}'
+            - ''
+            - '&aInformation:'
+            - ' &7• Chance to find experience while'
+            - ' &7using sellwand to sell chests!'
+            - ''
+            - '{4}'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: "CUSTOM_SKULL-399ad7a0431692994b6c412c7eafb9e0fc49975240b73a27d24ed797035fb894"
+            materialData: 0
+            customModelData: 0
+            glow: false
+            itemflags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'  
+            
+         '3':
+            settings:
+               type: "MOBCOINFINDER"
+            # Placeholders: {1} = Current Level, {2} = Max Level, {3} = token cost, {4} = details
+            name: "&7Mobcoin Finder Enchantment"
+            lore:
+            - ''
+            - '&eCurrent Level: &f{1}'
+            - ''
+            - '&cCost: &f{3}'
+            - ''
+            - '&aInformation:'
+            - ' &7• Chance to find mobcoins while'
+            - ' &7using sellwand to sell chests!'
+            - ''
+            - '{4}'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: "CUSTOM_SKULL-1f5c1a678bfa15b90b6a8b83da339ffff567ac2ab419c28f0422759b1cd54208"
+            materialData: 0
+            customModelData: 0
+            glow: false
+            itemflags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'                          
+            
+         '4':
+            settings:
+               type: "SPAWNERFINDER"
+            # Placeholders: {1} = Current Level, {2} = Max Level, {3} = token cost, {4} = details
+            name: "&7Spawner Looter Enchantment"
+            lore:
+            - ''
+            - '&eCurrent Level: &f{1}'
+            - ''
+            - '&cCost: &f{3}'
+            - ''
+            - '&aInformation:'
+            - ' &7• Chance to find various spawners'
+            - ' &7while using sellwand to sell chests!'
+            - ''
+            - '{4}'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: "CUSTOM_SKULL-9f455d11355de8e3a6cd6fe970bad51c592aa6a5717309255fb1b9e47a4e"
+            materialData: 0
+            customModelData: 0
+            glow: false
+            itemflags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'             
+
+         '5':
+            settings:
+               type: "MULTIPLIER"
+            # Placeholders: {1} = Current Level, {2} = Max Level, {3} = token cost, {4} = details
+            name: "&7Multiplier Enchantment"
+            lore:
+            - ''
+            - '&eCurrent Level: &f{1}'
+            - ''
+            - '&cCost: &f{3}'
+            - ''
+            - '&aInformation:'
+            - ' &7• Chance to multiply your earnings'
+            - ' &7while using sellwand to sell chests!'
+            - ''
+            - '{4}'
+            # Note: To use custom skulls use "CUSTOM_SKULL-<URL>". 1.14.4+ ONLY.
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: "CUSTOM_SKULL-95977a99841e021713fac48b8bad2b2dd243e91cd3c37945d9d6f213ab4c2265"
+            materialData: 0
+            customModelData: 0
+            glow: false
+            itemflags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'                                  
+
+# Note: These are the built-in enchantments, you can't add more. For custom enchantments go to the customEnchantments section.      
+enchantments:
+   
+   # Note: Do NOT change TOKENFINDER, edit its settings instead. 
+   TOKENFINDER:
+      settings:
+         enabled: true
+         name: "&7Token Greed"
+         # Note: Enchantment name shown in messages.
+         messageName: "Token Greed"
+         # Note: Sound that plays when the enchantment works.
+         sound: "BLOCK_ENCHANTMENT_TABLE_USE"
+         # Note: Particle effect that shows when the enchantment works.
+         particle: "TOTEM"
+         # Notes:
+         # cost -> Cost of tokens to get/upgrade.
+         # chance -> Chance of enchantment working whenever sellwand is used.
+         # amount -> "MINIMUM-MAXIMUM" amount of tokens you can get as a bonus.
+         # details -> {4} placeholder in menu item lores.
+         levels:
+            '0':
+               cost: 500
+               chance: 7.50
+               amount: "1-2"
+               details:
+               - '&7Activation Chance: &a&l7.5%'
+               - '&7Tokens Amount: &a1-2 tokens'
+            '1':
+               cost: 1000
+               chance: 7.50
+               amount: "1-2"
+               details:
+               - '&7Activation Chance: &a&l7.5%'
+               - '&7Tokens Amount: &a1-2 tokens'
+            '2':
+               cost: 1500
+               chance: 10.0
+               amount: "1-2"
+               details:
+               - '&7Activation Chance: &a&l10%'
+               - '&7Tokens Amount: &a1-2 tokens'
+            '3':
+               cost: 2000
+               chance: 12.5
+               amount: "1-2"
+               details:
+               - '&7Activation Chance: &a&l12.5%'
+               - '&7Tokens Amount: &a1-2 tokens' 
+   
+   # Note: Do NOT change EXPFINDER, edit its settings instead.             
+   EXPFINDER:
+      settings:
+         enabled: true
+         name: "&7EXP Greed"
+         # Note: Enchantment name shown in messages.
+         messageName: "EXP Greed"
+         # Note: Sound that plays when the enchantment works.
+         sound: "BLOCK_ENCHANTMENT_TABLE_USE"
+         # Note: Particle effect that shows when the enchantment works.
+         particle: "TOTEM"
+         # Notes:
+         # cost -> Cost of tokens to get/upgrade.
+         # chance -> Chance of enchantment working whenever sellwand is used.
+         # amount -> "MINIMUM-MAXIMUM" amount of experience points you can get as a bonus.
+         # details -> {4} placeholder in menu item lores.
+         levels:
+            '0':
+               cost: 100
+               chance: 5.0
+               amount: "10-15"
+               details:
+               - '&7Activation Chance: &a&l5%'
+               - '&7Experience Amount: &a10-15 exp'
+            '1':
+               cost: 200
+               chance: 5.0
+               amount: "10-15"
+               details:
+               - '&7Activation Chance: &a&l5%'
+               - '&7Experience Amount: &a10-15 exp'
+            '2':
+               cost: 300
+               chance: 7.5
+               amount: "10-15"
+               details:
+               - '&7Activation Chance: &a&l7.5%'
+               - '&7Experience Amount: &a8-10 exp'
+            '3':
+               cost: 400
+               chance: 10.0   
+               amount: "10-15"
+               details:
+               - '&7Activation Chance: &a&l10%'
+               - '&7Experience Amount: &a8-10 exp'
+            '4':
+               cost: 500
+               chance: 12.5
+               amount: "10-15"
+               details:
+               - '&7Activation Chance: &a&l12.5%'
+               - '&7Experience Amount: &a8-10 exp'
+            '5':
+               cost: 600
+               chance: 15.0
+               amount: "10-15"   
+               details:
+               - '&7Activation Chance: &a&l15%'
+               - '&7Experience Amount: &a8-10 exp'        
+   
+   # Note: Do NOT change MULTIPLIER, edit its settings instead.                   
+   MULTIPLIER:
+      settings:
+         enabled: true
+         name: "&7Multiplier"
+         # Note: Enchantment name shown in messages.
+         messageName: "Multiplier"
+         # Note: Sound that plays when the enchantment works.
+         sound: "BLOCK_ENCHANTMENT_TABLE_USE"
+         # Note: Particle effect that shows when the enchantment works.
+         particle: "TOTEM"
+         # Notes:
+         # cost -> Cost of tokens to get/upgrade.
+         # chance -> Chance of enchantment working whenever sellwand is used.
+         # amount -> "MINIMUM-MAXIMUM" final multiplier amount (gets multiplied AGAIN after all other multipliers)
+         # details -> {4} placeholder in menu item lores.
+         levels:
+            '0':
+               cost: 10000
+               chance: 10
+               amount: "1-2"
+               details:
+               - '&7Activation Chance: &a&l10%'
+               - '&7Bonus Multiplier: &ax1-x2 Multiplier'
+            '1':
+               cost: 10000
+               chance: 10
+               amount: "1-2"
+               details:
+               - '&7Activation Chance: &a&l10%'
+               - '&7Bonus Multiplier: &ax1-x2 Multiplier'
+
+# Note: You can add as many custom enchantments as you want, they're all the same format (execute commands).               
+customEnchantments: 
+   
+   # Note: EXAMPLE ENCHANTMENT OF WHAT YOU CAN DO WITH CUSTOM ENCHANTMENTS.
+   SPAWNERFINDER:
+      settings:
+         enabled: true
+         name: "&7Spawner Looter"
+         # Note: Enchantment name shown in messages.
+         messageName: "Spawner Looter"
+         # Note: Sound that plays when the enchantment works.
+         sound: "BLOCK_ENCHANTMENT_TABLE_USE"
+         # Note: Particle effect that shows when the enchantment works.
+         particle: "TOTEM"
+         # Notes:
+         # cost -> Cost of tokens to get/upgrade.
+         # chance -> Chance of enchantment working whenever sellwand is used.
+         # commands -> If the enchantment gets fired, ONE command of the list will be picked and executed.
+         # details -> {4} placeholder in menu item lores.
+         levels:
+            '0':
+               cost: 500
+               chance: 5
+               commands: 
+               - 'spawner give {PLAYER} skeleton 1'
+               - 'spawner give {PLAYER} zombie 1'   
+               details:
+               - '&7Activation Chance: &a&l5%'
+               - '&7Spawner Drops:'
+               - ' &a• Skeleton'     
+               - ' &a• Zombie'    
+            '1':
+               cost: 500
+               chance: 5
+               commands: 
+               - 'spawner give {PLAYER} skeleton 1'
+               - 'spawner give {PLAYER} zombie 1'
+               details:
+               - '&7Activation Chance: &a&l5%'
+               - '&7Spawner Drops:'
+               - ' &a• Skeleton'     
+               - ' &a• Zombie'  
+            '2':
+               cost: 1000
+               chance: 7.5
+               commands: 
+               - 'spawner give {PLAYER} skeleton 1'
+               - 'spawner give {PLAYER} zombie 1'
+               details:
+               - '&7Activation Chance: &a&l7.5%'
+               - '&7Spawner Drops:'
+               - ' &a• Skeleton'     
+               - ' &a• Zombie' 
+            '3':
+               cost: 1500
+               chance: 10.0
+               commands: 
+               - 'spawner give {PLAYER} skeleton 1'
+               - 'spawner give {PLAYER} zombie 1'  
+               details:
+               - '&7Activation Chance: &a&l10%'
+               - '&7Spawner Drops:'
+               - ' &a• Skeleton'     
+               - ' &a• Zombie'      
+   
+   # Note: EXAMPLE ENCHANTMENT OF WHAT YOU CAN DO WITH CUSTOM ENCHANTMENTS.            
+   MOBCOINFINDER:
+      settings:
+         enabled: true
+         name: "&7Mobcoin Finder"
+         # Note: Enchantment name shown in messages.
+         messageName: "Mobcoin Finder"
+         # Note: Sound that plays when the enchantment works.
+         sound: "BLOCK_ENCHANTMENT_TABLE_USE"
+         # Note: Particle effect that shows when the enchantment works.
+         particle: "TOTEM"
+         # Notes:
+         # cost -> Cost of tokens to get/upgrade.
+         # chance -> Chance of enchantment working whenever sellwand is used.
+         # commands -> If the enchantment gets fired, ONE command of the list will be picked and executed.
+         # details -> {4} placeholder in menu item lores.
+         levels:
+            '0':
+               cost: 125
+               chance: 5
+               commands: 
+               - 'mobcoin give {PLAYER} 1'
+               - 'mobcoin give {PLAYER} 2'  
+               details:
+               - '&7Activation Chance: &a&l5%'
+               - '&7Mobcoins Amount: &a1-2 mobcoins'       
+            '1':
+               cost: 125
+               chance: 5
+               commands: 
+               - 'mobcoin give {PLAYER} 1'
+               - 'mobcoin give {PLAYER} 2'
+               details:
+               - '&7Activation Chance: &a&l5%'
+               - '&7Mobcoins Amount: &a1-2 mobcoins'
+            '2':
+               cost: 250
+               chance: 10
+               commands: 
+               - 'mobcoin give {PLAYER} 1'
+               - 'mobcoin give {PLAYER} 2'
+               details:
+               - '&7Activation Chance: &a&l10%'
+               - '&7Mobcoins Amount: &a1-2 mobcoins'
+            '3':
+               cost: 375
+               chance: 15
+               commands: 
+               - 'mobcoin give {PLAYER} 1'
+               - 'mobcoin give {PLAYER} 2'    
+               details:
+               - '&7Activation Chance: &a&l15%'
+               - '&7Mobcoins Amount: &a1-2 mobcoins'                                    

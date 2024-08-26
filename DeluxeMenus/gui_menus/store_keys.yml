@@ -1,0 +1,313 @@
+menu_title: '&8Buy | Keys'
+open_command:
+- keystore
+- buy-keys
+register_commands: true
+size: 54
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-53'
+    display_name: ' '
+  '1':
+    material: YELLOW_DYE
+    amount: 1
+    slots:
+    - '11'
+    display_name: '&#FCDD0F&lPrime Key &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FCDD0F&l❖ &7Price: &#FCDD0F$1.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FCDD0F&lBuy Our Crate Keys!'
+    - '[message] &#FCDD0F&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: YELLOW_DYE
+    amount: 3
+    slots:
+    - '20'
+    display_name: '&#FCDD0F&lPrime Key &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FCDD0F&l❖ &7Price: &#FCDD0F$5.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FCDD0F&lBuy Our Crate Keys!'
+    - '[message] &#FCDD0F&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: YELLOW_DYE
+    amount: 5
+    slots:
+    - '29'
+    display_name: '&#FCDD0F&lPrime Key &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FCDD0F&l❖ &7Price: &#FCDD0F$9.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FCDD0F&lBuy Our Crate Keys!'
+    - '[message] &#FCDD0F&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: YELLOW_DYE
+    amount: 10
+    slots:
+    - '38'
+    display_name: '&#FCDD0F&lPrime Key &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FCDD0F&l❖ &7Price: &#FCDD0F$19.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FCDD0F&lBuy Our Crate Keys!'
+    - '[message] &#FCDD0F&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+##############################################################
+  '5':
+    material: LIGHT_BLUE_DYE
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#0D9CFF&lEpic Key &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#0D9CFF&l❖ &7Price: &#0D9CFF$4.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#0D9CFF&lBuy Our Crate Keys!'
+    - '[message] &#0D9CFF&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '6':
+    material: LIGHT_BLUE_DYE
+    amount: 3
+    slots:
+    - '21'
+    display_name: '&#0D9CFF&lEpic Key &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#0D9CFF&l❖ &7Price: &#0D9CFF$14.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#0D9CFF&lBuy Our Crate Keys!'
+    - '[message] &#0D9CFF&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '7':
+    material: LIGHT_BLUE_DYE
+    amount: 5
+    slots:
+    - '30'
+    display_name: '&#0D9CFF&lEpic Key &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#0D9CFF&l❖ &7Price: &#0D9CFF$24.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#0D9CFF&lBuy Our Crate Keys!'
+    - '[message] &#0D9CFF&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '8':
+    material: LIGHT_BLUE_DYE
+    amount: 10
+    slots:
+    - '39'
+    display_name: '&#0D9CFF&lEpic Key &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#0D9CFF&l❖ &7Price: &#0D9CFF$49.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#0D9CFF&lBuy Our Crate Keys!'
+    - '[message] &#0D9CFF&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+##############################################################
+  '9':
+    material: RED_DYE
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#F70E08&lRival Key &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#F70E08&l❖ &7Price: &#F70E08$7.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#F70E08&lBuy Our Crate Keys!'
+    - '[message] &#F70E08&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '10':
+    material: RED_DYE
+    amount: 3
+    slots:
+    - '23'
+    display_name: '&#F70E08&lRival Key &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#F70E08&l❖ &7Price: &#F70E08$24.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#F70E08&lBuy Our Crate Keys!'
+    - '[message] &#F70E08&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '11':
+    material: RED_DYE
+    amount: 5
+    slots:
+    - '32'
+    display_name: '&#F70E08&lRival Key &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#F70E08&l❖ &7Price: &#F70E08$39.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#F70E08&lBuy Our Crate Keys!'
+    - '[message] &#F70E08&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '12':
+    material: RED_DYE
+    amount: 10
+    slots:
+    - '41'
+    display_name: '&#F70E08&lRival Key &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#F70E08&l❖ &7Price: &#F70E08$79.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#F70E08&lBuy Our Crate Keys!'
+    - '[message] &#F70E08&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+##############################################################
+  '13':
+    material: JACK_O_LANTERN
+    amount: 1
+    slots:
+    - '15'
+    display_name: '&#b410fb&lH&#bb1ae7&la&#c125d4&ll&#c82fc0&ll&#cf3aad&lo&#d54499&lw&#dc4f86&le&#e25972&le&#e9645f&ln &#f06e4b&lK&#f67938&le&#fd8324&ly &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#b410fb&l❖ &7Price: &#b410fb$&#bd1ee01&#c62dc54&#cf3baa.&#d94a909&#e258759 &#eb665aU&#f4753fS&#fd8324D'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#b410fb&lB&#b918ed&lu&#be1fde&ly &#c327d0&lO&#c72fc2&lu&#cc36b3&lr &#d13ea5&lC&#d64697&lr&#db4d88&la&#e0557a&lt&#e55d6c&le &#ea645d&lK&#ee6c4f&le&#f37441&ly&#f87b32&ls&#fd8324&l!'
+    - '[message] &#b410fb&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '14':
+    material: JACK_O_LANTERN
+    amount: 3
+    slots:
+    - '24'
+    display_name: '&#b410fb&lH&#bb1ae7&la&#c125d4&ll&#c82fc0&ll&#cf3aad&lo&#d54499&lw&#dc4f86&le&#e25972&le&#e9645f&ln &#f06e4b&lK&#f67938&le&#fd8324&ly &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#b410fb&l❖ &7Price: &#b410fb$&#bd1ee04&#c62dc54&#cf3baa.&#d94a909&#e258759 &#eb665aU&#f4753fS&#fd8324D'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#b410fb&lB&#b918ed&lu&#be1fde&ly &#c327d0&lO&#c72fc2&lu&#cc36b3&lr &#d13ea5&lC&#d64697&lr&#db4d88&la&#e0557a&lt&#e55d6c&le &#ea645d&lK&#ee6c4f&le&#f37441&ly&#f87b32&ls&#fd8324&l!'
+    - '[message] &#b410fb&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '15':
+    material: JACK_O_LANTERN
+    amount: 5
+    slots:
+    - '33'
+    display_name: '&#b410fb&lH&#bb1ae7&la&#c125d4&ll&#c82fc0&ll&#cf3aad&lo&#d54499&lw&#dc4f86&le&#e25972&le&#e9645f&ln &#f06e4b&lK&#f67938&le&#fd8324&ly &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#b410fb&l❖ &7Price: &#b410fb$&#bd1ee07&#c62dc54&#cf3baa.&#d94a909&#e258759 &#eb665aU&#f4753fS&#fd8324D'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#b410fb&lB&#b918ed&lu&#be1fde&ly &#c327d0&lO&#c72fc2&lu&#cc36b3&lr &#d13ea5&lC&#d64697&lr&#db4d88&la&#e0557a&lt&#e55d6c&le &#ea645d&lK&#ee6c4f&le&#f37441&ly&#f87b32&ls&#fd8324&l!'
+    - '[message] &#b410fb&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  '16':
+    material: JACK_O_LANTERN
+    amount: 10
+    slots:
+    - '42'
+    display_name: '&#b410fb&lH&#bb1ae7&la&#c125d4&ll&#c82fc0&ll&#cf3aad&lo&#d54499&lw&#dc4f86&le&#e25972&le&#e9645f&ln &#f06e4b&lK&#f67938&le&#fd8324&ly &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#b410fb&l❖ &7Price: &#b410fb$&#bc1de31&#c42acb4&#cc36b39&#d4439b.&#dd50849&#e55d6c9 &#ed6954U&#f5763cS&#fd8324D'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#b410fb&lB&#b918ed&lu&#be1fde&ly &#c327d0&lO&#c72fc2&lu&#cc36b3&lr &#d13ea5&lC&#d64697&lr&#db4d88&la&#e0557a&lt&#e55d6c&le &#ea645d&lK&#ee6c4f&le&#f37441&ly&#f87b32&ls&#fd8324&l!'
+    - '[message] &#b410fb&l❖ &e&nhttps://store.minerival.org/category/crates'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    click_commands:
+    - '[openguimenu] buy_menu'

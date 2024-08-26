@@ -1,0 +1,74 @@
+menu_title: '&8KOTH Information'
+size: 27
+open_command:
+- koth
+- koths
+#register_command: true
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+#############################################################################################
+  info:
+    material: 'BOOK'
+    slot: 11
+    display_name: '&#09ff04&lK&#0bff06&li&#0cff09&ln&#0efe0b&lg &#10fe0d&lo&#12fe10&lf &#13fe12&lT&#15fe14&lh&#17fe16&le &#19fd19&lH&#1afd1b&li&#1cfd1d&ll&#1efd20&ll &#20fd22&lI&#21fd24&ln&#23fc27&lf&#25fc29&lo&#27fc2b&lr&#28fc2d&lm&#2afc30&la&#2cfc32&lt&#2efb34&li&#2ffb37&lo&#31fb39&ln'
+    lore:
+    - ''
+    - '&7You have &f2 minutes &7to capture the zone!'
+    - ''
+    - '&7Stand in the &fzone &7(wool square) to capture'
+    - '&7it! Once you &fcapture &7the zone you will'
+    - '&7be awarded an &fOP Event Lootbox&7!'
+    - ''
+    - '&8❖ &fRewards: &7OP Event Lootbox'
+    - ''
+    - '&eA random colored KOTH event will occur'
+    - '&eevery &f4 hours&e!'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+#############################################################################################
+  red:
+    material: 'RED_CANDLE'
+    slot: 14
+    display_name: '&#ff2727&lR&#fe2a2a&le&#fe2d2d&ld &#fd3030&lK&#fc3232&lO&#fc3535&lT&#fb3838&lH'
+    lore:
+    - ''
+    - '&7Head to these &fcoordinates &7to capture the KOTH!'
+    - ''
+    - '&8❖ &fCoords: &7%zkoth_redkoth_x%, %zkoth_redkoth_y%, %zkoth_redkoth_z%'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+  blue:
+    material: 'LIGHT_BLUE_CANDLE'
+    slot: 15
+    display_name: '&#43d2ff&lB&#49d3fe&ll&#4fd4fe&lu&#55d5fd&le &#5bd6fd&lK&#61d7fc&lO&#67d8fc&lT&#6dd9fb&lH'
+    lore:
+    - ''
+    - '&7Head to these &fcoordinates &7to capture the KOTH!'
+    - ''
+    - '&8❖ &fCoords: &7%zkoth_bluekoth_x%, %zkoth_bluekoth_y%, %zkoth_bluekoth_z%'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+  yellow:
+    material: 'YELLOW_CANDLE'
+    slot: 16
+    display_name: '&#fff622&lY&#fff626&le&#fef62a&ll&#fef52e&ll&#fdf532&lo&#fdf535&lw &#fcf539&lK&#fcf43d&lO&#fbf441&lT&#fbf445&lH'
+    lore:
+    - ''
+    - '&7Head to these &fcoordinates &7to capture the KOTH!'
+    - ''
+    - '&8❖ &fCoords: &7%zkoth_yellowkoth_x%, %zkoth_yellowkoth_y%, %zkoth_yellowkoth_z%'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true

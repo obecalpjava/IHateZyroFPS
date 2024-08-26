@@ -1,0 +1,2625 @@
+#########################################################################################
+#                                                                                       #
+# DeluxeSellwands, a premium resource by Norska @ https://norska.dev                    #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome/                                                #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the messages.yml file of DeluxeSellwands.                             #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# If PlaceholderAPI is installed you can use any placeholder inside messages,           #
+# make sure to properly install any extension using /papi ecloud.                       #
+#                                                                                       #
+# Placeholders that are inside {} (e.g {0}, {1}) are inner placeholders.                #
+# To use PAPI's placeholders, use them normally, like %player_gamemode%, etc.           #
+#                                                                                       #
+#########################################################################################  
+
+# Note: Whether or not to strip colors from messages shown to console.
+stripConsole: false
+messages:
+
+   # Note: Use {PREFIX} in any message to add the below prefix!
+  prefix: '&e&lSELLWAND &8➟'
+  EVENT_SELL_SUCCESS:
+   # Placeholders: {0} = money, {1} = items, {2} = uses left, {3} = sellwand multiplier
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7You sold &ax{1} &7items for a total of &a{0}&7! Uses left: &e{2}'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &6Sold Container: &eWorth » &6{0}&f, &eItems » &6x{1}
+        items&f, &eUses left: &6{2}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&eWorth » &6{0}&f, &eItems » &6x{1} items'
+         
+  EVENT_SELL_NOITEMS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7This container does not have any sellable items!'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fThis container does not have any sellable items!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fNo sellable items found!'
+         
+  EVENT_SELL_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7Please wait &e{0}s &7before using your sellwand again!'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore using your sellwand again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPlease wait &e{0}s!'
+         
+  EVENT_SELL_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7You do not have permission to use sellwands.'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to use sellwands.'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission'
+         
+  EVENT_SELL_BINDING_NOT_OWNER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - '{PREFIX} &7You do not own this sellwand and cannot use it!'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fThis is &c{0}''s &fsellwand. You cannot use it!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThis is not your sellwand, you cannot use it!'
+         
+   ###############################         
+         
+  EVENT_INSPECT_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &7You inspected a container!'
+      - ''
+      - '  &eContainer Details:'
+      - '  &6• &eWorth: &f{0}'
+      - '  &6• &eItems: &fx{1} items'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &6Inspection: &eWorth » &6{0}&f, &eItems » &6x{1} items&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&eWorth » &6{0}&f, &eItems » &6x{1} items'
+            
+  EVENT_INSPECT_NOITEMS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7This container does not have any sellable items!'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fThis container does not have any sellable items!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fNo sellable items found!'
+         
+  EVENT_INSPECT_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: true
+      content:
+      - '{PREFIX} &7Please wait &e{0}s &7before inspecting a container again!'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore inspecting a container
+        again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPlease wait &e{0}s!'
+         
+  EVENT_INSPECT_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7You do not have permission to use inspection with sellwands.'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to use inspection with sellwands.'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission'
+         
+   ###############################    
+
+  EVENT_ENCHANT_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &fPurchased &e{0} {1}&f for sellwand!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fPurchased &e{0} {1}&f for sellwand!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPurchased &e{0} {1}&f for sellwand!'
+   
+  EVENT_ENCHANT_CANNOT_AFFORD:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &fYou have &e{1} tokens &fbut this costs &e{0} tokens&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou have &e{1} tokens &fbut this costs &e{0} tokens&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou have &e{1} tokens &fbut this costs &e{0} tokens&f!'
+         
+  EVENT_ENCHANT_ALREADY_MAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &e{0} &fis already fully upgraded!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &e{0} &fis already fully upgraded!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&e{0} &fis already fully upgraded!'
+         
+  EVENT_ENCHANT_ENCHANTMENT_DISABLED:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &e{0} &fis currently disabled!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &e{0} &fis currently disabled!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&e{0} &fis currently disabled!'
+         
+  EVENT_ENCHANT_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to enchant wands!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to enchant wands!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to enchant wands!'
+         
+  EVENT_ENCHANT_MUST_RECHARGE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease re-charge your sellwand before enchanting!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fPlease re-charge your sellwand before enchanting!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPlease re-charge your sellwand before enchanting!'
+  EVENT_ENCHANT_FIRE_EXPFINDER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &f» &f&lEXP Greed &7has been activated, you got &e{0} exp&7!'
+    actionbar:
+      enabled: false
+      content: ''
+    titles:
+      enabled: false
+      titleContent: ''
+      subtitleContent: ''
+  EVENT_ENCHANT_FIRE_MULTIPLIER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &f» &f&lMultiplier &7has been activated, you got an extra &e{0}$&7!'
+    actionbar:
+      enabled: false
+      content: ''
+    titles:
+      enabled: false
+      titleContent: ''
+      subtitleContent: ''
+  EVENT_ENCHANT_FIRE_TOKENFINDER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &f» &f&lToken Greed &7has been activated, you got &e{0} tokens&7!'
+    actionbar:
+      enabled: false
+      content: ''
+    titles:
+      enabled: false
+      titleContent: ''
+      subtitleContent: ''
+  EVENT_ENCHANT_FIRE_SPAWNERFINDER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &f» &f&lSpawner Looter &7has been activated, you got a spawner!'
+    actionbar:
+      enabled: false
+      content: ''
+    titles:
+      enabled: false
+      titleContent: ''
+      subtitleContent: ''
+  EVENT_ENCHANT_FIRE_MOBCOINFINDER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &f» &f&lMobcoin Finder &7has been activated, you got mobcoins!'
+    actionbar:
+      enabled: false
+      content: ''
+    titles:
+      enabled: false
+      titleContent: ''
+      subtitleContent: ''
+         
+   ###############################         
+         
+  EVENT_WAND_BREAK:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &7Your sellwand just broke!'
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYour sellwand just broke!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour sellwand just broke!'
+              
+  EVENT_WAND_DROPCONFIRM:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fDrop your item again within &e{0}s &fto confirm the drop!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fDrop your item again within &e{0}s &fto confirm the
+        drop!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fDrop again to confirm!'
+         
+  EVENT_WAND_DROPSUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou successfully dropped your {0}!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou successfully dropped your {0}!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fDropped your {0}!'
+         
+   ###############################      
+   
+  EVENT_PAYOUT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fPayout statistics:'
+      - ''
+      - ' &a⭐ &fYou made &a{0} &fin the last &e10 seconds!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &a⭐ &fYou made &a{0} &fin the last &e10 seconds!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&a⭐ &fYou made &a{0} &fin the last &e10 seconds!'
+         
+   ###############################           
+
+  EVENT_CHARGER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou successfully added {0} to your sellwand!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fAdded &a{0} uses &fto your sellwand!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fAdded &a{0} uses &fto your sellwand!'
+         
+  EVENT_CHARGER_FAIL_HIGHMULTIPLIER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fCannot use chargers on sellwands with a multiplier above x{0}!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fCannot use chargers on sellwands with a multiplier
+        above x{0}!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCannot use chargers on sellwands with a multiplier above
+        x{0}!'
+         
+  EVENT_CHARGER_FAIL_TYPE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fCannot use chargers on {0}!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fCannot use chargers on {0}!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCannot use chargers on {0}!'
+                  
+  EVENT_CHARGER_NOUSESLEFT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fUse a charger on this wand before using it again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fUse a charger on this wand before using it again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCharge up your sellwand first!'
+          
+  EVENT_CHARGER_USESDEPLETED:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fThe uses on your sellwand have been depleted!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fThe uses on your sellwand have been depleted!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThe uses on your sellwand have been depleted!'
+         
+  EVENT_CHARGER_NOSELLWAND:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou must have at least 1 sellwand in your inventory!'
+      - '&7&o(Sellwands with infinite uses are excluded!)'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fNo valid sellwand found in your inventory!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fNo applicable sellwand found in your inventory!'
+         
+  EVENT_CHARGER_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou do not have permission to use chargers!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou do not have permission to use chargers!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to use chargers!'
+         
+   ###############################         
+
+  EVENT_DISCHARGER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fDischarged your sellwand & got a charger with &e{0} uses&f!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fDischarged your sellwand & got a charger with &e{0}
+        uses&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fDischarged your sellwand & got a charger with &e{0} uses&f!'
+         
+  EVENT_DISCHARGER_FAIL_HIGHMULTIPLIER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fCannot use dischargers on sellwands with a multiplier above
+        x{0}!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fCannot use dischargers on sellwands with a multiplier
+        above x{0}!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCannot use dischargers on sellwands with a multiplier above
+        x{0}!'
+         
+  EVENT_DISCHARGER_FAIL_TYPE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fCannot use dischargers on {0}!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fCannot use dischargers on {0}!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCannot use dischargers on {0}!'
+         
+  EVENT_DISCHARGER_FAIL_NOUSES:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fThis sellwand does not have any uses left!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fThis sellwand does not have any uses left!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThis sellwand does not have any uses left!'
+  EVENT_DISCHARGER_NOSELLWAND:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou must have at least 1 sellwand in your inventory!'
+      - '&7&o(Sellwands with infinite uses are excluded!)'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fNo valid sellwand found in your inventory!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fNo applicable sellwand found in your inventory!'
+         
+  EVENT_DISCHARGER_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou do not have permission to use dischargers!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou do not have permission to use dischargers!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to use dischargers!'
+         
+   ###############################
+
+  COMMAND_WAND_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou gave &e{3} {4}(s) &fto &e{0}&f!'
+      - ''
+      - '  &eSellwand Details:'
+      - '  &6• &eMultiplier: &f{1}'
+      - '  &6• &eUses: &f{2}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fGave &e{3} {4}(s) &fto &e{0}&f. &eMultiplier: &6{1}&f,
+        &eUses: &6{2}'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &e{3} {4}(s) &fto &e{0}&f!'
+         
+  COMMAND_WAND_SENDER_SUCCESS_SILENT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' &7[Silent] {PREFIX} &f» &fYou gave &e{3} {4}(s) &fto &e{0}&f!'
+      - ''
+      - '  &eSellwand Details:'
+      - '  &6• &eMultiplier: &f{1}'
+      - '  &6• &eUses: &f{2}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7[S] &fGave &e{3} {4}(s) &fto &e{0}&f. &eMultiplier:
+        &6{1}&f, &eUses: &6{2}'
+    titles:
+      enabled: false
+      titleContent: '&a&lDONE! &7(Silent)'
+      subtitleContent: '&fGave &e{3} {4}(s) &fto &e{0}&f!'
+         
+  COMMAND_WAND_SENDER_SUCCESS_ALL:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou gave &e{0} {3}(s) &fto everyone online!'
+      - ''
+      - '  &eSellwand Details:'
+      - '  &6• &eMultiplier: &f{1}'
+      - '  &6• &eUses: &f{2}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fGave &e{0} {3}(s) &fto everyone online. &eMultiplier:
+        &6{1}&f, &eUses: &6{2}'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &e{3} {3}(s) &fto everyone onlne!'
+         
+  COMMAND_WAND_SENDER_SUCCESS_ALL_SILENT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' &7[Silent] {PREFIX} &f» &fYou gave &e{0} {3}(s) &fto everyone online!'
+      - ''
+      - '  &eSellwand Details:'
+      - '  &6• &eMultiplier: &f{1}'
+      - '  &6• &eUses: &f{2}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7[S] &fGave &e{0} {3}(s) &fto everyone online. &eMultiplier:
+        &6{1}&f, &eUses: &6{2}'
+    titles:
+      enabled: false
+      titleContent: '&a&lDONE! &7(Silent)'
+      subtitleContent: '&fGave &e{3} {3}(s) &fto everyone online!'
+         
+  COMMAND_WAND_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou received &e{0} {4}(s)&f from &e{1}&f!'
+      - ''
+      - '  &eSellwand Details:'
+      - '  &6• &eMultiplier: &f{2}'
+      - '  &6• &eUses: &f{3}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fReceived &e{0} {4}(s) &ffrom &e{1}&f. &eMultiplier:
+        &6{2}&f, &eUses: &6{3}'
+    titles:
+      enabled: false
+      titleContent: '&a&lNEW ITEM!'
+      subtitleContent: '&fReceived {4}(s)!'
+  COMMAND_WAND_INVALIDSYNTAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give wand because your syntax is wrong!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fFull command.'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give wand because your syntax is wrong!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour syntax is wrong!'
+  COMMAND_WAND_WRONGTYPE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give wand because your type argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fA type that exists'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give wand because your type argument is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_WAND_WRONGAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fCould not give wand because your amount argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 1)'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give wand because your amount argument is
+        faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_WAND_WRONGMULTIPLIER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give wand because your multiplier argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fPositive Double (e.g 2.5)'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give wand because your multiplier argument
+        is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_WAND_WRONGUSES:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give wand because your uses argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 100) or "Infinite"'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give wand because your uses argument is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_WAND_NOTONLINE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give wand because &e{0} &fis offline!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give wand because &e{0} &fis offline!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThe player is offline!'
+         
+   ###############################
+     
+  COMMAND_CHARGER_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou gave &e{2} {3}(s) &fto &e{0}&f!'
+      - ''
+      - '  &eCharger Details:'
+      - '  &6• &eUses: &f{1}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fGave &e{2} {3}(s) &fto &e{0}&f. &eUses: &6{1}'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &e{2} {3}(s) &fto &e{0}&f!'
+         
+  COMMAND_CHARGER_SENDER_SUCCESS_SILENT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' &7[Silent] {PREFIX} &f» &fYou gave &e{2} {3}(s) &fto &e{0}&f!'
+      - ''
+      - '  &eCharger Details:'
+      - '  &6• &eUses: &f{1}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7[S] &fGave &e{2} {3}(s) &fto &e{0}&f. &eUses: &6{1}'
+    titles:
+      enabled: false
+      titleContent: '&a&lDONE! &7(Silent)'
+      subtitleContent: '&fGave &e{2} {3}(s) &fto &e{0}&f!'
+         
+  COMMAND_CHARGER_SENDER_SUCCESS_ALL:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou gave &e{0} {2}(s) &fto everyone online!'
+      - ''
+      - '  &eCharger Details:'
+      - '  &6• &eUses: &f{1}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fGave &e{0} {2}(s) &fto everyone online. &eUses: &6{1}'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &e{2} {2}(s) &fto everyone online!'
+         
+  COMMAND_CHARGER_SENDER_SUCCESS_ALL_SILENT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' &7[Silent] {PREFIX} &f» &fYou gave &e{0} {2}(s) &fto everyone online!'
+      - ''
+      - '  &eCharger Details:'
+      - '  &6• &eUses: &f{1}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7[S] &fGave &e{0} {2}(s) &fto everyone online. &eUses:
+        &6{1}'
+    titles:
+      enabled: false
+      titleContent: '&a&lDONE! &7(Silent)'
+      subtitleContent: '&fGave &e{2} {2}(s) &fto everyone online!'
+         
+  COMMAND_CHARGER_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou received &e{0} {3}(s)&f from &e{1}&f!'
+      - ''
+      - '  &eCharger Details:'
+      - '  &6• &eUses: &f{2}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fReceived &e{0} {3}(s) &ffrom &e{1}&f. &eUses: &6{2}'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fReceived {3}(s)!'
+         
+  COMMAND_CHARGER_INVALIDSYNTAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give charger because your syntax is wrong!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fFull command.'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give charger because your syntax is wrong!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour syntax is wrong!'
+         
+  COMMAND_CHARGER_WRONGTYPE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give charger because your type argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fA type that exists'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give charger because your type argument is
+        faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_CHARGER_WRONGAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give charger because your amount argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 1)'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give charger because your amount argument
+        is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_CHARGER_WRONGUSES:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give charger because your uses argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 100)'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give charger because your usesmultiplier
+        argument is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_CHARGER_NOTONLINE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give charger because &e{0} &fis offline!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give charger because &e{0} &fis offline!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThe player is offline!'
+
+  ###############################
+     
+  COMMAND_DISCHARGER_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fGave &e{1} {2}(s) &fto &e{0}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fGave &e{1} {2}(s) &fto &e{0}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &e{1} {2}(s) &fto &e{0}&f!'
+         
+  COMMAND_DISCHARGER_SENDER_SUCCESS_SILENT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' &7[Silent] {PREFIX} &f» &fGave &e{1} {2}(s) &fto &e{0}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7[S] &fGave &e{1} {2}(s) &fto &e{0}&f!'
+    titles:
+      enabled: false
+      titleContent: '&a&lDONE! &7(Silent)'
+      subtitleContent: '&fGave &e{1} {2}(s) &fto &e{0}&f!'
+         
+  COMMAND_DISCHARGER_SENDER_SUCCESS_ALL:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fGave &e{0} {1}(s) &fto everyone online!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fGave &e{0} {1}(s) &fto everyone online!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &e{0} {1}(s) &fto everyone online!'
+         
+  COMMAND_DISCHARGER_SENDER_SUCCESS_ALL_SILENT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' &7[Silent] {PREFIX} &f» &fGave &e{0} {1}(s) &fto everyone online!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7[S] &fGave &e{0} {1}(s) &fto everyone online!'
+    titles:
+      enabled: false
+      titleContent: '&a&lDONE! &7(Silent)'
+      subtitleContent: '&fGave &e{0} {1}(s) &fto everyone online!'
+         
+  COMMAND_DISCHARGER_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fReceived &e{0} {2}(s)&f from &e{1}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fReceived &e{0} {2}(s) &ffrom &e{1}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fReceived &e{0} {3}(s)!'
+         
+  COMMAND_DISCHARGER_INVALIDSYNTAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give discharger because your syntax is wrong!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fFull command.'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give discharger because your syntax is wrong!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour syntax is wrong!'
+         
+  COMMAND_DISCHARGER_WRONGTYPE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give discharger because your type argument is faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fA type that exists'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give discharger because your type argument
+        is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_DISCHARGER_WRONGAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give discharger because your amount argument is
+        faulty!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{0}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 1)'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give discharger because your amount argument
+        is faulty!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command arguments are faulty!'
+         
+  COMMAND_DISCHARGER_NOTONLINE:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not give discharger because &e{0} &fis offline!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not give discharger because &e{0} &fis offline!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThe player is offline!'
+  COMMAND_TOKENS_NO_ACTION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fSelect from &eset&f, &eadd&f, &eremove &fand &echeck&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fSelect from &eset&f, &eadd&f, &eremove &fand &echeck&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fSelect from &eset&f, &eadd&f, &eremove &fand &echeck&f!'
+         
+   ############################### 
+   
+  COMMAND_TOKENS_CHECK_INVALIDSYNTAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYour command syntax is wrong!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fYour command syntax is wrong!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command syntax is wrong!'
+   
+  COMMAND_TOKENS_CHECK_INVALIDPLAYER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not check &e{0}''s &ftokens!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not check &e{0}''s &ftokens!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not check &e{0}''s &ftokens!'
+         
+  COMMAND_TOKENS_CHECK_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &e{0} &fhas &ex{1} tokens&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &e{0} &fhas &ex{1} tokens&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&e{0} &fhas &ex{1} tokens&f!'
+         
+  COMMAND_TOKENS_ADD_INVALIDSYNTAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYour command syntax is wrong!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fYour command syntax is wrong!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command syntax is wrong!'
+         
+  COMMAND_TOKENS_ADD_INVALIDPLAYER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not add tokens to &e{0}&f, player not found!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not add tokens to &e{0}&f, player not found!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not add tokens to &e{0}&f, player not found!'
+         
+  COMMAND_TOKENS_ADD_INVALIDAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not add tokens to &e{0}&f, invalid amount!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{1}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 1)'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not add tokens to &e{0}&f, invalid amount!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not add tokens to &e{0}&f, invalid amount!'
+         
+  COMMAND_TOKENS_ADD_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fGave &ex{1} tokens &fto &e{0}&f! They now have &ex{2} tokens&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fGave &ex{1} tokens &fto &e{0}&f! They now have &ex{2}
+        tokens&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fGave &ex{1} tokens &fto &e{0}&f! They now have &ex{2} tokens&f!'
+         
+  COMMAND_TOKENS_ADD_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fReceived &ex{1} tokens &ffrom &e{0}&f! You now have &ex{2}
+        tokens&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fReceived &ex{1} tokens &ffrom &e{0}&f! You now have
+        &ex{2} tokens&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fReceived &ex{1} tokens &ffrom &e{0}&f! You now have &ex{2}
+        tokens&f!'
+         
+  COMMAND_TOKENS_TAKE_INVALIDPLAYER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not take tokens from &e{0}&f, player not found!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not take tokens from &e{0}&f, player not found!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not take tokens from &e{0}&f, player not found!'
+         
+  COMMAND_TOKENS_TAKE_INVALIDAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not take tokens from &e{0}&f, invalid amount!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{1}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 1)'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not take tokens from &e{0}&f, invalid amount!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not take tokens from &e{0}&f, invalid amount!'
+         
+  COMMAND_TOKENS_TAKE_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fTook &ex{1} tokens &ffrom &e{0}&f! They now have &ex{2} tokens&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fTook &ex{1} tokens &ffrom &e{0}&f! They now have &ex{2}
+        tokens&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fTook &ex{1} tokens &ffrom &e{0}&f! They now have &ex{2}
+        tokens&f!'
+         
+  COMMAND_TOKENS_TAKE_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &e{0} &ftook &ex{1} tokens &ffrom you! You now have &ex{2}
+        tokens&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &e{0} &ftook &ex{1} tokens &ffrom you! You now have
+        &ex{2} tokens&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&e{0} &ftook &ex{1} tokens &ffrom you! You now have &ex{2}
+        tokens&f!'
+         
+  COMMAND_TOKENS_TAKE_INVALIDSYNTAX:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYour command syntax is wrong!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fYour command syntax is wrong!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYour command syntax is wrong!'
+         
+  COMMAND_TOKENS_SET_INVALIDPLAYER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not set &e{0}''s &ftokens, player not found!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not set &e{0}''s &ftokens, player not found!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not set &e{0}''s &ftokens, player not found!'
+         
+  COMMAND_TOKENS_SET_INVALIDAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not set &e{0}''s &ftokens, invalid amount!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eYour argument: &f{1}'
+      - '  &6• &eExpected argument: &fPositive Integer (e.g 1)'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fCould not set &e{0}''s &ftokens, invalid amount!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not set &e{0}''s &ftokens, invalid amount!'
+         
+  COMMAND_TOKENS_SET_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fSet &e{0}''s &ftokens to &ex{1}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &fSet &e{0}''s &ftokens to &ex{1}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fSet &e{0}''s &ftokens to &ex{1}&f!'
+         
+  COMMAND_TOKENS_SET_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &e{0} &fset your tokens to &ex{1}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: ' {PREFIX} &f» &e{0} &fset your tokens to &ex{1}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&e{0} &fset your tokens to &ex{1}&f!'
+
+   ############################### 
+   
+  COMMAND_SEARCH_FINISH:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &7» &fSearched logs for &7"&e{0}&7"&f. &7(&e&o{4}ms&r&7)'
+      - ''
+      - ' &fIterated &ex{1} files&f, with a total of &ex{2} lines&f.'
+      - ' &fFound &e{3} matching items&f!'
+      - ''
+      - ' &fOutput Generated: &e{5}'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &7» &fIterated &ex{1} files&f, with a total of &ex{2} lines&f.
+        Found &e{3} matching items&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fIterated &ex{1} files&f, with a total of &ex{2} lines&f.
+        Found &e{3} matching items&f!'
+         
+  COMMAND_SEARCH_FAIL_NO_INPUT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &7» &fCould not execute search. Define a keyword!'
+      - ''
+      - ' &7&nExample:&r &d/dsw search N0RSKA'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &7» &fCould not execute search. Define a keyword!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not execute search. Define a keyword!'
+         
+   ###############################
+         
+  COMMAND_RELOAD:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - '{PREFIX} &fReloaded config files. &7(&f{0}ms&7)'
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fReloaded config files. &7(&f{0}ms&7)'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fReloaded config files.'
+         
+  COMMAND_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to run this command!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to run this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission!'
+        
+   ###############################  
+         
+  COMMAND_HOLOGRAMS_TOGGLEON:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fHolograms will now appear when using sellwands!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fHolograms will now appear when using sellwands!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou will now see sale holograms!'
+         
+  COMMAND_HOLOGRAMS_TOGGLEOFF:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fHolograms will no longer appear when using sellwands!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fHolograms will no longer appear when using sellwands!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou will no longer see sale holograms!'
+         
+  COMMAND_HOLOGRAMS_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThat command is on cooldown!'
+         
+  COMMAND_HOLOGRAMS_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to use this command!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou do not have permission to use this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to use this command!'
+         
+   ###############################   
+   
+  EVENT_SELLCONFIRM_PROMPT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fRight-Click on the container again to confirm!'
+      - ' &a• &7&oYou can toggle this by using "&a/sellwands toggle sellconfirm&7&o"'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fRight-Click on the container again to confirm!'
+    titles:
+      enabled: false
+      titleContent: '&e&lWARNING!'
+      subtitleContent: '&fRight-Click on the container again to confirm!'
+    
+  COMMAND_SELLCONFIRM_TOGGLE_TOGGLEON:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou will now have to confirm before selling containers!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou will now have to confirm before selling containers!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou will now have to confirm before selling containers!'
+         
+  COMMAND_SELLCONFIRM_TOGGLE_TOGGLEOFF:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou will no longer have to confirm before selling containers!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou will no longer have to confirm before selling containers!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou will no longer have to confirm before selling containers!'
+         
+  COMMAND_SELLCONFIRM_TOGGLE_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThat command is on cooldown!'
+         
+  COMMAND_SELLCONFIRM_TOGGLE_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to use this command!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou do not have permission to use this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to use this command!'
+         
+   ###############################
+   
+  COMMAND_DROPCONFIRM_TOGGLE_TOGGLEON:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou will now have to confirm before dropping your sellwand!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou will now have to confirm before dropping your sellwand!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou will now have to confirm before dropping your sellwand!'
+         
+  COMMAND_DROPCONFIRM_TOGGLE_TOGGLEOFF:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou will no longer have to confirm before dropping your sellwand!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou will no longer have to confirm before dropping
+        your sellwand!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou will no longer have to confirm before dropping your
+        sellwand!'
+         
+  COMMAND_DROPCONFIRM_TOGGLE_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThat command is on cooldown!'
+         
+  COMMAND_DROPCONFIRM_TOGGLE_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to use this command!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou do not have permission to use this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to use this command!'
+         
+   ###############################
+         
+  USER_HELP_COMMAND:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fUser Menu:'
+      - ''
+      - ' &7&nToggles:&r'
+      - '  &a&l•&r &f/sellwands toggle dropconfirm &a→ &7Toggle drop confirmation!'
+      - '  &a&l•&r &f/sellwands toggle sellconfirm &a→ &7Toggle sell confirmation!'
+      - '  &a&l•&r &f/sellwands toggle holograms &a→ &7Toggle holograms!'
+      - ''
+      - ' &7&nSell Commands:&r'
+      - '  &e&l•&r &f/sell hand &e→ &7Sell item in your hand!'
+      - '  &e&l•&r &f/sell hand all &e→ &7Sell item in your hand & from your inventory!'
+      - '  &e&l•&r &f/sell inventory &e→ &7Sell all of your inventory!'
+      - ''
+      - '  &d&l•&r &7/sell help &e→ &7View this menu!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '&e&lMenu: &f/sell hand&e, &f/sell hand all&e, &f/sell inventory'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&f/sell hand&e, &f/sell hand all&e, &f/sell inventory'
+         
+   ###############################
+         
+  COMMAND_SELL_HAND_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to run this command!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to run this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission!'
+         
+  COMMAND_SELL_HAND_INVALID:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou must hold something in order to sell it!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou must hold something in order to sell it!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou must hold something to sell!'
+         
+  COMMAND_SELL_HAND_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou have sold the item in your hand!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eWorth: &f${0}'
+      - '  &6• &eItems: &fx{1} items'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &6Sold Hand: &eWorth » &6${0}&f, &eItems » &6x{1} items&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou made &6${0}&f!'
+         
+  COMMAND_SELL_HAND_NOITEMS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fThe item you are holding is not sellable!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fThe item you are holding is not sellable!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThat item is not sellable!'
+         
+  COMMAND_SELL_HAND_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPlease wait before doing that again!'
+         
+  COMMAND_SELL_HANDALL_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to run this command!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to run this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission!'
+         
+  COMMAND_SELL_HANDALL_INVALID:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou must hold something in order to sell it!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYou must hold something in order to sell it!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou must hold something to sell!'
+         
+  COMMAND_SELL_HANDALL_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou have sold the item from your hand & inventory!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eWorth: &f${0}'
+      - '  &6• &eItems: &fx{1} items'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &6Sold Hand & Inventory: &eWorth » &6${0}&f, &eItems
+        » &6x{1} items&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou made &6${0}&f!'
+         
+  COMMAND_SELL_HANDALL_NOITEMS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fThe item you are holding is not sellable!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fThe item you are holding is not sellable!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThat item is not sellable!'
+         
+  COMMAND_SELL_HANDALL_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPlease wait before doing that again!'
+         
+  COMMAND_SELL_INVENTORY_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to run this command!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to run this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission!'
+         
+  COMMAND_SELL_INVENTORY_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou have sold your inventory!'
+      - ''
+      - '  &eDetails:'
+      - '  &6• &eWorth: &f${0}'
+      - '  &6• &eItems: &fx{1} items'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &6Sold Inventory: &eWorth » &6${0}&f, &eItems » &6x{1}
+        items&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou made &6${0}&f!'
+         
+  COMMAND_SELL_INVENTORY_NOITEMS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYour inventory does not have any sellable items!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fYour inventory does not have any sellable items!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThat item is not sellable!'
+         
+  COMMAND_SELL_INVENTORY_COOLDOWN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &fPlease wait &e{0}s &fbefore doing this again!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fPlease wait before doing that again!'
+         
+   ###############################
+
+  PLAYER_COMMAND_TOKENS_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have permission to use this command!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have permission to use this command!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission to use this command!'
+         
+  PLAYER_COMMAND_TOKENS_MENU:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fWand Tokens:'
+      - ''
+      - '  &e&l•&r &7/wandtoken bal [player]'
+      - '  &e&l•&r &7/wandtoken send [player] [amount]'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &7/wandtoken bal [player]&f, &7/wandtoken send [player]
+        [amount]'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&7/wandtoken bal [player]&f, &7/wandtoken send [player] [amount]'
+         
+  PLAYER_COMMAND_TOKENS_BALANCE_NOARG:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou have &e{0} token(s)&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou have &e{0} token(s)&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou have &e{0} token(s)&f!'
+         
+  PLAYER_COMMAND_TOKENS_BALANCE_INVALIDPLAYER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not find player &e{0}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not find player &e{0}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not find player &e{0}&f!'
+         
+  PLAYER_COMMAND_TOKENS_BALANCE_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &e{0} &fhas &e{1} token(s)&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &e{0} &fhas &e{1} token(s)&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&e{0} &fhas &e{1} token(s)&f!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_NOTARGET:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou need to define a player to send tokens to!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou need to define a player to send tokens to!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou need to define a player to send tokens to!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_NOAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou need to define the amount of tokens to send!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou need to define the amount of tokens to send!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou need to define the amount of tokens to send!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_INVALIDPLAYER:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fCould not find player &e{0}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fCould not find player &e{0}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fCould not find player &e{0}&f!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_INVALIDAMOUNT:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fThe amount you defined is invalid &7(&f{0}&7)'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fThe amount you defined is invalid &7(&f{0}&7)'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fThe amount you defined is invalid &7(&f{0}&7)'
+         
+  PLAYER_COMMAND_TOKENS_SEND_NOTENOUGH:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou do not have &c{0} token(s)&f. You only have &e{1}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou do not have &c{0} token(s)&f. You only have &e{1}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have &c{0} token(s)&f. You only have &e{1}&f!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_SELFTARGET:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fYou cannot send tokens to yourself!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fYou cannot send tokens to yourself!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou cannot send tokens to yourself!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_SENDER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fSent &e{1} token(s) &fto &e{0}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fSent &e{1} token(s) &fto &e{0}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fSent &e{1} token(s) &fto &e{0}&f!'
+         
+  PLAYER_COMMAND_TOKENS_SEND_RECEIVER_SUCCESS:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fReceived &e{1} token(s) &ffrom &e{0}&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fReceived &e{1} token(s) &ffrom &e{0}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fReceived &e{1} token(s) &ffrom &e{0}&f!'
+   
+   ###############################   
+
+  HOOK_LUNARCLIENT_JOIN:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &a[▲] <GRADIENT:A19FDF>10% boost</GRADIENT:FFE176> &ffor using
+        the <GRADIENT:A19FDF>Lunar Client</GRADIENT:FFE176>&f!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &a[▲] <GRADIENT:A19FDF>10% boost</GRADIENT:FFE176> &ffor
+        using the <GRADIENT:A19FDF>Lunar Client</GRADIENT:FFE176>&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&a[▲] <GRADIENT:A19FDF>10% boost</GRADIENT:FFE176> &ffor using
+        the <GRADIENT:A19FDF>Lunar Client</GRADIENT:FFE176>&f!'
+   
+  HOOK_LOCKETTEPRO_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - ''
+      - ' {PREFIX} &f» &fThis container is locked!'
+      - ''
+    actionbar:
+      enabled: false
+      content: '{PREFIX} &f» &fThis container is locked!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou do not have permission!'
+         
+  HOOK_FACTIONS_STEALCHEST:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: false
+      centered: false
+      content:
+      - ''
+      - '{PREFIX} &f» &fYou stole a container!'
+      - ''
+      - '  &eContainer Details:'
+      - '  &6• &eWorth: &f{0} &c(-{4} penalty)'
+      - '  &6• &eItems: &fx{1} items'
+      - ''
+      - '  &a• &eUses left: &f{2}'
+      - ''
+    actionbar:
+      enabled: true
+      content: '{PREFIX} &f» &6Sold Container: &eWorth » &6{0} &c(-{4} penalty)&f,
+        &eItems » &6x{1} items&f, &eUses left » &6{2}&f!'
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou made &6{0}&f!'
+         
+  HOOK_IRIDIUMSKYBLOCK_NOPERMISSION:
+   # Placeholders: None
+   # Scope: User
+    chatMessage:
+      enabled: true
+      centered: false
+      content:
+      - <GRADIENT:09C6F9>&lIridiumSkyblock</GRADIENT:045DE9> &8» &7You cannot use
+        sellwands on this island.
+    actionbar:
+      enabled: false
+      content: <GRADIENT:09C6F9>&lIridiumSkyblock</GRADIENT:045DE9> &8» &7You cannot
+        use sellwands on this island.
+    titles:
+      enabled: false
+      titleContent: '{PREFIX}'
+      subtitleContent: '&fYou cannot use sellwands on this island.'

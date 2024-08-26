@@ -1,0 +1,150 @@
+menu_title: '&8Profile | Main Menu'
+open_command:
+  - profile
+register_command: true
+size: 45
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-44'
+    display_name: ' '
+  '1':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 9
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+  '2':
+    material: RED_STAINED_GLASS_PANE
+    slot: 18
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+  '3':
+    material: RED_STAINED_GLASS_PANE
+    slot: 27
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+#####################################################################################
+#####################################################################################
+  'personal':
+    material: head-%player_name%
+    slot: 10
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#5398ff&lP&#569cff&le&#599fff&lr&#5ca3ff&ls&#5fa6ff&lo&#62aaff&ln&#65adff&la&#69b1ff&ll &#6cb4ff&lP&#6fb8ff&lr&#72bbff&lo&#75bfff&lf&#78c2ff&li&#7bc6ff&ll&#7ec9ff&le'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour profile!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /profile'
+      - '&r'
+      - '&c&l➥ &c&lALREADY OPEN'
+  'currency':
+    material: EMERALD
+    slot: 19
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#45ff41&lC&#54ff48&lu&#64ff4f&lr&#73ff56&lr&#82ff5c&le&#91ff63&ln&#a1ff6a&lc&#b0ff71&ly'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour currencies!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /currency'
+      - '&r'
+      - '&e&l➥ &e&lCLICK TO CONTINUE'
+    left_click_commands:
+    - '[player] currency'
+    right_click_commands:
+    - '[player] currency'
+  'stats':
+    material: IRON_SWORD
+    slot: 28
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff2525&lS&#ff2929&lt&#ff2c2c&la&#ff3030&lt&#ff3434&li&#ff3737&ls&#ff3b3b&lt&#ff3f3f&li&#ff4242&lc&#ff4646&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour statistics!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /statistics'
+      - '&r'
+      - '&e&l➥ &e&lCLICK TO CONTINUE'
+    left_click_commands:
+    - '[player] statistics'
+    right_click_commands:
+    - '[player] statistics'
+#####################################################################################
+#####################################################################################
+#  'LootBox':
+#    material: ENDER_CHEST
+#    slot: 25
+#    priority: 1
+#    update: true
+#    hide_attributes:  true
+#    display_name: '&#ffd80e&lL&#ffda12&lo&#ffdc15&lo&#ffdf19&lt&#ffe11d&lb&#ffe320&lo&#ffe524&lx &#ffe828&lC&#ffea2b&lo&#ffec2f&lo&#ffee32&ll&#fff036&ld&#fff33a&lo&#fff53d&lw&#fff741&ln'
+#    lore:
+#      - '&8Description'
+#      - '&r'
+#      - '&8❖ &fLootbox Cooldown: &#FFDF34%lootbox_cooldown%'
+  'team':
+    material: red_dye
+    slot: 24
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#fb1d1d&lP&#fb2020&lr&#fc2424&le&#fc2727&ls&#fc2a2a&lt&#fc2d2d&li&#fd3131&lg&#fd3434&le'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fHeart Prestige: &#fb1d1d%math_0:_{lifesteal_heartoffset}/2%'
+  'tag':
+    material: name_tag
+    slot: 25
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#64acff&lC&#66b3ff&lu&#69b9ff&lr&#6bc0ff&lr&#6dc6ff&le&#70cdff&ln&#72d3ff&lt &#74daff&lT&#77e0ff&la&#79e7ff&lg'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fCurrent Tag: &#79E7FF%alonsotags_tag%'
+  'playtime':
+    material: CLOCK
+    slot: 22
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff62ef&lP&#fd65f0&ll&#fb69f2&la&#f96cf3&ly&#f770f4&lt&#f573f6&li&#f477f7&lm&#f27af8&le &#f07dfa&lL&#ee81fb&le&#ec84fc&lv&#ea88fe&le&#e88bff&ll'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fPlaytime Level: &#E371FF%rankup_current_rank%'
+      - '&8❖ &fPlaytime: &#E371FF%statistic_time_played%'
+  'rank':
+    material: BOOK
+    slot: 21
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff2222&lY&#ff2727&lo&#ff2d2d&lu&#ff3232&lr &#ff3838&lR&#ff3d3d&la&#ff4343&ln&#ff4848&lk'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fRank: &#FF4848%luckperms_prefix%'
+      #- '&8❖ &fDuration: &#FF4848%luckperms_expiry_time%'

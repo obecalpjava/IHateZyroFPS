@@ -1,0 +1,47 @@
+menu_title: '&8Details'
+open_command: details
+register_command: true
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: DIAMOND_SWORD
+    amount: 1
+    slots:
+    - '11'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#25cbff&lC&#2ccffe&lo&#33d3fd&lm&#3ad7fc&lb&#41dbfb&la&#48e0fa&lt &#4ee4f8&lT&#55e8f7&li&#5cecf6&lm&#63f0f5&le&#6af4f4&lr'
+    lore:
+    - '&8Details Info'
+    - ''
+    - '&#25cbff❖ &fCombat Cooldown: &#25cbff15 Seconds'
+  '2':
+    material: BARRIER
+    amount: 1
+    slots:
+    - '13'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#1dff18&lW&#22fe1f&lo&#27fd26&lr&#2cfc2e&ll&#31fb35&ld &#36fa3c&lB&#3bf843&lo&#40f74a&lr&#45f652&ld&#4af559&le&#4ff460&lr'
+    lore:
+    - '&8Details Info'
+    - ''
+    - '&#1dff18❖ &fBorder Size: &#1dff1850,000 x 50,000'
+  '3':
+    material: ENDER_PEARL
+    amount: 1
+    slots:
+    - '15'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#b66cff&lE&#b96ffe&ln&#bb71fe&ld&#be74fd&le&#c076fc&lr &#c379fc&lP&#c67cfb&le&#c87efa&la&#cb81fa&lr&#cd83f9&ll &#d086f9&lC&#d288f8&lo&#d58bf7&lo&#d88ef7&ll&#da90f6&ld&#dd93f5&lo&#df95f5&lw&#e298f4&ln'
+    lore:
+    - '&8Details Info'
+    - ''
+    - '&#b66cff❖ &fPearl Cooldown: &#b66cff5 Seconds'

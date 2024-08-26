@@ -1,0 +1,526 @@
+#########################################################################################
+#                                                                                       #
+# DeluxeSellwands, a premium resource by Norska @ https://norska.dev                    #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome/                                                #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the config.yml file of DeluxeSellwands.                               #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+##################################
+#                                #
+#          ITEM PRICES           #
+#                                #
+##################################
+
+# Note: Only one set to true at a time.
+priceHandlers:
+  deluxesellwands: false
+  shopguiplus: true
+  essentialsworth: false
+  cmi: false
+  onestopshop: false
+  guishop: false
+  zshop: false
+  economyshopgui: false
+  deluxebazaar: false
+  shops: false
+  autosell: false
+   
+priceHandlerSettings:
+   # Note: What to display in sell messages
+  currencyName: $
+   # Note: 1 -> Will display currencyName before currency (e.g $50). 2 -> Will display currencyName after currency (e.g 50$)
+  format: 1
+      
+# Note: Format -> '<MATERIAL>;<DATA>;<PRICE>.' CAN ONLY BE USED IF DELUXESELLWANDS IS THE PRICE HANDLER!
+prices:
+- DIAMOND;0;5.0
+- EMERALD;0;10.0
+
+# Note: CAN ONLY BE USED IF DELUXESELLWANDS IS THE PRICE HANDLER!
+# The system works by comparing materials and display names, those two must match 100%.
+# You can also define the world for which the custom item is sellable. You can also have
+# different prices per world for the same custom item.
+# Use "IGNORE" in name or worlds if you want to skip that specific check.
+customItemPrices:
+  example1:
+    material: DIAMOND;0
+    name: '&bShiny Diamond'
+    worth: 10.0
+    worlds:
+    - IGNORE
+  example2:
+    material: EMERALD;0
+    name: '&aShiny EMERALD'
+    worth: 20.0
+    worlds:
+    - IGNORE
+  example3:
+    material: EMERALD;0
+    name: IGNORE
+    worth: 20.0
+    worlds:
+    - world_nether
+
+##################################
+#                                #
+#           HOLOGRAMS            #
+#                                #
+##################################
+            
+holograms:
+  settings:
+      # Handlers: HolographicDisplays, CMI, DecentHolograms
+      # Note: CMI uses a different RGB format -> {#8b4726}
+    handler: HolographicDisplays
+  sale:
+    enabled: true
+    displayTime: 3
+    layouts:
+         # Placeholders: {0} = money, {1} = amount
+      success:
+      - '&a✔ <SOLID:77ff00>&nSALE'
+      - '&f→ <SOLID:9cff6b>Value: &f{0}'
+      - '&f→ <SOLID:ffb56b>Items: &fx{1}'
+      failure:
+      - '&4❌ <SOLID:fc0384>&nWARN'
+      - '&f(<SOLID:ff6984>&oNo valuables found!&f)'
+    offset:
+      X: 0.5
+      Y: 1
+      Z: 0.5
+  inspection:
+    enabled: true
+    displayTime: 3
+    layouts:
+         # Placeholders: {0} = money, {1} = amount
+      success:
+      - '&e⭐ <SOLID:fff873>&nINSPECTION'
+      - '&f→ <SOLID:9cff6b>Value: &f{0}'
+      - '&f→ <SOLID:ffb56b>Items: &fx{1}'
+      failure:
+      - '&4❌ <SOLID:fc0384>&nWARN'
+      - '&f(<SOLID:ff6984>&oNo valuables found!&f)'
+    offset:
+      X: 0.5
+      Y: 1
+      Z: 0.5
+  toggleCommand:
+    enabled: false
+      # Commands must be in CAPS and have a / in front of them
+    commands:
+    - /SELLWANDS TOGGLE HOLOGRAMS
+    - /SELLWAND TOGGLE HOLOGRAM
+    affects:
+      sale: true
+      inspection: true
+      errors: true
+         
+##################################
+#                                #
+#            PAYOUTS             #
+#                                #
+##################################
+
+# Note: Here you can toggle the payouts feature.
+payouts:
+  enabled: true
+  interval: 10
+
+##################################
+#                                #
+#      INSPECTION & EXTRAS       #
+#                                #
+##################################
+      
+# Note: Here you can toggle the inspection feature, look at other sections for deeper customization regarding this feature.
+inspect:
+  enabled: true
+    
+extra:
+  usableOnHoppers: true
+  usableOnShulkers: true
+  usableOnBarrels: true
+   # Note: Whether or not to skip items with display names (which might be special items, etc).
+  skipItemsWithDisplayName: true
+   # Note: Whether or not to sell items inside shulkers which are inside another container.
+  sellShulkerContent: true
+
+##################################
+#                                #
+#    VALUE DISPLAY SETTINGS      #
+#                                #
+################################## 
+
+# Note: Here you can configure how the infinite placeholder & numbers show in messages/lores.
+other:
+  infiniteDisplay: ∞
+   # Note: Format can be 1 or 2. 1 = Display 10000 as 10,000. 250000 as 250,000 etc. // 2 = Display 10000 as 10k. 1000000 as 1M etc.
+  numberFormat: 1
+
+##################################
+#                                #
+#          STATISTICS            #
+#                                #
+##################################
+   
+# Note: Here you can configure the statistics tracking feature for sellwands.
+statistics:
+  trackMoneyMade: true
+  trackItemsSold: true
+
+##################################
+#                                #
+#           COOLDOWNS            #
+#                                #
+##################################
+
+# Note: The interval must be a positive integer (e.g 10) and is counted in seconds.
+# Note: You can find bypass permissions on the wiki.
+cooldowns:
+  usageCooldown:
+    enabled: false
+    cooldown: 3
+  inspectCooldown:
+    enabled: false
+    cooldown: 3
+  toggleHolograms:
+    enabled: true
+    cooldown: 15
+  toggleConfirmDrop:
+    enabled: true
+    cooldown: 15
+  toggleConfirmSell:
+    enabled: true
+    cooldown: 15
+  sellHand:
+    enabled: false
+    cooldown: 10
+  sellHandAll:
+    enabled: false
+    cooldown: 30
+  sellInventory:
+    enabled: false
+    cooldown: 60
+      
+##################################
+#                                #
+#    DROP & SELL CONFIRMATION    #
+#                                #
+##################################      
+
+# READ ME: Find configurable messages in messages.yml
+# READ ME: You can configure cooldowns in the above section
+   
+# Note: Toggle whether or not players have to confirm (double-drop) sellwands in order to actually drop them.
+# Note: The interval must be a positive integer (e.g 10) and is counted in seconds.   
+confirmDrop:
+  enabled: true
+  interval: 10
+  toggleCommand:
+    enabled: true
+      # Commands must be in CAPS and have a / in front of them
+    commands:
+    - /SELLWANDS TOGGLE DROPCONFIRM
+    - /SELLWAND TOGGLE DROPCONFIRM
+
+# Note: Toggle whether or not players have to double-right-click a container in order to sell it.
+confirmSell:
+  enabled: false
+  toggleCommand:
+    enabled: false
+      # Commands must be in CAPS and have a / in front of them
+    commands:
+    - /SELLWANDS TOGGLE SELLCONFIRM
+    - /SELLWAND TOGGLE SELLCONFIRM
+   
+##################################
+#                                #
+#             TAXES              #
+#                                #
+################################## 
+   
+# Note: decideFor can be MAX or MIN. This option is here in order for tax to work well with group/perm inheritance.
+# - MAX = Grab the highest tax (works for when higher ranks [ranks that inherit lower ranks perms] have a higher tax rate).
+# - MIN = Grab the lowest tax (works for when higher ranks [ranks that inherit lower ranks perms] have a lower tax rate).
+# Note: To apply taxes just add "dsw.tax.<integer value>", for example a user with "dsw.tax.10" will have a 10% tax rate on every sale.
+tax:
+  decideFor: MIN
+
+##################################
+#                                #
+#     SELLWAND OWNER BINDING     #
+#                                #
+##################################
+
+sellwandBinding:
+  settings:
+      # Note: Whether or not to bind sellwands to their owners (player that uses the wand for the first time).
+    enabled: false
+    disableUsageEntirely:
+         # Note: Whether or not to disable usage of the sellwand entirely if it is not owned by the player trying to use it.
+      enabled: false
+    taxes:
+         # Note: Whether or not to tax the player that uses another player's sellwand, for this feature to work disableUsageEntirely needs to be set to false.
+      enabled: false
+         # Note: This tax gets applied last (after other boosts, taxes, etc.). Accepted values -> Integer.
+      percentage: 25
+    placeholders:
+         # Note: What the {4} placeholder (ITEM section) will show when the sellwand is not bound yet.
+      notBound: Not bound to a player
+      
+
+##################################
+#                                #
+#       USER HELP COMMAND        # 
+#                                #
+##################################
+      
+# Note: helpCommand will display a help message/menu which you can configure in DeluxeSellwands' messages.yml file.
+helpCommand:
+  enabled: true
+   # Commands must be in CAPS and have a / in front of them
+   # These commands will override commands from other plugins, it is best to disable the other plugin's commands if you use DeluxeSellwands'.
+  commands:
+  - /SELLWANDS
+  - /SELLWANDS HELP
+  - /SELLWANDS ?
+   
+##################################
+#                                #
+#         SELL COMMANDS          #
+#                                #
+##################################
+
+# Note: Here you can configure the sell commands feature.
+# Note: You can find permissions for each commands in the documentation.
+sellCommands:
+   # Note: sellHand will attempt to sell the item you are currently holding.
+  sellHand:
+    enabled: false
+      # Commands must be in CAPS and have a / in front of them
+      # These commands will override commands from other plugins, it is best to disable the other plugin's commands if you use DeluxeSellwands'.
+    commands:
+    - /SELL HAND
+   # Note: sellHandAll will attempt to sell the item you are currently holding, and the rest of the same item you may have in your inventory.
+  sellHandAll:
+    enabled: false
+      # Commands must be in CAPS and have a / in front of them
+      # These commands will override commands from other plugins, it is best to disable the other plugin's commands if you use DeluxeSellwands'.
+    commands:
+    - /SELL HAND ALL
+    - /SELL HANDALL
+   # Note: sellInventory will attempt to sell all of the items in your inventory.
+  sellInventory:
+    enabled: false
+      # Commands must be in CAPS and have a / in front of them
+      # These commands will override commands from other plugins, it is best to disable the other plugin's commands if you use DeluxeSellwands'.
+    commands:
+    - /SELL ALL
+    - /SELL INV
+    - /SELL INVENTORY
+
+##################################
+#                                #
+#            CHARGERS            #
+#                                #
+##################################
+
+# You can configure charger items in items.yml.          
+chargers:
+  enabled: false
+  settings:
+      # Note: This will make sellwands unusable if their uses are at 0 instead of breaking them. This will not work if chargers are disabled.
+    preventSellwandBreak: true
+      # Note: Prevent using chargers on various occassions.
+    preventIf:
+         # Note: Prevent using chargers on sellwands with a multiplier above the one define here.
+      multipliers:
+        enabled: false
+        isAbove: 5.0
+         # Note: Prevent using chargers on specific type sellwands.
+      type:
+        enabled: false
+            # Note: When adding to the list, use UPPERCASE.
+        blocked:
+        - SELL_GAUNTLET
+  gui:
+      # Placeholders: {0} = charger uses
+    title: '&0Charge sellwand... (&a&l+{0} uses&0) &a&o⚡'
+      
+##################################
+#                                #
+#           DISCHARGERS          #
+#                                #
+##################################
+
+# You can configure discharger items in items.yml.          
+dischargers:
+  enabled: true
+  settings:
+      # Note: Prevent using dischargers on various occassions.
+    preventIf:
+         # Note: Prevent using dischargers on sellwands with a multiplier above the one define here.
+      multipliers:
+        enabled: false
+        isAbove: 5.0
+         # Note: Prevent using dischargers on specific type sellwands.
+      type:
+        enabled: false
+            # Note: When adding to the list, use UPPERCASE.
+        blocked:
+        - SELL_GAUNTLET
+  gui:
+      # Placeholders: {0} = charger uses
+    title: '&0Discharge sellwand... &c&o⚡'
+      
+##################################
+#                                #
+#            LOGGER              #
+#                                #
+##################################
+
+# Note: Whether or not to log sellwand events.
+logger:
+  enabled: true
+  formats:
+      # Note: Name of the files that generate in DeluxeSellwands/logs.
+    file: dd.MM.yyyy
+      # Note: Start of the log entry inside each log file.
+    entry: dd.MM.yyyy @ HH:mm:ss
+  types:
+      # Note: Log sale events
+    sale: true
+      # Note: Log inspection events
+    inspect: false
+      # Note: Log drop confirmation events
+    drops: false
+      # Note: Log charger events
+    chargers: true
+      # Note: Log discharger events
+    dischargers: true
+      # Note: Log give commands
+    give: true
+      # Note: Log admin token add commands
+    tokenAdd: true
+      # Note: Log admin token take commands
+    tokenTake: true
+      # Note: Log admin token set commands
+    tokenSet: true
+      # Note: Log player enchanting events
+    enchantments: true
+
+##################################
+#                                #
+#             HOOKS              #
+#                                #
+##################################
+   
+hooks:
+   
+   # Note: Find customizable sounds/messages for LockettePro in DeluxeSellwands' messages.yml and sounds.yml file!   
+  lockettepro:
+    enabled: true
+      
+  coreprotect:
+    enabled: true
+      
+  lwc:
+    enabled: true
+         
+  elitemasks:
+    enabled: true
+      
+  superboosters:
+    enabled: true
+      
+  worldguard:
+    enabled: true
+      
+  advancedchests:
+    enabled: true
+      
+  wildchests:
+    enabled: true
+      
+  towny:
+    enabled: true
+      
+  superiorskyblock2:
+    enabled: true
+      
+  bentobox:
+    enabled: true
+      
+  superhoppers:
+    enabled: true
+      
+  griefprevention:
+    enabled: true
+      
+  griefdefender:
+    enabled: true
+      
+  lands:
+    enabled: true
+      
+  voidchest:
+    enabled: true
+      
+  chestshop:
+    enabled: true
+      
+  lunarclient:
+    enabled: true
+      # Note: Warning! Client detection can be spoofed!
+    boost:
+         # Note: Whether or not to add an extra multiplier for players that use the Lunar Client.
+         # Note: Find configurable alert message in messages.yml (HOOK_LUNARCLIENT_JOIN).
+      enabled: true
+      multiplier: 1.1
+      
+   # Note: Find customizable sounds/messages for HuskTowns in DeluxeSellwands' messages.yml and sounds.yml file!   
+  husktowns:
+    enabled: true
+ 
+   # Note: The penalty system gives less money (percentage) to users that use the sellwand to steal from enemy factions.
+   # Note: The penalty must be a positive integer (e.g 25).
+   # Note: Find customizable sounds/messages for Factions in DeluxeSellwands' messages.yml and sounds.yml file!   
+  factions:
+    enabled: true
+    allowUsageInEnemyLand:
+      enabled: true
+      penalty:
+        enabled: true
+        percentage: 25
+            
+   # Note: Here you can configure the permission item that shows up in "/is permissions", to toggle usage of sellwands for specific ranks on your island. IridiumSkyblock v3+ ONLY!
+   # Note: Use the placeholder %permission% in the lore!
+   # Note: Find customizable sounds/messages for IridiumSkyblock in DeluxeSellwands' messages.yml and sounds.yml file!
+  iridiumskyblock:
+    enabled: true
+    permission:
+      material: STICK
+      amount: 1
+      slot: 1
+      name: '&eUse sellwands'
+      lore:
+      - '&7Grant the ability to use sellwands on your Island.'
+      - ''
+      - '&e&lPermission'
+      - '%permission%'
+         
+updates:
+  notifications: true

@@ -1,0 +1,530 @@
+menu_title: '&8Levels | Playtime [2/4]'
+open_command:
+- levels2
+size: 54
+items:
+  '1':
+    material: GRAY_STAINED_GLASS_PANE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    name: '&0'
+    slots:
+    - '0-53'
+#################################################################
+  'level16':
+    material: MAGENTA_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 11
+    display_name: '&d&lLevel 16'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f160 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$10,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f2x Epic Crate Keys'
+      - '&8❖ &f2x Prime Crate Keys'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level17':
+    material: LIGHT_BLUE_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 12
+    display_name: '&b&lLevel 17'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f172 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$15,000'
+      - '&8❖ &f30 Coins'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level18':
+    material: LIME_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 13
+    display_name: '&a&lLevel 18'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f180 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$20,000'
+      - '&8❖ &f30 Coins'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level19':
+    material: YELLOW_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 14
+    display_name: '&e&lLevel 19'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f195 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$25,000'
+      - '&8❖ &f30 Coins'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level20':
+    material: RED_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 15
+    display_name: '&c&lLevel 20'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f200 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f2 Additional Hearts'
+      - '&8❖ &f$28,500'
+      - '&8❖ &f150 Coins'
+      - '&8❖ &f1x Rival Crate Keys'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level21':
+    material: MAGENTA_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 20
+    display_name: '&d&lLevel 21'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f210 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$30,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f55 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level22':
+    material: LIGHT_BLUE_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 21
+    display_name: '&b&lLevel 22'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f220 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$32,500'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f60 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level23':
+    material: LIME_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 22
+    display_name: '&a&lLevel 23'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f225 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$33,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f65 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level24':
+    material: YELLOW_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 23
+    display_name: '&e&lLevel 24'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f230 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f2 Additional Hearts'
+      - '&8❖ &f$35,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f70 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level25':
+    material: RED_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 24
+    display_name: '&c&lLevel 25'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f235 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$37,500'
+      - '&8❖ &f100 Coins'
+      - '&8❖ &f75 EXP Levels'
+      - '&8❖ &f2x Rival Crate Keys'
+      - '&8❖ &f1x Epic Crate Keys'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level26':
+    material: MAGENTA_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 29
+    display_name: '&d&lLevel 26'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f240 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$40,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f80 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level27':
+    material: LIGHT_BLUE_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 30
+    display_name: '&b&lLevel 27'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f250 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f2 Additional Hearts'
+      - '&8❖ &f$42,500'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f85 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level28':
+    material: LIME_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 31
+    display_name: '&a&lLevel 28'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f265 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$45,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f90 EXP Levels'
+      - '&8❖ &f2x Prime Crate Keys'
+      - '&8❖ &f2x Epic Crate Keys'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level29':
+    material: YELLOW_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 32
+    display_name: '&e&lLevel 29'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f275 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Additional Hearts'
+      - '&8❖ &f$50,000'
+      - '&8❖ &f30 Coins'
+      - '&8❖ &f95 EXP Levels'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  'level30':
+    material: RED_CANDLE
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 33
+    display_name: '&c&lLevel 30'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&#FB0026Requirements:'
+      - '&8❖ &f300 Hours of Playtime'
+      - ''
+      - '&#3BE408Rewards:'
+      - '&8❖ &f1 Armory Loot Box'
+      - '&8❖ &f$100,000'
+      - '&8❖ &f150 Coins'
+      - '&8❖ &f100 EXP Levels'
+      - '&8❖ &f2x Rival Crate Keys'
+      - ''
+      - '&e➥ &lCLICK TO RANKUP'
+    left_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+    right_click_commands:
+    - '[player] rankup:rankup'
+    - '[sound] ENTITY_EXPERIENCE_ORB_PICKUP'
+    - '[close]'
+#################################################################
+  '30':
+    material: painting
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 39
+    display_name: '&#FB0026&lYour Statistics'
+    lore:
+      - '&8Personal Statistics'
+      - ''
+      - '&fStatistics:'
+      - '&8❖ &fPlaytime: &#18B549%statistic_hours_played% Hours'
+      - '&8❖ &fVotes: &#18B549%provotes_player_total_votes%'
+      - '&8❖ &fLevel: &#18B549%rankup_current_rank%'
+  '31':
+    material: lime_shulker_box
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 42
+    display_name: '&aNext Page &7[→]'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&fHead to the next page to'
+      - '&fobtain more rewards!'
+      - ''
+      - '&e➥ &lCONTINUE'
+    left_click_commands:
+    - '[player] levels3'
+    right_click_commands:
+    - '[player] levels3'
+  '31-2':
+    material: red_shulker_box
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 41
+    display_name: '&7[←] &cPrevious Page'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&fHead to the previous page to'
+      - '&fobtain more rewards!'
+      - ''
+      - '&e➥ &lCONTINUE'
+    left_click_commands:
+    - '[player] levels'
+    right_click_commands:
+    - '[player] levels'
+  '32':
+    material: enchanting_table
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    slot: 38
+    display_name: '&#FB0026&lHelpful Information'
+    lore:
+      - '&8Rankup Information'
+      - ''
+      - '&fPlaytime levels are achieveable tiers where'
+      - '&fyou can get rewards by just playing! (or afking)'
+      - '&fThe more you play and vote for us, the'
+      - '&fmore in-game rewards you will receive!'
+      - ''
+      - '&#FF3376&lDon''t want to level?'
+      - '&fPurchase coins on our store'
+      - '&fto buy crate keys on your own!'
+      - ''
+      - '&e➥ &lCLICK FOR STORE'
+    left_click_commands:
+    - '[player] store'
+    - '[player] buy'
+    - '[close]'
+    right_click_commands:
+    - '[player] store'
+    - '[player] buy'
+    - '[close]'

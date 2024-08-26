@@ -1,0 +1,159 @@
+menu_title: '&8Profile | Statistics'
+open_command:
+  - statistics
+register_command: true
+size: 45
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-44'
+    display_name: ' '
+  '1':
+    material: RED_STAINED_GLASS_PANE
+    slot: 9
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+  '2':
+    material: RED_STAINED_GLASS_PANE
+    slot: 18
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+  '3':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 27
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+#####################################################################################
+#####################################################################################
+  'personal':
+    material: head-%player_name%
+    slot: 10
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#5398ff&lP&#569cff&le&#599fff&lr&#5ca3ff&ls&#5fa6ff&lo&#62aaff&ln&#65adff&la&#69b1ff&ll &#6cb4ff&lP&#6fb8ff&lr&#72bbff&lo&#75bfff&lf&#78c2ff&li&#7bc6ff&ll&#7ec9ff&le'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour profile!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /profile'
+      - '&r'
+      - '&e&l➥ &e&lCLICK TO CONTINUE'
+    left_click_commands:
+    - '[player] profile'
+    right_click_commands:
+    - '[player] profile'
+  'currency':
+    material: EMERALD
+    slot: 19
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#45ff41&lC&#54ff48&lu&#64ff4f&lr&#73ff56&lr&#82ff5c&le&#91ff63&ln&#a1ff6a&lc&#b0ff71&ly'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour currencies!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /currency'
+      - '&r'
+      - '&e&l➥ &e&lCLICK TO CONTINUE'
+    left_click_commands:
+    - '[player] currency'
+    right_click_commands:
+    - '[player] currency'
+  'stats':
+    material: IRON_SWORD
+    slot: 28
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff2525&lS&#ff2929&lt&#ff2c2c&la&#ff3030&lt&#ff3434&li&#ff3737&ls&#ff3b3b&lt&#ff3f3f&li&#ff4242&lc&#ff4646&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour statistics!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /statistics'
+      - '&r'
+      - '&c&l➥ &c&lALREADY OPEN'
+#####################################################################################
+#####################################################################################
+  'votes':
+    material: LIME_CANDLE
+    slot: 21
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#5ad32f&lY&#5cd930&lo&#5fde32&lu&#61e433&lr &#64e934&lV&#66ef35&lo&#68f437&lt&#6bfa38&le&#6dff39&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fVotes: &#6DFF39%provotes_player_total_votes%'
+  'gems':
+    material: sunflower
+    slot: 22
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#fbc918&lY&#fbcd1f&lo&#fbd026&lu&#fbd42d&lr &#fbd735&lC&#fbdb3c&lo&#fbde43&li&#fbe24a&ln&#fbe551&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fCoins: &#fbe551%playerpoints_points%'
+  'balance':
+    material: paper
+    slot: 23
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#28b71c&lY&#2ebe1e&lo&#33c521&lu&#39cc23&lr &#3fd325&lM&#44da27&lo&#4ae12a&ln&#4fe82c&le&#55ef2e&ly'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fBalance: &#78D04E$%vault_eco_balance_formatted%'
+  'kills':
+    material: DIAMOND_SWORD
+    slot: 24
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#f42121&lY&#f42525&lo&#f42828&lu&#f42c2c&lr &#f43030&lK&#f43333&li&#f43737&ll&#f43a3a&ll&#f43e3e&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fPlayer Kills: &#F43E3E%statistic_player_kills%'
+  'deaths':
+    material: WITHER_SKELETON_SKULL
+    slot: 25
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#b44df4&lY&#b253f4&lo&#b158f4&lu&#af5ef4&lr &#ad64f4&lD&#ac69f4&le&#aa6ff4&la&#a875f4&lt&#a77af4&lh&#a580f4&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fDeaths: &#A06CF4%statistic_deaths%'
+  'playtime':
+    material: CLOCK
+    slot: 32
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#3c90f4&lY&#3e95f4&lo&#3f99f4&lu&#419ef4&lr &#42a2f4&lP&#44a7f4&ll&#45abf4&la&#47b0f4&ly&#48b4f4&lt&#4ab9f4&li&#4bbdf4&lm&#4dc2f4&le'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fPlaytime: &#4DC2F4%statistic_time_played%'

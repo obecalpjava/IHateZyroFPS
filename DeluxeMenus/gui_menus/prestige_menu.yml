@@ -1,0 +1,70 @@
+# ==============================================================
+# A NOTE WHEN EDITING THIS OR ANY DeluxeMenus CONFIGURATION FILE:
+# This config is sensitive to yaml formatting errors
+# KEEP A BACKUP WHEN EDITING YOUR FILE BEFORE UPLOADING TO YOUR SERVER!!!
+# Make sure every String you modify or add is enclosed in 'apostrophes'
+# ==============================================================
+menu_title: '&8Heart Prestige'
+open_command:
+- prestige
+size: 27
+open_commands:
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: red_dye
+    data: 0
+    amount: 1
+    slot: 11
+    priority: 1
+    display_name: '&#fb1d1d&lP&#fb2020&lr&#fc2424&le&#fc2727&ls&#fc2a2a&lt&#fc2d2d&li&#fd3131&lg&#fd3434&le'
+    lore:
+    - '&8Prestige Details'
+    - ''
+    - '&8❖ &7Trade In: &#f44336-20❤ Hearts'
+    - '&8❖ &7Receive: &r &#4BFB24+1❤ Heart Slot'
+    - ''
+    - '&e➥ &lCLICK TO UPGRADE'
+    click_requirement:
+      requirements:
+        hasHearts:
+          deny_commands:
+          - "[message] &#fb1d1d&lP&#fb2020&lr&#fc2424&le&#fc2727&ls&#fc2a2a&lt&#fc2d2d&li&#fd3131&lg&#fd3434&le &8➟ &7You need to have atleast &c20❤ &7that you can give."
+          type: ">="
+          input: "%lifesteal_hearts%"
+          output: "42" #need atleast 21 hearts
+        isntMaxOffset:
+          deny_commands:
+          - "[message] &#fb1d1d&lP&#fb2020&lr&#fc2424&le&#fc2727&ls&#fc2a2a&lt&#fc2d2d&li&#fd3131&lg&#fd3434&le &8➟ You can only prestige &f10 times&7."
+          type: "<"
+          input: "%lifesteal_heartoffset%"
+          output: "20" #10 hearts max
+
+    click_commands:
+    - '[console] hearts removehearts %player_name% 20'
+    - '[console] hearts addoffsetheart %player_name% 1'
+    - '[close]'
+  '2':
+    material: BOOK
+    data: 0
+    amount: 1
+    slot: 15
+    priority: 1
+    display_name: '&#4de5fd&lI&#4ee3fd&ln&#4fe1fd&lf&#50dffd&lo&#51ddfd&lr&#52dcfd&lm&#53dafd&la&#54d8fd&lt&#55d6fd&li&#56d4fd&lo&#57d2fd&ln'
+    lore:
+    - '&8Prestige Details'
+    - ''
+    - '&7The regular amount of hearts a player can'
+    - '&7obtain is &#f4433630❤ Hearts&7. However, if you trade'
+    - '&7in &#f44336-20❤ Hearts&7 you''ll receive a bonus of &#f44336+1 Heart Slot'
+    - '&7permanently. This is maxed out at &#f4433640❤ Hearts&7 total.'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+    

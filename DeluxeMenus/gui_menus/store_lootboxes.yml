@@ -1,0 +1,242 @@
+menu_title: '&8Buy | Lootboxes'
+open_command:
+- lootboxstore
+- buy-lootboxes
+register_commands: true
+size: 54
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-53'
+    display_name: ' '
+  '1':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#18a9fb&lA&#1baefb&lr&#1eb3fb&lm&#22b8fc&lo&#25bdfc&lr&#28c2fc&ly &#2bc8fc&lL&#2ecdfc&lo&#31d2fc&lo&#35d7fd&lt&#38dcfd&lb&#3be1fd&lo&#3ee6fd&lx &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#18a9fb&l❖ &7Price: &#18a9fb$9.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#18a9fb&lBuy A Lootbox!'
+    - '[message] &#18a9fb&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: ENDER_CHEST
+    amount: 3
+    slots:
+    - '21'
+    display_name: '&#18a9fb&lA&#1baefb&lr&#1eb3fb&lm&#22b8fc&lo&#25bdfc&lr&#28c2fc&ly &#2bc8fc&lL&#2ecdfc&lo&#31d2fc&lo&#35d7fd&lt&#38dcfd&lb&#3be1fd&lo&#3ee6fd&lx &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#18a9fb&l❖ &7Price: &#18a9fb$29.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#18a9fb&lBuy A Lootbox!'
+    - '[message] &#18a9fb&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: ENDER_CHEST
+    amount: 5
+    slots:
+    - '30'
+    display_name: '&#18a9fb&lA&#1baefb&lr&#1eb3fb&lm&#22b8fc&lo&#25bdfc&lr&#28c2fc&ly &#2bc8fc&lL&#2ecdfc&lo&#31d2fc&lo&#35d7fd&lt&#38dcfd&lb&#3be1fd&lo&#3ee6fd&lx &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#18a9fb&l❖ &7Price: &#18a9fb$49.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#18a9fb&lBuy A Lootbox!'
+    - '[message] &#18a9fb&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: ENDER_CHEST
+    amount: 10
+    slots:
+    - '39'
+    display_name: '&#18a9fb&lA&#1baefb&lr&#1eb3fb&lm&#22b8fc&lo&#25bdfc&lr&#28c2fc&ly &#2bc8fc&lL&#2ecdfc&lo&#31d2fc&lo&#35d7fd&lt&#38dcfd&lb&#3be1fd&lo&#3ee6fd&lx &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#18a9fb&l❖ &7Price: &#18a9fb$99.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#18a9fb&lBuy A Lootbox!'
+    - '[message] &#18a9fb&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+###############################################################################
+  '5':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '13'
+    display_name: '&#d30101&lM&#d60404&lo&#d90808&ln&#dd0b0b&lt&#e00e0e&lh&#e31212&ll&#e61515&ly &#ea1818&lL&#ed1b1b&lo&#f01f1f&lo&#f32222&lt&#f72525&lb&#fa2929&lo&#fd2c2c&lx &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#d30101&l❖ &7Price: &#d30101$24.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#d30101&lBuy A Lootbox!'
+    - '[message] &#d30101&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '6':
+    material: ENDER_CHEST
+    amount: 3
+    slots:
+    - '22'
+    display_name: '&#d30101&lM&#d60404&lo&#d90808&ln&#dd0b0b&lt&#e00e0e&lh&#e31212&ll&#e61515&ly &#ea1818&lL&#ed1b1b&lo&#f01f1f&lo&#f32222&lt&#f72525&lb&#fa2929&lo&#fd2c2c&lx &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#d30101&l❖ &7Price: &#d30101$74.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#d30101&lBuy A Lootbox!'
+    - '[message] &#d30101&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '7':
+    material: ENDER_CHEST
+    amount: 5
+    slots:
+    - '31'
+    display_name: '&#d30101&lM&#d60404&lo&#d90808&ln&#dd0b0b&lt&#e00e0e&lh&#e31212&ll&#e61515&ly &#ea1818&lL&#ed1b1b&lo&#f01f1f&lo&#f32222&lt&#f72525&lb&#fa2929&lo&#fd2c2c&lx &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#d30101&l❖ &7Price: &#d30101$124.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#d30101&lBuy A Lootbox!'
+    - '[message] &#d30101&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '8':
+    material: ENDER_CHEST
+    amount: 10
+    slots:
+    - '40'
+    display_name: '&#d30101&lM&#d60404&lo&#d90808&ln&#dd0b0b&lt&#e00e0e&lh&#e31212&ll&#e61515&ly &#ea1818&lL&#ed1b1b&lo&#f01f1f&lo&#f32222&lt&#f72525&lb&#fa2929&lo&#fd2c2c&lx &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#d30101&l❖ &7Price: &#d30101$249.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#d30101&lBuy A Lootbox!'
+    - '[message] &#d30101&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+###############################################################################
+  '9':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#922ae4&lG&#9a2ce6&lr&#a22fe8&li&#aa31ea&ln&#b234ec&ld&#ba36ee&le&#c239f0&lr &#c93bf1&lL&#d13ef3&lo&#d940f5&lo&#e143f7&lt&#e945f9&lb&#f148fb&lo&#f94afd&lx &8[&7x1&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#922ae4&l❖ &7Price: &#922ae4$9.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#922ae4&lBuy A Lootbox!'
+    - '[message] &#922ae4&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '10':
+    material: ENDER_CHEST
+    amount: 3
+    slots:
+    - '23'
+    display_name: '&#922ae4&lG&#9a2ce6&lr&#a22fe8&li&#aa31ea&ln&#b234ec&ld&#ba36ee&le&#c239f0&lr &#c93bf1&lL&#d13ef3&lo&#d940f5&lo&#e143f7&lt&#e945f9&lb&#f148fb&lo&#f94afd&lx &8[&7x3&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#922ae4&l❖ &7Price: &#922ae4$29.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#922ae4&lBuy A Lootbox!'
+    - '[message] &#922ae4&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '11':
+    material: ENDER_CHEST
+    amount: 5
+    slots:
+    - '32'
+    display_name: '&#922ae4&lG&#9a2ce6&lr&#a22fe8&li&#aa31ea&ln&#b234ec&ld&#ba36ee&le&#c239f0&lr &#c93bf1&lL&#d13ef3&lo&#d940f5&lo&#e143f7&lt&#e945f9&lb&#f148fb&lo&#f94afd&lx &8[&7x5&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#922ae4&l❖ &7Price: &#922ae4$49.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#922ae4&lBuy A Lootbox!'
+    - '[message] &#922ae4&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  '12':
+    material: ENDER_CHEST
+    amount: 10
+    slots:
+    - '41'
+    display_name: '&#922ae4&lG&#9a2ce6&lr&#a22fe8&li&#aa31ea&ln&#b234ec&ld&#ba36ee&le&#c239f0&lr &#c93bf1&lL&#d13ef3&lo&#d940f5&lo&#e143f7&lt&#e945f9&lb&#f148fb&lo&#f94afd&lx &8[&7x10&8]'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#922ae4&l❖ &7Price: &#922ae4$99.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#922ae4&lBuy A Lootbox!'
+    - '[message] &#922ae4&l❖ &e&nhttps://store.minerival.org/category/lootboxes-1'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] buy_menu'
+    right_click_commands:
+    - '[openguimenu] buy_menu'

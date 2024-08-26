@@ -1,0 +1,71 @@
+menu_title: '&8MineRival ➟ Punishments'
+open_command: buy-punishments
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: BARRIER
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#E11E22&lUnban'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#E11E22&l❖ &7Price: &#E11E22$17.99 USD'
+    - '&8&o➟ &#E11E22&l10% OFF &#CECECEsale!'
+    - ''
+    - '&e➥ Click to view in store'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#33A0E7&lView our punishment removals:'
+    - '[message] &e➟ https://store.minerival.org/category/coins-1'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#FF0023&lView our punishment removals:'
+    - '[message] &e➟ https://store.minerival.org/category/coins-1'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: WRITABLE_BOOK
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#33A0E7&lUnmute'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#33A0E7&l❖ &7Price: &#33A0E7$8.99 USD'
+    - '&8&o➟ &#33A0E7&l10% OFF &#CECECEsale!'
+    - ''
+    - '&e➥ Click to view in store'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#33A0E7&lView our punishment removals:'
+    - '[message] &e➟ https://store.minerival.org/category/coins-1'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#FF0023&lView our punishment removals:'
+    - '[message] &e➟ https://store.minerival.org/category/coins-1'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] buy_menu'
+    right_click_commands:
+    - '[openguimenu] buy_menu'

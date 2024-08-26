@@ -1,0 +1,126 @@
+menu_title: '&8Profile | Currency'
+open_command:
+  - currency
+register_command: true
+size: 45
+items:
+  'filler':
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-44'
+    display_name: ' '
+  '1':
+    material: RED_STAINED_GLASS_PANE
+    slot: 9
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+  '2':
+    material: LIME_STAINED_GLASS_PANE
+    slot: 18
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+  '3':
+    material: RED_STAINED_GLASS_PANE
+    slot: 27
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&r'
+#####################################################################################
+#####################################################################################
+  'personal':
+    material: head-%player_name%
+    slot: 10
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#5398ff&lP&#569cff&le&#599fff&lr&#5ca3ff&ls&#5fa6ff&lo&#62aaff&ln&#65adff&la&#69b1ff&ll &#6cb4ff&lP&#6fb8ff&lr&#72bbff&lo&#75bfff&lf&#78c2ff&li&#7bc6ff&ll&#7ec9ff&le'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour profile!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /profile'
+      - '&r'
+      - '&e&l➥ &e&lCLICK TO CONTINUE'
+    left_click_commands:
+    - '[player] profile'
+    right_click_commands:
+    - '[player] profile'
+  'currency':
+    material: EMERALD
+    slot: 19
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#45ff41&lC&#54ff48&lu&#64ff4f&lr&#73ff56&lr&#82ff5c&le&#91ff63&ln&#a1ff6a&lc&#b0ff71&ly'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour currencies!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /currency'
+      - '&r'
+      - '&c&l➥ &c&lALREADY OPEN'
+  'stats':
+    material: IRON_SWORD
+    slot: 28
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#ff2525&lS&#ff2929&lt&#ff2c2c&la&#ff3030&lt&#ff3434&li&#ff3737&ls&#ff3b3b&lt&#ff3f3f&li&#ff4242&lc&#ff4646&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&fThis menu displays'
+      - '&fyour statistics!'
+      - '&r'
+      - '&7&l┃ &7&oQuick Access /statistics'
+      - '&r'
+      - '&e&l➥ &e&lCLICK TO CONTINUE'
+    left_click_commands:
+    - '[player] statistics'
+    right_click_commands:
+    - '[player] statistics'
+#####################################################################################
+#####################################################################################
+  'balance':
+    material: paper
+    slot: 22
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#47d824&lM&#4ae226&lo&#4eec27&ln&#51f529&le&#54ff2a&ly'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fBalance: &#42C821$&#54FF2A%vault_eco_balance_formatted%'
+  'gems':
+    material: sunflower
+    slot: 23
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#fbce2e&lC&#fbd437&lo&#fbda40&li&#fbdf48&ln&#fbe551&ls'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fCoins: &#fbe551%playerpoints_points%'
+  'exp':
+    material: EXPERIENCE_BOTTLE
+    slot: 24
+    priority: 1
+    update: true
+    hide_attributes:  true
+    display_name: '&#9562e7&lE&#9a62e7&lx&#a062e7&lp&#a563e7&le&#aa63e7&lr&#b063e7&li&#b563e7&le&#ba64e7&ln&#c064e7&lc&#c564e7&le'
+    lore:
+      - '&8Description'
+      - '&r'
+      - '&8❖ &fExperience: &#C564E7%player_current_exp%'

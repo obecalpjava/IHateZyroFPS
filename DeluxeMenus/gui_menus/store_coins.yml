@@ -1,0 +1,111 @@
+menu_title: '&8MineRival ➟ Coins'
+open_command: buy-coins
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: GOLD_NUGGET
+    amount: 1
+    slots:
+    - '11'
+    display_name: '&#FBFF31&l600 &#FBFF31Coins'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FBFF31&l❖ &7Price: &#FBFF31$4.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBFF31&lBuy Some Coins!'
+    - '[message] &#FBFF31&l❖ &e&nhttps://store.minerival.org/category/coins'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: RAW_GOLD
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#FBFF31&l2,500 &#FBFF31Coins'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FBFF31&l❖ &7Price: &#FBFF31$14.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBFF31&lBuy Some Coins!'
+    - '[message] &#FBFF31&l❖ &e&nhttps://store.minerival.org/category/coins'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: GOLD_INGOT
+    amount: 1
+    slots:
+    - '13'
+    display_name: '&#FBFF31&l4,000 &#FBFF31Coins'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FBFF31&l❖ &7Price: &#FBFF31$29.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBFF31&lBuy Some Coins!'
+    - '[message] &#FBFF31&l❖ &e&nhttps://store.minerival.org/category/coins'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: RAW_GOLD_BLOCK
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#FBFF31&l5,000 &#FBFF31Coins'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FBFF31&l❖ &7Price: &#FBFF31$39.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBFF31&lBuy Some Coins!'
+    - '[message] &#FBFF31&l❖ &e&nhttps://store.minerival.org/category/coins'
+    - '[message]'
+    - '[close]'
+  '5':
+    material: GOLD_BLOCK
+    amount: 1
+    slots:
+    - '15'
+    display_name: '&#FBFF31&l7,500 &#FBFF31Coins'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FBFF31&l❖ &7Price: &#FBFF31$59.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBFF31&lBuy Some Coins!'
+    - '[message] &#FBFF31&l❖ &e&nhttps://store.minerival.org/category/coins'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] buy_menu'
+    right_click_commands:
+    - '[openguimenu] buy_menu'

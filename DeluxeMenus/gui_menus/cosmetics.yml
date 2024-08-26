@@ -1,0 +1,69 @@
+menu_title: '&8Cosmetics | Main Menu'
+open_command: cosmetics
+register_command: true
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: NAME_TAG
+    amount: 1
+    slots:
+    - '11'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#c727ff&lP&#cc28fc&ll&#d128f8&la&#d629f5&ly&#db2af1&le&#e02aee&lr &#e52bea&lT&#ea2ce7&la&#ef2ce3&lg&#f42de0&ls'
+    lore:
+    - '&8Cosmetic Category'
+    - ''
+    - '&fSelect a tag that will display'
+    - '&fnext to your name in chat!'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[player] tags'
+  '2':
+    material: BOOK
+    amount: 1
+    slots:
+    - '13'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#04df00&lI&#0de108&ln&#17e311&lf&#20e519&lo&#29e722&lr&#33ea2a&lm&#3cec32&la&#45ee3b&lt&#4ef043&li&#58f24c&lo&#61f454&ln'
+    lore:
+    - '&8Cosmetic Information'
+    - ''
+    - '&#04df00&lWhat Are Coins?'
+    - '&fCoins are a virtual currency'
+    - '&fused to buy tags, crate keys,'
+    - '&fand chat colors.'
+    - ''
+    - '&#04df00&lHow Can I Obtain Coins?'
+    - '&fYou can &fbuy coins from our webstore,'
+    - '&fwin them in crates, or from playtime'
+    - '&flevels to get coins.'
+    - ''
+    - '&e&l➥ CLICK TO USE COINS'
+    click_commands:
+    - '[player] coinshop'
+  '3':
+    material: LIGHT_BLUE_DYE
+    amount: 1
+    slots:
+    - '15'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#1bbaff&lC&#23bffe&lh&#2bc3fd&la&#33c8fb&lt &#3bccfa&lC&#43d1f9&lo&#4bd5f8&ll&#53daf6&lo&#5bdef5&lr&#63e3f4&ls'
+    lore:
+    - '&8Cosmetic Category'
+    - ''
+    - '&fMake your chats stand out'
+    - '&fby selecting a chat color!'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[player] chatcolors'

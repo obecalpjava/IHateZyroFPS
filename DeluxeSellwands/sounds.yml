@@ -1,0 +1,854 @@
+#########################################################################################
+#                                                                                       #
+# DeluxeSellwands, a premium resource by Norska @ https://norska.dev                    #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome/                                                #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the sounds.yml file of DeluxeSellwands.                               #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# WARNING: PLEASE READ BEFORE CONFIGURING!                                              #
+#                                                                                       #
+# The plugin uses ENUM sound names, meaning you cannot use default sound names          #
+# To find the ENUM names, google the following: "<Server Version> ENUM Sounds>".        #
+#                                                                                       #
+# Do not open tickets regarding issues with sounds, they can be easily solved by using  #
+# names which are in ENUM form and are appropriate for YOUR base server version.        #
+#                                                                                       #
+#########################################################################################   
+   
+sounds:
+
+   EVENT_SELL_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_SELL_NOITEMS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_SELL_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_SELL_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_SELL_BINDING_NOT_OWNER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+            
+   EVENT_INSPECT_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_INSPECT_NOITEMS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_INSPECT_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_INSPECT_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+
+   EVENT_ENCHANT_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0   
+      
+   EVENT_ENCHANT_CANNOT_AFFORD:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0     
+      
+   EVENT_ENCHANT_ALREADY_MAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0        
+      
+   EVENT_ENCHANT_ENCHANTMENT_DISABLED:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0         
+      
+   EVENT_ENCHANT_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0         
+      
+   EVENT_ENCHANT_MUST_RECHARGE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0         
+
+   EVENT_ENCHANT_MENU_OPEN:
+      enabled: true
+      sound: 'BLOCK_CHEST_OPEN'
+      volume: 1.0
+      pitch: 1.0  
+      
+   EVENT_ENCHANT_MENU_CLOSE:
+      enabled: true
+      sound: 'BLOCK_CHEST_CLOSE'
+      volume: 1.0
+      pitch: 2.0        
+      
+   ###############################  
+   
+   EVENT_WAND_BREAK:
+      enabled: true
+      sound: 'BLOCK_ANVIL_PLACE'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+   
+   EVENT_PAYOUT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0      
+      
+   ###############################  
+
+   EVENT_CHARGER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0   
+      
+   EVENT_CHARGER_FAIL_HIGHMULTIPLIER:     
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0 
+      
+   EVENT_CHARGER_FAIL_TYPE:     
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0       
+         
+   EVENT_CHARGER_USESDEPLETED:
+      enabled: true
+      sound: 'BLOCK_ANVIL_PLACE'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_CHARGER_NOUSESLEFT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_CHARGER_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_CHARGER_NOSELLWAND:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+
+   EVENT_DISCHARGER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0   
+      
+   EVENT_DISCHARGER_FAIL_HIGHMULTIPLIER:     
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0 
+      
+   EVENT_DISCHARGER_FAIL_TYPE:     
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0    
+      
+   EVENT_DISCHARGER_FAIL_NOUSES:     
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0           
+         
+   EVENT_DISCHARGER_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_DISCHARGER_NOSELLWAND:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   ###############################  
+   
+   COMMAND_WAND_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_WAND_SENDER_SUCCESS_SILENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_WAND_SENDER_SUCCESS_ALL:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_WAND_SENDER_SUCCESS_ALL_SILENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_WAND_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+
+   COMMAND_WAND_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_WAND_WRONGTYPE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0          
+   
+   COMMAND_WAND_WRONGAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_WAND_WRONGMULTIPLIER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0   
+      
+   COMMAND_WAND_WRONGUSES:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0     
+      
+   COMMAND_WAND_NOTONLINE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   ###############################  
+      
+   COMMAND_CHARGER_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_CHARGER_SENDER_SUCCESS_SILENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_CHARGER_SENDER_SUCCESS_ALL:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_CHARGER_SENDER_SUCCESS_ALL_SILENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_CHARGER_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_CHARGER_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0        
+      
+   COMMAND_CHARGER_WRONGTYPE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0          
+   
+   COMMAND_CHARGER_WRONGAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_CHARGER_WRONGUSES:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0    
+       
+   COMMAND_CHARGER_NOTONLINE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   ###############################  
+      
+   COMMAND_DISCHARGER_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DISCHARGER_SENDER_SUCCESS_SILENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DISCHARGER_SENDER_SUCCESS_ALL:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DISCHARGER_SENDER_SUCCESS_ALL_SILENT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DISCHARGER_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DISCHARGER_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0        
+      
+   COMMAND_DISCHARGER_WRONGTYPE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0          
+   
+   COMMAND_DISCHARGER_WRONGAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+
+   COMMAND_DISCHARGER_NOTONLINE:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0       
+
+   ###############################
+
+   COMMAND_TOKENS_NO_ACTION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0   
+
+   COMMAND_TOKENS_CHECK_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0    
+
+   COMMAND_TOKENS_CHECK_INVALIDPLAYER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0       
+      
+   COMMAND_TOKENS_CHECK_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0    
+      
+   COMMAND_TOKENS_ADD_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0          
+      
+   COMMAND_TOKENS_ADD_INVALIDPLAYER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_TOKENS_ADD_INVALIDAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_TOKENS_ADD_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0     
+      
+   COMMAND_TOKENS_ADD_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0                
+      
+   COMMAND_TOKENS_TAKE_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_TOKENS_TAKE_INVALIDPLAYER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_TOKENS_TAKE_INVALIDAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_TOKENS_TAKE_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0     
+      
+   COMMAND_TOKENS_TAKE_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0   
+      
+   COMMAND_TOKENS_SET_INVALIDSYNTAX:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0           
+      
+   COMMAND_TOKENS_SET_INVALIDPLAYER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_TOKENS_SET_INVALIDAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_TOKENS_SET_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0     
+      
+   COMMAND_TOKENS_SET_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0        
+      
+   ###############################
+
+   PLAYER_COMMAND_TOKENS_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0   
+      
+   PLAYER_COMMAND_TOKENS_MENU:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0    
+      
+   PLAYER_COMMAND_TOKENS_BALANCE_NOARG:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0   
+      
+   PLAYER_COMMAND_TOKENS_BALANCE_INVALIDPLAYER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0    
+      
+   PLAYER_COMMAND_TOKENS_BALANCE_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0            
+      
+   PLAYER_COMMAND_TOKENS_SEND_NOTARGET:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   PLAYER_COMMAND_TOKENS_SEND_NOAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0    
+
+   PLAYER_COMMAND_TOKENS_SEND_INVALIDPLAYER:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0        
+      
+   PLAYER_COMMAND_TOKENS_SEND_INVALIDAMOUNT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0       
+      
+   PLAYER_COMMAND_TOKENS_SEND_NOTENOUGH:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0       
+      
+   PLAYER_COMMAND_TOKENS_SEND_SELFTARGET:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   PLAYER_COMMAND_TOKENS_SEND_SENDER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0         
+      
+   PLAYER_COMMAND_TOKENS_SEND_RECEIVER_SUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0           
+   
+   ###############################   
+         
+   COMMAND_SEARCH_FINISH:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0    
+       
+   COMMAND_SEARCH_NO_INPUT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0        
+      
+   ###############################  
+         
+   COMMAND_RELOAD:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   ###############################  
+ 
+   COMMAND_HOLOGRAMS_TOGGLEON:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOLOGRAMS_TOGGLEOFF:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOLOGRAMS_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_HOLOGRAMS_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+   
+   EVENT_SELLCONFIRM_PROMPT:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELLCONFIRM_TOGGLE_TOGGLEOFF:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELLCONFIRM_TOGGLE_TOGGLEON:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELLCONFIRM_TOGGLE_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELLCONFIRM_TOGGLE_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+   
+   EVENT_WAND_DROPCONFIRM:
+      enabled: true
+      sound: 'BLOCK_ANVIL_PLACE'
+      volume: 1.0
+      pitch: 1.0
+      
+   EVENT_WAND_DROPSUCCESS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DROPCONFIRM_TOGGLE_TOGGLEOFF:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DROPCONFIRM_TOGGLE_TOGGLEON:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DROPCONFIRM_TOGGLE_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_DROPCONFIRM_TOGGLE_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   ############################### 
+   
+   USER_HELP_COMMAND:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BELL'
+      volume: 1.0
+      pitch: 1.0
+      
+   ###############################  
+      
+   COMMAND_SELL_HAND_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_HAND_INVALID:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_SELL_HAND_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_HAND_NOITEMS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_HAND_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0      
+      
+   COMMAND_SELL_HANDALL_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0   
+      
+   COMMAND_SELL_HANDALL_INVALID:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   COMMAND_SELL_HANDALL_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_HANDALL_NOITEMS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_HANDALL_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0       
+      
+   COMMAND_SELL_INVENTORY_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0    
+      
+   COMMAND_SELL_INVENTORY_SUCCESS:
+      enabled: true
+      sound: 'ENTITY_VILLAGER_YES'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_INVENTORY_NOITEMS:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   COMMAND_SELL_INVENTORY_COOLDOWN:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0  
+      
+   ###############################      
+
+   HOOK_LOCKETTEPRO_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0
+      
+   HOOK_LUNARCLIENT_JOIN:
+      enabled: true
+      sound: 'ENTITY_WANDERING_TRADER_YES'
+      volume: 1.0
+      pitch: 1.0      
+                  
+   HOOK_FACTIONS_STEALCHEST:
+      enabled: true
+      sound: 'ENTITY_WANDERING_TRADER_YES'
+      volume: 1.0
+      pitch: 1.0
+
+   HOOK_IRIDIUMSKYBLOCK_NOPERMISSION:
+      enabled: true
+      sound: 'BLOCK_NOTE_BLOCK_BIT'
+      volume: 1.0
+      pitch: 1.0   

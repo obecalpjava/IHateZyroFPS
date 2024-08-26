@@ -1,0 +1,697 @@
+[22-10-21 21:31:34] [INFO] [DEBUG] onEnable start -> 1666387894577
+
+[22-10-21 21:31:34] [INFO] Using Economy Provider: com.earth2me.essentials.economy.vault.VaultEconomyProvider
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of Config at 1666387894620
+[22-10-21 21:31:34] [INFO] [DEBUG] Config has been loaded. (took 3ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of Lang at 1666387894623
+[22-10-21 21:31:34] [INFO] [DEBUG] Lang has been loaded. (took 10ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of UserManagerImpl at 1666387894633
+[22-10-21 21:31:34] [INFO] [DEBUG] UserManagerImpl has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of GuiListener at 1666387894633
+[22-10-21 21:31:34] [INFO] [DEBUG] GuiListener has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of KitManagerImpl at 1666387894633
+[22-10-21 21:31:34] [INFO] KitManagerImpl: Loaded 2 kit(s).
+[22-10-21 21:31:34] [INFO] [DEBUG] KitManagerImpl has been loaded. (took 69ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of ArenaManagerImpl at 1666387894702
+[22-10-21 21:31:34] [INFO] ArenaManagerImpl: Loaded 5 arena(s).
+[22-10-21 21:31:34] [INFO] [DEBUG] ArenaManagerImpl has been loaded. (took 8ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of SettingsManager at 1666387894710
+[22-10-21 21:31:34] [INFO] [DEBUG] SettingsManager has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of PlayerInfoManager at 1666387894710
+[22-10-21 21:31:34] [INFO] [DEBUG] PlayerInfoManager has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of SpectateManagerImpl at 1666387894710
+[22-10-21 21:31:34] [INFO] [DEBUG] SpectateManagerImpl has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of BettingManager at 1666387894710
+[22-10-21 21:31:34] [INFO] [DEBUG] BettingManager has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of InventoryManager at 1666387894710
+[22-10-21 21:31:34] [INFO] [DEBUG] InventoryManager has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of DuelManager at 1666387894710
+[22-10-21 21:31:34] [INFO] [DEBUG] DuelManager has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of QueueManager at 1666387894710
+[22-10-21 21:31:34] [INFO] QueueManager: Loaded 0 queue(s).
+[22-10-21 21:31:34] [INFO] [DEBUG] QueueManager has been loaded. (took 1ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of QueueSignManagerImpl at 1666387894711
+[22-10-21 21:31:34] [INFO] QueueSignManagerImpl: Loaded 0 queue sign(s).
+[22-10-21 21:31:34] [INFO] [DEBUG] QueueSignManagerImpl has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of RequestManager at 1666387894711
+[22-10-21 21:31:34] [INFO] [DEBUG] RequestManager has been loaded. (took 0ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of Teleport at 1666387894711
+[22-10-21 21:31:34] [INFO] [DEBUG] Teleport has been loaded. (took 1ms)
+[22-10-21 21:31:34] [INFO] [DEBUG] Starting load of ExtensionManager at 1666387894712
+[22-10-21 21:31:34] [INFO] [ArenaRegen Extension] NMSHandler: Using me.realized.de.arenaregen.nms.fallback.NMSHandler
+[22-10-21 21:31:34] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'China'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:31:34] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Farmland'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:31:34] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Lighthouse'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:31:34] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Mansion'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:31:34] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Temple'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:31:34] [INFO] ExtensionManager: Extension 'ArenaRegen 1.2.0' is now enabled.
+[22-10-21 21:31:34] [INFO] [DEBUG] ExtensionManager has been loaded. (took 76ms)
+[22-10-21 21:31:36] [INFO] Hooked into DeluxeCombat!
+[22-10-21 21:31:37] [INFO] No updates were available. You are on the latest version!
+[22-10-21 21:46:21] [INFO] [DEBUG] onDisable start -> 1666388781234
+
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of ExtensionManager at 1666388781235
+[22-10-21 21:46:21] [INFO] ExtensionManager: Extension 'ArenaRegen' is now disabled.
+[22-10-21 21:46:21] [INFO] [DEBUG] ExtensionManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of Teleport at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] Teleport has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of RequestManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] RequestManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of QueueSignManagerImpl at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] QueueSignManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of QueueManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] QueueManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of DuelManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] DuelManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of InventoryManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] InventoryManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of BettingManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] BettingManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of SpectateManagerImpl at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] SpectateManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of PlayerInfoManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] PlayerInfoManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of SettingsManager at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] SettingsManager has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of ArenaManagerImpl at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] ArenaManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of KitManagerImpl at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] KitManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of GuiListener at 1666388781235
+[22-10-21 21:46:21] [INFO] [DEBUG] GuiListener has been unloaded. (took 1ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of UserManagerImpl at 1666388781236
+[22-10-21 21:46:21] [INFO] [DEBUG] UserManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of Lang at 1666388781236
+[22-10-21 21:46:21] [INFO] [DEBUG] Lang has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Starting unload of Config at 1666388781236
+[22-10-21 21:46:21] [INFO] [DEBUG] Config has been unloaded. (took 0ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] unload done (took 2ms)
+[22-10-21 21:46:21] [INFO] [DEBUG] Log#clearSources done (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] onEnable start -> 1666388815267
+
+[22-10-21 21:46:55] [INFO] Using Economy Provider: com.earth2me.essentials.economy.vault.VaultEconomyProvider
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of Config at 1666388815303
+[22-10-21 21:46:55] [INFO] [DEBUG] Config has been loaded. (took 3ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of Lang at 1666388815306
+[22-10-21 21:46:55] [INFO] [DEBUG] Lang has been loaded. (took 11ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of UserManagerImpl at 1666388815317
+[22-10-21 21:46:55] [INFO] [DEBUG] UserManagerImpl has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of GuiListener at 1666388815317
+[22-10-21 21:46:55] [INFO] [DEBUG] GuiListener has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of KitManagerImpl at 1666388815317
+[22-10-21 21:46:55] [INFO] KitManagerImpl: Loaded 2 kit(s).
+[22-10-21 21:46:55] [INFO] [DEBUG] KitManagerImpl has been loaded. (took 68ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of ArenaManagerImpl at 1666388815386
+[22-10-21 21:46:55] [INFO] ArenaManagerImpl: Loaded 5 arena(s).
+[22-10-21 21:46:55] [INFO] [DEBUG] ArenaManagerImpl has been loaded. (took 6ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of SettingsManager at 1666388815392
+[22-10-21 21:46:55] [INFO] [DEBUG] SettingsManager has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of PlayerInfoManager at 1666388815392
+[22-10-21 21:46:55] [INFO] [DEBUG] PlayerInfoManager has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of SpectateManagerImpl at 1666388815392
+[22-10-21 21:46:55] [INFO] [DEBUG] SpectateManagerImpl has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of BettingManager at 1666388815392
+[22-10-21 21:46:55] [INFO] [DEBUG] BettingManager has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of InventoryManager at 1666388815392
+[22-10-21 21:46:55] [INFO] [DEBUG] InventoryManager has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of DuelManager at 1666388815392
+[22-10-21 21:46:55] [INFO] [DEBUG] DuelManager has been loaded. (took 1ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of QueueManager at 1666388815393
+[22-10-21 21:46:55] [INFO] QueueManager: Loaded 0 queue(s).
+[22-10-21 21:46:55] [INFO] [DEBUG] QueueManager has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of QueueSignManagerImpl at 1666388815393
+[22-10-21 21:46:55] [INFO] QueueSignManagerImpl: Loaded 0 queue sign(s).
+[22-10-21 21:46:55] [INFO] [DEBUG] QueueSignManagerImpl has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of RequestManager at 1666388815393
+[22-10-21 21:46:55] [INFO] [DEBUG] RequestManager has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of Teleport at 1666388815393
+[22-10-21 21:46:55] [INFO] [DEBUG] Teleport has been loaded. (took 0ms)
+[22-10-21 21:46:55] [INFO] [DEBUG] Starting load of ExtensionManager at 1666388815394
+[22-10-21 21:46:55] [INFO] [ArenaRegen Extension] NMSHandler: Using me.realized.de.arenaregen.nms.fallback.NMSHandler
+[22-10-21 21:46:55] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'China'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:46:55] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Farmland'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:46:55] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Lighthouse'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:46:55] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Mansion'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:46:55] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Temple'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 21:46:55] [INFO] ExtensionManager: Extension 'ArenaRegen 1.2.0' is now enabled.
+[22-10-21 21:46:55] [INFO] [DEBUG] ExtensionManager has been loaded. (took 74ms)
+[22-10-21 21:46:57] [INFO] Hooked into DeluxeCombat!
+[22-10-21 21:46:57] [INFO] No updates were available. You are on the latest version!
+[22-10-21 21:53:47] [INFO] [DEBUG] onDisable start -> 1666389227282
+
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of ExtensionManager at 1666389227282
+[22-10-21 21:53:47] [INFO] ExtensionManager: Extension 'ArenaRegen' is now disabled.
+[22-10-21 21:53:47] [INFO] [DEBUG] ExtensionManager has been unloaded. (took 1ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of Teleport at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] Teleport has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of RequestManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] RequestManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of QueueSignManagerImpl at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] QueueSignManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of QueueManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] QueueManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of DuelManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] DuelManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of InventoryManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] InventoryManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of BettingManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] BettingManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of SpectateManagerImpl at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] SpectateManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of PlayerInfoManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] PlayerInfoManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of SettingsManager at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] SettingsManager has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of ArenaManagerImpl at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] ArenaManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of KitManagerImpl at 1666389227283
+[22-10-21 21:53:47] [INFO] [DEBUG] KitManagerImpl has been unloaded. (took 1ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of GuiListener at 1666389227284
+[22-10-21 21:53:47] [INFO] [DEBUG] GuiListener has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of UserManagerImpl at 1666389227284
+[22-10-21 21:53:47] [INFO] [DEBUG] UserManagerImpl has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of Lang at 1666389227284
+[22-10-21 21:53:47] [INFO] [DEBUG] Lang has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Starting unload of Config at 1666389227284
+[22-10-21 21:53:47] [INFO] [DEBUG] Config has been unloaded. (took 0ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] unload done (took 2ms)
+[22-10-21 21:53:47] [INFO] [DEBUG] Log#clearSources done (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] onEnable start -> 1666389725166
+
+[22-10-21 22:02:05] [INFO] Using Economy Provider: com.earth2me.essentials.economy.vault.VaultEconomyProvider
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of Config at 1666389725210
+[22-10-21 22:02:05] [INFO] [DEBUG] Config has been loaded. (took 2ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of Lang at 1666389725212
+[22-10-21 22:02:05] [INFO] [DEBUG] Lang has been loaded. (took 12ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of UserManagerImpl at 1666389725224
+[22-10-21 22:02:05] [INFO] [DEBUG] UserManagerImpl has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of GuiListener at 1666389725224
+[22-10-21 22:02:05] [INFO] [DEBUG] GuiListener has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of KitManagerImpl at 1666389725224
+[22-10-21 22:02:05] [INFO] KitManagerImpl: Loaded 2 kit(s).
+[22-10-21 22:02:05] [INFO] [DEBUG] KitManagerImpl has been loaded. (took 69ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of ArenaManagerImpl at 1666389725294
+[22-10-21 22:02:05] [INFO] ArenaManagerImpl: Loaded 5 arena(s).
+[22-10-21 22:02:05] [INFO] [DEBUG] ArenaManagerImpl has been loaded. (took 6ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of SettingsManager at 1666389725301
+[22-10-21 22:02:05] [INFO] [DEBUG] SettingsManager has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of PlayerInfoManager at 1666389725301
+[22-10-21 22:02:05] [INFO] [DEBUG] PlayerInfoManager has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of SpectateManagerImpl at 1666389725301
+[22-10-21 22:02:05] [INFO] [DEBUG] SpectateManagerImpl has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of BettingManager at 1666389725301
+[22-10-21 22:02:05] [INFO] [DEBUG] BettingManager has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of InventoryManager at 1666389725301
+[22-10-21 22:02:05] [INFO] [DEBUG] InventoryManager has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of DuelManager at 1666389725301
+[22-10-21 22:02:05] [INFO] [DEBUG] DuelManager has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of QueueManager at 1666389725301
+[22-10-21 22:02:05] [INFO] QueueManager: Loaded 0 queue(s).
+[22-10-21 22:02:05] [INFO] [DEBUG] QueueManager has been loaded. (took 1ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of QueueSignManagerImpl at 1666389725302
+[22-10-21 22:02:05] [INFO] QueueSignManagerImpl: Loaded 0 queue sign(s).
+[22-10-21 22:02:05] [INFO] [DEBUG] QueueSignManagerImpl has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of RequestManager at 1666389725302
+[22-10-21 22:02:05] [INFO] [DEBUG] RequestManager has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of Teleport at 1666389725302
+[22-10-21 22:02:05] [INFO] [DEBUG] Teleport has been loaded. (took 0ms)
+[22-10-21 22:02:05] [INFO] [DEBUG] Starting load of ExtensionManager at 1666389725302
+[22-10-21 22:02:05] [INFO] [ArenaRegen Extension] NMSHandler: Using me.realized.de.arenaregen.nms.fallback.NMSHandler
+[22-10-21 22:02:05] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'China'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:02:05] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Farmland'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:02:05] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Lighthouse'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:02:05] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Mansion'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:02:05] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Temple'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:02:05] [INFO] ExtensionManager: Extension 'ArenaRegen 1.2.0' is now enabled.
+[22-10-21 22:02:05] [INFO] [DEBUG] ExtensionManager has been loaded. (took 74ms)
+[22-10-21 22:02:07] [INFO] Hooked into DeluxeCombat!
+[22-10-21 22:02:07] [INFO] No updates were available. You are on the latest version!
+[22-10-21 22:12:30] [INFO] [DEBUG] onDisable start -> 1666390350908
+
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of ExtensionManager at 1666390350909
+[22-10-21 22:12:30] [INFO] ExtensionManager: Extension 'ArenaRegen' is now disabled.
+[22-10-21 22:12:30] [INFO] [DEBUG] ExtensionManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of Teleport at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] Teleport has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of RequestManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] RequestManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of QueueSignManagerImpl at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] QueueSignManagerImpl has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of QueueManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] QueueManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of DuelManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] DuelManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of InventoryManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] InventoryManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of BettingManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] BettingManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of SpectateManagerImpl at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] SpectateManagerImpl has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of PlayerInfoManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] PlayerInfoManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of SettingsManager at 1666390350909
+[22-10-21 22:12:30] [INFO] [DEBUG] SettingsManager has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of ArenaManagerImpl at 1666390350910
+[22-10-21 22:12:30] [INFO] [DEBUG] ArenaManagerImpl has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of KitManagerImpl at 1666390350910
+[22-10-21 22:12:30] [INFO] [DEBUG] KitManagerImpl has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of GuiListener at 1666390350910
+[22-10-21 22:12:30] [INFO] [DEBUG] GuiListener has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of UserManagerImpl at 1666390350910
+[22-10-21 22:12:30] [INFO] [DEBUG] UserManagerImpl has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of Lang at 1666390350910
+[22-10-21 22:12:30] [INFO] [DEBUG] Lang has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Starting unload of Config at 1666390350910
+[22-10-21 22:12:30] [INFO] [DEBUG] Config has been unloaded. (took 0ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] unload done (took 2ms)
+[22-10-21 22:12:30] [INFO] [DEBUG] Log#clearSources done (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] onEnable start -> 1666390391836
+
+[22-10-21 22:13:11] [INFO] Using Economy Provider: com.earth2me.essentials.economy.vault.VaultEconomyProvider
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of Config at 1666390391887
+[22-10-21 22:13:11] [INFO] [DEBUG] Config has been loaded. (took 4ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of Lang at 1666390391891
+[22-10-21 22:13:11] [INFO] [DEBUG] Lang has been loaded. (took 14ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of UserManagerImpl at 1666390391905
+[22-10-21 22:13:11] [INFO] [DEBUG] UserManagerImpl has been loaded. (took 1ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of GuiListener at 1666390391906
+[22-10-21 22:13:11] [INFO] [DEBUG] GuiListener has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of KitManagerImpl at 1666390391906
+[22-10-21 22:13:11] [INFO] KitManagerImpl: Loaded 2 kit(s).
+[22-10-21 22:13:11] [INFO] [DEBUG] KitManagerImpl has been loaded. (took 85ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of ArenaManagerImpl at 1666390391991
+[22-10-21 22:13:11] [INFO] ArenaManagerImpl: Loaded 5 arena(s).
+[22-10-21 22:13:11] [INFO] [DEBUG] ArenaManagerImpl has been loaded. (took 7ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of SettingsManager at 1666390391998
+[22-10-21 22:13:11] [INFO] [DEBUG] SettingsManager has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of PlayerInfoManager at 1666390391998
+[22-10-21 22:13:11] [INFO] [DEBUG] PlayerInfoManager has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of SpectateManagerImpl at 1666390391998
+[22-10-21 22:13:11] [INFO] [DEBUG] SpectateManagerImpl has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of BettingManager at 1666390391998
+[22-10-21 22:13:11] [INFO] [DEBUG] BettingManager has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of InventoryManager at 1666390391998
+[22-10-21 22:13:11] [INFO] [DEBUG] InventoryManager has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of DuelManager at 1666390391998
+[22-10-21 22:13:11] [INFO] [DEBUG] DuelManager has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of QueueManager at 1666390391998
+[22-10-21 22:13:11] [INFO] QueueManager: Loaded 0 queue(s).
+[22-10-21 22:13:11] [INFO] [DEBUG] QueueManager has been loaded. (took 1ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of QueueSignManagerImpl at 1666390391999
+[22-10-21 22:13:11] [INFO] QueueSignManagerImpl: Loaded 0 queue sign(s).
+[22-10-21 22:13:11] [INFO] [DEBUG] QueueSignManagerImpl has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of RequestManager at 1666390391999
+[22-10-21 22:13:11] [INFO] [DEBUG] RequestManager has been loaded. (took 0ms)
+[22-10-21 22:13:11] [INFO] [DEBUG] Starting load of Teleport at 1666390391999
+[22-10-21 22:13:12] [INFO] [DEBUG] Teleport has been loaded. (took 1ms)
+[22-10-21 22:13:12] [INFO] [DEBUG] Starting load of ExtensionManager at 1666390392000
+[22-10-21 22:13:12] [INFO] [ArenaRegen Extension] NMSHandler: Using me.realized.de.arenaregen.nms.fallback.NMSHandler
+[22-10-21 22:13:12] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'China'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:13:12] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Farmland'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:13:12] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Lighthouse'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:13:12] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Mansion'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:13:12] [SEVERE] [ArenaRegen Extension] Could not load reset zone 'Temple'!
+java.lang.NullPointerException: worldName or world is null
+	at me.realized.de.arenaregen.zone.Zone.<init>(Zone.java:185)
+	at me.realized.de.arenaregen.zone.ZoneManager.<init>(ZoneManager.java:50)
+	at me.realized.de.arenaregen.ArenaRegen.onEnable(ArenaRegen.java:37)
+	at Duels-3.5.2.jar//me.realized.duels.api.extension.DuelsExtension.setEnabled(DuelsExtension.java:74)
+	at Duels-3.5.2.jar//me.realized.duels.extension.ExtensionManager.handleLoad(ExtensionManager.java:84)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.load(DuelsPlugin.java:242)
+	at Duels-3.5.2.jar//me.realized.duels.DuelsPlugin.onEnable(DuelsPlugin.java:175)
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370)
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:542)
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugin()
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.enablePlugins()
+	at net.minecraft.server.MinecraftServer.loadWorld0()
+	at net.minecraft.server.MinecraftServer.loadLevel()
+	at net.minecraft.server.dedicated.DedicatedServer.e()
+	at net.minecraft.server.MinecraftServer.v()
+	at net.minecraft.server.MinecraftServer.lambda$spin$2()
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[22-10-21 22:13:12] [INFO] ExtensionManager: Extension 'ArenaRegen 1.2.0' is now enabled.
+[22-10-21 22:13:12] [INFO] [DEBUG] ExtensionManager has been loaded. (took 78ms)
+[22-10-21 22:13:14] [INFO] Hooked into DeluxeCombat!
+[22-10-21 22:13:14] [INFO] No updates were available. You are on the latest version!

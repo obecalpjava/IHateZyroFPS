@@ -1,0 +1,84 @@
+menu_title: 'Gambling | Main Menu'
+open_command: gamble
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: sunflower
+    slot: 10
+    display_name: '&#FBF500&lCoin Flips'
+    lore:
+    - ''
+    - '&fCoinflip versus other&f players'
+    - '&ffor a chance to &adouble&f your cash!'
+    left_click_commands:
+    - '[player] cf'
+    - '[close]'
+    right_click_commands:
+    - '[player] cf'
+    - '[close]'
+  '2':
+    material: book
+    slot: 13
+    display_name: '&#0EB0FB&lWhat is Gambling?'
+    lore:
+    - ''
+    - '&fWin in-game &amoney&f by gambling!'
+    - '&fTest your luck and only gamble what'
+    - '&fyou''re &cwilling&f to lose, have fun!'
+    - '&f'
+    - '&7Press one of our available games!'
+    left_click_commands:
+    right_click_commands:
+  '3':
+    material: tnt
+    slot: 15
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    display_name: '&#f60104&lMines'
+    lore:
+    - ''
+    - '&fFind &bDiamonds&f in a 30 slot grid'
+    - '&fbut hit one &cTNT&f and you''re out!'
+    left_click_commands:
+    - '[player] mines'
+    - '[close]'
+    right_click_commands:
+    - '[player] mines'
+    - '[close]'
+  '4':
+    material: BLACK_WOOL
+    slot: 16
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    display_name: '&c&lComing Soon'
+    lore:
+    - ''
+    - '&7Coming into an update soon!'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '5':
+    material: bow
+    slot: 11
+    display_name: '&#0EC1FF&lRussian Roulette'
+    lore:
+    - ''
+    - '&fSafely double your cash but,'
+    - '&fhit a &ctotem&f and you''re out!'
+    left_click_commands:
+    - '[player] russianroulette'
+    - '[close]'
+    right_click_commands:
+    - '[player] russianroulette'
+    - '[close]'

@@ -1,0 +1,416 @@
+menu_title: '&8Coins | Crate Keys'
+open_command: /coinshopcratekeys
+size: 36
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-34'
+    display_name: ' '
+###################################################################################################
+  primekey1-can_purchase:
+    material: yellow_dye
+    slot: 10
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '300'
+    display_name: '&#FCDD0F&l1x Prime Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6300 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#FCDD0F&l1x Prime Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 300'
+    - '[console] crates key give %player_name% prime 1'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#FCDD0F&l1x Prime Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 300'
+    - '[console] crates key give %player_name% prime 1'
+    - '[close]'
+  primekey1-cannot_purchase:
+    material: yellow_dye
+    slot: 10
+    priority: 2
+    display_name: '&#FCDD0F&l1x Prime Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6300 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#FCDD0F&l1x Prime Key&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#FCDD0F&l1x Prime Key&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+  primekey3-can_purchase:
+    material: yellow_dye
+    amount: 3
+    slot: 19
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+    display_name: '&#FCDD0F&l3x Prime Keys'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6900 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#FCDD0F&l3x Prime Keys&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 900'
+    - '[console] crates key give %player_name% Prime 3'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#FCDD0F&l3x Prime Keys&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 900'
+    - '[console] crates key give %player_name% Prime 3'
+    - '[close]'
+  primekey3-cannot_purchase:
+    material: yellow_dye
+    amount: 3
+    slot: 19
+    priority: 2
+    display_name: '&#FCDD0F&l3x Prime Keys'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6900 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#FCDD0F&l3x Prime Keys&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#FCDD0F&l3x Prime Keys&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  epickey1-can_purchase:
+    material: light_blue_dye
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '600'
+    display_name: '&#0D9CFF&l1x Epic Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6600 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#0D9CFF&l1x Epic Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 600'
+    - '[console] crates key give %player_name% Epic 1'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#0D9CFF&l1x Epic Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 600'
+    - '[console] crates key give %player_name% Epic 1'
+    - '[close]'
+  epickey1-cannot_purchase:
+    material: light_blue_dye
+    slot: 13
+    priority: 2
+    display_name: '&#0D9CFF&l1x Epic Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6600 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#0D9CFF&l1x Epic Key&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#0D9CFF&l1x Epic Key&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  epickey3-can_purchase:
+    material: light_blue_dye
+    slot: 22
+    amount: 3
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '1800'
+    display_name: '&#0D9CFF&l3x Epic Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &61,800 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#0D9CFF&l3x Epic Keys&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 1800'
+    - '[console] crates key give %player_name% Epic 3'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#0D9CFF&l3x Epic Keys&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 1800'
+    - '[console] crates key give %player_name% Epic 3'
+    - '[close]'
+  epickey3-cannot_purchase:
+    material: light_blue_dye
+    slot: 22
+    amount: 3
+    priority: 2
+    display_name: '&#0D9CFF&l3x Epic Keys'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &61,800 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#0D9CFF&l3x Epic Keys&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#0D9CFF&l3x Epic Keys&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  rivalkey1-can_purchase:
+    material: red_dye
+    slot: 16
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '900'
+    display_name: '&#F70E08&l1x Rival Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6900 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#F70E08&l1x Rival Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 900'
+    - '[console] crates key give %player_name% Rival 1'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#F70E08&l1x Rival Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 900'
+    - '[console] crates key give %player_name% Rival 1'
+    - '[close]'
+  rivalkey1-cannot_purchase:
+    material: red_dye
+    slot: 16
+    priority: 2
+    display_name: '&#F70E08&l1x Rival Key'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6900 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#F70E08&l1x Rival Key&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#F70E08&l1x Rival Key&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  rivalkey3-can_purchase:
+    material: red_dye
+    slot: 25
+    amount: 3
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '2700'
+    display_name: '&#F70E08&l3x Rival Keys'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &62,700 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#F70E08&l3x Rival Key&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 2700'
+    - '[console] crates key give %player_name% Rival 3'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#F70E08&l3x Rival Keys&a!'
+    - '[message] '
+    - '[console] coins take %player_name% 2700'
+    - '[console] crates key give %player_name% Rival 3'
+    - '[close]'
+  rivalkey3-cannot_purchase:
+    material: red_dye
+    slot: 25
+    amount: 3
+    priority: 2
+    display_name: '&#F70E08&l3x Rival Keys'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &62,700 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#F70E08&l3x Rival Keys&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough coins for &#F70E08&l3x Rival Keys&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 35
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] coinshop_main_menu'
+    right_click_commands:
+    - '[openguimenu] coinshop_main_menu'

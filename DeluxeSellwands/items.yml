@@ -1,0 +1,84 @@
+#########################################################################################
+#                                                                                       #
+# DeluxeSellwands, a premium resource by Norska @ https://norska.dev                    #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome/                                                #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the items.yml file of DeluxeSellwands.                                #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+# Note: Custom Model Data is ONLY 1.14+, if you have a custom texture and want to use it simply match the material and the custom model data to the one in your resource pack. SET TO 0 TO DISABLE.   
+
+# [SELLWANDS] Placeholders for names and lores:
+# {0} = uses
+# {1} = multiplier
+# {2} = amount statistic (statistics feature needs to be enabled)
+# {3} = worth statistic (statistics feature needs to be enabled)
+# {4} = owner (sellwand binding feature needs to be enabled)
+
+# [CHARGERS] Placeholders for names and lores:
+# {0} = uses
+
+# [DISCHARGERS] Placeholders for names and lores:
+# None
+
+items:
+
+   sellwands:
+
+      default:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sellwand'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'GOLDEN_HOE'
+            materialData: 0
+            customModelData: 0
+            name: '&x&f&b&b&c&2&e&lSell Wand'
+            lore:
+            - '&8Official Sellwand'
+            - ''
+            - '&8❖ &7Multiplier: &ax{1}'
+            - '&8❖ &7Uses: &f{0}'
+            - ''
+            - '&8❖ &7Right-Click &8→ &7Sell Container'
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: '&e&lSELLWAND &c&lUSED'
+            lore:
+            - ''
+            - '&7[&c&l❌&7] &cThis sellwand cannot be used'
+            - '&cuntil it has been re-charged!'
+            - ''
+            - '{ENCHANTMENTS}'
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true

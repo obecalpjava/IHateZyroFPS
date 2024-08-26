@@ -1,0 +1,56 @@
+menu_title: '&8Supply Drops'
+size: 27
+open_command:
+- supplydrops
+register_command: true
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+#############################################################################################
+  timeuntil:
+    material: 'CLOCK'
+    slot: 10
+    display_name: '&#13a7fb&lT&#1babfb&li&#23affb&lm&#2bb2fc&le &#33b6fc&lR&#3bbafc&le&#43befc&lm&#4bc1fc&la&#53c5fc&li&#5bc9fd&ln&#63cdfd&li&#6bd0fd&ln&#73d4fd&lg'
+    lore:
+    - ''
+    - '&7Countdown: &f%crazyenvoys_cooldown%'
+    - ''
+    - '&eWhen this reaches 0, supply drops spawn!'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+#############################################################################################
+  help:
+    material: 'BOOK'
+    slot: 13
+    display_name: '&#22ff04&lW&#24ff06&lh&#25ff07&le&#27ff09&lr&#28ff0b&le &#2aff0d&lD&#2cff0e&lo &#2dff10&lI &#2fff12&lG&#30ff13&lo&#32ff15&l?'
+    lore:
+    - ''
+    - '&7Supply drops will spawn all across'
+    - '&7the warzone at &f/spawn&7!'
+    - '&7'
+    - '&eYou will find the drops past the red line'
+    - '&eat spawn! PvP is enabled, watch out!'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+#############################################################################################
+  remaining:
+    material: 'CHEST'
+    slot: 16
+    display_name: '&#ff8104&lD&#ff8304&lr&#ff8503&lo&#ff8703&lp&#ff8a03&ls &#ff8c02&lR&#ff8e02&le&#ff9002&lm&#ff9202&la&#ff9401&li&#ff9701&ln&#ff9901&li&#ff9b00&ln&#ff9d00&lg'
+    lore:
+    - ''
+    - '&7Crates Left: &f%crazyenvoys_crates_left%'
+    - ''
+    - '&eNo drops left? Wait for the next drop!'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true

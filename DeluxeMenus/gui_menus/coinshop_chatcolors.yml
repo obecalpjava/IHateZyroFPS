@@ -1,0 +1,918 @@
+menu_title: '&8Coins | Chat Colors'
+open_command: /coinshopchatcolors
+size: 45
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-43'
+    display_name: ' '
+###################################################################################################
+  red-can_purchase:
+    material: red_dye
+    slot: 10
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&c&lRed Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &c&lRed Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &c/color red'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.red server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &c&lRed Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &c/color red'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.red server=lifesteal-gold'
+    - '[close]'
+  red-cannot_purchase:
+    material: red_dye
+    slot: 10
+    priority: 2
+    display_name: '&c&lRed Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &c&lRed Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &c&lRed Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  gold-can_purchase:
+    material: orange_dye
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&6&lGold Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &6&lGold Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &6/color gold'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.gold server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &6&lGold Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &6/color gold'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.gold server=lifesteal-gold'
+    - '[close]'
+  gold-cannot_purchase:
+    material: orange_dye
+    slot: 11
+    priority: 2
+    display_name: '&6&lGold Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &6&lGold Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &6&lGold Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  yellow-can_purchase:
+    material: yellow_dye
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&e&lYellow Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &e&lYellow Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &e/color yellow'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.yellow server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &e&lYellow Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &e/color yellow'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.yellow server=lifesteal-gold'
+    - '[close]'
+  yellow-cannot_purchase:
+    material: yellow_dye
+    slot: 12
+    priority: 2
+    display_name: '&e&lYellow Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &e&lYellow Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &e&lYellow Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  lime-can_purchase:
+    material: lime_dye
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&a&lLime Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &a&lLime Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &a/color lime'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.lime server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &a&lLime Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &a/color lime'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.lime server=lifesteal-gold'
+    - '[close]'
+  lime-cannot_purchase:
+    material: lime_dye
+    slot: 13
+    priority: 2
+    display_name: '&a&lLime Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &a&lLime Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &a&lLime Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  green-can_purchase:
+    material: green_dye
+    slot: 14
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&2&lGreen Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &2&lGreen Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &2/color green'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.green server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &2&lGreen Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &2/color green'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.green server=lifesteal-gold'
+    - '[close]'
+  green-cannot_purchase:
+    material: green_dye
+    slot: 14
+    priority: 2
+    display_name: '&2&lGreen Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &2&lGreen Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &2&lGreen Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  cyan-can_purchase:
+    material: cyan_dye
+    slot: 15
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&3&lCyan Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &3&lCyan Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &3/color cyan'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.cyan server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &3&lCyan Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &3/color cyan'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.cyan server=lifesteal-gold'
+    - '[close]'
+  cyan-cannot_purchase:
+    material: cyan_dye
+    slot: 15
+    priority: 2
+    display_name: '&3&lCyan Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &3&lCyan Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &3&lCyan Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  aqua-can_purchase:
+    material: light_blue_dye
+    slot: 16
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&b&lAqua Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &b&lAqua Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &b/color aqua'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.aqua server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &b&lAqua Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &b/color aqua'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.aqua server=lifesteal-gold'
+    - '[close]'
+  aqua-cannot_purchase:
+    material: light_blue_dye
+    slot: 16
+    priority: 2
+    display_name: '&b&lAqua Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &b&lAqua Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &b&lAqua Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  blue-can_purchase:
+    material: blue_dye
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&9&lBlue Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &9&lBlue Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &9/color blue'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.blue server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &9&lBlue Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &9/color blue'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.blue server=lifesteal-gold'
+    - '[close]'
+  blue-cannot_purchase:
+    material: blue_dye
+    slot: 20
+    priority: 2
+    display_name: '&9&lBlue Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &9&lBlue Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &9&lBlue Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  pink-can_purchase:
+    material: magenta_dye
+    slot: 21
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&d&lPink Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &d&lPink Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &d/color pink'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.pink server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &d&lPink Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &d/color pink'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.pink server=lifesteal-gold'
+    - '[close]'
+  pink-cannot_purchase:
+    material: magenta_dye
+    slot: 21
+    priority: 2
+    display_name: '&d&lPink Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &d&lPink Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &d&lPink Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  purple-can_purchase:
+    material: purple_dye
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&5&lPurple Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &5&lPurple Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &5/color purple'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.purple server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &5&lPurple Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &5/color purple'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.purple server=lifesteal-gold'
+    - '[close]'
+  purple-cannot_purchase:
+    material: purple_dye
+    slot: 22
+    priority: 2
+    display_name: '&5&lPurple Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &5&lPurple Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &5&lPurple Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  darkgray-can_purchase:
+    material: gray_dye
+    slot: 23
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&8&lDark Gray Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &8&lDark Gray Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &8/color dark_gray'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.darkgray server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &8&lDark Gray Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &8/color dark_gray'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.darkgray server=lifesteal-gold'
+    - '[close]'
+  darkgray-cannot_purchase:
+    material: gray_dye
+    slot: 23
+    priority: 2
+    display_name: '&8&lDark Gray Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &8&lDark Gray Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &8&lDark Gray Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  gray-can_purchase:
+    material: light_gray_dye
+    slot: 24
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '400'
+    display_name: '&7&lGray Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &7&lGray Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &7/color gray'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.gray server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased the &7&lGray Chat Color&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip this with &7/color gray'
+    - '[message] '
+    - '[console] coins take %player_name% 400'
+    - '[console] lp user %player_name% permission set ezcolors.color.gray server=lifesteal-gold'
+    - '[close]'
+  gray-cannot_purchase:
+    material: light_gray_dye
+    slot: 24
+    priority: 2
+    display_name: '&7&lGray Chat Color'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &6400 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &7&lGray Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for the &7&lGray Chat Color&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+###################################################################################################
+  allcolors-can_purchase:
+    material: flower_banner_pattern
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        credits:
+          type: '>='
+          input: '%playerpoints_points%'
+          output: '4800'
+    display_name: '&#ff0000A&#ff7400l&#fed000l &#fbf100C&#b3ff00h&#36ff00a&#12ff80t &#00eafeC&#0355fao&#4400f7l&#d500f5o&#e300f9r&#bd00ffs'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &64,800 Coins'
+    - ''
+    - '&e➥ &lCLICK TO PURCHASE'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#ff0000A&#ff7400l&#fed000l &#fbf100C&#b3ff00h&#36ff00a&#12ff80t &#00eafeC&#0355fao&#4400f7l&#d500f5o&#e300f9r&#bd00ffs&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip these with &d/chatcolors'
+    - '[message] '
+    - '[console] coins take %player_name% 4800'
+    - '[console] lp user %player_name% permission set ezcolors.color.allcolors server=lifesteal-gold' #NOT A REAL PERMISSION!!
+    - '[console] lp user %player_name% permission set ezcolors.color.red server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.gold server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.yellow server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.lime server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.green server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.cyan server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.lightblue server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.blue server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.pink server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.purple server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.darkgray server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.gray server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.aqua server=lifesteal-gold'
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &aYou purchased &#ff0000A&#ff7400l&#fed000l &#fbf100C&#b3ff00h&#36ff00a&#12ff80t &#00eafeC&#0355fao&#4400f7l&#d500f5o&#e300f9r&#bd00ffs&a!'
+    - '[message] &#FBD510&lCoins &8➟ &fYou can equip these with &d/chatcolors'
+    - '[message] '
+    - '[console] coins take %player_name% 4800'
+    - '[console] lp user %player_name% permission set ezcolors.color.allcolors server=lifesteal-gold' #NOT A REAL PERMISSION!!
+    - '[console] lp user %player_name% permission set ezcolors.color.red server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.gold server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.yellow server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.lime server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.green server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.cyan server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.lightblue server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.blue server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.pink server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.purple server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.darkgray server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.gray server=lifesteal-gold'
+    - '[console] lp user %player_name% permission set ezcolors.color.aqua server=lifesteal-gold'
+    - '[close]'
+  allcolors-cannot_purchase:
+    material: flower_banner_pattern
+    slot: 31
+    priority: 2
+    display_name: '&#ff0000A&#ff7400l&#fed000l &#fbf100C&#b3ff00h&#36ff00a&#12ff80t &#00eafeC&#0355fao&#4400f7l&#d500f5o&#e300f9r&#bd00ffs'
+    lore:
+    - '&8Coinshop Item'
+    - ''
+    - '&6❖ &fCost: &64,800 Coins'
+    - ''
+    - '&cObtain more coins from'
+    - '&7&nstore.minerival.org'
+    - ''
+    - '&c➥ &lYOU NEED MORE COINS'
+    hide_attributes: true
+    hide_enchantments: true
+    hide_effects: true
+    hide_unbreakable: true
+    left_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for &#ff0000A&#ff7400l&#fed000l &#fbf100C&#b3ff00h&#36ff00a&#12ff80t &#00eafeC&#0355fao&#4400f7l&#d500f5o&#e300f9r&#bd00ffs&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[message] '
+    - '[close]'
+    right_click_commands:
+    - '[message] '
+    - '[message] &#FBD510&lCoins &8➟ &cYou do not have enough for &#ff0000A&#ff7400l&#fed000l &#fbf100C&#b3ff00h&#36ff00a&#12ff80t &#00eafeC&#0355fao&#4400f7l&#d500f5o&#e300f9r&#bd00ffs&c!'
+    - '[message] &#FBD510&lCoins &8➟ &fPurchase more coins here: &c&nstore.minerival.org'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 44
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] coinshop_main_menu'
+    right_click_commands:
+    - '[openguimenu] coinshop_main_menu'

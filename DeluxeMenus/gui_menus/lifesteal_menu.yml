@@ -1,0 +1,282 @@
+menu_title: 'Server Help'
+open_command:
+- lifesteal
+- help
+- tutorial
+size: 36
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-37'
+    display_name: ' '
+  '1':
+    material: book
+    slot: 10
+    display_name: '&#3dfb00&lG&#40fb07&le&#42fb0d&lt&#45fb14&lt&#47fc1a&li&#4afc21&ln&#4dfc27&lg &#4ffc2e&lS&#52fc34&lt&#55fc3b&la&#57fd41&lr&#5afd48&lt&#5cfd4e&le&#5ffd55&ld'
+    lore:
+    - ''
+    - '&7Use the command &f/rtp&7!'
+    - '&7This will get you away from &fspawn&7.'
+    left_click_commands:
+    - '[player] rtp'
+    - '[close]'
+    right_click_commands:
+    - '[player] rtp'
+    - '[close]'
+  '2':
+    material: redstone
+    slot: 11
+    display_name: '&#fb2727&lW&#fb2929&lh&#fb2b2b&la&#fb2d2d&lt &#fc2f2f&li&#fc3131&ls &#fc3333&lL&#fc3535&li&#fc3737&lf&#fc3939&le&#fc3b3b&ls&#fc3d3d&lt&#fd3f3f&le&#fd4141&la&#fd4343&ll&#fd4545&l?'
+    lore:
+    - ''
+    - '&7Every kill&7 you get &a&l+1 Heart&7 but'
+    - '&7every death&7 you lose &c&l-1 Heart&7!'
+    - ''
+    - '&7Don''t lose all of your &fhearts&7 or you'
+    - '&7will get death-banned for &f48 Hours&7!'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '3':
+    material: command_block
+    slot: 12
+    display_name: '&#04e8fb&lU&#06e3fb&ls&#08defb&le&#0ad9fb&lf&#0cd4fb&lu&#0ecffb&ll &#10cafb&lC&#11c5fb&lo&#13c0fb&lm&#15bbfb&lm&#17b6fb&la&#19b1fb&ln&#1bacfb&ld&#1da7fb&ls'
+    lore:
+    - ''
+    - '&7These are the best &fcommands&7 to use!'
+    - ''
+    - '&8❖ &f/Market&7 - Open the server market place!'
+    - '&8❖ &f/Profile&7 - Checkout your personal profile!'
+    - '&8❖ &f/Home&7 - Teleport to your saved home!'
+    - '&8❖ &f/Rules&7 - Check out the server''s rules!'
+    - '&8❖ &f/Levels&7 - Unlock free rewards with play time!'
+    - '&8❖ &f/Gamble&7 - Test your odds, go win some money!'
+    - '&8❖ &f/Details&7 - Understand the server details!'
+    - '&8❖ &f/Store&7 - Want store items? Go check it out!'
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+  '4': 
+    material: diamond_pickaxe
+    enchantments:
+    - 'ARROW_DAMAGE;1'
+    hide_enchantments: true
+    hide_attributes: true
+    slot: 13
+    display_name: '&#fb9b01&lN&#fb9f06&le&#fba30b&lw &#fba711&lS&#fbab16&le&#fbae1b&la&#fbb220&ls&#fbb625&lo&#fbba2b&ln &#fbbe30&lF&#fbc235&le&#fbc63a&la&#fbca3f&lt&#fbcd44&lu&#fbd14a&lr&#fbd54f&le&#fbd954&ls'
+    lore:
+    - ''
+    - '&7There are a lot of &fnew&7 features this season!'
+    - ''
+    - '&8❖ &f/Lootbox&7 - Brand new Monthly Lootboxes are out!'
+    - '&8❖ &f/Quests&7 - Complete quests for exclusive rewards!'
+    - '&8❖ &f/Profile&7 - Check out your personal profile!'
+    - '&8❖ &f/Market&7 - All shops, all in one place!'
+    - '&8❖ &f/Shop&7 - We added buyable spawners!'
+    - '&8❖ &f/Heads&7 - Heads have value, better collect them!'
+    - '&8❖ &f/Teams&7 - Brand new teams revamp, build your foundation!'
+    - '&8❖ &f/Cosmetics&7 - Chat Colors & Tags, found in one place!'
+    - '&8❖ &fBye Player Vaults&7 - Build a base, or use enderchests!'
+    - '&8❖ &fToxic Warzone&7 - The city has gone toxic, help restore it!'
+    - '&8❖ &fMore Competitive&7 - End Event, KoTHs, More Players!'
+    - ''
+    - '&7There are even &fmore&7 features, explore now!'
+    - '&7&oNote: More features come out with our &f&oweekly updates&7&o!'
+    left_click_commands:
+    - '[player] discord'
+    - '[close]'
+    right_click_commands:
+    - '[player] discord'
+    - '[close]'
+
+    
+  '5':
+    material: chest
+    slot: 14
+    display_name: '&#fb00de&lF&#f903e2&lr&#f807e5&le&#f60ae9&le &#f40ded&lI&#f210f0&lt&#f114f4&le&#ef17f7&lm&#ed1afb&ls'
+    lore:
+    - ''
+    - '&7Get &ffree&7 items every single day!'
+    - ''
+    - '&8❖ &f/Vote&7 - Vote daily for MineRival!'
+    - '&8❖ &f/Discord&7 - Boost the discord server!'
+    - '&8❖ &f/Levels&7 - Unlock free rewards by just playing!'
+    - '&8❖ &f/Twitch&7 - Watch streamers to enter in active giveaways!'
+    - '&8❖ &fBeing Active&7 - Be active to enter giveaways!'
+
+    left_click_commands:
+    - '[player] rewards'
+    right_click_commands:
+    - '[player] rewards'
+    
+  '6':
+    material: iron_sword
+    hide_attributes: true
+    slot: 15
+    display_name: '&#fb1010&lP&#fb1717&lv&#fb1d1d&lP'
+    lore:
+    - ''
+    - '&7PvP is &fenabled&7 on this server!'
+    - '&7Want to PvP? Here are the best places:'
+    - ''
+    - '&8❖ &fWarzone&7 - Past the red line at spawn!'
+    - '&8❖ &fAt Bases&7 - Fight people at their bases!'
+    - '&8❖ &fTeleporting&7 - Teleport to players and fight them!'
+    - ''
+    - '&7Watch out, &fteleport trapping&7 is allowed!'
+
+    left_click_commands:
+    - '[close]'
+    right_click_commands:
+    - '[close]'
+    
+  '7':
+    material: paper
+    hide_attributes: true
+    slot: 16
+    display_name: '&#01fb00&lE&#0efb07&lc&#1bfc0e&lo&#29fc15&ln&#36fc1b&lo&#43fd22&lm&#50fd29&ly'
+    lore:
+    - ''
+    - '&7Make &fmoney&7 and be the richest!'
+    - ''
+    - '&8❖ &f/Market&7 - All stores, in one!'
+    - '&8❖ &f/Shop&7 - Buy items you need!'
+    - '&8❖ &f/Ah&7 - Sell items you no longer want!'
+    - '&8❖ &f/Bid&7 - Quickly bid on items you need!'
+    - '&8❖ &f/Gamble&7 - Make money by gambling!'
+    - '&8❖ &f/Sell&7 - Sell items for money!'
+    - ''
+    - '&7Don''t forget, only &fgamble&7 what you''re willing to lose!'
+
+    left_click_commands:
+    - '[player] shop'
+    right_click_commands:
+    - '[player] shop'
+    
+  '8':
+    material: sunflower
+    hide_attributes: true
+    slot: 21
+    display_name: '&#f2fb00&lC&#effb0a&lo&#edfc13&li&#eafc1d&ln &#e8fc26&lS&#e5fc30&lh&#e3fd39&lo&#e0fd43&lp'
+    lore:
+    - ''
+    - '&7Buy &fstore items&7 with coins!'
+    - ''
+    - '&8❖ &f/Coinshop&7 - Open the Coin Shop menu!'
+    - '&8❖ &f/Coins&7 - Check your Coin Balance!'
+    - ''
+    - '&7Where do I &fget&7 Coins?'
+    - ''
+    - '&8❖ &f/Buy&7 - Buy Coins on our Store!'
+    - '&8❖ &f/Levels&7 - Get Free Coins by just playing!'
+    - '&8❖ &fCrate Keys&7 - Get Coins in Crate Keys!'
+    - '&8❖ &fLoot Boxes&7 - Get Coins in Loot Boxes!'
+    left_click_commands:
+    - '[player] coinshop'
+    right_click_commands:
+    - '[player] coinshop'
+
+    
+  '9':
+    material: minecart
+    slot: 22
+    display_name: '&#7289da&lD&#6f85d3&li&#6b81cc&ls&#687dc6&lc&#6478bf&lo&#6174b8&lr&#5d70b1&ld'
+    lore:
+    - ''
+    - '&7We have a &fdiscord&7 community server!'
+    - ''
+    - '&7Chat with people in the &fcommunity&7,'
+    - '&7enter &fgiveaways&7, participate in &fpolls&7,'
+    - '&7keep updated with &fannouncements&7, and more!'
+    - ''
+    - '&7Join here: &fdiscord.gg/minerivalmc'
+    left_click_commands:
+    - '[player] discord'
+    - '[close]'
+    right_click_commands:
+    - '[player] discord'
+    - '[close]'
+
+    
+    
+  '10':
+    material: bell
+    slot: 20
+    display_name: '&#ff2525&lS&#ff2a2a&le&#ff2e2e&lr&#ff3333&lv&#ff3737&le&#ff3c3c&lr &#ff4141&lS&#ff4545&lt&#ff4a4a&lo&#ff4e4e&lr&#ff5353&le'
+    lore:
+    - ''
+    - '&7There''s currently a &f15% Off&7 release sale!'
+    - ''
+    - '&7Buy items to &fsupport&7 the server while you'
+    - '&7receive &famazing&7 items in-game!'
+    - ''
+    - '&7Interested? Do: &f/buy'
+    left_click_commands:
+    - '[player] buy'
+    - '[message]'
+    - '[message] &#CD0A0B&lCheck out the store!'
+    - '[message] &e➟ https://minerival.net/'
+    - '[message]'
+    right_click_commands:
+    - '[player] buy'
+    - '[message]'
+    - '[message] &#CD0A0B&lCheck out the store!'
+    - '[message] &e➟ https://minerival.net/'
+    - '[message]'
+    
+  '11':
+    material: axolotl_bucket
+    slot: 23
+    display_name: '&#ef00ff&lP&#ec00fc&ll&#e900f8&la&#e500f5&ly&#e200f1&le&#df00ee&lr &#dc00eb&lS&#d900e7&lt&#d500e4&la&#d200e0&lt&#cf00dd&ls'
+    lore:
+    - ''
+    - '&7Use &f/stats&7 to check your statistics!'
+    - '&7You will be able to see all kinds of statistics.'
+    - ''
+    - '&8❖ &fKills&7 - Check your all-time Kills!'
+    - '&8❖ &fDeaths&7 - Check your all-time Deaths!'
+    - '&8❖ &fHearts&7 - Check your amount of Hearts!'
+    - '&8❖ &fMoney&7 - Check how Rich you are!'
+    - '&8❖ &fVotes&7 - Check how many times you Voted!'
+    - '&8❖ &fCoins&7 - Check how many Coins you have!'
+    - '&8❖ &fPlaytime&7 - Check how long you''ve Played the server!'
+    - '&8❖ &fRank&7 - Check your current Rank!' 
+    - ''
+    - '&7&oNote: You can check other player''s stats by'
+    - '&7&oplacing a username at the end of /stats!'
+    left_click_commands:
+    - '[player] stats'
+    right_click_commands:
+    - '[player] stats' 
+    
+  '12':
+    material: allay_spawn_egg
+    enchantments:
+    - 'ARROW_DAMAGE;1'
+    hide_enchantments: true
+    hide_attributes: true
+    slot: 24
+    display_name: '&#00aeff&lS&#01aaff&le&#02a6ff&lr&#02a1ff&lv&#039dff&le&#0499ff&lr &#0595ff&lR&#0691ff&la&#068cff&ln&#0788ff&lk&#0884ff&ls'
+    lore:
+    - ''
+    - '&7Every rank has &funique&7 server features!'
+    - '&7Ranks can be obtained for &ffree&7 & on our &fstore&7!'
+    - ''
+    - '&8❖ &fMore Homes&7 - Set more home locations!'
+    - '&8❖ &fDaily Items&7 - Get amazing items like Loot Boxes!'
+    - '&8❖ &fBidding Slots&7 - Bid off more items!'
+    - '&8❖ &fAuction House Slots&7 - Sell more items at once!'
+    - '&8❖ &fCustom Weather&7 - Set your weather to always sunny!'
+    - '&8❖ &fCustom Daylight&7 - Set your time to always day!'
+    - '&8❖ &fPortable Enderchest&7 - /Enderchest anywhere you are!' 
+    - '&8❖ &fPortable Crafting Table&7 - /Craft anywhere you are!' 
+    - ''
+    - '&7There are even &fmore&7 features, explore now!'
+    left_click_commands:
+    - '[player] ranks'
+    right_click_commands:
+    - '[player] ranks'

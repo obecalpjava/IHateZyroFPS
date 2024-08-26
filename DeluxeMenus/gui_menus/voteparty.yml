@@ -1,0 +1,65 @@
+menu_title: '&8Vote Party'
+open_command: voteparty
+register_command: true
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: BOOK
+    amount: 1
+    slots:
+    - '11'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#1daeff&lH&#23b1fe&lo&#29b5fd&lw &#2fb8fc&lI&#35bbfb&lt &#3bbffa&lW&#41c2f8&lo&#47c5f7&lr&#4dc8f6&lk&#53ccf5&ls&#59cff4&l?'
+    lore:
+    - '&8Vote Party Info'
+    - ''
+    - '&fIf the server reaches &#1daeff&l300'
+    - '&fvotes a vote party will begin!'
+    - ''
+    - '&e&l➥ CLICK TO CONTINUE'
+    click_commands:
+    - '[player] vote'
+    - '[close]'
+  '2':
+    material: LIME_DYE
+    amount: 1
+    slots:
+    - '13'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#04df00&lV&#0ee10c&lo&#17e418&lt&#21e624&le &#2be830&lF&#34eb3b&lo&#3eed47&lr &#48ef53&lU&#51f25f&ls&#5bf46b&l!'
+    lore:
+    - '&8Vote Party Info'
+    - ''
+    - '&fWant free rewards? Vote today'
+    - '&fand receive the free rewards!'
+    - ''
+    - '&e&l➥ CLICK TO VOTE'
+    click_commands:
+    - '[player] vote'
+    - '[close]'
+  '3':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '15'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#bb64ff&lL&#bf62fe&lo&#c360fd&lo&#c75efc&lt&#cc5bfc&lb&#d059fb&lo&#d457fa&lx &#d855f9&lR&#dc53f8&le&#e051f7&lw&#e54ef7&la&#e94cf6&lr&#ed4af5&ld&#f148f4&ls'
+    lore:
+    - '&8Vote Party Info'
+    - ''
+    - '&fThis lootbox contains special rewards'
+    - '&fthat you can only get from this lootbox!'
+    - ''
+    - '&e&l➥ CLICK TO PREVIEW'
+    click_commands:
+    - '[player] lootbox preview voteparty'
+    - '[close]'

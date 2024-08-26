@@ -1,0 +1,91 @@
+menu_title: '&8Marketplace'
+open_command: market
+register_command: true
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: END_CRYSTAL
+    amount: 1
+    slots:
+    - '10'
+    display_name: '&#c35bf4&lS&#c866f4&lt&#cd70f4&lo&#d27bf4&lr&#d785f4&le'
+    lore:
+    - '&8Market Pages'
+    - ''
+    - '&fBuy blocks and other equipment'
+    - '&fto enhance your gameplay!'
+    - ''
+    - '&e&l➥ CLICK TO CONTINUE'
+    click_commands:
+    - '[player] shop'
+    - '[close]'
+  '2':
+    material: SUGAR_CANE
+    amount: 1
+    slots:
+    - '11'
+    display_name: '&#1ef434&lS&#27f43c&le&#30f444&ll&#39f44c&ll &#43f455&lL&#4cf45d&lo&#55f465&lo&#5ef46d&lt'
+    lore:
+    - '&8Market Pages'
+    - ''
+    - '&fSell ores and farming materials'
+    - '&fto earn in-game money!'
+    - ''
+    - '&e&l➥ CLICK TO CONTINUE'
+    click_commands:
+    - '[player] shop'
+    - '[close]'
+  '3':
+    material: PAINTING
+    amount: 1
+    slots:
+    - '13'
+    display_name: '&#ff0404&lA&#fe0909&lu&#fd0f0f&lc&#fc1414&lt&#fb1919&li&#fa1e1e&lo&#f92424&ln &#f82929&lH&#f72e2e&lo&#f63333&lu&#f53939&ls&#f43e3e&le'
+    lore:
+    - '&8Market Pages'
+    - ''
+    - '&fSell your gear and loot'
+    - '&fhere to make more money!'
+    - ''
+    - '&e&l➥ CLICK TO CONTINUE'
+    click_commands:
+    - '[player] ah'
+    - '[close]'
+  '4':
+    material: CLOCK
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#23e7f4&lB&#31e3f4&li&#3fdff4&ld&#4ddbf4&ld&#5ad6f4&li&#68d2f4&ln&#76cef4&lg'
+    lore:
+    - '&8Market Pages'
+    - ''
+    - '&fBid your loot away to'
+    - '&fthe community!'
+    - ''
+    - '&e&l➥ CLICK TO CONTINUE'
+    click_commands:
+    - '[player] bid'
+    - '[close]'
+  '5':
+    material: SUNFLOWER
+    amount: 1
+    slots:
+    - '16'
+    display_name: '&#ffc90b&lC&#fdcc16&lo&#fcce20&li&#fad12b&ln&#f9d336&lf&#f7d641&ll&#f6d84b&li&#f4db56&lp'
+    lore:
+    - '&8Market Pages'
+    - ''
+    - '&fBuy coins and use them'
+    - '&fat this shop!'
+    - ''
+    - '&e&l➥ CLICK TO CONTINUE'
+    click_commands:
+    - '[player] bid'
+    - '[close]'

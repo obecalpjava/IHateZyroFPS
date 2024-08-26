@@ -1,0 +1,129 @@
+menu_title: '&8Buy | Ranks'
+open_command: buy-ranks
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: BOOK
+    amount: 1
+    slots:
+    - '10'
+    display_name: '&#1EE220&lRANGER &fRank'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#1EE220&l❖ &7Price: &#1EE220$4.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#1EE220&lPurchase A Rank!'
+    - '[message] &#1EE220&l❖ &e&nhttps://store.minerival.org/category/grids'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: BOOK
+    amount: 1
+    slots:
+    - '11'
+    display_name: '&#EF9B44&lSHAMAN &fRank'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#EF9B44&l❖ &7Price: &#EF9B44$14.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#EF9B44&lPurchase A Rank!'
+    - '[message] &#EF9B44&l❖ &e&nhttps://store.minerival.org/category/grids'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: BOOK
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#FFCC31&lSAGE &fRank'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FFCC31&l❖ &7Price: &#FFCC31$34.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FFCC31&lPurchase A Rank!'
+    - '[message] &#FFCC31&l❖ &e&nhttps://store.minerival.org/category/grids'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: BOOK
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#43D6FD&lNOBLE &fRank'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#43D6FD&l❖ &7Price: &#43D6FD$49.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#43D6FD&lPurchase A Rank!'
+    - '[message] &#43D6FD&l❖ &e&nhttps://store.minerival.org/category/grids'
+    - '[message]'
+    - '[close]'
+  '5':
+    material: BOOK
+    amount: 1
+    slots:
+    - '15'
+    display_name: '&#FD3939&lWIZARD &fRank'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FD3939&l❖ &7Price: &#FD3939$74.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FD3939&lPurchase A Rank!'
+    - '[message] &#FD3939&l❖ &e&nhttps://store.minerival.org/category/grids'
+    - '[message]'
+    - '[close]'
+  '6':
+    material: BOOK
+    amount: 1
+    slots:
+    - '16'
+    display_name: '&#069ffb&lS&#0797fc&lO&#0890fc&lR&#0988fd&lC&#0b81fd&lE&#0c79fe&lR&#0d72fe&lE&#0e6aff&lR &fRank'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#069ffb&l❖ &7Price: &#069ffb$149.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#069ffb&lPurchase A Rank!'
+    - '[message] &#069ffb&l❖ &e&nhttps://store.minerival.org/category/grids'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] buy_menu'
+    right_click_commands:
+    - '[openguimenu] buy_menu'

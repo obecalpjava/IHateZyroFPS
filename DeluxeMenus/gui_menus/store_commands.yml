@@ -1,0 +1,111 @@
+menu_title: '&8Buy | Commands'
+open_command: buy-commands
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: END_PORTAL_FRAME
+    amount: 1
+    slots:
+    - '11'
+    display_name: '&#8601FB&l/WARP END&f Command'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#8601FB&l❖ &7Price: &#8601FB$3.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBD613&lPurchase This Command!'
+    - '[message] &#FBD613&l❖ &e&nhttps://store.minerival.org/category/commands-1'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: CRAFTING_TABLE
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#CE7D2E&l/CRAFT&f Command'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#CE7D2E&l❖ &7Price: &#CE7D2E$6.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#CE7D2E&lPurchase This Command!'
+    - '[message] &#CE7D2E&l❖ &e&nhttps://store.minerival.org/category/commands-1'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '13'
+    display_name: '&#07828C&l/ENDERCHEST&f Command'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#07828C&l❖ &7Price: &#07828C$9.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#07828C&lPurchase This Command!'
+    - '[message] &#07828C&l❖ &e&nhttps://store.minerival.org/category/commands-1'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: ANVIL
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#FB2222&l/FIX&f Command'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FB2222&l❖ &7Price: &#FB2222$14.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FB2222&lPurchase This Command!'
+    - '[message] &#FB2222&l❖ &e&nhttps://store.minerival.org/category/commands-1'
+    - '[message]'
+    - '[close]'
+  '5':
+    material: CHEST
+    amount: 1
+    slots:
+    - '15'
+    display_name: '&#2CBDFB&l/BACKPACK&f Command'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#2CBDFB&l❖ &7Price: &#2CBDFB$14.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#2CBDFB&lPurchase This Command!'
+    - '[message] &#2CBDFB&l❖ &e&nhttps://store.minerival.org/category/commands-1'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] buy_menu'
+    right_click_commands:
+    - '[openguimenu] buy_menu'

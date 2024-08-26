@@ -1,0 +1,118 @@
+menu_title: '&8Free Rewards'
+open_command: rewards
+register_command: true
+size: 26
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '10'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#bb64ff&lV&#c061fe&lo&#c65efd&lt&#cb5cfc&le &#d159fb&lP&#d656fa&la&#db53f8&lr&#e150f7&lt&#e64ef6&li&#ec4bf5&le&#f148f4&ls'
+    lore:
+    - '&8Description'
+    - ''
+    - '&fFinish a server vote party to'
+    - '&freceive a free lootbox!'
+    - ''
+    - '&8❖ &f1x Vote Party Lootbox'
+    - ''
+    - '&e&l➥ CLICK FOR MORE'
+    click_commands:
+    - '[player] voteparty'
+    - '[close]'
+  '2':
+    material: LIME_DYE
+    amount: 1
+    slots:
+    - '11'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#39c322&lV&#38cd23&lo&#38d724&lt&#37e024&li&#37ea25&ln&#36f426&lg'
+    lore:
+    - '&8Description'
+    - ''
+    - '&fVoting helps support the servers'
+    - '&fgrowth! Vote for free rewards!'
+    - ''
+    - '&8❖ &f4x Vote Keys'
+    - '&8❖ &f$400 In-Game Money'
+    - ''
+    - '&e&l➥ CLICK FOR MORE'
+    click_commands:
+    - '[player] vote'
+    - '[close]'
+  '3':
+    material: BEACON
+    amount: 1
+    slots:
+    - '13'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#1dbbff&lD&#20bdfe&li&#23c0fe&ls&#27c2fd&lc&#2ac5fc&lo&#2dc7fb&lr&#30cafb&ld &#33ccfa&lG&#37cff9&li&#3ad1f8&lv&#3dd4f8&le&#40d6f7&la&#43d9f6&lw&#47dbf5&la&#4adef5&ly&#4de0f4&ls'
+    lore:
+    - '&8Description'
+    - ''
+    - '&fJoin our discord to participate'
+    - '&fin exclusive giveaways!'
+    - ''
+    - '&8❖ &fSpecial Listed Prize'
+    - ''
+    - '&e&l➥ CLICK FOR MORE'
+    click_commands:
+    - '[player] discord'
+    - '[close]'
+  '4':
+    material: CLOCK
+    amount: 1
+    slots:
+    - '15'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#ffcb13&lP&#fece17&ll&#fdd01b&la&#fcd320&ly&#fcd524&lt&#fbd828&li&#fadb2c&lm&#f9dd31&le &#f8e035&lL&#f7e339&le&#f7e53d&lv&#f6e842&le&#f5ea46&ll&#f4ed4a&ls'
+    lore:
+    - '&8Description'
+    - ''
+    - '&fGet free rewards by just'
+    - '&fplaying on the server!'
+    - ''
+    - '&8❖ &fCrate Keys'
+    - '&8❖ &fHearts'
+    - '&8❖ &fMoney'
+    - '&8❖ &fAnd more...'
+    - ''
+    - '&e&l➥ CLICK FOR MORE'
+    click_commands:
+    - '[player] levels'
+    - '[close]'
+  '5':
+    material: CRAFTING_TABLE
+    amount: 1
+    slots:
+    - '16'
+    hide_enchantments: true
+    hide_attributes: true
+    display_name: '&#ce0000&lQ&#d60606&lu&#dd0b0b&le&#e51111&ls&#ec1616&lt&#f41c1c&ls'
+    lore:
+    - '&8Description'
+    - ''
+    - '&fComplete easy or hard quests'
+    - '&fto win free rewards!'
+    - ''
+    - '&8❖ &fCrate Keys'
+    - '&8❖ &fHearts'
+    - '&8❖ &fMoney'
+    - '&8❖ &fAnd more...'
+    - ''
+    - '&e&l➥ CLICK FOR MORE'
+    click_commands:
+    - '[player] quests'
+    - '[close]'

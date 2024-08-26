@@ -1,0 +1,93 @@
+menu_title: '&8Buy | Bundles'
+open_command: buy-bundles
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: NAME_TAG
+    amount: 1
+    slots:
+    - '10'
+    display_name: '&#FBD613&lTAGS &fBundle'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FBD613&l❖ &7Price: &#FBD613$14.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FBD613&lPurchase A Bundle!'
+    - '[message] &#FBD613&l❖ &e&nhttps://store.minerival.org/category/bundles'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: LIGHT_BLUE_DYE
+    amount: 1
+    slots:
+    - '12'
+    display_name: '&#2EBEFB&lCHAT COLOR &fBundle'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#2EBEFB&l❖ &7Price: &#2EBEFB$19.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#2EBEFB&lPurchase A Bundle!'
+    - '[message] &#2EBEFB&l❖ &e&nhttps://store.minerival.org/category/bundles'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: COMMAND_BLOCK
+    amount: 1
+    slots:
+    - '14'
+    display_name: '&#FB2222&lCOMMANDS &fBundle'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#FB2222&l❖ &7Price: &#FB2222$24.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#FB2222&lPurchase A Bundle!'
+    - '[message] &#FB2222&l❖ &e&nhttps://store.minerival.org/category/bundles'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: CHEST
+    amount: 1
+    slots:
+    - '16'
+    display_name: '&#2CFB1A&lCRATE KEYS &fBundle'
+    lore:
+    - '&8Webstore Goods'
+    - ''
+    - '&#2CFB1A&l❖ &7Price: &#2CFB1A$34.99 USD'
+    - ''
+    - '&e&l➥ CLICK FOR STORE'
+    click_commands:
+    - '[message]'
+    - '[message] &#2CFB1A&lPurchase A Bundle!'
+    - '[message] &#2CFB1A&l❖ &e&nhttps://store.minerival.org/category/bundles'
+    - '[message]'
+    - '[close]'
+  'back':
+    material: FLOWER_BANNER_PATTERN
+    slot: 26
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    display_name: '&cGo Back'
+    left_click_commands:
+    - '[openguimenu] buy_menu'
+    right_click_commands:
+    - '[openguimenu] buy_menu'

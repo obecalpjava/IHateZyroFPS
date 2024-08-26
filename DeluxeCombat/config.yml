@@ -1,0 +1,256 @@
+##############################################################################################################
+#                                                                                                            #
+# ______     _                _____                 _           _                                            #
+# |  _  \   | |              /  __ \               | |         | |                                           #
+# | | | |___| |_   ___  _____| /  \/ ___  _ __ ___ | |__   __ _| |_                                          #
+# | | | / _ \ | | | \ \/ / _ \ |    / _ \| '_ ` _ \| '_ \ / _` | __|                                         #
+# | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
+# |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
+#------------------------------------------------------------------------------------------------------------#
+#                                                                                                            #
+# Thank you for purchasing DeluxeCombat - An ultimate powerful combat resource for every server              #
+#                                                                                                            #             
+# This is one of the configuration files of the DeluxeCombat plugin.                                         #
+# Here, you can configure the basic plugin. If you want to change all messages, switch to the lang.yml       #
+#                                                                                                            #
+# The plugin supports following server versions: 1.8.3, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x, 1.15  #
+#                                                                                                            #
+# Any problems? Write me a private message on spigot! Spigot: www.spigotmc.org/members/199727/               #
+# To get quick support please also consider joining my discord server: discordapp.com/invite/MGTSYjS         #
+#                                                                                                            #
+# ~ Marido, timderspieler                                                                                    #
+#                                                                                                            #
+# Useful: You can use colorcodes '&' in nearly all string configurations                                     #
+#                                                                                                            #
+##############################################################################################################
+
+#
+# !IMPORTANT!: The majority of the settings can be found in the /dc menu (Settings editor). Please do not touch the
+#              data.yml. If you do, no settings will be stored. If you need help using the ingame editor please contact
+#              me via discord or spigot pm!
+#
+
+Storage:
+  
+  # Following types are available: MYSQL, SQLITE
+  # 'MYSQL' stores the data in a Database on your MySQL Server ( Better, for multiservers )
+  # 'SQLITE' stores the data in a flatfile database in the plugin folder ( CAN BE SLOW! )
+  
+  type: "SQLITE"
+  
+  MySQL:
+  
+    # You need to set following things up when you selected 'MYSQL' above
+    
+    # !WARNING! If you did something wrong here (Wrong password, username etc.)
+    # the plugin disables itself!
+    
+    username: "DeluxeCombat"
+    password: "1234"
+    database: "DeluxeCombat"
+    host: "localhost"
+    
+    # If you didnt change the port of the mysql server, dont touch this!
+    port: "3306"
+    
+    # Whether you want to use the encrypted secure socket layer or not
+    useSSL: false
+    
+    #
+    # !EXPERT OPTION!
+    #
+    # Here, you have the chance to use a custom mysql connection string.
+    # Writing something into here will directly disable the options above,
+    # except of username and password. So please handle with care and only write
+    # something into here if you know what you are doing!!!
+    manually_connection_string: ""
+
+Point-Ranking-System:
+  
+  # Here you set different displaynames for your
+  # players on each rank. You can add more
+  # displaynames with <RANK>:<DISPLAYNAME>
+  # The rank "0" sets a displayname for all
+  # players who are not in the e.g top 3.
+  displayname:
+  - "1:&a&l#1 &r&f%player%"
+  - "2:&e&l#2 &r&f%player%"
+  - "3:&c&l#3 &r&f%player%"
+  - "0:&7&l#>3 &r&f%player%"
+
+# NOT AVAILABLE IN 1.8-1.8.8!!!
+Custom_Items:
+  
+  # Custom items, or better said: Custom tools are
+  # normal items/tools with cool effects bind to them.
+  # You can e.g add WOOD_SWORD to this list and every
+  # wooden sword on the server has from now on these
+  # special effects. You need a configured permission
+  # to see these effects.
+  
+  # Simply add any material you want into this section
+  STICK:
+  
+    # Set a permission you need to have to see the
+    # effects / particles / sounds
+    permission: "customtool.stick"
+    
+    # Following modes are available:
+    # 'PLAYER': Fired when you hit a player
+    # 'ANIMAL': Fired when you hit an animal
+    # 'BOTH': Fired when you hit a player / an animal
+    enemy_mode: "BOTH"
+    
+    # Following target modes are available:
+    # 'ENEMY': Effects / Sounds / Potioneffects will be applied to the enemy
+    # 'PLAYER': Effects / Sound / Potioneffects will be applied to you the player
+    target: "ENEMY"
+    
+    # Particles will appear at the target you have hit
+    # with you custom tool
+    particle:
+    
+      # Particle name
+      name: "HEART"
+      
+      # Select an amount of particles that
+      # will appear on your choosen target
+      amount: 10
+      
+    # A potioneffect will be applied to your choosen target
+    effect:
+    
+      # Potioneffect name
+      name: "NIGHT_VISION"
+      
+      # Select an amplifier for the potioneffect
+      amplifier: 1
+      
+      # Select a duration of the effect in seconds
+      duration: 5
+      
+    # Select a sound that will be played when you hit your target
+    sound:
+    
+      # Sound name
+      name: "ENTITY_PIG_HURT"
+      
+      # Select a volume and pitch ( Integer only )
+      volume: 1
+      pitch: 1
+
+Kill-Streaks:
+
+   # Give your players gifts for reaching a killstreak
+   
+   permissions:
+      
+      # The permission the player needs to have to reach this streak
+      # You can create as many kill-streaks as you want
+      # Dont use dots. '-' will be replaced with a dot
+      # So 'permission-one' is actually 'permission.one'
+      permission-one:
+      
+         # Amount of kills you need to have in a row
+         streak: 5
+         
+         # Enable / Disable the plugins prefix for the messages
+         prefix: true
+         
+         # Actions that will be executed on reaching the streak
+         # [BROADCAST] <args> : Sends a broadcast
+         # [MSG] <args> : Sends a message to the player
+         # [TITLE] <args> : Sends a upper title message
+         # [SUBTITLE] <args> : Sends a subtitle
+         # [CMD] <args> : Executes a command as the console
+         # [SOUND] Sound, Volume, Pitch : Plays a sound to the player
+         cmds:
+         - "[BROADCAST] &c%player% &7has reached a killstreak of &c%streak%&7!"
+         - "[TITLE] &4Killstreak!"
+         - "[SUBTITLE] &c%streak% Kills!"
+         - "[MSG] You got a diamond for reaching this streak!"
+         - "[CMD] give %player% minecraft:diamond 1"
+         - "[SOUND] ENTITY_PLAYER_LEVELUP, 2f, 1f"
+
+Rewards:
+  
+  # Give players rewards for killing animals or players
+  
+  # Tutorial: https://timderspieler.gitbook.io/timderspieler-plugins/deluxecombat/configuration/rewards
+  
+  # If you have e.g 'permission.one' you will get a diamond
+  # If you have e.g 'permission.two' you will get 100 money
+  # You can add as many permissions / commands as you want
+  # Dont use dots. '-' will be replaced with a dot
+  # So 'permission-one' is actually 'permission.one'
+  permissions:
+  
+    permission-one:
+    
+      # Decide when this reward will be triggered
+      # Kill modes:
+      # 'PLAYER': Rewards for killing a player (Playerholder: %victim%)
+      # 'ANIMAL': Rewards for killing an animal (Placeholder: %animal%)
+      # 'MONSTER': Rewards for killing a monster (Placeholder: %monster%)
+      # 'BOTH': Rewards for killing players / animals (Placeholder: %entity%)
+      # 'BOUNTY': Extra rewards for killing bounties
+      # 'KILLSTREAK_BREAK:5': Reward for killing players with killstreak of e.g 5
+      kill_mode: "PLAYER"
+      
+      # Chance in percent that this reward will be executed
+      # when killing a %kill_mode%. 100 to always get this
+      # reward
+      chance: 100
+      
+      # Commands executes on when killing a 'kill_mode'
+      # Placeholders:
+      # %victim% Name of the killed player (Only in kill_mode player)
+      # %player% Name of the player
+      # %animal% Name/Type of the killed animal (Only in kill_mode animal)
+      # %entity% Name of the killed enemy (Only in kill_mode both)
+      
+      # Available cmds:
+      # [CMD] <arguments> : Runs command from console
+      # [MSG] <message> : Sends message to the player
+      # [TITLE] <message> : Sends title to the player
+      # [SUBTITLE] <message> : Sends subtitle to the player
+      # [SOUND] Sound, Volume, Pitch : Plays a sound to the player
+      cmds:
+      - "[TITLE] &a&l+1 Kill"
+      - "[SUBTITLE] &cYou killed %victim%"
+      - "[CMD] give %player% diamond 1"
+
+    permission-two:
+    
+      # Decide when this reward will be triggered
+      # Kill modes:
+      # 'PLAYER': Rewards for killing a player (Playerholder: %victim%)
+      # 'ANIMAL': Rewards for killing an animal (Placeholder: %animal%)
+      # 'MONSTER': Rewards for killing a monster (Placeholder: %monster%)
+      # 'BOTH': Rewards for killing players / animals (Placeholder: %entity%)
+      # 'BOUNTY': Extra rewards for killing bounties
+      # 'KILLSTREAK_BREAK:5': Reward for killing players with killstreak of e.g 5
+      kill_mode: "KILLSTREAK_BREAK:5"
+      
+      # Chance in percent that this reward will be executed
+      # when killing a %kill_mode%. 100 to always get this
+      # reward
+      chance: 100
+      
+      # Commands executes on when killing a 'kill_mode'
+      # Placeholders:
+      # %victim% Name of the killed player (Only in kill_mode player)
+      # %player% Name of the player
+      # %animal% Name/Type of the killed animal (Only in kill_mode animal)
+      # %entity% Name of the killed enemy (Only in kill_mode both)
+      
+      # Available cmds:
+      # [CMD] <arguments> : Runs command from console
+      # [MSG] <message> : Sends message to the player
+      # [TITLE] <message> : Sends title to the player
+      # [SUBTITLE] <message> : Sends subtitle to the player
+      # [SOUND] Sound, Volume, Pitch : Plays a sound to the player
+      cmds:
+      - "[SUBTITLE] &c&lKILLSTREAK DENIED!"
+      - "[MSG] &eYou denied the killstreak of &c%player%&e (&c5 Kills&e)!"
+      - "[CMD] give %player% beacon 1"

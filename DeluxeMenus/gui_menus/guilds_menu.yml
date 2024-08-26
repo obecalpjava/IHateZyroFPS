@@ -1,0 +1,274 @@
+# ==============================================================
+# A NOTE WHEN EDITING THIS OR ANY DeluxeMenus CONFIGURATION FILE:
+# This config is sensitive to yaml formatting errors
+# KEEP A BACKUP WHEN EDITING YOUR FILE BEFORE UPLOADING TO YOUR SERVER!!!
+# Make sure every String you modify or add is enclosed in 'apostrophes'
+# ==============================================================
+menu_title: '&8Teams | Info'
+open_command:
+- Teams
+size: 45
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-44'
+    display_name: ' '
+  '1':
+    material: BLUE_BANNER
+    data: 0
+    amount: 1
+    slot: 10
+    priority: 1
+    display_name: '&#3285CD&lCreate Team'
+    lore:
+    - '&8Creating a Team'
+    - ''
+    - '&#3285CDFeatures:'
+    - '&8❖ &fAlliances'
+    - '&8❖ &fTeam Home'
+    - '&8❖ &fToggleable Friendly-Fire'
+    - '&8❖ &fTeam Chat'
+    - ''
+    - '&#3285CDCommand:'
+    - '&8❖ &f/team create [name]'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#3285CD&lTeam Creation Command:'
+    - '[message] &e➥ /team create <name>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#3285CD&lTeam Creation Command:'
+    - '[message] &e➥ /team create <name>'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: PINK_BANNER
+    data: 0
+    amount: 1
+    slot: 13
+    priority: 1
+    display_name: '&#FF5ED6&lLeave Team'
+    lore:
+    - '&8Leaving a Team'
+    - ''
+    - '&fHave an issue with your &#FF80D2Team&f?'
+    - '&fYou are always free to &#FF80D2leave it&f.'
+    - ''
+    - '&#FF5ED6Command:'
+    - '&8❖ &f/team leave'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#FF4DC0&lTeam Leave Command:'
+    - '[message] &e➥ /team leave'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#FF4DC0&lTeam Leave Command:'
+    - '[message] &e➥ /team create'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: RED_BANNER
+    data: 0
+    amount: 1
+    slot: 16
+    priority: 1
+    display_name: '&#FF0016&lDelete Team'
+    lore:
+    - '&8Deleting a Team'
+    - ''
+    - '&fHas the time &ffinally come? If you''re'
+    - '&fthe &#FF3345Team owner&f, you can &#FF3345delete the Team&f.'
+    - ''
+    - '&#FF0016&lWARNING:'
+    - '&fThis action is &#FF3345irreversible. &fMake sure'
+    - '&fyou are absolutely certain &fthat you want'
+    - '&fto &#FF3345delete &fthe Team before doing so.'
+    - ''
+    - '&#FF0016Command:'
+    - '&8❖ &f/team delete'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#FF0016&lTeam Delete Command:'
+    - '[message] &e➥ /team delete'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#FF0016&lTeam Delete Command:'
+    - '[message] &e➥ /team delete'
+    - '[message]'
+    - '[close]'
+  '4':
+    material: PLAYER_HEAD
+    data: 0
+    amount: 1
+    slot: 29
+    priority: 1
+    display_name: '&#0AD111&lInviting Users'
+    lore:
+    - '&8Team Invitations'
+    - ''
+    - '&fA Team isn''t a Team without &#1AF421other players&f!'
+    - '&fYou can &#1AF421invite &fplayers to your Team!'
+    - '&7&oOnly Owners/Admins can invite users.'
+    - ''
+    - '&#0AD111Command:'
+    - '&8❖ &f/team invite [username]'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#0AD111&lTeam/Ally Chat Commands:'
+    - '[message] &e➥ /team invite <username>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#0AD111&lTeam/Ally Chat Commands:'
+    - '[message] &e➥ /team invite <username>'
+    - '[message]'
+    - '[close]'
+  '5':
+    material: PAPER
+    data: 0
+    amount: 1
+    slot: 30
+    priority: 1
+    display_name: '&#1CB9E3&lTeam Chat'
+    lore:
+    - '&8Team Chat'
+    - ''
+    - '&fYou can use a &#4AC7E8private chat'
+    - '&fin-game to talk to &#4AC7E8Team members'
+    - '&fas well as &#4AC7E8allies&f. Normal rules still'
+    - '&fapply in those chats!'
+    - ''
+    - '&#1CB9E3Commands:'
+    - '&8❖ &f/team chat [message]'
+    - '&8❖ &f/team chat'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#1CB9E3&lTeam Chat Commands:'
+    - '[message] &e➥ /team chat <message>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#1CB9E3&lTeam Chat Commands:'
+    - '[message] &e➥ /team chat <message>'
+    - '[message]'
+    - '[close]'
+  '6':
+    material: GOLD_BLOCK
+    data: 0
+    amount: 1
+    slot: 31
+    priority: 1
+    display_name: '&#F500FF&lTeam Hierarchy'
+    lore:
+    - '&8Team Roles'
+    - ''
+    - '&#F500FFRank Info:'
+    - '&7Members:'
+    - '&fVisit Team Home & Use Ally/team Chats.'
+    - ''
+    - '&cAdmins:'
+    - '&fInvite Users, Ban/Unban Users,'
+    - '&fToggle Friendly Fire, Manage Allies.'
+    - ''
+    - '&4Owners:'
+    - '&fSet/Delete Team Home, Handle Team Ranks,'
+    - '&fSet Name of Team, Toggle Invite-Only, and Delete.'
+    - ''
+    - '&#F500FFCommands:'
+    - '&8❖ &f/team promote [username]'
+    - '&8❖ &f/team demote [username]'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#F500FF&lTeam Promotion/Demotion Commands:'
+    - '[message] &e➥ /team promote <username>'
+    - '[message] &e➥ /team demote <username>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#F500FF&lTeam Promotion/Demotion Commands:'
+    - '[message] &e➥ /team promote <username>'
+    - '[message] &e➥ /team demote <username>'
+    - '[message]'
+    - '[close]'
+  '7':
+    material: TURTLE_EGG
+    data: 0
+    amount: 1
+    slot: 32
+    priority: 1
+    display_name: '&#D1D900&lAllies'
+    lore:
+    - '&8Team Alliances'
+    - ''
+    - '&#F6FF0DTeams &fcan be friends with &#F6FF0Dother Teams&f!'
+    - '&fAllies can &#F6FF0Dtake your side &fand be in your &#F6FF0Dally chat&f!'
+    - ''
+    - '&#D1D900Commands:'
+    - '&8❖ &f/team ally <Team Name>'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#D1D900&lTeam Ally Management Commands:'
+    - '[message] &e➥ /team ally <team name>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#D1D900&lTeam Ally Management Commands:'
+    - '[message] &e➥ /team ally <team name>'
+    - '[message]'
+    - '[close]'
+  '8':
+    material: IRON_DOOR
+    data: 0
+    amount: 1
+    slot: 33
+    priority: 1
+    display_name: '&#C80022&lKicking Members'
+    lore:
+    - '&8Team Management'
+    - ''
+    - '&fIf and when you must, you can &#FB002Aremove &fTeam members'
+    - '&fif they are not following your &#FB002Arules&f. Team &#FB002Aadmins'
+    - '&fand the &#FB002Aowner &fcan remove Team members.'
+    - ''
+    - '&#C80022Commands:'
+    - '&8❖ &f/team kick [username]'
+    - ''
+    - '&e➥ &lCLICK FOR INFO'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#C80022&lTeam Member Management Commands:'
+    - '[message] &e➥ /team kick <username>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#C80022&lTeam Member Management Commands:'
+    - '[message] &e➥ /team kick <username>'
+    - '[message]'
+    - '[close]'

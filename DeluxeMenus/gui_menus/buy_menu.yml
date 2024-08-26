@@ -1,0 +1,70 @@
+menu_title: '&8Buy | Webstore Goods'
+open_command: buy
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: BOOK
+    amount: 1
+    slots:
+    - '10'
+    display_name: '&#FF0023&lLifesteal Ranks'
+    lore:
+    - '&8Webstore Category'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[openguimenu] store_ranks'
+  '2':
+    material: RED_DYE
+    amount: 1
+    slots:
+    - '11'
+    display_name: '&#FF0023&lCrate Keys'
+    lore:
+    - '&8Webstore Category'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[openguimenu] store_keys'
+  '3':
+    material: SUNFLOWER
+    amount: 1
+    slots:
+    - '13'
+    display_name: '&#FF0023&lCoins'
+    lore:
+    - '&8Webstore Category'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[openguimenu] store_coins'
+  '4':
+    material: ENDER_CHEST
+    amount: 1
+    slots:
+    - '15'
+    display_name: '&#FF0023&lLootboxes'
+    lore:
+    - '&8Webstore Category'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[openguimenu] store_lootboxes'
+  '5':
+    material: CHEST
+    amount: 1
+    slots:
+    - '16'
+    display_name: '&#FF0023&lBundles'
+    lore:
+    - '&8Webstore Category'
+    - ''
+    - '&e&l➥ CLICK TO BROWSE'
+    click_commands:
+    - '[openguimenu] store_bundles'

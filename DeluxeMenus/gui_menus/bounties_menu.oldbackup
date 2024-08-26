@@ -1,0 +1,89 @@
+menu_title: '&8MineRival ➟ Bounties'
+open_command: bounties
+size: 27
+items:
+  '0':
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    slots:
+    - '0-26'
+    display_name: ' '
+  '1':
+    material: PLAYER_HEAD
+    data: 0
+    amount: 1
+    slot: 11
+    display_name: '&#FF9B00&lWhat are Bounties?'
+    lore:
+    - '&8Bounties GUI'
+    - ''
+    - '&fWith &#FFAF33bounties&f, you can put &#FFAF33money'
+    - '&fon &#FFAF33other players &fthat can be claimed by'
+    - '&fanyone who &#FFAF33kills that player&f.'
+    - ''
+    - '&6&lWant to set a bounty on someone?'
+    - '&e➟ /bounty create <player> <amount>'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#FF9B00&lBounty creation command:'
+    - '[message] &e➟ /bounty create <player> <amount>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#FF9B00&lBounty creation command:'
+    - '[message] &e➟ /bounty create <player> <amount>'
+    - '[message]'
+    - '[close]'
+  '2':
+    material: FLOWER_BANNER_PATTERN
+    data: 0
+    amount: 1
+    slot: 13
+    display_name: '&#CEDB24&lBounty List'
+    lore:
+    - '&8Bounties GUI'
+    - ''
+    - '&fYou can check out which &#D8E250online'
+    - '&#D8E250players &fhave a &#D8E250bounty on them!'
+    - ''
+    - '&e&lWant to take a look at the list?'
+    - '&e➟ /bounty list'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#CEDB24&lBounty list command:'
+    - '[message] &e➟ /bounty list'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#CEDB24&lBounty list command:'
+    - '[message] &e➟ /bounty list'
+    - '[message]'
+    - '[close]'
+  '3':
+    material: SKELETON_SKULL
+    data: 0
+    amount: 1
+    slot: 15
+    display_name: '&#FD5A02&lCancelling bounties'
+    lore:
+    - '&8Bounties GUI'
+    - ''
+    - '&fNeed to &#FE7B34retract &fa &#FE7B34bounty'
+    - '&fyou made on someone? No worries!'
+    - ''
+    - '&#B44001&lWant to remove the bounty?'
+    - '&e➟ /bounty delete <player>'
+    left_click_commands:
+    - '[message]'
+    - '[message] &#FD5A02&lBounty deletion command:'
+    - '[message] &e➟ /bounty delete <player>'
+    - '[message]'
+    - '[close]'
+    right_click_commands:
+    - '[message]'
+    - '[message] &#FD5A02&lBounty deletion command:'
+    - '[message] &e➟ /bounty delete <player>'
+    - '[message]'
+    - '[close]'
