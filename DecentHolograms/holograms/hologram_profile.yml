@@ -1,0 +1,20 @@
+location: spawn:-24.500:66.000:33.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: BLUE_CANDLE'
+    height: 0.6
+  - content: '&#0080e2&lP&#0083e7&lr&#0085ec&lo&#0088f1&lf&#008bf5&li&#008dfa&ll&#0090ff&le'
+    height: 0.3
+  - content: '&7&o/profile'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

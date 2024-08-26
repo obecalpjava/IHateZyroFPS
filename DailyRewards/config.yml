@@ -1,0 +1,1170 @@
+debug:
+  check-cooldowns: false
+  clear-cooldowns: false
+messages:
+  reload:
+    message: '&aReloaded config.'
+  help:
+    message:
+    - '&6&lDAILY SPIN HELP MENU'
+    - '&f'
+    - '&f/dailyreward reset <player> &7- Resets the daily reward for the player'
+    - '&f/dailyreward display <id> (player) &7- Previews a daily reward'
+    - '&f/dailyreward reload &7- Reloads the plugin'
+    - '&f'
+  won-item:
+    message:
+    - '&7You won &f%item%&7! Congratulations!'
+  inventory-full:
+    message: '&cYou don''t have enough space in your inventory!'
+  reloaded:
+    message: '&cYou reloaded the configuration.'
+  player-not-found:
+    message: '&cThat player doesn''t exists!'
+  no-permission:
+    message: '&cYou don''t have permission for this action.'
+  in-cooldown:
+    message: '&cYou are currently in cooldown. Please wait a %time%.'
+
+settings:
+  mongo:
+    auth-db: admin
+    hostname: 10.0.0.1
+    port: 27017
+    username: admin
+    password: Gk6M9FhjEZJeREcU
+    database: development
+    collection: dailyrewards
+  previewMenuTitle: Spin the Wheel
+  filler-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: '&f'
+  no-spins:
+    material: BARRIER
+    name: '&cNo spins left!'
+    lore:
+    - '&cYou have no spins left.'
+    - '&cPlease wait until the next day.'
+  description:
+    material: BOOK
+    name: '&6&lDAILY SPIN INFORMATION'
+    lore:
+    - '&f'
+    - '&fSpin the wheel to get a daily reward!'
+    - '&7&oYou have &f&n%left%&7 spins left.'
+  rewards:
+    regular:
+      material: BEACON
+      name: '&6&lDAILY SPIN REWARDS'
+      lore:
+      - '&f'
+      - '&7Click to view the spin rewards'
+    booster:
+      material: BEACON
+      name: '&6&lDAILY SPIN REWARDS'
+      lore:
+      - '&f'
+      - '&7Click to view the spin rewards'
+  spin:
+    regular:
+      material: GOLD_INGOT
+      name: '&6&lSPIN THE WHEEL'
+      lore:
+      - '&f'
+      - '&fClick to spin the wheel'
+    booster:
+      material: GOLD_INGOT
+      name: '&6&lSPIN THE WHEEL'
+      lore:
+      - '&f'
+      - '&fClick to spin the wheel'
+
+dailyrewards:
+  regular:
+    permission: dailyspin.regular
+    # in seconds
+    cooldown: 1080
+    lootbox-receive-item:
+      name: '&#09FB51&lALCHEMIST &fDaily Spin'
+      material: ENDER_CHEST
+      lore:
+      - '&8Daily Spin Item'
+      - '&fType &#1EE220&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#2476FB&lKNIGHT&f Rank &7[Permanent]'
+        material: WANDERING_TRADER_SPAWN_EGG
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 0.5
+        commands:
+        - voucher give KnightRank 1 %player_name%
+      '2':
+        name: '&#2476FB&lKNIGHT&f Rank &7[7 Days]'
+        material: WANDERING_TRADER_SPAWN_EGG
+        amount: 1
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 1
+        commands:
+        - voucher give KnightRank7d 1 %player_name%
+      '3':
+        name: '&#F6FF00&lPrime &fKey'
+        material: YELLOW_DYE
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 7
+        commands:
+        - excellentcrates key give %player_name% prime 1
+      '4':
+        name: '&#0BFF0A&lx3 Vote &fKey'
+        material: LIME_DYE
+        amount: 3
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 8
+        commands:
+        - excellentcrates key give %player_name% vote 3
+      '5':
+        name: '&#0BFF0A&lVote &fKey'
+        material: LIME_DYE
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 15
+        commands:
+        - excellentcrates key give %player_name% vote 1
+      '6':
+        name: '&#F2FB00&l500 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 3
+        commands:
+        - coins give %player_name% 500
+        - ebc &d&lDaily Spins &8➟ &#DD2295%player_name% &dwon the &#F2FB00&l500 Coins&d reward!
+      
+      
+      '7':
+        name: '&#F2FB00&l250 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 4
+        commands:
+        - coins give %player_name% 250
+        - ebc &d&lDaily Spins &8➟ &#DD2295%player_name% &dwon the &#F2FB00&l250 Coins&d reward!
+      
+      
+      '8':
+        name: '&#F2FB00&l100 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 8
+        commands:
+        - coins give %player_name% 100
+      '9':
+        name: '&#EF2626&lx3 Hearts'
+        material: RED_DYE
+        amount: 3
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - heartsystem add %player_name% 3
+      '10':
+        name: '&#EF2626&lx1 Heart'
+        material: RED_DYE
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 14
+        commands:
+        - heartsystem add %player_name% 1
+      '11':
+        name: '&#3EFF00&l$3,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 3000
+      '12':
+        name: '&#3EFF00&l$2,500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 2500
+      '13':
+        name: '&#3EFF00&l$1,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 12
+        commands:
+        - eco give %player_name% 1000
+      '14':
+        name: '&#3EFF00&l$500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 500
+      '15':
+        name: '&#3EFF00&l$250'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 250
+      '16':
+        name: '&bx2 Diamond Blocks'
+        material: DIAMOND_BLOCK
+        amount: 2
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give %player_name% diamond_block 2 0
+      '17':
+        name: '&ex4 Gold Blocks'
+        material: GOLD_BLOCK
+        amount: 4
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 12
+        commands:
+        - give %player_name% gold_block 4 0
+      '18':
+        name: '&fx6 Iron Blocks'
+        material: IRON_BLOCK
+        amount: 6
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 14
+        commands:
+        - give %player_name% iron_block 2 0
+      '19':
+        name: '&fIron Helmet'
+        material: iron_helmet
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_helmet 1 0 protection:1 unbreaking:1
+      '20':
+        name: '&fIron Chestplate'
+        material: iron_chestplate
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_chestplate 1 0 protection:1 unbreaking:1
+      '21':
+        name: '&fIron Leggings'
+        material: iron_leggings
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_leggings 1 0 protection:1 unbreaking:1
+      '22':
+        name: '&fIron Boots'
+        material: iron_boots
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_boots 1 0 protection:1 unbreaking:1
+      '23':
+        name: '&fIron Sword'
+        material: iron_sword
+        enchants:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_sword 1 0 sharpness:1 unbreaking:1
+      '24':
+        name: '&fIron Pickaxe'
+        material: iron_pickaxe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_pickaxe 1 0 efficiency:1 unbreaking:1
+      '25':
+        name: '&fIron Axe'
+        material: iron_axe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_axe 1 0 efficiency:1 unbreaking:1
+      '26':
+        name: '&fIron Shovel'
+        material: iron_shovel
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_shovel 1 0 efficiency:1 unbreaking:1
+      '27':
+        name: '&#00ABFB&lSpawner Wrench &7[1 Use]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners wrench %player_name% 1
+      '28':
+        name: '&bDiamond Helmet'
+        material: diamond_helmet
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_helmet 1 0 protection:1 unbreaking:1
+      '29':
+        name: '&bDiamond Chestplate'
+        material: diamond_chestplate
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_chestplate 1 0 protection:1 unbreaking:1
+      '30':
+        name: '&bDiamond Leggings'
+        material: diamond_leggings
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_leggings 1 0 protection:1 unbreaking:1
+      '31':
+        name: '&bDiamond Boots'
+        material: diamond_boots
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_boots 1 0 protection:1 unbreaking:1
+      '32':
+        name: '&bDiamond Sword'
+        material: diamond_sword
+        enchants:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_sword 1 0 sharpness:1 unbreaking:1
+      '33':
+        name: '&bDiamond Pickaxe'
+        material: diamond_pickaxe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_pickaxe 1 0 efficiency:1 unbreaking:1
+      '34':
+        name: '&bDiamond Axe'
+        material: diamond_axe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_axe 1 0 efficiency:1 unbreaking:1
+      '35':
+        name: '&bDiamond Shovel'
+        material: diamond_shovel
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_shovel 1 0 efficiency:1 unbreaking:1
+      '36':
+        name: '&#00ABFB&lSpawner Wrench &7[2 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 5
+        commands:
+        - spawners wrench %player_name% 2
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  booster:
+    permission: dailyspin.booster
+    # in seconds
+    cooldown: 1080
+    lootbox-receive-item:
+      name: '&#09FB51&lALCHEMIST &fDaily Spin'
+      material: ENDER_CHEST
+      lore:
+      - '&8Daily Spin Item'
+      - '&fType &#1EE220&l/lootbox &fto'
+      - '&fpreview possible rewards.'
+      - '&e➥ Click to open'
+      glow: false
+    items:
+      '1':
+        name: '&#2476FB&lKNIGHT&f Rank &7[Permanent]'
+        material: WANDERING_TRADER_SPAWN_EGG
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 0.5
+        commands:
+        - voucher give KnightRank 1 %player_name%
+      '2':
+        name: '&#2476FB&lKNIGHT&f Rank &7[7 Days]'
+        material: WANDERING_TRADER_SPAWN_EGG
+        amount: 1
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 1
+        commands:
+        - voucher give KnightRank7d 1 %player_name%
+      '3':
+        name: '&#F6FF00&lPrime &fKey'
+        material: YELLOW_DYE
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 7
+        commands:
+        - excellentcrates key give %player_name% prime 1
+      '4':
+        name: '&#0BFF0A&lx3 Vote &fKey'
+        material: LIME_DYE
+        amount: 3
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 8
+        commands:
+        - excellentcrates key give %player_name% vote 3
+      '5':
+        name: '&#0BFF0A&lVote &fKey'
+        material: LIME_DYE
+        enchants:
+        - minecraft:sharpness:1
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 15
+        commands:
+        - excellentcrates key give %player_name% vote 1
+      '6':
+        name: '&#F2FB00&l500 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 3
+        commands:
+        - coins give %player_name% 500
+        - ebc &d&lDaily Spins &8➟ &#DD2295%player_name% &dwon the &#F2FB00&l500 Coins&d reward!
+      
+      
+      '7':
+        name: '&#F2FB00&l250 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 4
+        commands:
+        - coins give %player_name% 250
+        - ebc &d&lDaily Spins &8➟ &#DD2295%player_name% &dwon the &#F2FB00&l250 Coins&d reward!
+      
+      
+      '8':
+        name: '&#F2FB00&l100 Coins'
+        material: SUNFLOWER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 8
+        commands:
+        - coins give %player_name% 100
+      '9':
+        name: '&#EF2626&lx3 Hearts'
+        material: RED_DYE
+        amount: 3
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - heartsystem add %player_name% 3
+      '10':
+        name: '&#EF2626&lx1 Heart'
+        material: RED_DYE
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 14
+        commands:
+        - heartsystem add %player_name% 1
+      '11':
+        name: '&#3EFF00&l$3,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 3000
+      '12':
+        name: '&#3EFF00&l$2,500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 2500
+      '13':
+        name: '&#3EFF00&l$1,000'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 12
+        commands:
+        - eco give %player_name% 1000
+      '14':
+        name: '&#3EFF00&l$500'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 500
+      '15':
+        name: '&#3EFF00&l$250'
+        material: PAPER
+        itemFlags:
+        - HIDE_ENCHANTS
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - eco give %player_name% 250
+      '16':
+        name: '&bx2 Diamond Blocks'
+        material: DIAMOND_BLOCK
+        amount: 2
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 10
+        commands:
+        - give %player_name% diamond_block 2 0
+      '17':
+        name: '&ex4 Gold Blocks'
+        material: GOLD_BLOCK
+        amount: 4
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 12
+        commands:
+        - give %player_name% gold_block 4 0
+      '18':
+        name: '&fx6 Iron Blocks'
+        material: IRON_BLOCK
+        amount: 6
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 14
+        commands:
+        - give %player_name% iron_block 2 0
+      '19':
+        name: '&fIron Helmet'
+        material: iron_helmet
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_helmet 1 0 protection:1 unbreaking:1
+      '20':
+        name: '&fIron Chestplate'
+        material: iron_chestplate
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_chestplate 1 0 protection:1 unbreaking:1
+      '21':
+        name: '&fIron Leggings'
+        material: iron_leggings
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_leggings 1 0 protection:1 unbreaking:1
+      '22':
+        name: '&fIron Boots'
+        material: iron_boots
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_boots 1 0 protection:1 unbreaking:1
+      '23':
+        name: '&fIron Sword'
+        material: iron_sword
+        enchants:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_sword 1 0 sharpness:1 unbreaking:1
+      '24':
+        name: '&fIron Pickaxe'
+        material: iron_pickaxe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_sword 1 0 efficiency:1 unbreaking:1
+      '25':
+        name: '&fIron Axe'
+        material: iron_axe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_axe 1 0 efficiency:1 unbreaking:1
+      '26':
+        name: '&fIron Shovel'
+        material: iron_shovel
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% iron_shovel 1 0 efficiency:1 unbreaking:1
+      '27':
+        name: '&#00ABFB&lSpawner Wrench &7[1 Use]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 4
+        commands:
+        - spawners wrench %player_name% 1
+      '28':
+        name: '&bDiamond Helmet'
+        material: diamond_helmet
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_helmet 1 0 protection:1 unbreaking:1
+      '29':
+        name: '&bDiamond Chestplate'
+        material: diamond_chestplate
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_chestplate 1 0 protection:1 unbreaking:1
+      '30':
+        name: '&bDiamond Leggings'
+        material: diamond_leggings
+        amount: 1
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_leggings 1 0 protection:1 unbreaking:1
+      '31':
+        name: '&bDiamond Boots'
+        material: diamond_boots
+        enchants:
+        - minecraft:protection:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_boots 1 0 protection:1 unbreaking:1
+      '32':
+        name: '&bDiamond Sword'
+        material: diamond_sword
+        enchants:
+        - minecraft:sharpness:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_sword 1 0 sharpness:1 unbreaking:1
+      '33':
+        name: '&bDiamond Pickaxe'
+        material: diamond_pickaxe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_pickaxe 1 0 efficiency:1 unbreaking:1
+      '34':
+        name: '&bDiamond Axe'
+        material: diamond_axe
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_axe 1 0 efficiency:1 unbreaking:1
+      '35':
+        name: '&bDiamond Shovel'
+        material: diamond_shovel
+        enchants:
+        - minecraft:efficiency:1
+        - minecraft:unbreaking:1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        chance: 13
+        commands:
+        - give %player_name% diamond_shovel 1 0 efficiency:1 unbreaking:1
+      '36':
+        name: '&#00ABFB&lSpawner Wrench &7[2 Uses]'
+        material: DIAMOND_HOE
+        amount: 1
+        lore:
+        - '&8Daily Reward Preview'
+        - ''
+        - '&fSpin Daily!'
+        - '&#f452d6➥ /spin'
+        itemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        chance: 5
+        commands:
+        - spawners wrench %player_name% 2

@@ -1,0 +1,30 @@
+location: spawn:-3.500:66.600:96.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: LIGHT_BLUE_DYE'
+    height: 0.6
+  - content: '#39a6ff&lE#41aeff&lp#49b5ff&li#51bdff&lc #59c5ff&lC#61ccff&lr#69d4ff&la#71dbff&lt#79e3ff&le'
+    height: 0.3
+  - content: '&7&o/buy'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '%javascript_epic_crate%'
+    height: 0.3
+  - content: guaranteed &#0077D3ʀᴀʀᴇ+
+    height: 0.3
+  - content: '%ecfree_epic_progress%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7[←]&f Punch to Preview'
+    height: 0.3
+  - content: '&7[→] &fUse Key to Open'
+    height: 0.3
+  actions: {}

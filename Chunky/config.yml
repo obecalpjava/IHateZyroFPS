@@ -1,0 +1,37 @@
+# Chunky Configuration
+# https://github.com/pop4959/Chunky/wiki/Configuration
+
+force-load-existing-chunks: false
+silent: false
+update-interval: 1
+version: 1
+language: en
+continue-on-restart: false
+tasks:
+  world:
+    cancelled: true
+    radius: 25000.0
+    x-center: 0.0
+    z-center: 0.0
+    iterator: concentric
+    shape: square
+    count: 9778079
+    time: 157251175
+  world_nether:
+    cancelled: true
+    radius: 25000.0
+    x-center: 0.0
+    z-center: 0.0
+    iterator: concentric
+    shape: square
+    count: 9778082
+    time: 138599408
+  world_the_end:
+    cancelled: true
+    radius: 25000.0
+    x-center: 0.0
+    z-center: 0.0
+    iterator: concentric
+    shape: square
+    count: 9778084
+    time: 83642962

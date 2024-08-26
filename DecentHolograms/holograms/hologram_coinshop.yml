@@ -1,0 +1,20 @@
+location: spawn:25.500:66.000:78.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: GOLD_INGOT'
+    height: 0.6
+  - content: '&#f98b30&lC&#f99334&lo&#f99b38&li&#f9a33c&ln &#f9ab40&lS&#f9b344&lh&#f9bb48&lo&#f9c34c&lp'
+    height: 0.3
+  - content: '&7&o/coin shop'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,20 @@
+location: spawn:25.500:66.000:42.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: GOLD_NUGGET'
+    height: 0.6
+  - content: '&#fbe551&lG&#fbe04e&la&#fcda4a&lm&#fcd547&lb&#fcd043&ll&#fccb40&li&#fdc53c&ln&#fdc039&lg'
+    height: 0.3
+  - content: '&7&o/gamble'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

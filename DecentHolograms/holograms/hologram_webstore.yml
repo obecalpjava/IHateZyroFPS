@@ -1,0 +1,20 @@
+location: spawn:-24.500:66.000:60.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: GOLD_BLOCK'
+    height: 0.6
+  - content: '&#fba81a&lW&#fbab1e&le&#fcaf22&lb&#fcb226&ls&#fcb52a&lt&#fcb82e&lo&#fdbc32&lr&#fdbf36&le'
+    height: 0.3
+  - content: '&7&o/store'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

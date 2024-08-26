@@ -1,0 +1,20 @@
+location: spawn:-21.500:69.000:3.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: diamond_sword'
+    height: 0.6
+  - content: '&#36cbff&lL&#35cdff&le&#35cfff&la&#34d1ff&ld&#33d3ff&le&#33d5ff&lr&#32d8ff&lb&#32daff&lo&#31dcff&la&#30deff&lr&#30e0ff&ld&#2fe2ff&ls'
+    height: 0.3
+  - content: '&7&o/leaderboards'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

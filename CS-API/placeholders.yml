@@ -1,0 +1,82 @@
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                        CS-API Version 1.5.7                          #
+#                                                                      #
+#      Copyright Culley Studios 2017-2022. All rights reserved.        #
+#    The software is provided as is without warranty of any kind.      #
+#                                                                      #
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                           Documentation                              #
+#        https://culleystudios.com/docs/spigot-plugins/cs-api          #
+#                                                                      #
+# -------------------------------------------------------------------- #
+
+warnings:
+  enabled: true
+  delay: 10000
+  ignored: []
+
+formatters:
+  array:
+    start: '['
+    end: ']'
+    separator: ', '
+  block-location:
+    format: true
+    separator: ', '
+  boolean:
+    'true': '&aTrue'
+    'false': '&cFalse'
+    colorize: true
+  collection:
+    start: '['
+    end: ']'
+    separator: ', '
+  date: yyyy-MM-dd HH:mm:ss
+  database-timestamp: yyyy-MM-dd HH:mm:ss
+  double: '###,###.#####'
+  empty-line: --empty--
+  float: '###,###.##'
+  integer: '###,###'
+  location:
+    format: true
+    separator: ', '
+  long: '###,###'
+  no-value: n/a
+  milliseconds:
+    expired: NOW!
+    days: d
+    hours: h
+    minutes: m
+    seconds: s
+  seconds:
+    expired: NOW!
+    days: d
+    hours: h
+    minutes: m
+    seconds: s
+  timestamp: yyyy-MM-dd HH:mm:ss
+
+replacers:
+  assert: true
+  assignment: true
+  calculate: true
+  command: true
+  entity: true
+  locale: true
+  menu_item: true
+  offline_player: true
+  offline_player_bed: true
+  player: true
+  player_menu: true
+  player_bed: true
+  plugin_command: true
+  plugin_permission: true
+  plugin: true
+  plugin_connection: true
+  random: true
+  server: true
+  time_type: true
+  wildcard: true
+  world: true

@@ -1,0 +1,253 @@
+# DeluxeCoinflip
+# Author: Lewis D (ItsLewizzz)
+# Copyright Lewis D 2020-2022. All rights reserved.
+#
+# Developer API
+#   https://github.com/ItsLewizzz/DeluxeCoinflipAPI
+
+# Select your storage type
+storage:
+  # Types available:
+  # - SQLITE
+  type: SQLITE
+
+settings:
+  # Min/max must be between 0 and 9,223,372,036,854,775,808
+  minimum-bet: 1000
+  maximum-bet: 10000000
+
+  # Aliases to the '/coinflip' command
+  command_aliases:
+    - cf
+
+  # How much needs to be won to broadcast to everyone? Set to 0 to broadcast all winnings.
+  minimum-broadcast-winnings: 5000
+
+  tax:
+    enabled: false
+    rate: 5.0 # 5% tax
+
+  # Economy providers
+  #   If you are using custom provider (from our API),
+  #   ensure to add the section with the provider identifier
+  #   being the main key (e.g. VAULT).
+  providers:
+    # This economy provider will be used if the player does /cf create <amount>
+    # without specifying a currency provider after the amount to use if multiple
+    # providers are enabled.
+    default_provider: "VAULT"
+
+    # Vault Economy (requires Vault + economy plugin)
+    # https://dev.bukkit.org/projects/vault
+    VAULT:
+      enabled: true
+      display_currency_name: "Money"
+
+    # TokenEnchant Economy (requires TokenEnchant plugin)
+    # https://polymart.org/resource/155
+    TOKENENCHANT:
+      enabled: false
+      display_currency_name: "TokenEnchant"
+
+    # TokenManager Economy (requires TokenManager plugin)
+    # https://www.spigotmc.org/resources/8610/
+    TOKENMANAGER:
+      enabled: false
+      display_currency_name: "TokenManager"
+
+    # UltraPrisonCore Tokens Economy (requires UltraPrisonCore plugin)
+    # https://www.spigotmc.org/resources/86845/
+    ULTRAPRISONCORE:
+      enabled: false
+      display_currency_name: "UltraPrisonCore"
+
+    # GamePoints Economy (requires GamePoints plugin)
+    # https://www.spigotmc.org/resources/84121/
+    GAMEPOINTS:
+      enabled: false
+      display_currency_name: "Points"
+
+    # PlayerPoints Economy (requires PlayerPoints plugin)
+    # https://www.spigotmc.org/resources/80745/
+    PLAYERPOINTS:
+      enabled: false
+      display_currency_name: "Points"
+
+    # BeastTokens Economy (requires BeastTokens plugin)
+    # https://www.spigotmc.org/resources/20806/
+    BEASTTOKENS:
+      enabled: false
+      display_currency_name: "Tokens"
+
+    # RevEnchants Tokens Economy (requires RevEnchants plugin)
+    # https://www.mc-market.org/resources/15288/
+    REVENCHANTS:
+      enabled: false
+      display_currency_name: "Tokens"
+
+coinflip-gui:
+  title: "Coinflips | Good luck!"
+
+games-gui:
+  title: "Coinflips | Choose a game!"
+  rows: 4
+
+  # You can add more items here
+  filler-items:
+    border:
+      material: GRAY_STAINED_GLASS_PANE
+      display_name: "&r"
+      slots: [27, 28, 29, 33, 34]
+    stats:
+      slot: 31
+      material: BOOK
+      display_name: "&#fc1414&lStatistics"
+      lore:
+        - "&8Coinflip Personal"
+        - ""
+        - "&fHere you can view your statistics"
+        - "&ffrom all your Coinflip games."
+        - ""
+        - "&8❖ &fUser: &f{PLAYER}"
+        - "&8❖ &fWins: &a{WINS}"
+        - "&8❖ &fLosses: &4{LOSSES}"
+        - "&8❖ &fProfit: &2${PROFIT}"
+        - "&8❖ &fWin Percentage: &d{WIN_PERCENTAGE}%"
+
+  # Items below here are fixed and ID should not be removed/changed.
+  create-new-game:
+    # Set this to false to disable the game builder gui
+    enabled: true
+    slot: 35
+    material: NETHER_STAR
+    display_name: "&#fd3b3b&lCreate Game"
+    lore:
+      - "&7Click here to create a new game!"
+  coinflip-game:
+    display_name: "&#fc1414&l{PLAYER}"
+    material: PLAYER_HEAD
+    lore:
+      - "&8Coinflip Game"
+      - ""
+      - "&8❖ &fWager Amount: &2$&a{AMOUNT}"
+      - ""
+      - "&e➥ &lCLICK TO CHALLENGE"
+  no-games:
+    slot: 13
+    material: BARRIER
+    display_name: "&#fd3b3b&lNo Games"
+    lore:
+      - "&8Coinflip Games"
+      - ""
+      - "&fThere are no active coinflip games."
+      - "&fStart one with &c/coinflip create <amount>"
+  error-no-funds:
+    material: BARRIER
+    display_name: "&#fd3b3b&lInsufficient Funds"
+    lore:
+      - ""
+      - "&7You do not have enough funds to play this coinflip."
+  next-page:
+    slot: 32
+    material: LIME_WOOL
+    display_name: "&aNext Page &7[→]"
+    lore:
+  previous-page:
+    slot: 30
+    material: RED_WOOL
+    display_name: "&7[←] &cPrevious Page"
+    lore:
+
+gamebuilder-gui:
+  title: "&lGAME BUILDER"
+  rows: 3
+
+  filler-items:
+    border:
+      material: GRAY_STAINED_GLASS_PANE
+      display_name: "&r"
+      slots: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 17, 19, 20, 21, 22, 23, 24, 25]
+
+  amount-items:
+    plus_100:
+      slot: 14
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+      display_name: '&a&l+ $100'
+      set_amount: '+100'
+    plus_500:
+      slot: 15
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+      display_name: '&a&l+ $500'
+      set_amount: '+500'
+    plus_1000:
+      slot: 16
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+      display_name: '&a&l+ $1,000'
+      set_amount: '+1000'
+    minus_1000:
+      slot: 10
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+      display_name: '&c&l- $1,000'
+      set_amount: '-1000'
+    minus_500:
+      slot: 11
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+      display_name: '&c&l- $500'
+      set_amount: '-500'
+    minus_100:
+      slot: 12
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+      display_name: '&c&l- $100'
+      set_amount: '-100'
+
+  currency-select:
+    slot: 13
+    material: OAK_SIGN
+    display_name: "&#fd3b3b&lCurrency"
+    lore-header:
+      - "&r"
+      - "&7Amount Bet: &f${BET_AMOUNT}"
+      - "&r"
+      - "&2Selected Currency:"
+    currency_lore_selected: "&a&l{CURRENCY}"
+    currency_lore_unselected: "&7{CURRENCY}"
+    lore-footer:
+      - "&r"
+  custom-amount:
+    slot: 18
+    material: ANVIL
+    display_name: "&c&lSet Custom Amount"
+    lore:
+      - "&7Click to enter a value in chat!"
+  create-game:
+    slot: 26
+    material: LIME_DYE
+    display_name: "&a&lCreate Game"
+    lore:
+      - "&7Click to create your game!"
+  error-limits:
+    material: BARRIER
+    display_name: "&cOut of betting limits!"
+    lore:
+      - ""
+      - "&fYou must keep between the minimum"
+      - "&fand maximum betting limits."
+  error-game-exists:
+    material: BARRIER
+    display_name: "&cYou already have a game active!"
+    lore:
+      - ""
+      - "&fYou must &c&l/cf delete &fyour current"
+      - "&fgame before creating a new one."
+  error-no-funds:
+    material: BARRIER
+    display_name: "&c&lInsufficient Funds"
+    lore:
+      - ""
+      - "&fYou do not have enough to create this game."

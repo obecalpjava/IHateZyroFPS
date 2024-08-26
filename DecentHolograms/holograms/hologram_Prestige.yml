@@ -1,0 +1,20 @@
+location: spawn:25.500:66.000:51.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: red_dye'
+    height: 0.6
+  - content: '&#fb0e0e&lP&#fb1313&lr&#fc1919&le&#fc1e1e&ls&#fc2424&lt&#fc2929&li&#fd2f2f&lg&#fd3434&le'
+    height: 0.3
+  - content: '&7&o/prestige'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

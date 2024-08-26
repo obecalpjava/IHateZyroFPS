@@ -1,0 +1,20 @@
+location: spawn:25.500:66.000:60.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: ENDER_CHEST'
+    height: 0.6
+  - content: '&#fbf500&lL&#fbea07&lo&#fcde0e&lo&#fcd314&lt &#fcc71b&lB&#fcbc22&lo&#fdb029&lx&#fda52f&le&#fd9936&ls'
+    height: 0.3
+  - content: '&7/lootbox'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

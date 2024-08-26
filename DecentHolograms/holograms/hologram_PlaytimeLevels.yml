@@ -1,0 +1,21 @@
+location: spawn:25.500:66.000:69.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: slimeball'
+    height: 0.6
+  - content: '&#5dfb1f&lP&#61fb25&ll&#66fb2b&la&#6afb31&ly&#6ffc37&lt&#73fc3d&li&#77fc43&lm&#7cfc4a&le
+      &#80fc50&lL&#84fc56&le&#89fd5c&lv&#8dfd62&le&#92fd68&ll&#96fd6e&ls'
+    height: 0.3
+  - content: '&7&o/levels'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

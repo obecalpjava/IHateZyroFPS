@@ -1,0 +1,35 @@
+location: spawn:-23.500:70.000:-0.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: EMERALD'
+    height: 0.6
+  - content: '&#21D81D&lTop Player Balances'
+    height: 0.3
+  - content: '&#18C31F#1 &7| &f%leaderheads_name_vault_eco_balance_alltime_1%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_1%'
+    height: 0.3
+  - content: '&#18C31F#2 &7| &f%leaderheads_name_vault_eco_balance_alltime_2%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_2%'
+    height: 0.3
+  - content: '&#18C31F#3 &7| &f%leaderheads_name_vault_eco_balance_alltime_3%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_3%'
+    height: 0.3
+  - content: '&#18C31F#4 &7| &f%leaderheads_name_vault_eco_balance_alltime_4%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_4%'
+    height: 0.3
+  - content: '&#18C31F#5 &7| &f%leaderheads_name_vault_eco_balance_alltime_5%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_5%'
+    height: 0.3
+  - content: '&#18C31F#6 &7| &f%leaderheads_name_vault_eco_balance_alltime_6%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_6%'
+    height: 0.3
+  - content: '&#18C31F#7 &7| &f%leaderheads_name_vault_eco_balance_alltime_7%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_7%'
+    height: 0.3
+  - content: '&#18C31F#8 &7| &f%leaderheads_name_vault_eco_balance_alltime_8%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_8%'
+    height: 0.3
+  - content: '&#18C31F#9 &7| &f%leaderheads_name_vault_eco_balance_alltime_9%&7: &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_9%'
+    height: 0.3
+  - content: '&#18C31F#10 &7| &f%leaderheads_name_vault_eco_balance_alltime_10%&7:
+      &#4BFF52$%leaderheads_value_vault_eco_balance_alltime_10%'
+    height: 0.3
+  actions: {}

@@ -1,0 +1,106 @@
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                        CS-API Version 1.5.7                          #
+#                                                                      #
+#      Copyright Culley Studios 2017-2022. All rights reserved.        #
+#    The software is provided as is without warranty of any kind.      #
+#                                                                      #
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                           Documentation                              #
+#        https://culleystudios.com/docs/spigot-plugins/cs-api          #
+#                                                                      #
+# -------------------------------------------------------------------- #
+
+# Creator messages
+creator.invalid.double=&cThe value entered in chat '&7%message%&c' is not a valid Double
+creator.invalid.integer=&cThe value entered in chat '&7%message%&c' is not a valid Integer
+creator.invalid.long=&cThe value entered in chat '&7%message%&c' is not a valid Long
+creator.invalid.player=&cThe value entered in chat '&7%message%&c' is not an online player
+creator.invalid.offline.player=&cThe value entered in chat '&7%message%&c' is a player that has never joined the server
+creator.invalid.regex=&cThe value entered in chat '&7%message%&c' does not match the RegEx pattern '&7%pattern%&c'
+
+# Command messages
+command.no.permission=&cYou do not have the '%plugin_permission_id%' permission to execute &7/%command_name% %args%
+command.no.console=&cThe command &7/%command_name% %args% &ccannot be executed from console.
+command.no.databases=&cNo enabled databases can be reached, try again later.
+command.reload.started=&aStarting reload of %plugin_name%...
+command.reload.finished=&aSuccessfully finished reloading %plugin_name%!
+command.reload.failed=&cAn error occurred while reloading %plugin_name%, check the logs for more details.
+command.plugman.not.allowed=&cYou are not allowed to manage CS-API plugins (&7%plugin_name%&c) using PlugMan. Restart your server to properly load your plugins.
+command.plugin.review.prompt=
+- &8&m-------------------------
+- &aIf you have a moment please consider leaving a review for %f%plugin_name%&a! Every review helps support the continued development. &7/%command_name% plugin review
+- &8&m-------------------------
+command.plugin.review.enter.rating=&aPlease enter your rating in chat &4[1] &c[2] &6[3] &e[4] &a[5]
+command.plugin.review.creator.invalid.rating=&cYou have entered an invalid rating '&7%rating%&c'. It must be one of the following: &4[1] &c[2] &6[3] &e[4] &a[5]
+command.plugin.review.ask.for.support=&7We noticed you only gave a &c%review_rating_bar% &7(&c%review_rating%&7) &7rating. Please reach out for support as we would like the opportunity to help you out!
+command.plugin.review.post=&7We noticed you only gave a &c%review_rating_bar% &7(&c%review_rating%&7) &7rating. Please reach out for support as we would like the opportunity to help you out!
+- &8&m-------------------------
+- &fRating: &e%review_rating_bar% &7(&f%review_rating%&7)
+-
+- &aThank you so much for taking the time to provide a review for &7%plugin_name%&a!
+-
+- &7To complete your review please click the link below. If you're required to enter a description/reason please provide as much feedback as possible! We actively use reviews to identity areas of improvement.
+-
+- {\"text\":\"Click here to complete your review\",\"underlined\":true,\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":[{\"text\":\"Follow the link to complete\\nyour review of %plugin_name%.\",\"color\":\"gray\"}]},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"%plugin_review_url%\"}}
+- &8&m-------------------------
+command.plugin.version.started=&aAttempting to retrieve plugin details...
+command.plugin.version.up.to.date=&aYou're currently using the latest version &7%plugin_version% &aof &7%plugin_name%&a.
+command.plugin.version.out.of.date=&cYou're currently using an outdated version &7%plugin_version% &cof &7%plugin_name%&c, the latest version is &7%plugin_latest_version%&c.
+command.plugin.version.out.of.date.json={"text":"You're currently using an outdated version ","color":"red"}&&{"text":"%plugin_version%","color":"gray"}&&{"text":" of ","color":"red"}&&{"text":"%plugin_name%","color":"gray"}&&{"text":", the latest version is ","color":"red"}&&{"text":"%plugin_latest_version%","color":"gray"}&&{"text":". ","color":"red"}&&{"text":"Click here to read the full details on our website.","underlined":true,"color":"white","hoverEvent":{"action":"show_text","contents":[{"text":"Follow the link for more details\nabout %plugin_name% v%plugin_latest_version%.","color":"gray"}]},"clickEvent":{"action":"open_url","value":"%plugin_latest_update_url%"}}
+command.support.registration.started=&aAttempting to register %arg2% for support...
+command.support.registration.successful=&aSuccessfully registered %arg2% for support!
+command.support.registration.error=&cAn error occurred while attempting to register %arg2% for support.
+command.support.registration.error.status=&cAn error occurred while attempting to register %arg2% for support - &7[%status_code%] %error_message%
+command.support.confirmation.error=&cAn error occurred while attempting to generate a support confirmation URL. Check your logs for more details.
+command.support.confirmation.fetching=&aAttempting to fetch the latest support confirmation for &7%plugin_name% &aversion &7%plugin_latest_version%&a.
+command.support.confirmation.up.to.date=&aYour support is confirmed for the latest version &7&7%plugin_support_confirmation_version% &aof &7%plugin_name%&c.
+command.support.confirmation.out.of.date=&cYour support is confirmed for an outdated version &7%plugin_support_confirmation_version% &cof &7%plugin_name%&c. Enter &7/%plugin_name% support confirm &cin-game and follow the steps to re-confirm your support.
+command.support.confirmation.unconfirmed=&cYour support is unconfirmed for version &7%plugin_support_confirmation_version% &cof &7%plugin_name%&c. Enter &7/%plugin_name% support confirm &cin-game and follow the steps to re-confirm your support.
+command.support.confirmation.message
+-
+- &8&m----- &aConfirm Support &8&m-----
+- &7You are about to confirm your support. To complete the confirmation you must use the link provided and &n&lread the update notes thoroughly.
+- 
+- &c&lWARNING: &cIf you ask for assistance with something already stated in the update notes your support may be terminated indefinitely.
+- 
+- {"text":"Click here to confirm","underlined":true,"color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"Follow the link and read all of\nthe update notes in order to\nconfirm your support.","color":"gray"}]},"clickEvent":{"action":"open_url","value":"%support_confirmation_url%"}}
+- &8&m------------------------
+
+command.creator.block.break.expired=&cYou took to long to break a block, you will have to enter the command again.
+command.creator.block.interact.expired=&cYou took to long to select a block, you will have to enter the command again.
+command.creator.command.expired=&cYou took to long to enter a command, you will have to enter the command again.
+command.creator.inventory.open.expired=&cYou took to long to open an inventory, you will have to enter the command again.
+command.creator.inventory.raw.slot.expired=&cYou took to long to select a slot in an inventory, you will have to enter the command again.
+command.creator.itemstack.interact.expired=&cYou took to long to select an item, you will have to enter the command again.
+command.creator.response.double.expired=&cYou took to long to enter a double in chat, you will have to enter the command again.
+command.creator.response.integer.expired=&cYou took to long to enter an integer in chat, you will have to enter the command again.
+command.creator.response.long.expired=&cYou took to long to enter a long in chat, you will have to enter the command again.
+command.creator.response.offline.player.expired=&cYou took to long to enter an offline player name or uuid in chat, you will have to enter the command again.
+command.creator.response.player.expired=&cYou took to long to enter a player name or uuid in chat, you will have to enter the command again.
+command.creator.response.regex.expired=&cYou took to long to enter a matching format in chat, you will have to enter the command again.
+command.creator.response.string.expired=&cYou took to long to enter a message in chat, you will have to enter the command again.
+
+# Other messages
+action.locale.actionbar.example=&aAn example actionbar, which is language specific!
+action.locale.json.message.example={"text":"&aAn example message! &f(Hover over this message)","hoverEvent":{"action":"show_text","contents":{"text":"&7Which is language specific!"}}}
+action.locale.message.example=&aAn example message, which is language specific!
+action.locale.title.example=&aAn example title!|&7Which is language specific!
+
+# Page Items
+common.items.next.page.material=STONE_BUTTON
+common.items.next.page.data=0
+common.items.next.page.amount=1
+common.items.next.page.name=&aNext page
+common.items.next.page.lore
+- &7Click to view the next page!
+common.items.next.page.invalid.action=[sound=BLOCK_ANVIL_LAND]
+
+common.items.previous.page.material=STONE_BUTTON
+common.items.previous.page.data=0
+common.items.previous.page.amount=1
+common.items.previous.page.name=&aPrevious page
+common.items.previous.page.lore
+- &7Click to view the previous page!
+common.items.previous.page.invalid.action=[sound=BLOCK_ANVIL_LAND]

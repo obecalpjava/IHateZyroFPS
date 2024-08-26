@@ -1,0 +1,20 @@
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                        CS-API Version 1.5.7                          #
+#                                                                      #
+#      Copyright Culley Studios 2017-2022. All rights reserved.        #
+#    The software is provided as is without warranty of any kind.      #
+#                                                                      #
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                           Documentation                              #
+#        https://culleystudios.com/docs/spigot-plugins/cs-api          #
+#                                                                      #
+# -------------------------------------------------------------------- #
+
+check_for_support: true
+check_for_updates: true
+creator_timeout: 60000
+locale: en_us
+server_id: server
+use_bungeecord: true

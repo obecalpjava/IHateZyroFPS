@@ -1,0 +1,33 @@
+location: spawn:0.500:66.900:97.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: jack_o_lantern'
+    height: 0.6
+  - content: '&#b410fb&lH&#ba19ea&la&#bf22da&ll&#c52bc9&ll&#ca33b9&lo&#d03ca8&lw&#d64598&le&#db4e87&le&#e15777&ln
+      &#e76066&lC&#ec6856&lr&#f27145&la&#f77a35&lt&#fd8324&le'
+    height: 0.3
+  - content: '&eAvailable until Novemeber 1st!'
+    height: 0.3
+  - content: '&7&o/buy'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '%javascript_monthly_crate%'
+    height: 0.3
+  - content: 'guaranteed #FFBC2Fʟᴇɢᴇɴᴅᴀʀʏ'
+    height: 0.3
+  - content: '%ecfree_halloween_progress%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7[←]&f Punch to Preview'
+    height: 0.3
+  - content: '&7[→] &fUse Key to Open'
+    height: 0.3
+  actions: {}

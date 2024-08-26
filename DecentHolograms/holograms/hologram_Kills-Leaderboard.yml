@@ -1,0 +1,44 @@
+location: spawn:-22.500:70.000:-6.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: BELL'
+    height: 0.6
+  - content: '&#FBC729&lTop Player Kills'
+    height: 0.3
+  - content: '&#FB8C18#1 &7| &f%leaderheads_name_statistic_player_kills_alltime_1%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_1%'
+    height: 0.3
+  - content: '&#FB8C18#2 &7| &f%leaderheads_name_statistic_player_kills_alltime_2%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_2%'
+    height: 0.3
+  - content: '&#FB8C18#3 &7| &f%leaderheads_name_statistic_player_kills_alltime_3%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_3%'
+    height: 0.3
+  - content: '&#FB8C18#4 &7| &f%leaderheads_name_statistic_player_kills_alltime_4%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_4%'
+    height: 0.3
+  - content: '&#FB8C18#5 &7| &f%leaderheads_name_statistic_player_kills_alltime_5%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_5%'
+    height: 0.3
+  - content: '&#FB8C18#6 &7| &f%leaderheads_name_statistic_player_kills_alltime_6%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_6%'
+    height: 0.3
+  - content: '&#FB8C18#7 &7| &f%leaderheads_name_statistic_player_kills_alltime_7%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_7%'
+    height: 0.3
+  - content: '&#FB8C18#8 &7| &f%leaderheads_name_statistic_player_kills_alltime_8%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_8%'
+    height: 0.3
+  - content: '&#FB8C18#9 &7| &f%leaderheads_name_statistic_player_kills_alltime_9%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_9%'
+    height: 0.3
+  - content: '&#FB8C18#10 &7| &f%leaderheads_name_statistic_player_kills_alltime_10%&7:
+      &e%leaderheads_value_statistic_player_kills_alltime_10%'
+    height: 0.3
+  actions: {}

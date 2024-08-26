@@ -1,0 +1,20 @@
+location: spawn:-24.500:66.000:24.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: redstone_torch'
+    height: 0.6
+  - content: '&#ff0000&lW&#ff0606&lh&#ff0d0d&la&#ff1313&lt&#ff1919&l&#ff2020&ls &#ff2626&lN&#ff2c2c&le&#ff3333&lw&#ff3939&l?'
+    height: 0.3
+  - content: '&7&o/season'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

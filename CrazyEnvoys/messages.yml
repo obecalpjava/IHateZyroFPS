@@ -1,0 +1,83 @@
+# Tips
+# 1. Make sure to use the %prefix% to add the prefix in front of messages.
+# 2. If you wish to use more than one line for a message just go from a line to a list.
+# Examples:
+#  Line:
+#    No-Permission: '%prefix%&cYou do not have permission to use that command.'
+#  List:
+#    No-Permission:
+#      - '%prefix%&cYou do not have permission'
+#      - '&cto use that command. Please try another.'
+Messages:
+  No-Permission: '%prefix%&cYou do not have permission to use that command.'
+  No-Permission-Claim: '%prefix%&cYou do not have permission to claim that supply
+    drop.'
+  Players-Only: '%prefix%&cOnly players can use that command.'
+  Not-Online: '%prefix%&cThat player is not online at this time.'
+  Not-A-Number: '%prefix%&cThat is not a number.'
+  Reloaded: '%prefix%&7You have just reloaded all the files.'
+  Already-Started: '%prefix%&cThere is already a supply drop event running. Please
+    stop it to start a new one.'
+  Force-Start: '%prefix%&7You have just started the supply drop.'
+  Not-Started: '%prefix%&cThere is no supply drop event going on at this time.'
+  Force-Ended: '%prefix%&cYou have just ended the supply drop.'
+  Warning: '%prefix%&7There is a supply drop event happening in &f%time%&7 at the
+    Warzone!'
+  Started: '%prefix%&7A supply drop event has just started. &f%amount% &7crates have
+    spawned around spawn for 5 minutes!'
+  Left: '%prefix%&f%player% &7has just found a &f%tier%&7 supply drop. There are now
+    &f%amount% &7left to find in the Warzone!'
+  Ended: '%prefix%&cThe supply drop event has ended. Waiting for another supply drop?
+    Check the time! &f/supplydrops&c.'
+  Not-Enough-Players: '%prefix%&7Not enough players are online to start the supply
+    drop event. Only &f%amount% &7players are online.'
+  Enter-Editor-Mode: '%prefix%&7You are now in editor mode.'
+  Leave-Editor-Mode: '%prefix%&7You have now left editor mode.'
+  Editor-Clear-Locations: '%prefix%&7You have cleared all the editor spawn locations.'
+  Editor-Clear-Failure: '%prefix%&7You must be in Editor mode to clear the spawn locations.'
+  Kicked-From-Editor-Mode: '%prefix%&cSorry but a supply drop is active. Please stop
+    it or wait till it''s over.'
+  Add-Location: '%prefix%&7You have just added a spawn location.'
+  Remove-Location: '%prefix%&cYou have just removed a spawn location.'
+  Time-Left: '%prefix%&7The current supply drop has &f%time%&7 left.'
+  Time-Till-Event: '%prefix%&7The next supply drop will start in &f%time%&7.'
+  Used-Flare: '%prefix%&7You have just started a supply drop event with a flare.'
+  Cant-Use-Flares: '%prefix%&cYou do not have permission to use flares.'
+  Give-Flare: '%prefix%&7You have just given &f%player% %amount% &7flares.'
+  Given-Flare: '%prefix%&7You have been given &f%amount% &7flares.'
+  New-Center: '%prefix%&7You have just set a new center for the random supply drop
+    crates.'
+  Not-In-World-Guard-Region: '%prefix%&cYou must be in the WarZone to use a flare.'
+  Start-Ignoring-Messages: '%prefix%&7You are now ignoring the collecting messages.'
+  Stop-Ignoring-Messages: '%prefix%&7You now see all the collecting messages.'
+  Cooldown-Left: '%prefix%&7You still have &f%time% &7till you can collect another
+    crate.'
+  Drops-Available: '%prefix%&7List of all available supply drops.'
+  Drops-Possibilities: '%prefix%&7List of location supply drop''s may spawn at.'
+  Drops-Page: '%prefix%&7Use /supply drop drops [page] to see more.'
+  Drops-Format: '&7[&f%id%&7]: %world%, %x%, %y%, %z%'
+  No-Spawn-Locations-Found: '%prefix%&cNo spawn locations were found and so the event
+    has been cancelled and the cooldown has been reset.'
+  Command-Not-Found: '%prefix%&cPlease do /supply drop help for more information.'
+  Hologram-Placeholders:
+    On-Going: On Going
+    Not-Running: Not Running
+  Time-Placeholders:
+    Day: ' days'
+    Hour: ' hours'
+    Minute: ' minutes'
+    Second: ' seconds'
+  Help:
+  - '&f/envoy help &7- Shows the supply drop help menu.'
+  - '&f/envoy reload &7- Reloads all the config files.'
+  - '&f/envoy time &7- Shows the time till the supply drop starts or ends.'
+  - '&f/envoy drops [page] &7- Shows all current crate locations.'
+  - '&f/envoy ignore &7- Shuts up the supply drop collecting message.'
+  - '&f/envoy flare [amount] [player] &7- Give a player a flare to call a supply drop
+    event.'
+  - '&f/envoy edit &7- Edit the crate locations with bedrock.'
+  - '&f/envoy start &7- Force starts the supply drop.'
+  - '&f/envoy stop &7- Force stops the supply drop.'
+  - '&f/envoy center &7- Set the center of the random crate drops.'
+  Countdown-In-Progress: '%prefix%&7You cannot claim any envoys for another &6%time%
+    seconds.'

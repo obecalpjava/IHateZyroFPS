@@ -1,0 +1,30 @@
+location: spawn:4.500:66.600:96.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: YELLOW_DYE'
+    height: 0.6
+  - content: '#f3ff10&lP#f4fa10&lr#f6f510&li#f7f00f&lm#f8eb0f&le #fae50f&lC#fbe00f&lr#fcdb0e&la#fed60e&lt#ffd10e&le'
+    height: 0.3
+  - content: '&7&o/buy'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '%javascript_prime_crate%'
+    height: 0.3
+  - content: guaranteed &#0077D3ʀᴀʀᴇ+
+    height: 0.3
+  - content: '%ecfree_prime_progress%'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7[←]&f Punch to Preview'
+    height: 0.3
+  - content: '&7[→] &fUse Key to Open'
+    height: 0.3
+  actions: {}

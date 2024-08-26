@@ -1,0 +1,20 @@
+location: spawn:-24.500:66.000:69.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: beacon'
+    height: 0.6
+  - content: '&#03fbff&lC&#23dcfb&lo&#42bcf8&ls&#629df4&lm&#817ef0&le&#a15eec&lt&#c03fe9&li&#e01fe5&lc&#ff00e1&ls'
+    height: 0.3
+  - content: '&7&o/cosmetics'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

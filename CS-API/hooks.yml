@@ -1,0 +1,73 @@
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                        CS-API Version 1.5.7                          #
+#                                                                      #
+#      Copyright Culley Studios 2017-2022. All rights reserved.        #
+#    The software is provided as is without warranty of any kind.      #
+#                                                                      #
+# -------------------------------------------------------------------- #
+#                                                                      #
+#                           Documentation                              #
+#        https://culleystudios.com/docs/spigot-plugins/cs-api          #
+#                                                                      #
+# -------------------------------------------------------------------- #
+
+hooks:
+  advancedenvoys: true
+  askyblock: true
+  auctionguiplus: true
+  auctionhouse: true
+  auctions: true
+  autorank: true
+  autosell: true
+  battlelevels: true
+  bentobox: true
+  boss: true
+  buycraftx: true
+  chatreaction: true
+  citizens: true
+  cratekeys: true
+  crazycrates: true
+  custombosses: true
+  dailybonus: true
+  essentials: true
+  ezblocks: true
+  ezrankspro: true
+  factions: true
+  factionsuuid: true
+  gangsplus: true
+  holographicdisplays: true
+  javascript: true
+  jobs: true
+  luckyblockshook: true
+  mcmmo: true
+  minecrates: true
+  mvdwplaceholderapi: true
+  mysql: true
+  mythicmobs: true
+  namemytool: true
+  obsidianauctions: true
+  placeholderapi: true
+  playerpoints: true
+  pouches: true
+  projackpots: true
+  promenus: true
+  propackages: true
+  provotes: true
+  proquests: true
+  rankvouchers: true
+  rpgme: true
+  shopguiplus: true
+  skillapi: true
+  sponsoredslots: true
+  sqlite: true
+  tokenenchant: true
+  tokenmanager: true
+  towny: true
+  unitygen: true
+  uskyblock: true
+  vault: true
+  nuvotifier: true
+  votifier: true
+  worldguard6: true
+  worldguard7: true

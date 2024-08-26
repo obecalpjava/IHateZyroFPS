@@ -1,0 +1,4 @@
+chesthider:
+  tick-check: 20
+  ignore-distance: 5
+  chunk-radius: 12

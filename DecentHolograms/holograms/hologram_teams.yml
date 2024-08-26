@@ -1,0 +1,20 @@
+location: spawn:-24.500:66.000:87.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: BEACON'
+    height: 0.6
+  - content: '&#2ebafb&lT&#2ac3fb&le&#25cbfb&la&#21d4fb&lm&#1cdcfb&ls'
+    height: 0.3
+  - content: '&7&o/teams'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

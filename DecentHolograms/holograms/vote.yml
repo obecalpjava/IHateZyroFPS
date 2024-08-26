@@ -1,0 +1,22 @@
+location: spawn:6.500:65.400:93.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: LIME_DYE'
+    height: 0.6
+  - content: '#59ff50&lV#4efa4d&lo#43f54a&lt#38f046&le #2dec43&lC#21e740&lr#16e23d&la#0bdd39&lt#00d836&le'
+    height: 0.3
+  - content: '&7&o/vote'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&7[←]&f Punch to Preview'
+    height: 0.3
+  - content: '&7[→] &fUse Key to Open'
+    height: 0.3
+  actions: {}

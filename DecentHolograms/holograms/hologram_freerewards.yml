@@ -1,0 +1,20 @@
+location: spawn:-24.500:66.000:51.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: diamond'
+    height: 0.6
+  - content: '&#05c2e0&lF&#05bfdd&lr&#05bdda&le&#05bad7&le &#05b7d4&lR&#05b5d1&le&#04b2cd&lw&#04afca&la&#04acc7&lr&#04aac4&ld&#04a7c1&ls'
+    height: 0.3
+  - content: '&7&o/rewards'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

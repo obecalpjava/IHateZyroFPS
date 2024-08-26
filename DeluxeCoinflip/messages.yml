@@ -1,0 +1,65 @@
+# DeluxeCoinflip Messages
+
+general:
+  prefix: "&#fc3131&lCoinflips &8➟"
+  reload: "{PREFIX} &7The configuration files have been reloaded!"
+  no-permission: "&cYou do not have permission to execute this command."
+  help_default:
+    - " "
+    - " &#fb0000&lL&#fb0a0a&lI&#fc1414&lF&#fc1e1e&lE&#fc2828&lS&#fc3131&lT&#fd3b3b&lE&#fd4545&lA&#fd4f4f&lL &8| &cCoinflips"
+    - " "
+    - " &c/coinflip &8- &7&oOpen the coinflip GUI."
+    - " &c/coinflip toggle &8- &7&oToggle game broadcast messages."
+    - " &c/coinflip create <amount> [{PROVIDERS}] &8- &7&oCreate a coinflip with a specified amount."
+    - " &c/coinflip delete &8- &7&oRemove your current coinflip listing."
+    - ""
+  help_admin:
+    - " &#fc1414&lAdmin Commands"
+    - " &7&oOnly players with coinflip.admin can view admin commands.&r"
+    - ""
+    - " &4/coinflip reload &8- &7&oReload the configuration files."
+    - ""
+
+coinflip:
+  game_not_found: "{PREFIX} &cYou do not have an active coinflip game."
+
+  toggle_broadcasts_on: "{PREFIX} &7You have &aenabled &7coinflip broadcast messages."
+  toggle_broadcasts_off: "{PREFIX} &7You have &cdisabled &7coinflip broadcast messages."
+
+  created_coinflip: "{PREFIX} &aCreated Coinflip game for &2${AMOUNT}!"
+  deleted_coinflip: "{PREFIX} &cYou have deleted your active coinflip game."
+
+  insufficient-funds: "{PREFIX} &cYou have insufficient funds to do this!"
+  minimum-amount: "{PREFIX} &7The minimum bet is &c${MIN_BET}&7 for a coinflip!"
+  maximum-amount: "{PREFIX} &7The maximum bet is &c${MAX_BET}&7 for a coinflip!"
+  coinflip-active: "{PREFIX} &7You already have an active coinflip! Please use &c/coinflip delete&7 first, if you wish to create a new one!"
+
+  game-unavailable: "{PREFIX} &cThis game is no longer available."
+  cant-coinflip-self: "{PREFIX} &cYou cannot coinflip against yourself!"
+  player-challenged-you: "{PREFIX} &c{OPPONENT} &aaccepted your coinflip!"
+
+  enter-value: "{PREFIX} &aPlease enter a value between &c{MIN_BET} &aand &c{MAX_BET}&a. Type 'cancel' to cancel."
+  chat-cancelled: "{PREFIX} &cCancelled!"
+  invalid-currency: "{PREFIX} &cThat is not a valid currency type. Types: {CURRENCY_TYPES}"
+  invalid-amount: "{PREFIX} &c{INPUT} is not a valid currency amount. Please try again."
+
+  broadcast-coinflip: "{PREFIX} &a{WINNER} &7just beat &c{LOSER} &7in a Coinflip worth &b${WINNINGS}&3!"
+
+  summary-loss:
+    - ""
+    - "         &#fc3131&lGame Summary"
+    - " &cYou lost, better luck next time."
+    - ""
+    - "&eAmount Bet: &2${WINNINGS}"
+    - "&eWinner: &a{WINNER}"
+    - "&eLoser: &c{LOSER}"
+    - ""
+  summary-win:
+    - ""
+    - "         &#fc3131&lGame Summary"
+    - "   &a&lWINNER! &aCongratulations!"
+    - ""
+    - "&eAmount Bet: &2${WINNINGS}"
+    - "&eWinner: &a{WINNER}"
+    - "&eLoser: &c{LOSER}"
+    - ""

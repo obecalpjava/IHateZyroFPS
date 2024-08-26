@@ -1,0 +1,20 @@
+location: spawn:-44.500:64.000:44.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: ENCHANTED_BOOK'
+    height: 0.6
+  - content: '&#fb2121&lR&#fb2323&la&#fb2525&ln&#fb2727&lk &#fc2929&lI&#fc2b2b&ln&#fc2d2d&lf&#fc2f2f&lo&#fc3131&lr&#fc3333&lm&#fc3535&la&#fd3737&lt&#fd3939&li&#fd3b3b&lo&#fd3d3d&ln'
+    height: 0.3
+  - content: '&7&o/ranks'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

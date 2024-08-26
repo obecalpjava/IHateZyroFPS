@@ -1,0 +1,20 @@
+location: spawn:0.500:69.000:13.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: GRASS_BLOCK'
+    height: 0.6
+  - content: '&#11c829&lG&#14cd2b&le&#16d32c&lt &#19d82e&lS&#1cde2f&lt&#1ee331&la&#21e932&lr&#24ee34&lt&#26f435&le&#29f937&ld'
+    height: 0.3
+  - content: '&7&oLeave Spawn!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

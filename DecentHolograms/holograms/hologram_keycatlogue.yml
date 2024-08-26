@@ -1,0 +1,20 @@
+location: spawn:12.500:66.000:87.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: AMETHYST_SHARD'
+    height: 0.6
+  - content: '&#b513fb&lK&#b815fb&le&#bb17fb&ly &#bd18fb&lC&#c01afb&la&#c31cfb&lt&#c61efb&la&#c920fb&ll&#cc22fb&lo&#ce23fb&lg&#d125fb&lu&#d427fb&le'
+    height: 0.3
+  - content: '&7&o/keystore'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

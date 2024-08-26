@@ -1,0 +1,81 @@
+options:
+  server-name: Lifesteal Green
+  webhook-url: https://discord.com/api/webhooks/995505316282253363/g_u_qDmjSSQGFtIdz6wXQur41a2UwAYw-3Wn6naegeB3H0xwPIXzIDEMkq8qS-944jAR
+  kick-messages:
+  - byte
+  - exception
+  - packet
+
+commands:
+  questionmark:
+    sent: '?'
+    permission: bukkit.command.help
+  pl:
+    sent: pl
+    permission: bukkit.command.plugins
+  plugins:
+    sent: plugins
+    permission: bukkit.command.plugins
+  lp:
+    sent: lp
+    permission: luckperms.use
+  luckperms:
+    sent: luckperms
+    permission: luckperms.use
+  lpb:
+    sent: lpb
+    permission: luckperms.use
+  luckpermsbungee:
+    sent: luckpermsbungee
+    permission: luckperms.use
+  litebans:
+    sent: litebans
+    permission: '*'
+  lbans:
+    sent: litebans
+    permission: '*'
+  plugman:
+    sent: plugman
+    permission: plugman.use
+  op:
+    sent: op
+    permission: minecraft.command.op
+  deop:
+    sent: deop
+    permission: minecraft.command.deop
+  npcmd:
+    sent: npcmd
+    permission: '*'
+  prunehistory:
+    sent: prunehistory
+    permission: '*'
+  staffrollback:
+    sent: staffrollback
+    permission: '*'
+  ban:
+    sent: ban
+    permission: litebans.ban
+  tempban:
+    sent: tempban
+    permission: litebans.tempban
+  mute:
+    sent: mute
+    permission: litebans.mute
+  tempmute:
+    sent: tempmute
+    permission: litebans.tempmute
+  gamemode:
+    sent: gamemode
+    permission: essentials.gamemode.*
+  gmc:
+    sent: gmc
+    permission: essentials.gamemode.creative
+  gms:
+    sent: gms
+    permission: essentials.gamemode.survival
+  gma:
+    sent: gma
+    permission: essentials.gamemode.adventure
+  co:
+    sent: co
+    permission: coreprotect.co

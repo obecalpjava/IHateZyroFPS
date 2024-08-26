@@ -1,0 +1,20 @@
+location: spawn:25.500:66.000:24.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: RED_SHULKER_BOX'
+    height: 0.6
+  - content: '&#fb2c2c&lM&#fb3030&la&#fb3535&lr&#fb3939&lk&#fb3e3e&le&#fb4242&lt'
+    height: 0.3
+  - content: '&7&o/market'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

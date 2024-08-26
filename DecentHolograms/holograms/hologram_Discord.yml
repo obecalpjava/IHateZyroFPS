@@ -1,0 +1,20 @@
+location: spawn:45.500:64.000:44.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: BLUE_DYE'
+    height: 0.6
+  - content: '&#7289da&lDiscord'
+    height: 0.3
+  - content: '&7&o/discord'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}

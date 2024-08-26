@@ -1,0 +1,18 @@
+location: spawn:-58.500:62.000:44.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: redstone_torch'
+    height: 0.7
+  - content: '&#FB1818&lWARZONE AHEAD'
+    height: 0.3
+  - content: '&fJust down and begin fighting!!'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  actions: {}

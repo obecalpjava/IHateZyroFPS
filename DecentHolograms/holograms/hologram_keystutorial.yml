@@ -1,0 +1,21 @@
+location: spawn:-11.500:66.000:87.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 10000
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '#ICON: diamond_block'
+    height: 0.6
+  - content: '&#40fff7&lL&#42fdf8&lo&#43fbf8&lo&#45f8f9&lt&#47f6f9&lb&#49f4fa&lo&#4af2fa&lx
+      &#4cf0fb&lC&#4eedfb&la&#50ebfc&lt&#51e9fc&la&#53e7fd&ll&#55e5fd&lo&#57e2fe&lg&#58e0fe&lu&#5adeff&le'
+    height: 0.3
+  - content: '&7&o/lootboxstore'
+    height: 0.3
+  - content: ''
+    height: 0.3
+  - content: '&f↓ Click Below ↓'
+    height: 0.3
+  actions: {}
