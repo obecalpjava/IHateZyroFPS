@@ -1,0 +1,94 @@
+Name: 'Thai'
+
+#MAIN GUI
+GUI_COLOR_TITLE: 'สีของข้อความแชท'
+GUI_SET_COLOR: '&7คลิกเพื่อตั้งค่าสีแชทของคุณเป็น{Color}&7'
+GUI_SET_COLOR_DEFAULT: '&7คลิกเพื่อตั้งค่าสีแชทของคุณกลับไปเป็นค่าเริ่มต้น !'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aคลิกเพื่อรีเซ็ตค่าเริ่มต้น !'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cคุณไม่มีสิทธิ์เข้าถึงเพื่อรีเซ็ตกลับเป็นค่าเริ่มต้น !'
+GUI_HAS_ACCESS: '&aคลิกเพื่อใช้ !'
+GUI_NO_ACCESS: '&cคุณไม่มีสิทธิ์ในการใช้สีนี้ค่ะ !'
+GUI_SELECTED_COLOR_TITLE: '&e&lสีที่เลือก'
+GUI_SELECTED_COLOR_LORE: '&7สีที่คุณเลือกคือ :||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: 'สร้างชุดสีข้อความแชทที่กำหนดเอง'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lสร้างสีแชทที่กำหนดเอง'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7คลิกที่นี่เพื่อสร้างสีที่จะกำหนดเอง'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cขออภัยคุณไม่มีสิทธิ์เข้าถึงเพื่อจะกำหนดสีเอง'
+GUI_COLOR_FINISH: 'เสร็จสิ้น'
+GUI_COLOR_FINISH_LORE: '&7คลิกเพื่อยืนยันการสร้างชุดสีแชทที่กำหนดเอง ||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7คุณได้เพิ่ม {Color} &7ลงในชุดสีที่กำหนดเองเรียบร้อยแล้ว!'
+GUI_ADD_CUSTOM_COLOR:  '&7คลิกเพื่อเพิ่ม {Color} เป็นชุดสีที่จะกำหนดสีเอง&7!'
+GUI_HAS_ACCESS_CUSTOM: '&aคลิกเพื่อเพิ่ม !'
+#You can add || to add new lines!
+GUI_CUSTOM_COLOR_LORE: 'คลิกเพื่อลบสีนี้ออกจากสีที่จะกำหนดเอง !'
+GUI_CUSTOM_COLOR_EXAMPLE: 'นี่คือลักษณะที่สีที่กำหนดเองในแชท'
+RESET_CUSTOM_COLORS_LIST: '&7คลิกเพื่อรีเซ็ตชุดสีที่กำหนดเองใหม่'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7สร้างชุดสีแชทที่กำหนดเองสำเร็จแล้ว ! พิมพ์แชทเพื่อดูสีของมัน !'
+GUI_COLOR_BACK: 'กลับ'
+GUI_COLOR_BACK_LORE: 'คลิกเพื่อย้อนกลับ'
+
+#COLORS
+COLOR: 'ชุดสี'
+COLOR_DARK_RED: 'สีแดงเลือดหมู'
+COLOR_GREEN: 'สีเขียว'
+COLOR_BLUE: 'สีน้ำเงิน'
+COLOR_CYAN: 'สีเขียวคราม'
+COLOR_PURPLE: 'สีม่วง'
+COLOR_GOLD: 'สีส้ม'
+COLOR_DARK_GRAY: 'สีเทาเข้ม'
+COLOR_RED: 'สีแดง'
+COLOR_LIME: 'สีเขียวมะนาว'
+COLOR_LIGHT_BLUE: 'สีน้ำเงิน'
+COLOR_BLACK: 'สีดำ'
+COLOR_PINK: 'สีชมพู'
+COLOR_YELLOW: 'สีเหลือง'
+COLOR_GRAY: 'สีเทา'
+COLOR_AQUA: 'สีฟ้า'
+COLOR_WHITE: 'สีขาว'
+COLOR_RAINBOW: 'สีรุ้ง'
+COLOR_RESET: 'รีเซ็ต'
+
+COLOR_RESET_NO_PERM: '%prefix%&cคุณไม่สามารถรีเซ็ตสีของคุณได้ค่ะ'
+
+COLOR_RAINBOW_SELECT_LEFT: '&7คลิกซ้ายเพื่อตั้งค่าสีแชทของคุณเป็น สีรุ้งแบบที่ 1'
+COLOR_RAINBOW_SELECT_RIGHT: '&7คลิกขวาเพื่อตั้งค่าสีแชทของคุณเป็น สีรุ้งแบบที่ 2'
+
+COLOR_HEX_SELECT_TITLE: 'กำหนดโค๊ดสี Hex ด้วยตัวเอง (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7คลิกเพื่อตั้งค่าสีแชทของคุณให้เป็น Hex Color!'
+COLOR_HEX_CUSTOM: 'โค๊ดสี Hex แบบกำหนดเอง'
+COLOR_HEX_CUSTOM_VALUE: 'ใส่โค๊ดสี : เช่น #ffc7c5'
+COLOR_HEX_CUSTOM_INCORRECT: 'คุณใส่โค๊ดสีไม่ถูกต้อง'
+
+NO_COLOR_SET: '&cยังไม่ได้เลือกสี'
+COLOR_SELECTED: '%prefix%&7คุณได้เลือก {Color} &7เรียบร้อยแล้วค่ะ !'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7ตั้งค่าสีของคุณกลับเป็นค่าเริ่มต้นเรียบร้อยแล้วค่ะ'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cคุณไม่ได้เลือกสีของข้อความแชท'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: 'เปลี่ยนภาษา'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'ภาษานี้ถูกเลือกในปัจจุบัน'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'คลิกเพื่อเลือก {Language} เป็นภาษาของการใช้งาน'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'รีเฟรชชุดภาษา'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'คลิกเพื่อรีเฟรชทุกภาษา ||รวมถึงการรีเซ็ตเพื่อหาภาษาใหม่ด้วย'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aรีเฟรชชุดภาษาใหม่เรียบร้อยแล้วค่ะ'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cชุดภาษายังไม่สมบูรณ์เรียบร้อย ดังนั้นจึงไม่สามารถโหลดได้ !'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} could not be found!'
+COLOR_SELECTED_OTHER: '%prefix%&7Successfully set {Player}''s color to {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Successfully set {Player}''s color back to default!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} has no chat color selected.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cYou don''t have enough permissions to use this command!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cYou don''t have access to open the languages menu.'
+COMMAND_NO_ACCESS: '%prefix%&cคุณไม่มีสิทธิ์ในการใช้สีนี้ค่ะ !'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cคุณไม่มีสิทธิ์เข้าถึงเพื่อจะกำหนดสีเอง!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cPlease specify a color!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} is not a color!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cYou have to be an online player to run this command!'
+
+COMMAND_RAINBOW: '&4R&ca&6i&en&2b&ao&bw'
+COMMAND_RAINBOW_2: '&4R&ca&6i&en&2b&ao&bw &92'

@@ -1,0 +1,165 @@
+Command:
+  Drop:
+    Usage: <crateId> <world> <x> <y> <z>
+    Desc: Drop crate at specified location in the world.
+    Done: '&aDropped &6%crate_name%&a at &7%x%&a, &7%y%&a, &7%z%&a
+      in &7%world%&a.'
+  ForceOpen:
+    Desc: Force open a crate for a player.
+    Usage: <crateId> [player]
+    Done: '&aForce opened &7%crate_name%&a for &7%player%&a.'
+    Notify: '&aYou have been forced to open &7%crate_name%&a.'
+  Give:
+    Usage: <player | *> <crateId> [amount]
+    Desc: Gives crate(s) to a player.
+    Done: '&7Given &7x%amount% &aof &7%crate_name% &acrate(s)
+      to &7%player%&a.'
+    Notify: '&7You recieved &7x%amount% &aof &7%crate_name%&a!'
+  GiveKey:
+    Usage: <player | *> <keyId> [amount]
+    Desc: Give crate key(s) to a player.
+    Done: '&aGiven &7x%amount% &aof &7%key_name% &akey(s) to &7%player%&a.'
+    Notify: '&7You recieved &7x%amount% &aof &7%key_name%&a!'
+  TakeKey:
+    Usage: <player | *> <keyId> [amount]
+    Desc: Take crate key(s) from a player.
+    Done: '&aTaken &7x%amount% of &7%key_name% &akey(s) from &7%player%&a.'
+    Notify: '&cYou lost &7x%amount% of &7%key_name%&a!'
+    Error: '&cCould not take keys: Player does not exist or does
+      not have such amount of keys.'
+  CheckKey:
+    Desc: Show amount of your or other player keys.
+    Usage: '[player]'
+    Format:
+      List:
+      - '{message: ~prefix: false;}'
+      - '&8&m              &8&l[ &e%player% &7Crate Keys &8&l]&8&m              &8'
+      - '&7'
+      - '&6▸ &e%key_name%: &6%amount%'
+      OfflineItem: '&c<Player Offline>'
+  Preview:
+    Desc: Open crate preview.
+    Usage: <crateId> [player]
+    Done:
+      Others: '&aOpened &7%crate_name%&a preview for &7%player%&a.'
+  ResetLimit:
+    Desc: Reset reward win limit for specified crate and reward.
+    Usage: <player> <crateId> [rewardId]
+    Done:
+      Crate: '&aReset &7%player%''s &awin limit for all rewards
+        of &7%crate_name%&a.'
+      Reward: '&aReset &7%player%''s &awin limit for &7%reward_name%
+        &areward of &7%crate_name%&a.'
+  ResetCooldown:
+    Desc: Reset player cooldown for specified crate.
+    Usage: <player> <crateId>
+    Done: '&aReset &7%player%''s &acooldown for &7%crate_name%&a.'
+  Menu:
+    Usage: '[menuId]'
+    Desc: Open crate menu.
+    Done:
+      Others: '&aOpened &7%menu_id%&a crate menu for &7%player%&a.'
+  Key:
+    Desc: Manage or view player's crate keys.
+    Error:
+      Player: '&cCould not proccess operation for offline/invalid player &e%player%&c!'
+    Give:
+      Usage: <player | *> <keyId> <amount>
+      Desc: Give crate key(s) to a player.
+      Done: Given &ax%amount% &7of &a%key_name% &7key(s) to &a%player%&7.
+      Notify: You recieved &ax%amount% &7of &a%key_name%&7!
+    Take:
+      Usage: <player | *> <keyId> <amount>
+      Desc: Take crate key(s) from a player.
+      Done: Taken &cx%amount% &c%key_name% &7key(s) from &c%player%
+      Notify: You lost &cx%amount% &c%key_name%&7!
+    Set:
+      Usage: <player | *> <keyId> <amount>
+      Desc: Set crate key(s) amount for a player.
+      Done: Set &ex%amount% &7of &e%key_name% &7key(s) for &e%player%&7.
+      Notify: Your &e%key_name%&7 amount has been changed to &ex%amount%&7!
+    Show:
+      Desc: Show amount of your or other player keys.
+      Usage: '[player]'
+      Format:
+        List:
+        - '{message: ~prefix: false;}'
+        - '&6&m              &6&l[ &a%player% &e&lCrate Keys &6&l]&6&m              &6'
+        - '&7'
+        - '&6▸ &e%key_name%: &6%amount%'
+Crate:
+  Error:
+    Invalid: '&cInvalid crate!'
+  Open:
+    Error:
+      InventorySpace: '&cPlease clean up your inventory to open
+        the crate!'
+      Cooldown:
+        Temporary: '&cYou have to wait &7%time% &cbefore you can
+          open &7%crate_name%&c again!'
+        OneTimed: '&cYou have already opened this crate, you cannot
+          open it again!'
+      NoKey: '&cYou don''t have a key for this crate!'
+      NoRewards: '&cThis crate does not contain any rewards for
+        you!'
+      Cost:
+        Money: '&cYou don''t have enough money to open this crate!'
+        Exp: '&cYou don''t have enough exp levels to open this
+          crate!'
+    Reward:
+      Info: '&7You won a &f%reward_name% &7reward from the &f%crate_name%&7!'
+      Broadcast: '&f%player% &7just won the &r%reward_name% &7reward from the &f%crate_name%&7!'
+  Key:
+    Error:
+      Invalid: '&cInvalid key!'
+  Placeholder:
+    Cooldown:
+      Blank: Ready to open!
+Menu:
+  Invalid: '&cMenu does not exist!'
+Editor:
+  Crate:
+    Enter:
+      Id: '&7Enter &aunique &7crate &aidentifier&7...'
+      DisplayName: '&7Enter crate &adisplay name&7...'
+      Particle:
+        Name: '&7Enter &aparticle &7name...'
+        Data: '&7Enter &aparticle &7data...'
+      KeyId: '&7Enter &akey &7identifier...'
+      BlockLocation: '&7Click a &ablock &7to assign crate...'
+      BlockHologramText: '&7Enter &atext &7line...'
+      BlockHologramOffset: '&7Enter &aoffset &7value...'
+      Cooldown: '&7Enter &acooldown &7in seconds...'
+      Citizens: '&7Enter &aCitizens NPC &7ID...'
+      AnimationConfig: '&7Enter &aanimation config &7name...'
+      PreviewConfig: '&7Enter &apreview config &7name...'
+      OpenCost:
+        Money: '&7Enter &amoney &7cost...'
+        Exp: '&7Enter &aexp levels &7cost...'
+      Block:
+        Location: '&7Click a &ablock &7to assign crate...'
+        Hologram:
+          Text: '&7Enter &atext &7line...'
+          Offset: '&7Enter &aoffset &7value...'
+    Error:
+      Create:
+        Exists: '&cA crate with that id already exists!'
+  Reward:
+    Enter:
+      Id: '&7Enter &aunique &7reward &aidentifier&7...'
+      DisplayName: '&7Enter reward &adisplay name&7...'
+      Chance: '&7Enter win &achance&7...'
+      Command: '&7Enter a &acommand&7...'
+      WinLimit:
+        Amount: '&7Enter win limit &aamount&7...'
+        Cooldown: '&7Enter win limit &acooldown&7...'
+    Error:
+      Create:
+        Exist: '&cA reward with that id already exists!'
+  Key:
+    Error:
+      Create:
+        Exist: '&cA key with that id already exists!'
+Other:
+  All:
+    Online: All online players

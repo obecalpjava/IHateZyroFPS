@@ -1,0 +1,32 @@
+mongo-uri: "mongodb://admin:Gk6M9FhjEZJeREcU@10.0.0.1:27017/ruby?authSource=admin"
+database: "gold"
+mongo-collection: ecfree
+crates:
+  prime:
+    neededCrates: 5
+    openingCrate: primeplus
+    bar:
+      char: ■
+      successColor: '&a'
+      failColor: '&7'
+  epic:
+    neededCrates: 5
+    openingCrate: epicplus
+    bar:
+      char: ■
+      successColor: '&a'
+      failColor: '&7'
+  rival:
+    neededCrates: 5
+    openingCrate: rivalplus
+    bar:
+      char: ■
+      successColor: '&a'
+      failColor: '&7'
+  halloween:
+    neededCrates: 5
+    openingCrate: halloweenplus
+    bar:
+      char: ■
+      successColor: '&a'
+      failColor: '&7'

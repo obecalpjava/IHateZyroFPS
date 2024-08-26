@@ -1,0 +1,31 @@
+Plugin:
+  Command_Aliases: excellentcrates,ecrates,crates,crate,case,cases
+  Language: en
+  Prefix: '#4BCEE7&lCrates &8➟ &7'
+  Name: ExcellentCrates
+
+Database:
+  Type: SQLite
+  Auto_Save_Interval: 15
+  Instant_Save: false
+  MySQL:
+    Username: user123
+    Password: pass123
+    Host: localhost:3306
+    Database: server
+  Purge:
+    Enabled: false
+    For_Inactive_Days: 60
+    For_Period: 60
+  Sync_Interval: 60
+  Table_Prefix: ''
+  SQLite:
+    FileName: data.db
+
+Crate:
+  Click_Actions:
+    LEFT: CRATE_PREVIEW
+    RIGHT: CRATE_OPEN
+  Block_Pushback:
+    Y: 0.0
+    Multiply: 0.0

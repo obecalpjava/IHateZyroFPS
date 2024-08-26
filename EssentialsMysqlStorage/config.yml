@@ -1,0 +1,130 @@
+# default config.yml for EssentialsMysqlStorage
+# config version 1.25.0
+
+#MySQL Database details
+Database:
+    Mysql:
+        #MySQL server address
+        Host: 10.0.0.1
+        #MySQL server port (default 3306)
+        Port: 3306
+        #Database name (NOTE! You need to create the database, then the plugin will create the tables.)
+        DatabaseName: 'ls-ess-g'
+        #Table name (the plugin will auto create them)
+        TableName: 'Essentials_userdata'
+        #User name
+        User: 'ls-ess-g'
+        #User password
+        Password: 'nTdVCbZWe5pZBp5LarNW'
+        #SSL connection
+        SslEnabled: false
+    #This maintenance task runs async with a 2 min delay after the server starts.
+    RemoveInactiveUsers:
+        #Enable or disable database clean up of old accounts. | (true or false)
+        enabled: false
+        #Inactivity in days. Default 60 days.
+        inactivity: 60
+            
+
+#Plugin settings.
+Settings:
+    #Built in support for other plugins.
+    # NOTE! A server restart is needed for changes here to take effect!
+    SupportFor:
+        #Support for QuickShop plugin: https://www.spigotmc.org/resources/quickshop.18676/
+        #If you use Essentials Economy and QuickShop plugin enable this option. If you use other economy plugin keep it disabled.
+        #Set the tax value same as in QuickShop config. To disable set:  QuickShopTax: 0.00
+        QuickShop: false
+        QuickShopTax: 0.05
+        #Support for ChestShop plugin: https://dev.bukkit.org/projects/chestshop
+        ##If you use Essentials Economy and ChestShop plugin enable this option. If you use other economy plugin keep it disabled.
+        ChestShop: false
+        #Enable support for plugin ShopChestPlayerShopGUI+: https://www.spigotmc.org/resources/playershopgui.37707/
+        PlayerShopGUI-Support: false
+        #Enable support for plugin AuctionHouse: https://www.spigotmc.org/resources/auctionhouse.61836/
+        AuctionHouse-Support: false
+        #Enable support for plugin ShopChest: https://www.spigotmc.org/resources/shopchest.11431/
+        ShopChest-Support: false
+    #Delete the entire Essentials/userdata folder on server shutdown or restart.
+    #NOTE! Will delete all users files. Make sure you import them first.
+    RemoveUserDataFolder: true
+    #Delete the data file for players that leave the server after his data is saved on database.
+    RemoveUserFile: false
+    #Save online players data files to database. If this is disabled the data will be saves only when the player leaves the server.
+    SaveDataTask:
+        #Enable or disable the data save task. | (true or false)
+        enabled: true
+        #Time between data saves in minutes. | Default 3 min.
+        interval: 3
+        #Hide the data save task log messages.
+        hideLogMessages: false
+    #Prevent saving of some Essentials users data.
+    SaveFilter:
+        #Enable or disable the filter.
+        enabled: false
+        #The following data will be removed from essentials users data file when saving.
+        preventSaveOf:
+        - 'logoutlocation'
+        - 'lastlocation'
+    #Add support for essentials commands when players are offline.
+    EssentialsCmdIntegration:
+        #Support for essentials /pay command for offline players.
+        PayCmd: true
+        #Support for essentials /balance command for offline players.
+        BalanceCmd: true
+        #Support for essentials /seen command for offline players.
+        SeenCmd: true
+        #Support for essentials /eco commands for offline players.
+        EcoCmd: true
+
+#Chat messages with color and format codes support.
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes    
+ChatMessages:
+    NoPermission: '&cYou don''t have permission!'
+    ImportCmd: '&aImport essentials data started! Check server console for progress.'
+    ExportCmd: '&aExport essentials data started! Check server console for progress.'
+    CmdNotFound: '&cCommand not found! For help do /ems'
+    MoneySymbol: '$'
+    MoneySyncDisabled: '&cMoney sync is disabled.'
+    BalTopTitle: '&6&l      Money Top 10'
+    BalTopUpdate: '&aUpdating Money Top 10 list...'
+    BalTopEmptyDB: '&cDatabase is empty!'
+    BalTopUsage: '&cUsage: &6/baltop'
+    RemoveCmdUsage: '&eUsage: &6/ems delete <name>'
+    RemoveCmdComplete: '&aUser removed from database!'
+    RemoveCmdNotFound: '&cUser not found in the database!'
+    ReloadCmdWarning: '&cThis plugin does not recommend server reloads. If you have issues after running this command stop using it.'
+    PlayerNotFound: '&cPlayer not found!'
+    PayAmountPositive: '&cAmount must be positive!'
+    PayFormatError: '&cAmount must be a number!'
+    PayNoMoney: '&cYou do not have sufficient funds!'
+    PayComplete: '$<amount> has been sent to&e <name>'
+    TakeComplete: '$<amount> has been taken from&e <name>'
+    ResetComplete: 'Money reset complete for&e <name>'
+    BalanceCmd: 'Balance of&e <name>&a:&c $<amount>'
+    ReloadCmd: 'Config reload complete'
+    DatabaseTaskStart: '&eCommand will run in background for all players in database! Check console for progress...'
+    DatabaseTaskRunning: '&cA database task is already running! Please wait until it''s done, check console for progress.'
+    HelpScreen:
+    - ' '
+    - ' &6&lEssentialsMySQLStorage Help'
+    - '  &7Get Money Top 10: '
+    - '    &e/ems baltop'
+    - ' &7Import Essentials data to database: '
+    - '    &e/ems import'
+    - ' &7Export Essentials data back to files: '
+    - '    &e/ems export'
+    - ' &7Kick all players and save their data: '
+    - '    &e/ems saveAndKick'
+    - ' &7Remove a user from the database '
+    - '    &e/ems remove <name>'
+    - ' &7Reload plugin config.'
+    - '    &e/ems reload'
+    - ' '
+    
+    
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes
+#Save and Kick command - disable kicking players after save if you want them moved to the fallback server when bungeecord is used
+Kick-after-save: false
+KickMessages:
+    saveAndKickCommand: '&cServer is restarting please come back in 20 seconds.'

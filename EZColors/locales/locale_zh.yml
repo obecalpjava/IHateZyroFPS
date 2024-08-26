@@ -1,0 +1,94 @@
+Name: 'Simplified Chinese'
+
+#MAIN GUI
+GUI_COLOR_TITLE: '彩色聊天 | 主GUI'
+GUI_SET_COLOR: '&7点击以设置你的聊天颜色为 {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7点击以回到你的默认聊天颜色!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&a点我DAZE~'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&c你够了，你不能这么做'
+GUI_HAS_ACCESS: '&a点击以使用'
+GUI_NO_ACCESS: '&c你并无权限这么做！'
+GUI_SELECTED_COLOR_TITLE: '&e&l已选择的颜色'
+GUI_SELECTED_COLOR_LORE: '&7你目前选择的颜色为:||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: '彩色聊天 | 自定义'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&l自定义颜色'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7点击这里创建自定义彩字.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&c你并不能创建自定义彩字'
+GUI_COLOR_FINISH: '我完事了！'
+GUI_COLOR_FINISH_LORE: '&7点击以完成你的自定义彩字的创建!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7成功添加颜色 {Color} &7到自定义彩字!'
+GUI_ADD_CUSTOM_COLOR:  '&7点击以添加颜色 {Color} 到自定义彩字&7!'
+GUI_HAS_ACCESS_CUSTOM: '&a点击以添加!'
+#You can add || to add new lines!
+GUI_CUSTOM_COLOR_LORE: '你可以从你的自定义彩字移除这个颜色'
+GUI_CUSTOM_COLOR_EXAMPLE: '这就是你目前聊天的样子'
+RESET_CUSTOM_COLORS_LIST: '&7点击以恢复默认'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7成功创建自定义彩字! 打出来试试吧~'
+GUI_COLOR_BACK: '背部'
+GUI_COLOR_BACK_LORE: '单击返回。'
+
+#COLORS
+COLOR: '颜色'
+COLOR_DARK_RED: '蕾米红'
+COLOR_GREEN: '帽子绿'
+COLOR_BLUE: '你看不到的蓝色'
+COLOR_CYAN: '青娥色'
+COLOR_PURPLE: '基佬紫'
+COLOR_GOLD: '黄 金 之 风'
+COLOR_DARK_GRAY: '暗灰色'
+COLOR_RED: '灵梦红'
+COLOR_LIME: '绿幕绿'
+COLOR_LIGHT_BLUE: '亮蓝色'
+COLOR_BLACK: '深邃的黑色'
+COLOR_PINK: '樱花粉'
+COLOR_YELLOW: '黄♂色'
+COLOR_GRAY: '灰色'
+COLOR_AQUA: '智慧（⑨）的颜色'
+COLOR_WHITE: '纯洁白'
+COLOR_RAINBOW: '光污染！'
+COLOR_RESET: '重置'
+
+COLOR_RESET_NO_PERM: '%prefix%&c你不能重置你的颜色.'
+
+COLOR_RAINBOW_SELECT_LEFT: '&7左键以开始你的光污染！'
+COLOR_RAINBOW_SELECT_RIGHT: '&7右键以设置为光污染 二代目！'
+
+COLOR_HEX_SELECT_TITLE: '自定义十六进制值（1.16+）'
+COLOR_HEX_SELECT_LORE: '&7单击以将您的颜色设置为十六进制值！'
+COLOR_HEX_CUSTOM: '自定义十六进制颜色'
+COLOR_HEX_CUSTOM_VALUE: '十六进制值'
+COLOR_HEX_CUSTOM_INCORRECT: '十六进制不正确'
+
+NO_COLOR_SET: '&c你并没有设置颜色'
+COLOR_SELECTED: '%prefix%&7成功选择颜色 {Color} &7'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7成功重置颜色'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&c你并没有选择任何颜色！'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: '语言'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: '已选择这个语言'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: '选择语言 {Language} 作为插件语言'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: '刷新语言'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: '刷新全部语言.||这也会寻找新的语言.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&a刷新成功！'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&c语言未完成，因此无法加载！'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} could not be found!'
+COLOR_SELECTED_OTHER: '%prefix%&7Successfully set {Player}''s color to {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Successfully set {Player}''s color back to default!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} has no chat color selected.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cYou don''t have enough permissions to use this command!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cYou don''t have access to open the languages menu.'
+COMMAND_NO_ACCESS: '%prefix%&c你并无权限这么做！'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&c你不能创建自定义彩字！！'
+COMMAND_SPECIFY_COLOR: '%prefix%&cPlease specify a color!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} is not a color!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cYou have to be an online player to run this command!'
+
+COMMAND_RAINBOW: '&4R&ca&6i&en&2b&ao&bw'
+COMMAND_RAINBOW_2: '&4R&ca&6i&en&2b&ao&bw &92'

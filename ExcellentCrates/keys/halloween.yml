@@ -1,0 +1,19 @@
+Name: §x§b§4§1§0§f§b§lH§x§b§d§1§e§e§0§la§x§c§6§2§d§c§5§ll§x§c§f§3§b§a§a§ll§x§d§9§4§a§9§0§lo§x§e§2§5§8§7§5§lw§x§e§b§6§6§5§a§le§x§f§4§7§5§3§f§le§x§f§d§8§3§2§4§ln§f Crate Key
+Virtual: false
+Item:
+  Material: JACK_O_LANTERN
+  Amount: 1
+  Durability: 0
+  Name: '&x&b&4&1&0&f&b&lH&x&b&d&1&e&e&0&la&x&c&6&2&d&c&5&ll&x&c&f&3&b&a&a&ll&x&d&9&4&a&9&0&lo&x&e&2&5&8&7&5&lw&x&e&b&6&6&5&a&le&x&f&4&7&5&3&f&le&x&f&d&8&3&2&4&ln&f Key'
+  Lore:
+  - '&8Official Crate Key'
+  - '&c'
+  - '&fGet more keys on'
+  - '&fthe store! &x&b&4&1&0&f&b/&x&c&c&3&6&b&3b&x&e&5&5&d&6&cu&x&f&d&8&3&2&4y'
+  - '&c'
+  - '&x&b&4&1&0&f&b&l➥ &x&b&9&1&8&e&c&lR&x&b&e&2&0&d&c&lE&x&c&4&2&9&c&d&lD&x&c&9&3&1&b&e&lE&x&c&e&3&9&a&e&lE&x&d&3&4&1&9&f&lM &x&d&9&4&a&9&0&lA&x&d&e&5&2&8&0&lT &x&e&3&5&a&7&1&l/&x&e&8&6&2&6&1&lS&x&e&d&6&a&5&2&lP&x&f&3&7&3&4&3&lA&x&f&8&7&b&3&3&lW&x&f&d&8&3&2&4&lN'
+  Enchants:
+    luck_of_the_sea: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  Unbreakable: false

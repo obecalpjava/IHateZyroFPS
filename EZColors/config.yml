@@ -1,0 +1,38 @@
+Prefix: ''
+
+#Selection:
+#BOTH: Allows players to use the command and gui.
+#GUI: Only allows players to use the GUI.
+#COMMAND: Only allows players to use the command.
+Selection: BOTH
+
+#StorageType:
+#YAML: Stores users colors in YAML/YML.
+#MySQL: Stores users colors in MySQL/MariaDB.
+StorageType: YAML
+
+#RainbowType:
+#NORMAL: Each character gets a different color.
+#SPACE: Each space gets a different color.
+RainbowType: NORMAL
+
+#GUIType:
+#NORMAL: Don't close the gui when selecting a color.
+#CLOSE: Close the gui when selecting a color.
+#CLOSE_RESET: Close the gui when selecting a color AND when resetting your color to default.
+GUIType: NORMAL
+
+#MySQL Settings
+#If EZColors cannot connect,
+#the settings will default to YML.
+#-------------------------------------
+#You can change the database and port
+#if you would like, but..........
+#MAKE SURE THE PORT IS AN INT
+MySQL:
+  host: ''
+  port: 3306
+  database: 'ezcolors'
+  table: 'colors'
+  username: ''
+  password: ''

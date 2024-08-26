@@ -1,0 +1,94 @@
+Name: 'Dutch'
+
+#MAIN GUI
+GUI_COLOR_TITLE: 'Chat Kleur'
+GUI_SET_COLOR: '&7Klik om de kleur te veranderen naar {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7Klik om de kleur te veranderen naar de standaard kleur!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aKlik om het naar de Standaard kleur te veranderen!'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cJe hebt geen toegang om de kleur aan te passen naar standaard!'
+GUI_HAS_ACCESS: '&aKlik om te gebruiken!'
+GUI_NO_ACCESS: '&cJe hebt geen toegang tot deze kleur!'
+GUI_SELECTED_COLOR_TITLE: '&e&lKleur geselecteerd'
+GUI_SELECTED_COLOR_LORE: '&7Je geselecteerde kleur is:||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: 'Chat Kleur maker'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lZelf bepaalde Kleur'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7Klik hier om zelf een Kleur te maken.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cSorry, je hebt geen toegang om zelf een kleur te maken.'
+GUI_COLOR_FINISH: 'Finish'
+GUI_COLOR_FINISH_LORE: '&7Klik hier om de gekozen kleur te bevestigen!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7De gekozen kleur {Color} is succesvoltegevoegt aan de gekozen &7Kleur!'
+GUI_ADD_CUSTOM_COLOR:  '&7Klik om de kleur {Color} toe te voegen aan de zelfgemaakte kleur Kleur&7!'
+GUI_HAS_ACCESS_CUSTOM: '&aKlik om toe te voegen!'
+#Je kan deze strepen || toevoegen voor de nieuw regel!
+GUI_CUSTOM_COLOR_LORE: 'Klik hier om de zelfgemaakte kleur te verwijderen!'
+GUI_CUSTOM_COLOR_EXAMPLE: 'Zo ziet het er uit in de chat met de zelfgemaakte kleur.'
+RESET_CUSTOM_COLORS_LIST: '&7Klik om de zelfgemaakte kleur te reseten.'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7De zelfgemaakte kleur is succesvol gemaakt. Type in de chat om het te zien!'
+GUI_COLOR_BACK: 'Terug'
+GUI_COLOR_BACK_LORE: 'Klik om terug te gaan.'
+
+#COLORS
+COLOR: 'Kleur'
+COLOR_DARK_RED: 'Donker rood'
+COLOR_GREEN: 'Groen'
+COLOR_BLUE: 'Donker Blauw'
+COLOR_CYAN: 'Cyaan'
+COLOR_PURPLE: 'Paars'
+COLOR_GOLD: 'Goud'
+COLOR_DARK_GRAY: 'Donker grijs'
+COLOR_RED: 'Rood'
+COLOR_LIME: 'Licht groen'
+COLOR_LIGHT_BLUE: 'Blauw'
+COLOR_BLACK: 'Zwart'
+COLOR_PINK: 'Rose'
+COLOR_YELLOW: 'Geel'
+COLOR_GRAY: 'Grijs'
+COLOR_AQUA: 'Licht blauw'
+COLOR_WHITE: 'Wit'
+COLOR_RAINBOW: 'Regenboog'
+COLOR_RESET: 'Reset'
+
+COLOR_RESET_NO_PERM: '%prefix%&cJe kan niet de kleur reseten.'
+
+COLOR_RAINBOW_SELECT_LEFT: '&7Klik op de linker muis knop om de chat in regenboog te krijgen!'
+COLOR_RAINBOW_SELECT_RIGHT: '&7Klik op de rechter muis knop om de chat in regenboog2 te krijgen!'
+
+COLOR_HEX_SELECT_TITLE: 'Aangepaste hex-waarde (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7Klik om uw kleur in te stellen op een hex waarde!'
+COLOR_HEX_CUSTOM: 'Aangepaste Hex Kleur'
+COLOR_HEX_CUSTOM_VALUE: 'Hex-Waarde'
+COLOR_HEX_CUSTOM_INCORRECT: 'Onjuiste Hex'
+
+NO_COLOR_SET: '&cGeen kleur ingesteld'
+COLOR_SELECTED: '%prefix%&7Je hebt succesvol de &7Kleur {Color} geselecteerd!'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7Je hebt de kleur terug gezet naar standaard.'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cJe hebt geen chat kleur geselecteerd.'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: 'Vertaling'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'Deze vertaling is geselecteerd.'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'Klik om deze vertaling {Language} intestellen als de plugin taal.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'Ververs de vertaling'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'Klik om alle vertaling te verversen.||Hij zoekt ook naar nieuwe vertalingen.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aVertaling ververst.'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cDe taal is niet af en kan daarom niet worden geladen!'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} could not be found!'
+COLOR_SELECTED_OTHER: '%prefix%&7Successfully set {Player}''s color to {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Successfully set {Player}''s color back to default!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} has no chat color selected.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cYou don''t have enough permissions to use this command!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cYou don''t have access to open the languages menu.'
+COMMAND_NO_ACCESS: '%prefix%&cJe hebt geen toegang tot deze kleur!'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cJe hebt geen toegang om zelf een kleur te maken!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cPlease specify a color!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} is not a color!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cYou have to be an online player to run this command!'
+
+COMMAND_RAINBOW: '&4R&ca&6i&en&2b&ao&bw'
+COMMAND_RAINBOW_2: '&4R&ca&6i&en&2b&ao&bw &92'

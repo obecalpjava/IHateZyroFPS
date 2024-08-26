@@ -1,0 +1,94 @@
+Name: 'Italian'
+
+#MAIN GUI
+GUI_COLOR_TITLE: 'Colori Chat'
+GUI_SET_COLOR: '&7Clicca per impostare il colore della tua Chat su {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7Clicca per ripristinare il colore della tua Chat allo stato iniziale!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aClicca per impostare la Chat allo stato iniziale!'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cNon hai i permessi per impostare il colore della tua Chat allo stato iniziale!'
+GUI_HAS_ACCESS: '&aClicca per Utilizzare!'
+GUI_NO_ACCESS: '&cNon hai accesso a questo colore!'
+GUI_SELECTED_COLOR_TITLE: '&e&lColore Selezionato'
+GUI_SELECTED_COLOR_LORE: '&7Il Colore selezionato è:||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: 'Creatore di Colori'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lColori Personalizzati'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7Clicca qui per creare un colore personalizzato.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cSono spiacente ma, non hai il permesso per creare colori personalizzati.'
+GUI_COLOR_FINISH: 'Termina'
+GUI_COLOR_FINISH_LORE: '&7Clicca per finire la creazione del tuo colore personalizzato!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7Aggiunto con successo il colore {Color} &7alla lista dei colori personalizzati!'
+GUI_ADD_CUSTOM_COLOR:  '&7Clicca per aggiungere {Color} ai colori personalizzati&7!'
+GUI_HAS_ACCESS_CUSTOM: '&aClicca per aggiungere!'
+#You can add || to add new lines!
+GUI_CUSTOM_COLOR_LORE: 'Clicca per rimuovere questo colore da quelli personalizzati!'
+GUI_CUSTOM_COLOR_EXAMPLE: 'Questa è una anteprima di come verra'' mostrato il colore personalizzato in chat.'
+RESET_CUSTOM_COLORS_LIST: '&7Clicca per resettare il colore personalizzato.'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7Creato con successo il tuo Colore Personalizzato! Scrivi in chat per vederlo!'
+GUI_COLOR_BACK: 'Indietro'
+GUI_COLOR_BACK_LORE: 'Clicca per tornare indietro.'
+
+#COLORS
+COLOR: 'Colore'
+COLOR_DARK_RED: 'Rosso Scuro'
+COLOR_GREEN: 'Verde'
+COLOR_BLUE: 'Blu'
+COLOR_CYAN: 'Ciano'
+COLOR_PURPLE: 'Viola'
+COLOR_GOLD: 'Oro'
+COLOR_DARK_GRAY: 'Grigio Scuro'
+COLOR_RED: 'Rosso'
+COLOR_LIME: 'Lime'
+COLOR_LIGHT_BLUE: 'Blue Chiaro'
+COLOR_BLACK: 'Nero'
+COLOR_PINK: 'Rosa'
+COLOR_YELLOW: 'Giallo'
+COLOR_GRAY: 'Grigio'
+COLOR_AQUA: 'Aqua'
+COLOR_WHITE: 'Bianco'
+COLOR_RAINBOW: 'Arcobaleno'
+COLOR_RESET: 'Reset'
+
+COLOR_RESET_NO_PERM: '%prefix%&cNon puoi resettare il tuo colore.'
+
+COLOR_RAINBOW_SELECT_LEFT: '&7Click Sinistro per impostare il tuo colore della Chat su Arcobaleno!'
+COLOR_RAINBOW_SELECT_RIGHT: '&7Click Sinistro per impostare il tuo colore della Chat su Arcobaleno 2!'
+
+COLOR_HEX_SELECT_TITLE: 'Valore esadecimale personalizzato (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7Fai clic per impostare il colore su un valore esadecimale!'
+COLOR_HEX_CUSTOM: 'Colore Hex Personalizzato'
+COLOR_HEX_CUSTOM_VALUE: 'Valore Hex'
+COLOR_HEX_CUSTOM_INCORRECT: 'Hex Errato'
+
+NO_COLOR_SET: '&cNessun set di colori'
+COLOR_SELECTED: '%prefix%&7Selezionato con successo il Colore {Color}!'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7Ripristinato il Colore della chat allo stato iniziale.'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cNon hai selezionato un colore.'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: 'Linguaggi'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'Questo linguaggio è già stato selezionato.'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'Clicca per selezionare il linguaggio {Language} per il plugin.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'Ricarica Linguaggi'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'Clicca per ricaricare tutti i linguaggi.||Questo controllerà se ci sono nuovi linguaggi.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aRicaricati tutti i linguaggi.'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cLa lingua non è finita, quindi non può essere caricata!'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} could not be found!'
+COLOR_SELECTED_OTHER: '%prefix%&7Successfully set {Player}''s color to {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Successfully set {Player}''s color back to default!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} has no chat color selected.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cYou don''t have enough permissions to use this command!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cYou don''t have access to open the languages menu.'
+COMMAND_NO_ACCESS: '%prefix%&cNon hai accesso a questo colore!'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cNon hai i permessi per creare colori personalizzati!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cPlease specify a color!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} is not a color!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cYou have to be an online player to run this command!'
+
+COMMAND_RAINBOW: '&4R&ca&6i&en&2b&ao&bw'
+COMMAND_RAINBOW_2: '&4R&ca&6i&en&2b&ao&bw &92'

@@ -1,0 +1,94 @@
+Name: 'Russian'
+
+#MAIN GUI
+GUI_COLOR_TITLE: 'Цвет чата'
+GUI_SET_COLOR: '&7Нажмите, чтобы установить цвет чата на {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7Нажмите, чтобы вернуть цвет чата по умолчанию!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aНажмите, чтобы установить цвет по умолчанию!'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cУ вас нет доступа для возврата к настройкам по умолчанию!'
+GUI_HAS_ACCESS: '&aНажмите, чтобы использовать!'
+GUI_NO_ACCESS: '&cУ вас нет доступа к этому цвету!'
+GUI_SELECTED_COLOR_TITLE: '&e&lВыбранный цвет'
+GUI_SELECTED_COLOR_LORE: '&7Ваш выбранный цвет:||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: 'Создатель цвета'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lПользовательский цвет'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7Нажмите здесь, чтобы сделать собственный цвет.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cSorry, but you don''t have access to make a custom color.'
+GUI_COLOR_FINISH: 'Завершить'
+GUI_COLOR_FINISH_LORE: '&7Щелкните, чтобы завершить создание собственного цвета!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7Успешно добавлен {Color} &7цвет в индивидуальный цвет!'
+GUI_ADD_CUSTOM_COLOR:  '&7Нажмите, чтобы добавить {Color} к индивидуальному цвету&7!'
+GUI_HAS_ACCESS_CUSTOM: '&aНажмите, чтобы добавить!'
+#You can add || to add new lines!
+GUI_CUSTOM_COLOR_LORE: 'Щелкните, чтобы удалить этот цвет из пользовательского цвета!'
+GUI_CUSTOM_COLOR_EXAMPLE: 'Так будет выглядеть нестандартный цвет в чате.'
+RESET_CUSTOM_COLORS_LIST: '&7Нажмите, чтобы сбросить собственный цвет.'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7Ваш пользовательский цвет чата создан успешно! Введите в чат, чтобы увидеть это!'
+GUI_COLOR_BACK: 'Назад'
+GUI_COLOR_BACK_LORE: 'Нажми что бы вернутся назад.'
+
+#COLORS
+COLOR: 'Цвет'
+COLOR_DARK_RED: 'Тёмно-красный'
+COLOR_GREEN: 'Зелёный'
+COLOR_BLUE: 'Синий'
+COLOR_CYAN: 'Голубой'
+COLOR_PURPLE: 'Фиолетовый'
+COLOR_GOLD: 'Золотой'
+COLOR_DARK_GRAY: 'Тёмно-серый'
+COLOR_RED: 'Красный'
+COLOR_LIME: 'Лаймовый'
+COLOR_LIGHT_BLUE: 'Светло синий'
+COLOR_BLACK: 'Чёрный'
+COLOR_PINK: 'Розовый'
+COLOR_YELLOW: 'Жёлтый'
+COLOR_GRAY: 'Серый'
+COLOR_AQUA: 'Аква'
+COLOR_WHITE: 'Белый'
+COLOR_RAINBOW: 'Радужный'
+COLOR_RESET: 'Очистить'
+
+COLOR_RESET_NO_PERM: '%prefix%&cВы не можете сбросить свой цвет.'
+
+COLOR_RAINBOW_SELECT_LEFT: '&7Щелкните ЛКМ, чтобы установить цвет чата на Радугу1!'
+COLOR_RAINBOW_SELECT_RIGHT: '&7Щелкните ПКМ, чтобы установить цвет чата на Радуга2!'
+
+COLOR_HEX_SELECT_TITLE: 'Пользовательское Hex значение (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7Щелкните, чтобы установить для цвета Hex значение!'
+COLOR_HEX_CUSTOM: 'Пользовательский Hex цвет'
+COLOR_HEX_CUSTOM_VALUE: 'Hex значение'
+COLOR_HEX_CUSTOM_INCORRECT: 'Неверный Hex'
+
+NO_COLOR_SET: '&cЦвет не выбран'
+COLOR_SELECTED: '%prefix%&7Успешно выбран {Color} &7цвет!'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7Успешно установлен цвет по умолчанию.'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cУ вас не выбран цвет чата.'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: 'Языки'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'Этот язык сейчас выбран.'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'Нажмите, чтобы выбрать {Language} язык плагина.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'Обновить языки'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'Щелкните, чтобы обновить все языки. || Это также найдёт новые языки.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aОбновленные языки.'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cЯзык не закончен, поэтому его нельзя загрузить!'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} could not be found!'
+COLOR_SELECTED_OTHER: '%prefix%&7Successfully set {Player}''s color to {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Successfully set {Player}''s color back to default!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} has no chat color selected.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cYou don''t have enough permissions to use this command!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cYou don''t have access to open the languages menu.'
+COMMAND_NO_ACCESS: '%prefix%&cУ вас нет доступа к этому цвету!'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cУ вас нет доступа для создания собственного цвета!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cPlease specify a color!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} is not a color!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cYou have to be an online player to run this command!'
+
+COMMAND_RAINBOW: '&4R&ca&6i&en&2b&ao&bw'
+COMMAND_RAINBOW_2: '&4R&ca&6i&en&2b&ao&bw &92'

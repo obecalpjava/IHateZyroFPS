@@ -1,0 +1,19 @@
+Name: §x§0§B§F§F§0§A§lVote §fCrate Key
+Virtual: false
+Item:
+  Material: LIME_DYE
+  Amount: 1
+  Durability: 0
+  Name: '&x&0&B&F&F&0&A&lVote &fKey'
+  Lore:
+  - '&8Official Crate Key'
+  - '&c'
+  - '&fGet more keys by'
+  - '&fvoting! &x&0&B&F&F&0&A/vote'
+  - '&c'
+  - '&x&0&B&F&F&0&A&l➥ REDEEM AT /SPAWN'
+  Enchants:
+    luck_of_the_sea: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  Unbreakable: false

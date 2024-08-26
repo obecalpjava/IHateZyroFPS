@@ -1,0 +1,94 @@
+Name: 'Indonesian'
+
+#MAIN GUI
+GUI_COLOR_TITLE: 'Warna Chat'
+GUI_SET_COLOR: '&7Klik untuk mengubah Warna Chat-mu menjadi {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7Klik untuk mengembalikan Warna Chat-mu menjadi semula!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aKlik untuk kembali ke semula!'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cKamu tidak punya akses untuk kembali ke warna semula!'
+GUI_HAS_ACCESS: '&aKlik untuk menggunakan!'
+GUI_NO_ACCESS: '&cKamu tidak punya akses untuk warna ini!'
+GUI_SELECTED_COLOR_TITLE: '&e&lWarna Terpilih'
+GUI_SELECTED_COLOR_LORE: '&7Warna yang terpilih:||||{SelectedColor}'
+
+#CUSTOM COLOR GUI
+GUI_COLOR_CUSTOM_TITLE: 'Pembuat Warna Chat Custom'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lWarna Custom'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7Klik di sini untuk membuat warna custom.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cMaaf, tapi kamu tidak punya akses untuk membuat warna custom.'
+GUI_COLOR_FINISH: 'Selesai'
+GUI_COLOR_FINISH_LORE: '&7Kluk untuk menyudahi pembuatan warna custom!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7Berhasil menambahkan {Color} &7ke dalam warna custom!'
+GUI_ADD_CUSTOM_COLOR:  '&7Klik untuk menambah {Color} &7ke warna custom!'
+GUI_HAS_ACCESS_CUSTOM: '&aKlik untuk menambahkan!'
+#You can add || to add new lines!
+GUI_CUSTOM_COLOR_LORE: 'Klik untuk menghapus warna ini dari warna custom!'
+GUI_CUSTOM_COLOR_EXAMPLE: 'Inilah bagaimana warna akan terlihat pada chat.'
+RESET_CUSTOM_COLORS_LIST: '&7Klik untuk mengatur ulang warna custom.'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7Berhasil membuat Warna Chat Custom! Ketik pada chat untuk melihatnya!'
+GUI_COLOR_BACK: 'Kembali'
+GUI_COLOR_BACK_LORE: 'Klik untuk kembali.'
+
+#COLORS
+COLOR: 'Warna'
+COLOR_DARK_RED: 'Merah Gelap'
+COLOR_GREEN: 'Hijau'
+COLOR_BLUE: 'Biru'
+COLOR_CYAN: 'Cyan'
+COLOR_PURPLE: 'Ungu'
+COLOR_GOLD: 'Emas'
+COLOR_DARK_GRAY: 'Abu Gelap'
+COLOR_RED: 'Merah'
+COLOR_LIME: 'Limau'
+COLOR_LIGHT_BLUE: 'Biru Muda'
+COLOR_BLACK: 'Hitam'
+COLOR_PINK: 'Merah Muda'
+COLOR_YELLOW: 'Kuning'
+COLOR_GRAY: 'Abu-abu'
+COLOR_AQUA: 'Aqua'
+COLOR_WHITE: 'Putih'
+COLOR_RAINBOW: 'Pelangi'
+COLOR_RESET: 'Reset'
+
+COLOR_RESET_NO_PERM: '%prefix%&cKamu tidak bisa me-reset warnamu.'
+
+COLOR_RAINBOW_SELECT_LEFT: '&7Klik Kiri untuk mengubah Warna Chat menjadi Pelangi !'
+COLOR_RAINBOW_SELECT_RIGHT: '&7Klik Kanan untuk mengubah Warna Chat menjadi Pelangi 2!'
+
+COLOR_HEX_SELECT_TITLE: 'Nilai Hex Khusus (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7Klik untuk mengatur warna Anda ke nilai hex!'
+COLOR_HEX_CUSTOM: 'Warna Hex Khusus'
+COLOR_HEX_CUSTOM_VALUE: 'Nilai Hex'
+COLOR_HEX_CUSTOM_INCORRECT: 'Hex Salah'
+
+NO_COLOR_SET: '&cTidak ada warna terpilih'
+COLOR_SELECTED: '%prefix%&7Berhasil memilih warna {Color}&7!'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7Berhasil mengembalikan warna menjadi semula.'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cKamu sedang tidak punya warna terpilih.'
+
+#LANGUAGE GUI
+GUI_LANGUAGE_TITLE: 'Bahasa'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'Bahasa ini sedang terpakai.'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'Klik untuk memilih {Language} sebagai bahasa plugin.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'Refresh Bahasa'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'Klik untuk me-refresh semua bahasa.||Ini juga akan efektif untuk bahasa baru.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aBahasa ter-Refresh.'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cBahasa belum selesai, karena itu tidak dapat dimuat!'
+
+#OTHER
+PLAYER_NOT_FOUND: '%prefix%&c{Player} could not be found!'
+COLOR_SELECTED_OTHER: '%prefix%&7Successfully set {Player}''s color to {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Successfully set {Player}''s color back to default!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} has no chat color selected.'
+
+#COMMANDS
+COMMAND_NO_PERMS: '%prefix%&cYou don''t have enough permissions to use this command!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cYou don''t have access to open the languages menu.'
+COMMAND_NO_ACCESS: '%prefix%&cKamu tidak punya akses untuk warna ini!'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cYou don''t have access to make a custom color!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cPlease specify a color!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} is not a color!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cYou have to be an online player to run this command!'
+
+COMMAND_RAINBOW: '&4R&ca&6i&en&2b&ao&bw'
+COMMAND_RAINBOW_2: '&4R&ca&6i&en&2b&ao&bw &92'

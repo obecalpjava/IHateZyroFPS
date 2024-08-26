@@ -1,0 +1,107 @@
+Name: 'Ukrainian'
+
+#ОСНОВНИЙ ГРАФІЧНИЙ Інтерфейс
+GUI_COLOR_TITLE: 'Колір чату'
+GUI_SET_COLOR: '&7Натисніть, щоб установити колір чату {Color}&7!'
+GUI_SET_COLOR_DEFAULT: '&7Натисніть, щоб повернути колір чату до значення за умовчанням!'
+GUI_SET_COLOR_DEFAULT_HAS_ACCESS: '&aНатисніть, щоб встановити значення за умовчанням!'
+GUI_SET_COLOR_DEFAULT_NO_ACCESS: '&cВи не маєте доступу, щоб повернутися до параметрів за умовчанням!'
+GUI_HAS_ACCESS: '&aНатисніть, щоб використовувати!'
+GUI_NO_ACCESS: '&cВи не маєте доступу до цього кольору!'
+GUI_SELECTED_COLOR_TITLE: '&e&lВибраний колір'
+GUI_SELECTED_COLOR_LORE: '&7Вибраний вами колір:||||{SelectedColor}'
+
+#ГРАФІЧНИЙ Інтерфейс користувача КОЛЬОРІВ
+GUI_COLOR_CUSTOM_TITLE: 'Створювач кольору чату'
+GUI_CUSTOM_COLOR_ITEM_TITLE: '&e&lСтворення власного кольору'
+GUI_CUSTOM_COLOR_ITEM_LORE_HAS_ACCESS: '&7Натисніть тут, щоб створити індивідуальний колір.'
+GUI_CUSTOM_COLOR_ITEM_LORE_NO_ACCESS: '&cВибачте, але ви не маєте доступу до створення власного кольору.'
+GUI_COLOR_FINISH: 'Закінчити'
+GUI_COLOR_FINISH_LORE: '&7Натисніть, щоб завершити створення власного кольору!||||{CustomColor}'
+COLOR_ADDED_MSG: '%prefix%&7Успішно додано колір{Color} &7до власного кольору!'
+GUI_ADD_CUSTOM_COLOR:  '&7Натисніть, щоб додати {Color} до власного кольору&7!'
+GUI_HAS_ACCESS_CUSTOM: '&aНатисніть, щоб додати!'
+#Ви можете додати || щоб додати нові рядки!
+GUI_CUSTOM_COLOR_LORE: 'Клацніть, щоб видалити цей колір зі власного кольору!'
+GUI_CUSTOM_COLOR_EXAMPLE: 'Ось як власний колір виглядатиме в чаті.'
+RESET_CUSTOM_COLORS_LIST: '&7Натисніть, щоб скинути настроюваний колір.'
+GUI_FINISH_CUSTOM_COLOR: '%prefix%&7Успішно створено власний колір чату! Введіть у чаті, щоб побачити це!'
+GUI_COLOR_BACK: 'Назад'
+GUI_COLOR_BACK_LORE: 'Натисніть, щоб повернутися.'
+
+#КОЛЬОРИ
+COLOR: 'Колір'
+COLOR_DARK_RED: 'Темно-червоний'
+COLOR_GREEN: 'Зелений'
+COLOR_BLUE: 'Синій'
+COLOR_CYAN: 'Бірюзовий'
+COLOR_PURPLE: 'Фіолетовий'
+COLOR_GOLD: 'Помаранчевий'
+COLOR_DARK_GRAY: 'Темно-сірий'
+COLOR_RED: 'Червоний'
+COLOR_LIME: 'Салатовий'
+COLOR_LIGHT_BLUE: 'Світло-синій'
+COLOR_BLACK: 'Чорний'
+COLOR_PINK: 'Рожевий'
+COLOR_YELLOW: 'Жовтий'
+COLOR_GRAY: 'Сірий'
+COLOR_AQUA: 'Блакитний'
+COLOR_WHITE: 'Білий'
+COLOR_RAINBOW: 'Райдужний'
+COLOR_CLEAN_RAINBOW: 'Охайний Райдужний'
+COLOR_HEX_RAINBOW: 'Hex Райдужний'
+COLOR_RESET: 'Скинути'
+
+COLOR_RESET_NO_PERM: '%prefix%&cВи не можете скинути свій колір.'
+
+COLOR_RAINBOW_SELECT: '&7Клацніть, щоб установити колір Райдужний в чаті!'
+
+COLOR_HEX_SELECT_TITLE: 'Спеціальне шістнадцяткове значення (1.16+)'
+COLOR_HEX_SELECT_LORE: '&7Натисніть, щоб встановити шістнадцяткове значення кольору!'
+COLOR_HEX_CUSTOM: 'Спеціальний шістнадцятковий колір'
+COLOR_HEX_CUSTOM_VALUE: 'Шістнадцяткове значення'
+COLOR_HEX_CUSTOM_INCORRECT: 'Неправильне шістнадцяткове значення'
+
+NO_COLOR_SET: '&cКолір не встановлено'
+COLOR_SELECTED: '%prefix%&7Успішно вибрано {Color} &7колір!'
+COLOR_SELECTED_DEFAULT_SUCCESSFUL: '%prefix%&7Успішно відновлено колір за умовчанням.'
+COLOR_SELECTED_DEFAULT_NO_COLOR: '%prefix%&cВи не вибрали колір чату.'
+
+#ГРАФІЧНИЙ Інтерфейс за РАЙДУЖНИМЫ кольорами
+RAINBOW_GUI_TITLE: 'Райдужний колір чату'
+
+RAINBOW_GUI_RAINBOW1_TITLE: 'Райдужний'
+RAINBOW_GUI_RAINBOW1_LORE: '&7Клацніть, щоб вибрати колір Райдужний!'
+
+RAINBOW_GUI_RAINBOW2_TITLE: 'Охайний Райдужний'
+RAINBOW_GUI_RAINBOW2_LORE: '&7Клацніть, щоб вибрати колір Охайний Райдужний!'
+
+RAINBOW_GUI_RAINBOW3_TITLE: 'Hex Райдужний'
+RAINBOW_GUI_RAINBOW3_LORE: '&7Клацніть, щоб встановити колір Hex Райдужний!'
+
+#ГРАФІЧНИЙ Інтерфейс МОВИ
+GUI_LANGUAGE_TITLE: 'Мови'
+GUI_LANGUAGE_LANGUAGE_ENABLED_DESC: 'Ця мова наразі вибрана.'
+GUI_LANGUAGE_LANGUAGE_DISABLED_DESC: 'Натисніть, щоб вибрати {Language} як мову плагіна.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_TITLE: 'Оновити мови'
+GUI_LANGUAGE_LANGUAGE_REFRESH_DESC: 'Натисніть, щоб оновити всі мови.||Це також шукатиме нові мови.'
+GUI_LANGUAGE_LANGUAGE_REFRESH_MSG: '%prefix%&aМови оновлені.'
+GUI_LANGUAGE_LANGUAGE_NOT_FINISHED_MSG: '%prefix%&cМова не закінчена, тому її неможливо завантажити!'
+
+#ІНШЕ
+PLAYER_NOT_FOUND: '%prefix%&c{Player} не вдалося знайти!'
+COLOR_SELECTED_OTHER: '%prefix%&7Успішно встановлено для гравця {Player}, колір {Color}&7!'
+COLOR_SELECTED_OTHER_DEFAULT_SUCCESSFUL: '%prefix%&7Успішно встановлено для гравця {Player}, колір за умовчанням!'
+COLOR_SELECTED_OTHER_DEFAULT_NO_COLOR: '%prefix%&c{Player} не вибрано колір чату.'
+
+#КОМАНДИ
+COMMAND_NO_PERMS: '%prefix%&cУ вас недостатньо прав для використання цієї команди!'
+COMMAND_NO_PERMS_LANGUAGES: '%prefix%&cВи не маєте доступу до меню мов.'
+COMMAND_NO_ACCESS: '%prefix%&cВи не маєте доступу до цього кольору!'
+COMMAND_NO_ACCESS_CUSTOM: '%prefix%&cВи не маєте доступу до створення власного кольору!'
+COMMAND_SPECIFY_COLOR: '%prefix%&cБудь ласка, вкажіть колір!'
+COMMAND_NOT_COLOR: '%prefix%&c{Color} це не колір!'
+COMMAND_ONLINE_PLAYER: '%prefix%&cЦю команду можна виконати лише з гри!'
+
+COMMAND_RAINBOW: '&4Р&cа&6й&eд&2у&aж&bн&3и&dй'
+COMMAND_RAINBOW_2: '&4Р&cа&6й&eд&2у&aж&bн&3и&dй &92'

@@ -1,0 +1,19 @@
+Name: §a§c§x§F§B§1§D§1§D§lRival§f Crate Key
+Virtual: false
+Item:
+  Material: RED_DYE
+  Amount: 1
+  Durability: 0
+  Name: '&x&F&B&1&D&1&D&lRival&f Key'
+  Lore:
+  - '&8Official Crate Key'
+  - '&c'
+  - '&fGet more keys on'
+  - '&fthe store! &x&F&B&1&D&1&D/buy&x&F&B&1&D&1&D'
+  - '&c'
+  - '&x&F&B&1&D&1&D&l➥ REDEEM AT /SPAWN'
+  Enchants:
+    luck_of_the_sea: 1
+  Item_Flags:
+  - HIDE_ENCHANTS
+  Unbreakable: false
