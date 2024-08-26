@@ -1,0 +1,77 @@
+Command:
+  Add:
+    Usage: <player> <amount>
+    Desc: Add points to player account.
+    Done:
+      Sender: '&7Added &a%amount% %points_name% &7to &a%user_name%&7. New balance:
+        &a%user_balance% %points_name%&7.'
+      User: '&7You received &a%amount% %points_name%&7!'
+  Take:
+    Usage: <player> <amount>
+    Desc: Take points from player account.
+    Done:
+      Sender: '&7Taken &a%amount% %points_name% &7from &a%user_name%&7. New balance:
+        &a%user_balance% %points_name%&7.'
+      User: '&7You lost &a%amount% %points_name%&7!'
+  Set:
+    Usage: <player> <amount>
+    Desc: Set balance of player account.
+    Done:
+      Sender: '&7Set &a%amount% %points_name% &7for &a%user_name%&7. New balance:
+        &a%user_balance% %points_name%&7.'
+      User: '&7Your balance has been set to &a%amount% %points_name%&7!'
+  Pay:
+    Usage: <player> <amount>
+    Desc: Transfer points to player.
+    Error:
+      NoMoney: You don't have enought points!
+    Done:
+      Sender: '&7You sent &a%amount% %points_name% &7to &a%player%&7!'
+      User: '&7You received &a%amount% %points_name%&7 from &a%player%&7!'
+  RemovePurchase:
+    Usage: <player> <store> <product>
+    Desc: Removes specified pruchase from user data.
+    Done:
+      User: '&7Purchase removed!'
+  Balance:
+    Usage: '[player]'
+    Desc: Displays player balance.
+    Done: '&a%user_name%&7''s balance: &a%user_balance% %points_name%'
+  BalanceTop:
+    Usage: '[page]'
+    Desc: Displays top balances.
+    List:
+    - '&6&m             &6&l[ &e&lGame Points &7- &e&lTop &f%page_min%&7/&f%page_max%
+      &6&l]&6&m             &7'
+    - '&6%pos%. &e%user_name%: &a%user_balance% %points_name%'
+    - '&6&m             &6&l[ &e&lEnd Game Points Top &6&l]&6&m              &7'
+  Store:
+    Usage: '[store] [player]'
+    Desc: Opens specified store.
+  AddPurchase:
+    Usage: <player> <store> <product>
+    Desc: Adds specified purchase to user data.
+    Done:
+      User: '&7Purchase added!'
+    Error:
+      NoCooldown: '&cSpecified product does not have a cooldown! It''s useless to
+        add it.'
+Store:
+  Open:
+    Error:
+      Invalid: '&cInvalid store!'
+      Permission: '&cWhoops! &7You don''t access to %store_name%&7 store!'
+  Buy:
+    Error:
+      NoMoney: '&cWhoops! &7You don''t have enough %points_name%&7!'
+      Inherited: '&cWhoops! &7You already have purchased a higher version of this
+        product!'
+      SinglePurchase: '&cWhoops! &7This product can be purchased only once! You already
+        have purchased this product.'
+      Cooldown: '&cWhoops! &7You can purchase this product again in: &c%product_cooldown%'
+    Success: '&7You successfully bought &a%product_name%&7 for &a%product_price_inherited%
+      %points_name%&7!'
+  Error:
+    Product:
+      Invalid: '&cInvalid product!'
+    Invalid: '&cInvalid store!'

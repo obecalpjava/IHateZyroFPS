@@ -1,0 +1,6 @@
+mongo:
+  uri: "mongodb://admin:Gk6M9FhjEZJeREcU@10.0.0.1:27017/?authSource=admin"
+  database: "gold"
+messages:
+  collected-head: "<green>You collected %player's head! Use /heads to view your collected heads.</green>"
+  cant-collect-own-head: "<red>You can't collect your own head!</red>"

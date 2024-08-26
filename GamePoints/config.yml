@@ -1,0 +1,68 @@
+core:
+  command-aliases: gp,gamepoints,points,coins
+  lang: en
+  prefix: GamePoints
+
+data:
+  auto-save: 15
+  instant-save: true
+  storage:
+    type: sqlite
+    username: none
+    password: none
+    host: none
+    database: none
+  purge:
+    enabled: false
+    days: 60
+
+General:
+  Points_Name: Game Points
+  Start_Balance: 0
+  Balance_Top:
+    Update_Interval: 20
+
+Store:
+  Product:
+    Display:
+      Format:
+      - '%product_description%'
+      - '&7'
+      - '&7Default Price: &f%product_price% %points_name%'
+      - '&7Your Price: &f%product_price_inherited% %points_name%'
+      - ''
+      - '&6Your Balance: &e%user_balance% %points_name%'
+      - '&bOne-Time Purchase: &f%product_one_time_purchase%'
+      - '&7'
+      - '%purchase%'
+    Purchase:
+      Format:
+        Already_Have:
+        - '&cYou already have purchased this product!'
+        Cooldown:
+        - '&6You can purchase again in: &e%product_cooldown%'
+        Available:
+        - '&aClick to purchase!'
+
+Transaction_Logs:
+  Format: '%user_name% purchased ''%product_id%'' in ''%store_id%'' store for %product_price_inherited%
+    points.'
+  Date: dd/MM/yyyy HH:mm:ss
+  Console: true
+  File: true
+Plugin:
+  Prefix: GamePoints
+  Command_Aliases: gamepoints
+  Language: en
+Database:
+  Auto_Save_Interval: 20
+  Instant_Save: false
+  Type: SQLITE
+  MySQL:
+    Username: root
+    Password: root
+    Host: localhost
+    Database: minecraft
+  Purge:
+    Enabled: false
+    For_Inactive_Days: 60

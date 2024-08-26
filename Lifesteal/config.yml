@@ -1,0 +1,138 @@
+mongo:
+  auth-db: admin
+  hostname: 10.0.0.1
+  port: 27017
+  username: admin
+  password: Gk6M9FhjEZJeREcU
+  database: gold
+  collection: lifesteal
+
+options:
+  starting-hearts: 10
+  max-hearts-default: 30
+  only-on-player-kill: true
+  drop-hearts-if-full: false
+  heart-revive-cost: 10
+  hearts-stolen: 1
+  max-kill-protection: true
+  max-kills: 3
+  max-kill-cooldown-minutes: 1440
+  heart-calc: '{hearts} * 2'
+  heart-calc-inverse: '{hearts} / 2'
+  heart-capsule:
+    material: REDSTONE
+    name: '&#b70000&lH&#bd0000&le&#c40000&la&#ca0000&lr&#d00000&lt &#d70000&lC&#dd0000&la&#e40000&lp&#ea0000&ls&#f00000&lu&#f70000&ll&#fd0000&le'
+    headURL: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmExODk4YjQxNDdjNmY3MTM3YjI1NmZiNDY4NjQwNzM4ZmRhZTUzMjY5MmI5MGU0ZTllZjJlNjI5NzZjN2E3ZCJ9fX0=
+    lore:
+    - '&8Heart Info'
+    - ''
+    - '&8❖ &fContained Hearts: &c{amount}❤'
+    - ''
+    - '&e&l➥ RIGHT-CLICK TO USE'
+    amount: 1
+    customModelData: 0
+    unbreakable: true
+    itemFlags:
+    - HIDE_UNBREAKABLE
+    - HIDE_ATTRIBUTES
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    - HIDE_POTION_EFFECTS
+    - HIDE_ENCHANTS
+    - HIDE_DYE
+    enchantments:
+    - minecraft:lure:1
+  enable-revives: false
+  enable-withdraws: true
+  enable-viewhearts: true
+  # 24 hours in minutes
+  default-deathban-length: 2880
+  max-hearts:
+    fifty: 30
+    sixty: 40
+  deathbans:
+    # 1 hour in minutes (lifesteal.length.one-hour)
+    one-hour: 2400
+    # 2 hours in minutes (lifesteal.length.two-hours)
+    two-hours: 1800
+    # 3 hours in minutes (lifesteal.length.three-hours)
+    three-hours: 1440
+    # 4 hours in minutes (lifesteal.length.four-hours)
+    four-hours: 720
+    # 5 hours in minutes (lifesteal.length.five-hours)
+    five-hours: 300
+    # 6 hours in minutes (lifesteal.length.six-hours)
+    six-hours: 120
+    # 6 hours in minutes (lifesteal.length.six-hours)
+    one-minute: 1
+  ban-message:
+  - '&r'
+  - '&c&lYOU ARE DEATHBANNED!'
+  - '&r'
+  - '&7You ran out of hearts! You can'
+  - '&7join back in &f{time} &7or have'
+  - '&7a friend revive you with &f/revive'
+  - '&r'
+
+commands:
+  lifesteal:
+  - lifesteal
+  - hearts
+  revive:
+  - revive
+  - res
+  - respawn
+  withdraw:
+  - withdraw
+  viewhearts:
+  - viewhearts
+
+messages:
+  help-message:
+    message:
+    - '&7&m                                     '
+    - '&#f0f-#fff&Lifesteal Core &7- Made By: &fCasper#9647 '
+    - '&7/lifesteal &f- Shows this help menu'
+    - '&7/lifesteal revive <player> &f- Revives a player'
+    - '&7/lifesteal ban <player> &f- Deathbans a player'
+    - '&7/lifesteal reviveall &f- Revives all players'
+    - '&7/lifesteal reload &f- Reloads the config'
+    - '&7/lifesteal sethearts <player> <amount> &f- Sets a players hearts'
+    - '&7/lifesteal addhearts <player> <amount> &f- Adds hearts to a player'
+    - '&7/lifesteal removehearts <player> <amount> &f- Removes hearts from a player'
+    - '&7/lifesteal heartcapsule <amount> [player] &f- Gives a player a heart capsule'
+    - '&7&m                                     '
+  add-hearts:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have added &f{amount} &7hearts to &f{player}&7.'
+  remove-hearts:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have removed &f{amount} &7hearts from &f{player}&7.'
+  invalid-usage:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &cUsage: &7{usage}'
+  player-not-found:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &cPlayer not found.'
+  no-permissions:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &cYou do not have permission to use this command. You need &f{permission}&c.'
+  invalid-number:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &cYou have entered an invalid number &f"{input}"&7.'
+  withdraw:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have withdrawn &f{amount} &7hearts.'
+  reload:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &aReloaded the configuration!'
+  use-capsule:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have used a &f{amount} &7heart capsule.'
+  capsule-left-over:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You could only take &f{taken} &7hearts so you were given &f{leftOver} &7hearts back.'
+  ban:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have deathbanned &f{player}&7 for &f{time}&7.'
+  reviveall:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have revived all players.'
+  heartcapsule-given:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have given &f{player} &7a &f{amount} &7heart capsule.'
+  revive-not-banned:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &c{player} is not deathbanned. They cannot be revived.'
+  revive:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7You have revived &f{player}&7.'
+  not-enough-hearts:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &cYou must have atleast {hearts}❤ to give a player to revive them!.'
+  view-hearts:
+    message: '&#B70000-#FD0000&&lLifesteal &8➟ &7{player} has &c{hearts}❤ &7hearts.'

@@ -1,0 +1,70 @@
+options:
+  server-name: Lifesteal Green
+  webhook-url: https://discord.com/api/webhooks/995505637477851186/7umG96ZAcr4P7R4bu2THPGws9n1OwiCuuNZiW7N5KNSFeiOMHA_E_gjQ7TvHep5ZPKGG
+items:
+  netheriteBlock:
+    material: NETHERITE_BLOCK
+    max: 64
+  netheriteIngot:
+    material: NETHERITE_INGOT
+    max: 160
+  heartcontainer:
+    material: RED_DYE
+    displayName: Heart Container
+    max: 846
+    nbt:
+    - hearts.new
+  votekey:
+    material: LIME_DYE
+    displayName: Vote Key
+    max: 64
+    nbt:
+    - excellentcrates.crate_key.id
+  primekey:
+    material: YELLOW_DYE
+    displayName: Prime Key
+    max: 32
+    nbt:
+    - excellentcrates.crate_key.id
+  epickey:
+    material: LIGHT_BLUE_DYE
+    displayName: Epic Key
+    max: 32
+    nbt:
+    - excellentcrates.crate_key.id
+  rivalkey:
+    material: RED_DYE
+    displayName: Rival Key
+    max: 24
+    nbt:
+    - excellentcrates.crate_key.id
+  lordrank:
+    material: STRIDER_SPAWN_EGG
+    displayName: Lord Rank Voucher
+    max: 16
+    nbt:
+    - voucher
+  dukerank:
+    material: SHULKER_SPAWN_EGG
+    displayName: Duke Rank Voucher
+    max: 16
+    nbt:
+    - voucher
+  viscountrank:
+    material: TROPICAL_FISH_SPAWN_EGG
+    displayName: Viscount Rank Voucher
+    max: 16
+    nbt:
+    - voucher
+  marquisrank:
+    material: AXOLOTL_SPAWN_EGG
+    displayName: Marquis Rank Voucher
+    max: 16
+    nbt:
+    - voucher
+  knightrank:
+    material: WANDERING_TRADER_SPAWN_EGG
+    displayName: Knight Rank Voucher
+    max: 16
+    nbt:
+    - voucher

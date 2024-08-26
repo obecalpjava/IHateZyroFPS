@@ -1,0 +1,220 @@
+#    _____        __ _       _ _                                                                            _
+#   |_   _|      / _(_)     (_) |         /\                                                               | |
+#     | |  _ __ | |_ _ _ __  _| |_ ___   /  \   _ __  _ __   ___  _   _ _ __   ___ ___ _ __ ___   ___ _ __ | |_ ___
+#     | | | '_ \|  _| | '_ \| | __/ _ \ / /\ \ | '_ \| '_ \ / _ \| | | | '_ \ / __/ _ \ '_ ` _ \ / _ \ '_ \| __/ __|
+#    _| |_| | | | | | | | | | | ||  __// ____ \| | | | | | | (_) | |_| | | | | (_|  __/ | | | | |  __/ | | | |_\__ \
+#   |_____|_| |_|_| |_|_| |_|_|\__\___/_/    \_\_| |_|_| |_|\___/ \__,_|_| |_|\___\___|_| |_| |_|\___|_| |_|\__|___/
+#
+# InfiniteAnnouncements - announcements.yml - Announcements configuration
+# Copyright 2020 Zach_FR | All Rights Reserved
+#
+#  Helpful Links:
+#   Support |   https://discord.zachfr.com
+#   Docs    |   https://docs.zachfr.com
+
+Announcements:
+  store:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#d931fb&lS&#dd36f8&lE&#e03cf6&lR&#e441f3&lV&#e746f0&lE&#eb4cee&lR &#ef51eb&lS&#f256e8&lT&#f65be5&lO&#f961e3&lR&#fd66e0&lE'
+      - '&r'
+      - '&7Every purchase of in-game goods such as &#F6CCFBranks&7, &#F6CCFBcrate keys&7,'
+      - '&7and &#F6CCFBcoins&7 directly supports the server! Donating helps us'
+      - '&7keep the server online & maintained well!'
+      - '&r'
+      - '&#FBC0EC➥ &lSTORE.MINERIVAL.ORG'
+      - '&r'
+  voting:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#15ce2d&lV&#1ad733&lO&#1fe138&lT&#25ea3e&lI&#2af443&lN&#2ffd49&lG'
+      - '&r'
+      - '&7Vote for the server &#A7D0A8daily&7 to receive'
+      - '&#A7D0A8vote keys &7and &#A7D0A8money&7! Type &#A7D0A8/vote&7 for more info!'
+      - '&r'
+      - '&#96D38A➥ &l/VOTE'
+      - '&r'
+  discord:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#7289da&lDISCORD'
+      - '&r'
+      - '&7Join our &#BAC0DADiscord &7server to participate in'
+      - '&#BAC0DAevents&7, &#BAC0DAgiveaways&7, and so &#BAC0DAmuch more&7!'
+      - '&r'
+      - '&#9EADDA➥ &lDISCORD.GG/MINERIVALMC'
+      - '&r'
+  twitter:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#7289da&l&#1bdad4&lT&#21d6d5&lW&#26d2d6&lI&#2cced7&lT&#31cad8&lT&#37c6d9&lE&#3cc2da&lR'
+      - '&r'
+      - '&7Follow us on &#B4DAD9Twitter &7to be informed about issues&7,'
+      - '&7participate in &#B4DAD9giveaways&7, and information about &#B4DAD9updates&7!'
+      - '&r'
+      - '&#8FDAD8➥ &lTWITTER.COM/MINERIVAL'
+      - '&r'
+  rules:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#fffd13&lS&#fff91c&lE&#fff424&lR&#fff02d&lV&#ffeb36&lE&#ffe73f&lR &#ffe347&lR&#ffde50&lU&#ffda59&lL&#ffd561&lE&#ffd16a&lS'
+      - '&r'
+      - '&7Make sure to read up on our &#FFFAB6rules&7! By playing'
+      - '&7on &#FFFAB6MineRival&7 you &#FFFAB6acknowledge&7 that you have &#FFFAB6read'
+      - '&7and &#FFFAB6understand&7 the rules of the server.'
+      - '&r'
+      - '&#FFF08D➥ &l/RULES'
+      - '&r'
+  rules:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#fffd13&lS&#fff91c&lE&#fff424&lR&#fff02d&lV&#ffeb36&lE&#ffe73f&lR &#ffe347&lR&#ffde50&lU&#ffda59&lL&#ffd561&lE&#ffd16a&lS'
+      - '&r'
+      - '&7Make sure to read up on our &#FFFAB6rules&7! By playing'
+      - '&7on &#FFFAB6MineRival&7 you &#FFFAB6acknowledge&7 that you have &#FFFAB6read'
+      - '&7and &#FFFAB6understand&7 the rules of the server.'
+      - '&r'
+      - '&#FFF08D➥ &l/RULES'
+      - '&r'
+  staffapps:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#ff1700&lS&#ff1904&lT&#ff1b07&lA&#ff1d0b&lF&#ff200e&lF &#ff2212&lA&#ff2415&lP&#ff2619&lP&#ff281d&lL&#ff2a20&lI&#ff2c24&lC&#ff2e27&lA&#ff312b&lT&#ff332e&lI&#ff3532&lO&#ff3735&lN&#ff3939&lS'
+      - '&r'
+      - '&7Are you looking to be part of our &#FFC3C3staff team&7? You''re in &#FFC3C3luck&7!'
+      - '&7Applications are &#FFC3C3OPEN&7 to join our team of brilliant'
+      - '&7individuals who help protect &#FFC3C3MineRival&7!'
+      - '&r'
+      - '&#FF9A9A➥ &l/APPLY'
+      - '&r'
+  mediaapps:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#b42aff&lM&#b42fff&lE&#b534ff&lD&#b539ff&lI&#b53eff&lA &#b643ff&lA&#b648ff&lP&#b64dff&lP&#b753ff&lL&#b758ff&lI&#b75dff&lC&#b762ff&lA&#b867ff&lT&#b86cff&lI&#b871ff&lO&#b976ff&lN&#b97bff&lS'
+      - '&r'
+      - '&7Are you looking to be part of our &#E6CAFFmedia team&7? You''re in &#E6CAFFluck&7!'
+      - '&7You can apply by making a &#E6CAFFticket&7 in our &#E6CAFFDiscord&7 server to'
+      - '&7join our team who help bring attention to &#E6CAFFMineRival&7!'
+      - '&r'
+      - '&#D4A4FF➥ &l/APPLY'
+      - '&r'
+  activesale:
+    # Interval in seconds.
+    interval: 180
+    # Sound when this announcement is show.
+    sound: ""
+    # In worlds that announcement will only be show.
+    worlds:
+      - "world"
+      - "world_nether"
+      - "world_the_end"
+    # Announcements will only be show for player with that permission.
+    permission: null
+    # Content of announcement.
+    lines:
+      - '&r'
+      - '&#ff48bb&lA&#ff4bba&lC&#ff4db9&lT&#ff50b8&lI&#ff52b7&lV&#ff55b5&lE &#ff57b4&lS&#ff5ab3&lA&#ff5cb2&lL&#ff5fb1&lE'
+      - '&r'
+      - '&7Every purchase of in-game goods such as &#FFCDE7ranks&7, &#FFCDE7crate keys&7,'
+      - '&7and &#FFCDE7lootboxes&7 directly supports the server! Donating helps us'
+      - '&7keep the server online & maintained well!'
+      - '&r'
+      - '&#FFB1D4➥ &lSTORE.MINERIVAL.ORG'
+      - '&8❖ &f&l15% OFF SALE'
+      - '&r'

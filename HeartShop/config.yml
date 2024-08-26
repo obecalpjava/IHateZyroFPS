@@ -1,0 +1,20 @@
+messages:
+  no-permission:
+    message: '&cYou are lacking permission &f''{permission}''&c to perform this action.'
+  invalid-usage:
+    message: '&cInvalid usage! &7Use &f{usage}'
+  shop-not-found:
+    message: '&cInvalid shop! We couldn''t find a shop with the name &f{shop}'
+  shop-not-spawned:
+    message: '&cInvalid shop! The shop &f{shop} &cis not spawned!'
+  despawned-shop:
+    message: '&7The shop &f{shop} &chas despawned!'
+  despawned-all-shops:
+    message: '&7All shops have despawned!'
+  help:
+    message:
+    - '&#f0f-#fff&Heart Shop Help'
+    - '&7/heartshop &fhelp - &7Shows this help message'
+    - '&7/heartshop &fdespawn <shop> - &7Despawns a shop'
+    - '&7/heartshop &fdespawnall - &7Despawns all shops'
+    - '&7/heartshop &fspawn <shop> &c[x] [y] [z] &e[world] - &7Spawns a shop at an optional location in a world'

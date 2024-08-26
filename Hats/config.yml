@@ -1,0 +1,71 @@
+messages:
+  special-hat:
+    message: '&#00FB3C&lHats &8➟ &cYou cannot use this item as it is a special hat item!'
+  reloaded:
+    message: '&#00FB3C&lHats &8➟ &aReloaded plugin.'
+  no-permission:
+    message: '&#00FB3C&lHats &8➟ &cYou do not have permission to do that.'
+  hat-given:
+    message: '&#00FB3C&lHats &8➟ &aYou have given a hat to &f%player%&a.'
+  not-a-hat:
+    message: '&#00FB3C&lHats &8➟ &cYou must be holding a hat to use this command.'
+  applied-hat:
+    message: '&#00FB3C&lHats &8➟ &aYou have applied the hat.'
+  hat-not-found:
+    message: '&#00FB3C&lHats &8➟ &cHat not found, please try another ID.'
+  player-not-found:
+    message: '&#00FB3C&lHats &8➟ &cPlayer not found.'
+  help-message:
+    message:
+    - '&#00FB3C&lHats &8➟ &7/hat reload: &fReloads the config file.'
+    - '&#00FB3C&lHats &8➟ &7/hat give <player> <hat>: &fGives a player a hat.'
+
+hats:
+  LeafHat:
+    material: AZALEA
+    name: '&#00FB1D&lL&#16FB2B&le&#2BFC39&la&#41FC47&lf &#57FC54&lH&#6CFD62&la&#82FD70&lt &7[Summer Exclusive]'
+    unbreakable: true
+    enchants:
+    - minecraft:sharpness:1
+    itemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DYE
+    - HIDE_POTION_EFFECTS
+  FlowerHat:
+    material: SPORE_BLOSSOM
+    name: '&#DA4AFB&lF&#D953FB&ll&#D95BFC&lo&#D864FC&lw&#D86DFC&le&#D775FC&lr &#D67EFD&lH&#D686FD&la&#D58FFD&lt &7[Summer Exclusive]'
+    unbreakable: true
+    enchants:
+    - minecraft:sharpness:1
+    itemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DYE
+    - HIDE_POTION_EFFECTS
+  Unicorn:
+    material: END_ROD
+    name: '&#00D9FB&lU&#19CAFB&ln&#32BAFB&li&#4CABFC&lc&#659BFC&lo&#7E8CFC&lr&#977CFC&ln &#B06DFC&lH&#CA5DFD&lo&#E34EFD&lr&#FC3EFD&ln &7[Summer Exclusive]'
+    unbreakable: true
+    enchants:
+    - minecraft:sharpness:1
+    itemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DYE
+    - HIDE_POTION_EFFECTS
+  Snorkel:
+    material: LIGHTNING_ROD
+    name: '&#1B8CFB&lS&#329FFB&ln&#49B2FA&lo&#60C5FA&lr&#76D7FA&lk&#8DEAF9&le&#A4FDF9&ll &7[Summer Exclusive]'
+    unbreakable: true
+    enchants:
+    - minecraft:sharpness:1
+    itemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DYE
+    - HIDE_POTION_EFFECTS

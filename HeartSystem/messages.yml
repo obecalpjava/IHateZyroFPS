@@ -1,0 +1,56 @@
+# Messages configuration file for HeartSystem.
+
+config-version: 2
+
+# The prefix to display in front of all messages.
+prefix: "<#b70000>&lL<#c00000>&li<#c90000>&lf<#d10000>&le<#da0000>&ls<#e30000>&lt<#ec0000>&le<#f40000>&la<#fd0000>&ll &8➟ "
+
+# The message the player receives when they are initially banned.
+banned: "&cYou have ran out of hearts! You can join back in &7%remaining%&c. Purchase a rank at &7store.minerival.org&c for a reduced deathban!"
+
+# The message if a command is used incorrectly.
+# %usage% - The correct usage.
+incorrect-usage: "&cIncorrect usage! Did you mean: &7%usage%"
+
+# The message if the command execute does not have permission for the command.
+# %permission% - The permission node required.
+insufficient-permission: "&cYou need the &7%permission% &cpermission to do this."
+
+# The message sent after a player's hearts has been modified by an admin.
+hearts-updated: "&7%target% &cnow has &d%amount% &chearts."
+
+# The message sent if an admin tries to eliminate an already eliminated player.
+already-eliminated: "&7%target% &cis already eliminated."
+
+# The message sent if an admin tries to revive an already alive player.
+already-alive: "&7%target% &cis already alive."
+
+# The message sent after a player gets eliminated by an admin.
+eliminated: "&7%target% &chas been forcibly eliminated."
+
+# The message sent after a player gets revived by an admin.
+revived: "&7%target% &chas been forcibly revived."
+
+
+player-not-online: "#b70000&lL#c00000&li#c90000&lf#d10000&le#da0000&ls#e30000&lt#ec0000&le#f40000&la#fd0000&ll &8➟ &7Player &c%target% &7is not online."
+
+view-hearts: "#b70000&lL#c00000&li#c90000&lf#d10000&le#da0000&ls#e30000&lt#ec0000&le#f40000&la#fd0000&ll &8➟ &a%target% &7has &a%hearts% &7heart(s)."
+
+withdraw-help: "<#b70000>&lL<#c00000>&li<#c90000>&lf<#d10000>&le<#da0000>&ls<#e30000>&lt<#ec0000>&le<#f40000>&la<#fd0000>&ll &8➟ &f/withdraw <amount>"
+
+withdraw-success: "<#b70000>&lL<#c00000>&li<#c90000>&lf<#d10000>&le<#da0000>&ls<#e30000>&lt<#ec0000>&le<#f40000>&la<#fd0000>&ll &8➟ &7You have withdrawn &a%amount% &7hearts!"
+
+withdraw-failure: "<#b70000>&lL<#c00000>&li<#c90000>&lf<#d10000>&le<#da0000>&ls<#e30000>&lt<#ec0000>&le<#f40000>&la<#fd0000>&ll &8➟ &cYou do not have enough hearts to withdraw."
+
+revive-help:
+  - "<#b70000>&lL<#c00000>&li<#c90000>&lf<#d10000>&le<#da0000>&ls<#e30000>&lt<#ec0000>&le<#f40000>&la<#fd0000>&ll &8➟ &f/revive <player>"
+  - "&7This will remove &f10 hearts&7 from your person."
+  - "&7(You must have &f15 hearts&7 to do this action)"
+
+revive-confirm: "&7Please run the command again to confirm."
+
+revive-failure: "<#b70000>&lL<#c00000>&li<#c90000>&lf<#d10000>&le<#da0000>&ls<#e30000>&lt<#ec0000>&le<#f40000>&la<#fd0000>&ll &8➟ &7You do not have enough hearts to revive &c%target%&c."
+
+revive-success: "&a%target% &7has been revived!"
+
+redeem-heart-container: "#b70000&lL#c00000&li#c90000&lf#d10000&le#da0000&ls#e30000&lt#ec0000&le#f40000&la#fd0000&ll &8➟ &7You have redeemed a &aHeart Capsule&7!"

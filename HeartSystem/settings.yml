@@ -1,0 +1,57 @@
+# General configuration file for HeartSystem.
+
+config-version: 3
+
+debug:
+  ban-command: "ban %player% 7d Bug Abuse [H]"
+  49-ban-command: "ban %player% Please make a ticket [49]"
+
+# MySQL data storage settings.
+database:
+  host: "10.0.0.1"
+  port: 3306
+  database: "ls-heartsystem-dev"
+  user: "ls-heartsystem-dev"
+  password: "test"
+  table-prefix: "heartsystem"
+
+# The hub command, that is executed by the player.
+hub-command: "hubsendnow"
+
+# The default number of hearts that players have after their ban expires.
+default-hearts: 10
+
+# The maximum number of hearts a player can have.
+max-hearts: 50
+
+# The ban durations for each permission. Durations listed first have higher priority.
+# Format- duration: permission
+ban-durations:
+  40h: "heartsystem.duration.ranger"
+  30h: "heartsystem.duration.shaman"
+  24h: "heartsystem.duration.sage"
+  12h: "heartsystem.duration.noble"
+  5h: "heartsystem.duration.wizard"
+  2h: "heartsystem.duration.sorcerer"
+  1s: "heartsystem.duration.admin"
+
+# The default ban duration if the player does not have any of the special permissions.
+default-ban-duration: "48h"
+
+# If life steal should only be enabled when a player is killed by another player.
+player-kills-only: true
+# The number of seconds between each leaderboard refresh.
+# Depending on the number of players, you will want to increase/decrease this.
+leaderboard-interval: 30
+
+required-hearts-to-revive: 15
+
+heart-container:
+  material: RED_DYE
+  name: "&#b70000&lH&#bd0000&le&#c40000&la&#ca0000&lr&#d00000&lt &#d70000&lC&#dd0000&la&#e40000&lp&#ea0000&ls&#f00000&lu&#f70000&ll&#fd0000&le"
+  lore:
+    - "&8Heart Info"
+    - "&r"
+    - "&8❖ &fContained Hearts: &c%hearts%"
+    - "&r"
+    - "&e&l➥ RIGHT-CLICK TO USE"

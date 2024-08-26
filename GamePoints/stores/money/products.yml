@@ -1,0 +1,68 @@
+money_5000:
+  Name: '&e&l$5.000'
+  Description:
+  - '&7Gives you &e$5.000'
+  Price: 10
+  Purchase_Cooldown: 0
+  Priority: 10
+  Inheritance:
+    Rewards: []
+    Price: []
+  Preview:
+    material: GOLD_NUGGET
+    amount: 5
+    durability: 0
+    enchanted: false
+    unbreakable: false
+  Rewards:
+    Commands:
+    - '[CONSOLE] eco give %player% 5000'
+  Store:
+    Slot: 11
+    Page: 1
+
+money_15000:
+  Name: '&e&l$15.000'
+  Description:
+  - '&7Gives you &e$15.000'
+  Price: 30
+  Purchase_Cooldown: 0
+  Priority: 10
+  Inheritance:
+    Rewards: []
+    Price: []
+  Preview:
+    material: GOLD_NUGGET
+    amount: 15
+    durability: 0
+    enchanted: false
+    unbreakable: false
+  Rewards:
+    Commands:
+    - '[CONSOLE] eco give %player% 15000'
+  Store:
+    Slot: 13
+    Page: 1
+
+money_30000:
+  Name: '&e&l$30.000'
+  Description:
+  - '&7Gives you &e$30.000'
+  Price: 60
+  Purchase_Cooldown: 0
+  Priority: 10
+  Inheritance:
+    Rewards: []
+    Price: []
+  Preview:
+    material: GOLD_NUGGET
+    amount: 30
+    durability: 0
+    enchanted: false
+    unbreakable: false
+  Rewards:
+    Commands:
+    - '[CONSOLE] eco give %player% 30000'
+  Store:
+    Slot: 15
+    Page: 1

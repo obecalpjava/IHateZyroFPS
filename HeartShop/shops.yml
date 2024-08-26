@@ -1,0 +1,584 @@
+shops:
+  typeOne:
+    options:
+      numberOfItems: 7
+      heartContainerBlockDistance: 150
+      title: Heart Shop
+      rows: 3
+      despawnMinutes: 15
+      heartItemSlots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      entityType: WANDERING_TRADER
+      cachedLocations: 10
+      worlds:
+      - world
+      maxPurchases: 5
+      maxPurchasesPerPlayer: 3
+      minXSpawn: -3000
+      minZSpawn: -3000
+      maxXSpawn: 15000
+      # https://www.freeformatter.com/cron-expression-generator-quartz.html
+      schedule: 0 0/25 0/2 ? * * *
+    previewMenu:
+      title: Heart Shop Preview
+      backButton:
+        item:
+          material: ARROW
+          name: '&7[←] &cPrevious Page'
+        slots:
+        - 18
+        - 26
+      nextButton:
+        item:
+          material: ARROW
+          name: '&aNext Page &7[→]'
+        slots:
+        - 23
+        - 25
+      shopItemSlots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      menuItems:
+        '1':
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          item:
+            material: GRAY_STAINED_GLASS_PANE
+            name: '&f'
+    messages:
+      purchaseComplete:
+        message: '&#FB0909&&lHEART SHOP &8➟ &7You purchased &fx{amount} {displayName} &7for &f{cost} hearts&7!'
+      purchaseFailed:
+        message: '&#FB0909&&lHEART SHOP &8➟ &7You cannot buy {displayName}!'
+      spawnShop:
+        message:
+        - ''
+        - '&#FB0909&&lHEART SHOP SPAWNED'
+        - ''
+        - '&fA wild Heart Shop NPC has just spawned!'
+        - '&fHead to the NPC and purchase loot!'
+        - ''
+        - '&fLocation: &#FB0909&{x}, {y}, {z}'
+        - ''
+      despawnShop:
+        message: '&#FB0909&&lHEART SHOP &8➟ &7The heart shop has &cdespawned&7!'
+    menuItems:
+      '1':
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        item:
+          material: GRAY_STAINED_GLASS_PANE
+          name: '&f'
+      '2':
+        slots:
+        - 22
+        item:
+          material: BOOK
+          name: '&#FBCB1F&lInformation'
+          lore:
+          - '&8Heart Shop Info'
+          - '&f'
+          - '&8❖ &fTime Left: &#FBCB1F{timeLeft}'
+          - '&f'
+          - '&8❖ &fYour Purchases: &#FBCB1F{purchasesLeft}/{maxPurchasesLeft}'
+          - '&8❖ &fServer Purchases: &#FBCB1F{totalPurchasesLeft}/{maxTotalPurchasesLeft}'
+    shopItems:
+      '1':
+        displayName: '&#0BFF0A&&lx3 Vote &fKey'
+        price: 30
+        amount: 3
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: lime_dye
+        preview:
+          material: lime_dye
+          name: '&#0BFF0A&lx3 Vote &fKey'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - excellentcrates key give {player} vote 3
+      '2':
+        displayName: '&#0BFF0A&&lx2 Vote &fKey'
+        price: 20
+        amount: 2
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: lime_dye
+        preview:
+          material: lime_dye
+          name: '&#0BFF0A&lx2 Vote &fKey'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - excellentcrates key give {player} vote 2
+      '3':
+        displayName: '&#0BFF0A&&lx1 Vote &fKey'
+        price: 20
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: lime_dye
+        preview:
+          material: lime_dye
+          name: '&#0BFF0A&lx1 Vote &fKey'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - excellentcrates key give {player} vote 1
+      '4':
+        displayName: '&#F6FF00&&lx1 Prime &fKey'
+        price: 25
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: yellow_dye
+        preview:
+          material: yellow_dye
+          name: '&#F6FF00&lx1 Prime &fKey'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - excellentcrates key give {player} prime 1
+      '5':
+        displayName: '&#00CAFB&&lx1 Epic&f Key'
+        price: 30
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: light_blue_dye
+        preview:
+          material: light_blue_dye
+          name: '&#00CAFB&lx1 Epic&f Key'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - excellentcrates key give {player} epic 1
+      '6':
+        displayName: '&#FB1D1D&&lx1 Rival&f Key'
+        price: 40
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: red_dye
+        preview:
+          material: red_dye
+          name: '&#FB1D1D&lx1 Rival&f Key'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - excellentcrates key give {player} rival 1
+      '7':
+        displayName: '&#5BD6FD-#6DD9FB&&lKOTH &fStarter'
+        price: 45
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: nether_star
+        preview:
+          material: nether_star
+          name: '&#5bd6fd&lK&#61d7fc&lO&#67d8fc&lT&#6dd9fb&lH &fStarter'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - voucher give KothStarter 1 {player}
+      '8':
+        displayName: '&#F2FB00&&l100 Coins'
+        price: 30
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: sunflower
+        preview:
+          material: sunflower
+          name: '&#F2FB00&l100 Coins'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - coins give {player} 100
+      '9':
+        displayName: '&#F2FB00&&l200 Coins'
+        price: 40
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: sunflower
+        preview:
+          material: sunflower
+          name: '&#F2FB00&l200 Coins'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - coins give {player} 200
+      '10':
+        displayName: '&#F2FB00&&l300 Coins'
+        price: 49
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: sunflower
+        preview:
+          material: sunflower
+          name: '&#F2FB00&l300 Coins'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - coins give {player} 300
+      '11':
+        displayName: '&#FB0909&&lHEART &fSword'
+        price: 40
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: netherite_sword
+        preview:
+          material: netherite_sword
+          glow: true
+          name: '&#FB0909&lHEART &fSword'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&7Enchants:'
+          - '&fSharpness V'
+          - '&fUnbreaking III'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - give {player} netherite_sword 1 0 sharpness:5 unbreaking:3 name:&#FB0909&lHEART&f_Sword
+      '12':
+        displayName: '&#FB0909&&lHEART &fPickaxe'
+        price: 40
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: netherite_pickaxe
+        preview:
+          material: netherite_pickaxe
+          name: '&#FB0909&lHEART &fPickaxe'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&7Enchants:'
+          - '&fEfficiency VI'
+          - '&fUnbreaking III'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - give {player} netherite_pickaxe 1 0 efficiency:6 unbreaking:3 name:&#FB0909&lHEART&f_Pickaxe
+      '13':
+        displayName: '&#FB0909&&lHEART &fHelmet'
+        price: 35
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: netherite_helmet
+        preview:
+          material: netherite_helmet
+          name: '&#FB0909&lHEART &fHelmet'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&7Enchants:'
+          - '&fProtection IV'
+          - '&fUnbreaking III'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - give {player} netherite_helmet 1 0 protection:4 unbreaking:3 name:&#FB0909&lHEART&f_Helmet
+      '14':
+        displayName: '&#FB0909&&lHEART &fChestplate'
+        price: 45
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: netherite_chestplate
+        preview:
+          material: netherite_chestplate
+          name: '&#FB0909&lHEART &fChestplate'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&7Enchants:'
+          - '&fProtection IV'
+          - '&fUnbreaking III'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - give {player} netherite_chestplate 1 0 protection:4 unbreaking:3 name:&#FB0909&lHEART&f_Chestplate
+      '15':
+        displayName: '&#FB0909&&lHEART &fLeggings'
+        price: 40
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: netherite_leggings
+        preview:
+          material: netherite_leggings
+          name: '&#FB0909&lHEART &fLeggings'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&7Enchants:'
+          - '&fProtection IV'
+          - '&fUnbreaking III'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - give {player} netherite_leggings 1 0 protection:4 unbreaking:3 name:&#FB0909&lHEART&f_Leggings
+      '16':
+        displayName: '&#FB0909&&lHEART &fBoots'
+        price: 35
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: netherite_boots
+        preview:
+          material: netherite_boots
+          name: '&#FB0909&lHEART &fBoots'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&7Enchants:'
+          - '&fProtection IV'
+          - '&fUnbreaking III'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - give {player} netherite_boots 1 0 protection:4 unbreaking:3 name:&#FB0909&lHEART&f_Boots
+      '17':
+        displayName: '&#00ABFB&&lBlaze &fSpawner'
+        price: 35
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: spawner
+        preview:
+          material: spawner
+          name: '&#00ABFB&lBlaze &fSpawner'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawnes give {player} BLAZE 1
+      '18':
+        displayName: '&#00ABFB&&lSkeleton &fSpawner'
+        price: 35
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: spawner
+        preview:
+          material: spawner
+          name: '&#00ABFB&lSkeleton &fSpawner'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawnes give {player} SKELETON 1
+      '19':
+        displayName: '&#00ABFB&&lZombie &fSpawner'
+        price: 35
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: spawner
+        preview:
+          material: spawner
+          name: '&#00ABFB&lZombie &fSpawner'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawnes give {player} ZOMBIE 1
+      '20':
+        displayName: '&#00ABFB&&lSpawner &fWrench &7[1 Use]'
+        price: 20
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: diamond_hoe
+        preview:
+          material: diamond_hoe
+          name: '&#00ABFB&lSpawner &fWrench &7[1 Use]'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawners wrench {player} 1
+      '21':
+        displayName: '&#00ABFB&&lSpawner &fWrench &7[2 Use]'
+        price: 25
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: diamond_hoe
+        preview:
+          material: diamond_hoe
+          name: '&#00ABFB&lSpawner &fWrench &7[2 Use]'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawners wrench {player} 2
+      '22':
+        displayName: '&#00ABFB&&lSpawner &fWrench &7[3 Use]'
+        price: 30
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: diamond_hoe
+        preview:
+          material: diamond_hoe
+          name: '&#00ABFB&lSpawner &fWrench &7[3 Use]'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawners wrench {player} 3
+      '23':
+        displayName: '&#00ABFB&&lSpawner &fWrench &7[4 Use]'
+        price: 35
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: diamond_hoe
+        preview:
+          material: diamond_hoe
+          name: '&#00ABFB&lSpawner &fWrench &7[4 Use]'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+        commands:
+        - spawners wrench {player} 4
+      '24':
+        displayName: '&#1EE220&&lRANGER&f Rank &7[3 Days]'
+        price: 40
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: book
+        preview:
+          material: book
+          name: '&#1EE220&lRANGER&f Rank &7[3 Days]'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+          commands:
+          - voucher give RangerRank3d 1 {player}
+      '25':
+        displayName: '&#EF9B44&&lSHAMAN&f Rank &7[3 Days]'
+        price: 45
+        amount: 1
+        sendsCommands: true
+        sendsItem: false
+        final:
+          material: book
+        preview:
+          material: book
+          name: '&#EF9B44&lSHAMAN&f Rank &7[3 Days]'
+          lore:
+          - '&8Description'
+          - '&f'
+          - '&8❖ &fBuy Price: &a{buy}❤'
+          commands:
+          - voucher give ShamanRank3d 1 {player}

@@ -1,0 +1,16 @@
+Name: '&bRanks'
+Permission_Required: false
+View:
+  Title: '&lRanks Store'
+  Size: 36
+  
+  Content:
+    return:
+      Display:
+        default:
+          Item:
+            material: BARRIER
+            name: '&c&lReturn'
+      Type: RETURN
+      Slots: 31
+Pages: 1
