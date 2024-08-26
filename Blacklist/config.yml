@@ -1,0 +1,14 @@
+mongo-uri: mongodb://admin:Gk6M9FhjEZJeREcU@10.0.0.1:27017/blacklist?authSource=admin
+
+after-command: ipban %player% Blacklisted
+
+default-reason: "Undisclosed"
+kick-message:
+  - "&f"
+  - "&f"
+  - "&4&lYOU ARE BLACKLISTED FROM THIS SERVER"
+  - "&fReason: &7{reason}"
+  - "&f"
+
+use-redis: true
+redis-uri: redis://t2wKkgkzYe5KeLZh26CLqVMjTs2s9QM5WncnPhcb8BwRrjVfmgnGVJ68T8JG2FEj@10.0.0.1:6379
