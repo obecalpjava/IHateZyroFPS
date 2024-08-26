@@ -1,0 +1,307 @@
+messages:
+  prefix:
+    type: TCHAT
+    message: '&x&f&f&4&1&4&1&lKOTH &8➟ '
+  time:
+    day:
+      type: TCHAT
+      message: '%02dd %02dh %02dm %02ds'
+    hour:
+      type: TCHAT
+      message: '%02dh %02dm %02ds'
+      simple:
+        type: TCHAT
+        message: '%02d:%02d:%02d'
+    minute:
+      type: TCHAT
+      message: '%02dm %02ds'
+    second:
+      type: TCHAT
+      message: '%02ds'
+  command:
+    syntaxe:
+      error:
+        type: TCHAT
+        message: '&cYou have to execute the command like this&7: &2%syntax%'
+      help:
+        type: TCHAT
+        message: '&f%command% &8➟ &7%description%'
+    'no':
+      permission:
+        type: TCHAT
+        message: '&cYou do not have permission to execute this command..'
+      console:
+        type: TCHAT
+        message: '&cOnly a player can execute this command.'
+      arg:
+        type: TCHAT
+        message: '&cImpossible to find the command with its arguments.'
+    help:
+      header:
+        type: TCHAT
+        message: '&7Commands informations&8:'
+  zkoth:
+    axe:
+      receive:
+        type: TCHAT
+        message: '&7You have just received the axe for zone selection.'
+      pos1:
+        type: TCHAT
+        message: '&7You have just put the first position in &f%world%&7, &f%x%&7,
+          &f%y%&7, &f%z%&7.'
+      pos2:
+        type: TCHAT
+        message: '&7You have just put the second position in &f%world%&7, &f%x%&7,
+          &f%y%&7, &f%z%&7.'
+      name:
+        type: TCHAT
+        message: '&6✤ &ezKoth axe &6✤'
+      description:
+        type: TCHAT
+        messages:
+        - ''
+        - '&f&l➟ &7Allows you to select a zone to create a koth'
+        - ' &7&oYou must select an area with the right click'
+        - ' &7&oand left then do the command &b/koth create &8<&aname&8>'
+        - ''
+    already:
+      exist:
+        type: TCHAT
+        message: '&cThe koth &f%name% &calready exists.'
+    size:
+      type: TCHAT
+      message: '&cYour koth is too small, you can''t create one that small. Then you
+        will come on discord for support when the problem comes from you.'
+    doesnt:
+      exist:
+        type: TCHAT
+        message: '&cThe koth &f%name% &cdoesnt exists.'
+    create:
+      success:
+        type: TCHAT
+        message: '&7You just created the koth &f%name%&7.'
+      error:
+        selection:
+          type: TCHAT
+          message: '&cYou must select a zone with the command &b/zkoth axe&c.'
+    delete:
+      success:
+        type: TCHAT
+        message: '&7You just deleted the koth &f%name%&7.'
+    move:
+      success:
+        type: TCHAT
+        message: '&7You have just moved the koth &f%name%&7.'
+    spawn:
+      error:
+        type: TCHAT
+        message: '&cImpossible to spawn the koth, positions do not work. You have
+          to do &b/zkoth move &8<&aname&8>&c.'
+      cooldown:
+        type: TCHAT
+        message: '&cthe countdown to the appearance of the koth is already underway'
+      already:
+        type: TCHAT
+        message: '&cThe koth is running.'
+    event:
+      start:
+        type: CENTER
+        messages:
+        - ''
+        - '&x&7&3&f&1&5&3&lK&x&7&1&f&2&5&4&lO&x&6&f&f&3&5&6&lT&x&6&e&f&5&5&7&lH &x&6&c&f&6&5&8&lB&x&6&a&f&7&5&a&lE&x&6&8&f&8&5&b&lG&x&6&6&f&9&5&c&lI&x&6&4&f&a&5&e&lN&x&6&3&f&c&5&f&lN&x&6&1&f&d&6&0&lI&x&5&f&f&e&6&2&lN&x&5&d&f&f&6&3&lG'
+        - ''
+        - '&7A &x&7&9&f&f&7&eKoTH &7event has begun! Travel'
+        - '&7to these coordinates &x&7&9&f&f&7&e%x%, %y%, %z%'
+        - '&7and &x&7&9&f&f&7&ecapture &7the KoTH to win an &x&7&9&f&f&7&eOP Event
+          lootbox!!'
+        - ''
+      win:
+        type: CENTER
+        messages:
+        - ''
+        - '&x&f&f&d&a&1&b&lK&x&f&f&d&d&2&1&lO&x&f&f&e&0&2&6&lT&x&f&f&e&3&2&c&lH &x&f&f&e&6&3&1&lW&x&f&f&e&9&3&7&lI&x&f&f&e&c&3&d&lN&x&f&f&e&f&4&2&lN&x&f&f&f&2&4&8&lE&x&f&f&f&5&4&d&lR&x&f&f&f&8&5&3&l!'
+        - ''
+        - '&7The player &x&f&f&e&b&8&1%player% &7has captured'
+        - '&7the KoTH in time and won an &x&f&f&e&b&8&1OP Event lootbox!'
+        - ''
+      cooldown:
+        type: CENTER
+        messages:
+        - ''
+        - '&x&3&4&a&a&f&f&lK&x&3&a&a&e&f&f&lO&x&4&0&b&3&f&f&lT&x&4&5&b&7&f&f&lH &x&4&b&b&c&f&f&lE&x&5&1&c&0&f&f&lV&x&5&7&c&5&f&f&lE&x&5&c&c&9&f&f&lN&x&6&2&c&d&f&f&lT
+          &x&6&8&d&2&f&f&lS&x&6&e&d&6&f&f&lO&x&7&3&d&b&f&f&lO&x&7&9&d&f&f&f&lN'
+        - ''
+        - '&7The KoTH event will start in &x&7&9&d&f&f&f%capture%!'
+        - '&7Travel towards &x&7&9&d&f&f&f%x%, %y%, %z% &7and'
+        - '&7capture the KoTH to win an &x&7&9&d&f&f&fOP Event lootbox!'
+        - ''
+      disable:
+        type: TCHAT
+        message: '&cThe event is not enable.'
+    scheduler:
+      create:
+        type: TCHAT
+        message: '&eYou have just created a scheduler for the koth &6%s&e.'
+      empty:
+        type: TCHAT
+        message: '&cNo scheduler available'
+      remove:
+        hover:
+          type: TCHAT
+          message: '&7Click to delete the scheduler'
+        error:
+          type: TCHAT
+          message: '&cYou must make &b/koth scheduler list &cand then click on one
+            of the koths to be able to delete it'
+        success:
+          type: TCHAT
+          message: '&eYou have just deleted the scheduler'
+      list:
+        type: TCHAT
+        message: '&6%totemName%&7, &f%type%&7, &e%day%&7, &e%hour%&7, &e%minute%'
+        repeat:
+          type: TCHAT
+          message: '&6%totemName%&7, &f%type%&7, &e%timer%'
+      error:
+        type: TCHAT
+        message: '&cImpossible to find the day &f%day%&c.'
+      add:
+        type: TCHAT
+        messages:
+        - '&f/zkoth scheduler add repeat <koth name> <hour> &8» &7Repeat koth every
+          x hours.'
+        - '&f/zkoth scheduler add delay <koth name> <day> <hour> <minute> &8» &7Start
+          koth at specitif time.'
+    command:
+      create:
+        type: TCHAT
+        message: '&7You have just added the command &8"&f%command%&8"'
+      delete:
+        type: TCHAT
+        message: '&aYou have just deleted a command.'
+    loot:
+      edit:
+        type: TCHAT
+        message: '&aYou have just set the loot type to &f%type%&a.'
+      inventory:
+        type: TCHAT
+        message: '&7Loots &b%name%'
+      change:
+        type: TCHAT
+        message: '&aYou have just modified the loots of the koth &2%name%&a.'
+    type:
+      edit:
+        type: TCHAT
+        message: '&aYou have just set the type to &f%type%&a.'
+    points:
+      edit:
+        type: TCHAT
+        message: '&aYou have just set the points to &f%points%&a.'
+    timer:
+      edit:
+        type: TCHAT
+        message: '&aYou have just set the timer to &f%seconds%&a.'
+    caputre:
+      edit:
+        type: TCHAT
+        message: '&aYou have just modified the capture time of the koth &n%name%&a
+          to &f%seconds%&a.'
+    list:
+      console:
+        type: TCHAT
+        message: '&fKoths&8: &f%koth%'
+  zkoht:
+    event:
+      stop:
+        type: CENTER
+        messages:
+        - ''
+        - '&x&f&f&3&4&3&4&lK&x&f&f&3&7&3&7&lO&x&f&f&3&a&3&a&lT&x&f&f&3&c&3&c&lH &x&f&f&3&f&3&f&lS&x&f&f&4&2&4&2&lT&x&f&f&4&5&4&5&lO&x&f&f&4&8&4&8&lP&x&f&f&4&a&4&a&lP&x&f&f&4&d&4&d&lE&x&f&f&5&0&5&0&lD'
+        - ''
+        - '&7The &x&f&f&7&1&7&1KoTH &7event has just stopped!'
+        - ''
+      catch:
+        type: ACTION
+        message: ''
+      loose:
+        type: ACTION
+        message: ''
+      timer:
+        type: ACTION
+        message: ''
+      everyseconds:
+        type: ACTION
+        message: '&b%player% &7- &8[&f%classicProgress%&8] &7- &b%classicPercent%&f%'
+      facion:
+        type: TCHAT
+        message: None
+      player:
+        type: TCHAT
+        message: Person
+  description:
+    scheduler:
+      type: TCHAT
+      message: Show scheduler commands
+      list:
+        type: TCHAT
+        message: Show scheduler list
+      add:
+        type: TCHAT
+        message: Add a scheduler
+      remove:
+        type: TCHAT
+        message: Remove a scheduler
+    version:
+      type: TCHAT
+      message: Show plugin version
+    addcommand:
+      type: TCHAT
+      message: Allows you to add a command to a koth
+    removecommand:
+      type: TCHAT
+      message: Allows you to remove a command to a koth
+    axe:
+      type: TCHAT
+      message: Getting the selection axe
+    create:
+      type: TCHAT
+      message: Create new koth
+    delete:
+      type: TCHAT
+      message: Delete a koth
+    info:
+      type: TCHAT
+      message: Show information about a koth
+    list:
+      type: TCHAT
+      message: Get koth list
+    loot:
+      type: TCHAT
+      message: Change loot for a koth
+    move:
+      type: TCHAT
+      message: Move a koth
+    now:
+      type: TCHAT
+      message: Spawn a koth without cooldown
+    stop:
+      type: TCHAT
+      message: Stop a koth
+    spawn:
+      type: TCHAT
+      message: Spawn a koth with cooldown
+    capture:
+      type: TCHAT
+      message: Set capture time for a koth
+    type:
+      type: TCHAT
+      message: Set koth type (classic, point, timer)
+    timer:
+      type: TCHAT
+      message: Set koth max second for timer type
+    points:
+      type: TCHAT
+      message: Set koth max point for point type
+    loottype:
+      type: TCHAT
+      message: Set loot type for a koth
