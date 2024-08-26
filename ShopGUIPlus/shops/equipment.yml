@@ -1,0 +1,145 @@
+equipment:
+  name: "&8Equipment Shop"
+  size: 27
+  fillItem:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item: 
+        material: Obsidian
+        quantity: 64
+      buyPrice: 8000
+      sellPrice: -1
+      slot: 11
+    2:
+      type: item
+      item: 
+        material: Respawn_Anchor
+        quantity: 8
+      buyPrice: 2500
+      sellPrice: -1
+      slot: 12
+    3:
+      type: item
+      item: 
+        material: Totem_Of_Undying
+        quantity: 1
+      buyPrice: 8000
+      sellPrice: -1
+      slot: 10
+    4:
+      type: item
+      item: 
+        material: End_Crystal
+        quantity: 3
+      buyPrice: 750
+      sellPrice: -1
+      slot: 13
+    5:
+      type: item
+      item: 
+        material: Experience_Bottle
+        quantity: 64
+      buyPrice: 2500
+      sellPrice: -1
+      slot: 13
+      page: 2
+    7:
+      type: item
+      item: 
+        material: Firework_Rocket
+        quantity: 16
+      buyPrice: 500
+      sellPrice: -1
+      slot: 14
+      page: 2
+    8:
+      type: command
+      item:
+        material: red_dye
+        quantity: 1
+        name: '&cHeart &7[x1]'
+      commands:
+        - "hearts heartcapsule %PLAYER% 1"
+      buyPrice: 30000
+      sellPrice: -1
+      slot: 14
+    9:
+      type: item
+      item: 
+        material: elytra
+        quantity: 1
+      buyPrice: 50000
+      sellPrice: -1
+      slot: 15
+    10:
+      type: item
+      item: 
+        material: ender_pearl
+        quantity: 16
+      buyPrice: 3000
+      sellPrice: -1
+      slot: 10
+      page: 2
+    11:
+      type: item
+      item: 
+        material: ender_chest
+        quantity: 1
+      buyPrice: 1500
+      sellPrice: -1
+      slot: 11
+      page: 2
+    12:
+      type: item
+      item: 
+        material: enchanting_table
+        quantity: 1
+      buyPrice: 1500
+      sellPrice: -1
+      slot: 12
+      page: 2
+    13:
+      type: item
+      item: 
+        material: shulker_box
+        quantity: 1
+      buyPrice: 5000
+      sellPrice: -1
+      slot: 16
+    14:
+      type: command
+      item:
+        material: diamond_hoe
+        glow: true
+        quantity: 1
+        name: '#00ABFBSpawner Wrench&f Tool'
+        lore:
+        - ""
+        - '&8❖ &7Grab spawners with this tool!'
+        - '&8❖ &7This Tool Has&f 2 Uses'
+      commands:
+        - "spawners wrench %PLAYER% 2"
+      buyPrice: 200000
+      sellPrice: -1
+      slot: 15
+      page: 2
+    15:
+      type: item
+      item: 
+        material: golden_hoe
+        glow: true
+        quantity: 1
+        name: '#FFE710Sell Wand&f Tool'
+        lore:
+        - ""
+        - '&8❖ &7Sell your loot with this tool!'
+        - '&8❖ &7This Tool Has&f 100 Uses'
+      commands:
+        - "spawners wrench %PLAYER% 2"
+      buyPrice: 100000
+      sellPrice: -1
+      slot: 16
+      page: 2

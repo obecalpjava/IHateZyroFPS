@@ -1,0 +1,103 @@
+# Сообщения в этой секции могут быть изменены для каждого повышения уровня в rankups.yml
+rankup:
+  requirements-not-met: "&cВам нужно ещё {{rank.requirement('money').total | simple}} денег для повышения уровня."
+  no-rankup: "&eУ Вас уже самый высокий ранг."
+  # Оставьте это поле пустым, чтобы скрыть сообщение (success-public: '')
+  success-public: "&eРанг игрока &a{{player}} &eбыл повышен до: &d{{next.rank}}"
+  success-private: "&aВаш ранг повысился до: &d{{next.rank}}"
+  # Используется как текст подтверждения
+  confirmation: |-
+    &eВы уверены, что хотите ранг до &a{{next.rank}}&e?
+    &eВведите &c/rankup &eещё раз, чтобы подтвердить.
+
+  gui:
+    rows: 1
+    title: "Повысить до {{next.rank}}"
+    rankup:
+      material: EMERALD_BLOCK
+      # index can be separated by spaces to show in multiple groups
+      # for example: 0-3 9-12 18-21
+      # you can also just use a single number instead of a range.
+      index: 0-3
+      name: '&a&lConfirm'
+      # lore is optional
+      lore: '&6Rankup to &b{{next.rank}}'
+    cancel:
+      material: REDSTONE_BLOCK
+      index: 5-8
+      name: '&c&lCancel'
+    fill:
+      name: ' '
+      # if you are using a 1.8-1.12 and you want to change this
+      # you can use MATERIAL:data, for example STAINED_GLASS_PANE:8
+      # this works for both the rankup and cancel blocks as well
+      material: BLACK_STAINED_GLASS_PANE
+
+  must-prestige: "&cВам нужно будет больше престижа для /rankup в будущем!"
+
+  # Вы можете (вам стоит ;D) переписать это в rankups.yml, чтобы показать специфичные требования для каждого ранга.
+  # Тем не менее, если Вы просто используете деньги или не нуждаетесь в смене сообщений для кажого ранга - Вы
+  # можете использовать комбинации из: {{rank.requirement('money').total | simple}} {MONEY_NEEDED} {PERCENT_DONE <требование>} {PERCENT_LEFT <требование>}
+  # {AMOUNT <требование>} {AMOUNT_NEDDED <требование>}. "{{rank.requirement('money').total | simple}}" и "{MONEY_NEEDED}" отличаются от
+  # {AMOUNT сумма} {AMOUNT_NEDDED сумма} тем, что они используют разный формат.
+  # Вот пример показа требований только для денег
+  # P.S. \xbb - "»" в Unicode.
+  #list:
+  #  complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}} &eза &7${{rank.requirement('money').total | simple}}"
+  #  current: "&c{{rank.rank}} &e\xbb &c{{next.rank}} &eза &a${{rank.requirement('money').total | simple}} &e{PERCENT_DONE money}%"
+  #  incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}} &eза &a${{rank.requirement('money').total | simple}}"
+  list:
+    complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}}"
+    current: "&c{{rank.rank}} &e\xbb &c{{next.rank}}"
+    incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}}"
+    # Пустая строка выключает заголовок/нижнюю часть
+    header: ''
+    footer: ''
+  # Отправляется игроку, который попытался повысить уровень, когда ещё не прошёл кулдаун (откат/перезарядка)
+  cooldown:
+    singular: "&cПожалуйста, подождите {{seconds_left}} сек., чтобы повысить ранг снова."
+    plural: "&cПожалуйста, подождите {{seconds_left}} сек., чтобы повысить ранг снова."
+# Сообщения престижа тоже могут быть изменены
+prestige:
+  requirements-not-met: "&cВам нужно {{rank.requirement('money').total | simple}} денг для повышения престижа."
+  no-prestige: "&eУ Вас уже самый высокий уровень престижа."
+
+  success-public: "Престиж игрока &a{{player}} &eповышен в: &d{{next.rank}}"
+  success-private: "&aВаш престиж повышен в: &d{{next.rank}}"
+
+  confirmation: |-
+    &eВы уверены, что хотите престиж в &a{{next.rank}}&e?
+    &eВведите &c/prestige &eснова для подтверждения.
+  title: "Повысить престиж в {{next.rank}}"
+
+  gui:
+    rows: 1
+    title: "Prestige to {{next.rank}}"
+    rankup:
+      material: GOLD_BLOCK
+      index: 0-3
+      name: '&a&lConfirm'
+      lore: '&6Prestige to &b{{next.rank}}'
+    cancel:
+      material: REDSTONE_BLOCK
+      index: 5-8
+      name: '&c&lCancel'
+    fill:
+      name: ' '
+      # if you are using a 1.8-1.12 and you want to change this
+      # you can use MATERIAL:data, for example STAINED_GLASS_PANE:8
+      # this works for both the rankup and cancel blocks as well
+      material: BLACK_STAINED_GLASS_PANE
+
+  list:
+    complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}}"
+    current: "&c{{rank.rank}} &e\xbb &c{{next.rank}}"
+    incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}}"
+    header: ""
+    footer: ""
+  cooldown:
+    singular: "&cПожалуйста, подождите {{seconds_left}} сек., чтобы повысить ранг снова."
+    plural: "&cПожалуйста, подождите {{seconds_left}} сек., чтобы повысить ранг снова."
+
+not-high-enough: "&cВы не можете поднять уровень престижа в этом ранге"
+not-in-ladder: "&cПростите, но мне не можем найти какие-нибудь повышения для Вашей группы."

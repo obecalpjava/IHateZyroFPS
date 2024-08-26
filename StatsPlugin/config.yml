@@ -1,0 +1,185 @@
+messages:
+  noStatsUser:
+    message: No stats found for user
+
+options:
+  updateSeconds: 180
+  title: Statistics Menu
+  rows: 6
+  tracked-placeholders:
+  - '%vault_eco_balance%'
+  - '%statistic_player_kills%'
+  - '%statistic_deaths%'
+  - '%statistic_time_played%'
+  - '%playerpoints_points_formatted%'
+  - '%math_0:_{player_max_health_rounded}/2%'
+  - '%provotes_player_total_votes%'
+  - '%vault_prefix%'
+  - '%statz_mobs_killed%'
+  - '%vault_eco_balance_commas%'
+  - '%vault_eco_top_rank%'
+  - '%rankup_current_rank%'
+  - '%deluxecoinflip_wins%'
+  - '%statistic_mine_block:spawner%'
+  - '%team%'
+  mongo:
+    auth-db: admin
+    hostname: 10.0.0.1
+    port: 27017
+    username: admin
+    password: Gk6M9FhjEZJeREcU
+    database: development
+    collection: stats
+menu:
+  '1':
+    filler:
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
+      slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+      - 53
+    main:
+      material: NETHER_STAR
+      name: '&#1DAEFF&lYour Statistics'
+      slots:
+      - 4
+      lore:
+      - '&7'
+      - '&#1DAEFFServer Rank:'
+      - '&8❖ &f{%vault_prefix%}'
+    kills:
+      material: DIAMOND_SWORD
+      name: '&#1CB9E3&lKills'
+      slots:
+      - 20
+      lore:
+      - '&7'
+      - '&#1CB9E3Player Kills:'
+      - '&8❖ &f{%statistic_player_kills%} Kills!'
+    deaths:
+      material: WITHER_SKELETON_SKULL
+      name: '&#FF0016&lDeaths'
+      slots:
+      - 22
+      lore:
+      - '&7'
+      - '&#FF0016Deaths:'
+      - '&8❖ &f{%statistic_deaths%} Deaths!'
+    hearts:
+      material: RED_DYE
+      name: '&#FF3345&lHearts'
+      slots:
+      - 24
+      lore:
+      - '&7'
+      - '&#FF3345Current Hearts:'
+      - '&8❖ &f{%math_0:_{player_max_health_rounded}/2%} Hearts!'
+    money:
+      material: EMERALD
+      name: '&#0AD111&lMoney'
+      slots:
+      - 28
+      lore:
+      - '&7'
+      - '&#0AD111Current Balance:'
+      - '&8❖ &f${%vault_eco_balance_commas%} Balance!'
+    votes:
+      material: PURPLE_DYE
+      name: '&#A938FB&lVotes'
+      slots:
+      - 30
+      lore:
+      - '&7'
+      - '&#A938FBVote Counter:'
+      - '&8❖ &f{%provotes_player_total_votes%} Votes!'
+    coins:
+      material: SUNFLOWER
+      name: '&#FBF613&lCoins'
+      slots:
+      - 32
+      lore:
+      - '&7'
+      - '&#FBF613Current Coins:'
+      - '&8❖ &f{%playerpoints_points_formatted%} Coins!'
+    playtime:
+      material: CLOCK
+      name: '&#FBA213&lPlaytime'
+      slots:
+      - 34
+      lore:
+      - '&7'
+      - '&#FBA213Time Played:'
+      - '&8❖ &f{%statistic_time_played%}'
+      - '&7'
+      - '&#FBA213Playtime Level:'
+      - '&8❖ &fLevel {%rankup_current_rank%}'
+    mined:
+      material: SPAWNER
+      name: '&#CF46FF&lSpawners Mined'
+      slots:
+      - 38
+      lore:
+      - '&7'
+      - '&#CF46FFSpawners Mined:'
+      - '&8❖ &f{%statistic_mine_block:spawner%} Mined!'
+    cfwon:
+      material: GOLD_NUGGET
+      name: '&#FFD706&lCoinflip''s Won'
+      slots:
+      - 42
+      lore:
+      - '&7'
+      - '&#FFD706Coinflip''s Won:'
+      - '&8❖ &f{%deluxecoinflip_wins%} Won!'

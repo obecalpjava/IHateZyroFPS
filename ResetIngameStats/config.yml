@@ -1,0 +1,2 @@
+post-commands:
+- coins set %player% 0

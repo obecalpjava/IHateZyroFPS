@@ -1,0 +1,99 @@
+# ======================================================
+#
+# ProVotes Version: 1.12.1 build: 363272
+# Created by: JC_Plays_MC
+#
+# ======================================================
+#
+# Rewards File
+#
+# This file will store all of your defined rewards that will awarded to
+# players based on a number of factors such as permissions, chance, and cumulative
+# total. If you have any other suggestions for reward types let me know!
+#
+# ======================================================
+#
+# Types of Rewards:
+#
+# Permission Rewards - Gives players the reward with the highest priority that they have permisison for
+# Chance Rewards - Gives the player a 1/X chance with X being the rewards chance (ex. 1/5)
+# Cumulative Rewards - Gives the player a reward once they've reached X amount of votes (can be monthly or total)
+#
+# ======================================================
+#
+# Examples:
+#
+# use_default_actions_for_pending: true ## Whether or not to execute the default actions for pending votes
+#
+# default_actions:
+# - '[Broadcast] &b%vote_username% has voted for the server!'
+#
+# permission_rewards:
+#   default: ## The identifier for the reward
+#     priority: 0 ## The priority of this permission reward (lower priorities override)
+#     permission: provotes.receive ## The permission for this reward
+#     parents: [] ## The identifier of rewards in which this inherits actions from
+#     actions: [] ## The actions to be executed for the reward
+#
+# chance_rewards:
+#   default: ## The identifier for the reward
+#     chance: 2 ## The chance for the player to receive the reward (1/chance)
+#     parents: [] ## The identifier of rewards in which this inherits actions from
+#     actions: [] ## The actions to be executed for the reward
+#
+# cumulative_rewards:
+#   default: ## The identifier for the reward
+#     amount: 5 ## The total amount of votes required to receive this reward
+#     type: LIFETIME ## The type of votes to check against the amount (DAILY, WEEKLY, MONTHLY, LIFETIME)
+#     parents: [] ## The identifier of rewards in which this inherits actions from
+#     actions: [] ## The actions to be executed for the reward
+#
+# weekly_rewards:
+#   first_place: ## The identifier for the reward
+#     positions: [] ## The positions which will receive this reward
+#     actions: [] ## The actions to be executed for the reward
+#
+# monthly_rewards:
+#   first_place: ## The identifier for the reward
+#     positions: [] ## The positions which will receive this reward
+#     actions: [] ## The actions to be executed for the reward
+#
+# ======================================================
+
+use_default_actions_for_pending: true
+default_actions:
+- '[console-command] eco give %vote_username% 100'
+- '[console-command] crate key give %vote_username% vote 1'
+- '[console-command] broadcast &#E817CB&lVoteParty &8➟ &#F33FD3%vote_username% just
+  voted! Only %provotes_votes_until_party% more votes until a &#F33FD3&lVote Party!'
+# - '[broadcast] &b%vote_username% has voted for the server!'
+permission_rewards:
+  default:
+    priority: 0
+    permission: provotes.receive
+    actions: []
+chance_rewards:
+  default:
+    chance: 2
+    actions: []
+cumulative_rewards:
+  default:
+    amount: 5
+    type: LIFETIME
+    actions: []
+weekly_rewards:
+  first_place:
+    positions:
+    - 1
+    actions: []
+#   - '[give-item] DIAMOND|64'
+#   - '[message] &c[&c&lVOTES&c] &7You finished &a&l1st Place &7with the most weekly
+#     votes! &7(&b%weekly_votes% votes&7)'
+monthly_rewards:
+  first_place:
+    positions:
+    - 1
+    actions: []
+#   - '[give-item] EMERALD|64'
+#   - '[message] &c[&c&lVOTES&c] &7You finished &a&l1st Place &7with the most monthly
+#     votes! &7(&b%monthly_votes% votes&7)'

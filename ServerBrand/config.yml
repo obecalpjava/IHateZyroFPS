@@ -1,0 +1,3 @@
+#The string to display in the debug menu.
+#On BungeeCord/Velocity with snap you can use %%server%% to insert the brand coming from the backend server, eg to show the instance id
+brand: "Grapefruit"

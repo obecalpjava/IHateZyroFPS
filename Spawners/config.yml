@@ -1,0 +1,45 @@
+messages:
+  too-many:
+    message: '&#00ABFB&lSpawners &8➟ &cYou can only have 2 spawners per chunk!'
+  confirm-wrench:
+    message: '&#00ABFB&lSpawners &8➟ &cPlease click again to confirm breaking this spawner!'
+
+options:
+  allow-wrenching-natural-spawners: true
+  tps-limit: 18.0
+  disabled-worlds:
+  - world_nether
+  spawners-per-chunk: 2
+  mongo:
+    auth-db: admin
+    hostname: 10.0.0.1
+    port: 27017
+    username: admin
+    password: Gk6M9FhjEZJeREcU
+    database: gold
+    collection: spawners
+item:
+  wrench:
+    material: DIAMOND_HOE
+    enchants:
+    - minecraft:sharpness:1
+    itemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DYE
+    - HIDE_POTION_EFFECTS
+    name: '&#00ABFB&lSpawner Wrench'
+    lore:
+    - '&8Official Spawner Wrench'
+    - ''
+    - '&8❖ &7Grab spawners with this tool!'
+    - '&8❖ &7Uses Left: &f{uses}'
+  spawner:
+    material: SPAWNER
+    name: '&#00ABFB&l{type} &fSpawner'
+    lore:
+    - '&8Official Spawner'
+    - '&c'
+    - '&8❖ &7Only obtained from a spawner wrench!'
+    - '&8❖ &7Max of 2 spawners per chunk.'

@@ -1,0 +1,51 @@
+# ======================================================
+#
+# ProVotes Version: 1.12.1 build: 363272
+# Created by: JC_Plays_MC
+#
+# ======================================================
+#
+# Forwarder File
+#
+# This is the forwarder file where you will specify whether or not you want
+# votes received to be sent to other servers. This is useful if you are
+# attempting to reward players on multiple servers in a multi-server setup.
+# Any votes received will be sent to every server specified below.
+#
+# ======================================================
+#
+# Settings:
+#
+# Whether or not you want to forward votes received on this server
+# use_forwarder: true
+#
+# Whether or not you want to log forwarded votes in the console
+# use_logger: true
+#
+# ======================================================
+#
+# Forwarder Example:
+#
+# servers:
+#   server_1: ##A unique identifier for the forwarder
+#     ip: 127.0.0.1 ##The ip address of the server to send the vote to
+#     port: 8807 ##The votifier port of the server you are sending the vote to
+#     votifier_key: <key> ##The votifier public key of the server you are sending the vote to
+#     service_name: %vote_service_name% ##The service name you want to use for the vote
+#
+# ======================================================
+
+settings:
+  use_forwarder: false
+  use_logger: true
+servers:
+  server_1:
+    ip: 127.0.0.1
+    port: 8807
+    votifier_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkb4aunoDLc5rfGpxcKTbxEFoYuQVhAfSXJ8ojOrfrU4YaoIE1SmsEU0O4qrzS8KA1hCzOSwngrSBGOxNqtY+Mekla7zyTauzW6imegrLpvwFQaYKEHrbtj+f3PNuStKJjoyZuOsCy09e4exLV8gguxKaAXFPIrD9PyEtCuLjQFEfHRSOx5LsC+qx8ETeRYytlsYlqAaL6kb2YfyYO+VrRX0sDqx9y6GKIFHxpbgceG6Ex3EeXatkBP8/ER8rcfUZrgyuMznwXUu60LriBzMsaicy3PNfkxZX5qDEkYaZ1mVgDgYK5wAIulKRkomsPloZ9x6a5c3UVFsJUqjqVgh+SwIDAQAB
+    service_name: '%vote_service_name%'
+  server_2:
+    ip: 127.0.0.1
+    port: 8808
+    votifier_key: <enter public key here>
+    service_name: '%vote_service_name%'

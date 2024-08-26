@@ -1,0 +1,224 @@
+mongo:
+  auth-db: admin
+  hostname: 10.0.0.1
+  port: 27017
+  username: admin
+  password: Gk6M9FhjEZJeREcU
+  database: gold
+  collection: teams
+required:
+  required-promote-rank: CAPTAIN
+  required-demote-rank: COLEADER
+  required-invite-rank: COLEADER
+  required-kick-rank: COLEADER
+  required-sethome-rank: CAPTAIN
+  required-delhome-rank: COLEADER
+  required-ally-rank: COLEADER
+  required-unally-rank: COLEADER
+home-cooldown: 0
+home-warmup: 5
+default-max-size: 10
+default-max-allies: 1
+chat-format: '&#00DCFF&&l➥ &lTEAM &8[&f{player} &8→ &f{team}&8] &#00DCFF&{message}'
+banned-team-names: []
+aliases:
+- teams
+- f
+- factions
+- guild
+- g
+- guilds
+messages:
+  help:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &fAll Team Commands!'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} create <name> &7- &fCreate a team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} delete &7- &fDelete your team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} uninvite <player> &7- &fUn-invite a player from your team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} invite <player> &7- &fInvite a player to your team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} join <name> &7- &fJoin a team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} leave &7- &fLeave your team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} promote <player> &7- &fPromote a player to captain'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} kick <player> &7- &fKick a player from your team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} deposit <amount> &7- &fDeposit money into your team'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} chat &7- &fToggle team chat'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} info &7- &fShow team info'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} sethome &7- &fSet your team home'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} delhome &7- &fDelete your team home'
+    - '&#00DCFF&&lTeam &8➟&7 /{label} home &7- &fTeleport to your team home'
+  #      - "&#00DCFF&&lTeam &8➟ /{label} ally <name> &7- &fAlly your team with another team"
+  #      - "&#00DCFF&&lTeam &8➟ /{label} unally <name> &7- &fUnally your team with another team"
+  create:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Your team has been created'
+  delete:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{team} has been deleted'
+  delete-broadcast:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Your team has been deleted'
+  top-message:
+    teams-line: '&8 ❖&f #%pos% {team} &7({kills})'
+    top-slots: 10
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Displaying top teams'
+    - '&7{teams}'
+  uninvite:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has been un-invited from your team'
+  invite:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has been invited to your team'
+  invite-received:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have been invited to join {team}'
+  join:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have joined {team}'
+  join-broadcast:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has joined your team'
+  leave:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have left your team'
+  team-already-exists:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7A team with the name ''{team}'' already exists'
+  team-name-banned:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7The name ''{team}'' is banned'
+  leave-broadcast:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has left your team'
+  promote:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has been promoted to %rank%'
+  kick:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has been kicked from your team'
+  invalid-team:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{team} is not a valid team'
+  full-team:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{team} is full, contact their leader'
+  already-member:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are already a member of {team}'
+  not-able-to-uninvite:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are not able to un-invite {player}'
+  not-invited:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have not been invited to {team}'
+  target-already-in-team:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} is already in your team!'
+  already-in-team:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are already in %name%'
+  not-in-team:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are not in a team'
+  leave-leader:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You cannot leave your team while you are the leader'
+  not-leader:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are not the leader of {team}'
+  not-enough-to-sethome:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You must be &f&lCO LEADER&7 to set a home.'
+  not-enough-to-delhome:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You must be &f&lCO LEADER&7 to delete a home.'
+  not-enough-to-invite:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You must be &f&lCO LEADER&7 to invite members.'
+  not-enough-to-ally:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You must be &f&lCO LEADER&7 to ally teams.'
+  not-enough-to-unally:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You must be &f&lCO LEADER&7 to unally teams.'
+  invalid-player:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} is not a valid player'
+  not-able-to-promote:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are not able to promote {player}'
+  not-able-to-demote:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are not able to demote {player}'
+  not-part-of-team:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} is not a member of {team}'
+  demote:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{player} has been demoted to {role}'
+  toggle-chat-on:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have enabled chat.'
+  toggle-chat-off:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have disabled chat.'
+  team-not-found:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7{team} was not found.'
+  team-info:
+    user-lines: '&8 ❖&f {role} {player}'
+    message:
+    - '&#00DCFF&&lTeam &8➟ &f&l{team} Information'
+    - '&7Members [{players]/{max-players}]:'
+    - '{users}'
+  team-info-internal:
+    user-lines: '&8 ❖&f {role} {player}'
+    message:
+    - '&#00DCFF&&lTeam &8➟ &f&l{team} Information'
+    - '&7Members [{players]/{max-players}]:'
+    - '{users}'
+  home-cancelled:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Your home teleport has been cancelled.'
+  home-warmup:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Teleporting will commence in &f{warmup} seconds&7. Don''t move.'
+  home-success:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have been teleported to your team''s home.'
+  home-cooldown:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You must wait &f{cooldown}&7 before you can go to your home again.'
+  home-set:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have set your home to this location.'
+  home-already-set:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You already have a home set.'
+  home-not-set:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You do not have a home set.'
+  home-deleted:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have deleted your home.'
+  ally-limit-reached:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You cannot ally with any more teams.'
+  ally-accepted:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Your team has have accepted the ally request from {team}.'
+  ally-request-accepted:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Your ally request with {team} has been accepted.'
+  ally-request-sent:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7Your team has sent an ally request to {team}.'
+  ally-request-received:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You have received an ally request from {team}.'
+  not-ally:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are not allied with {team}.'
+  no-longer-allies:
+    message:
+    - '&#00DCFF&&lTeam &8➟ &7You are no longer allied with {team}.'

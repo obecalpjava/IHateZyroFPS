@@ -1,0 +1,1975 @@
+###################################
+#             Items: Options
+# Item: <ID:MD/Item Name> - You can choose the item with its id and meta data.
+# Amount: <Number> - Choose how many of the item you get.
+# Name: <Name> - The display name that goes on the item.
+# Lore: <Line 1>,<Line 2>,<Line 3>,<Line 4> - The lore that will go under the enchantments. Split lines with a ','
+# <Enchantment>:<Level> - Choose the enchantment you want to add to the item. You can use the in-game names of the enchantment if you want. Replace the spaces in the name with a "_".
+###########################################################
+#                    Sound Options                        #
+# 1.9 and up players use these sounds: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+###################################################################
+#                         Firework Colors:                        #
+#      Aqua, Black, Blue, Fuchsia, Gray, Green, Lime, Maroon,     #
+#  Navy, Olive, Orange, Purple, Red, Silver, Teal, White, Yellow  #
+###################################################################
+Settings: #Settings - Hex Color support does work, Please use #FFFFFF format!
+  Prefix: '#FB3B3B&lVouchers &8➟ ' #The prefix before messages.
+  Updater: true # Has been temporarily removed.
+Vouchers: #Where you make your vouchers.
+  RangerRank:
+    Item: 'CREEPER_SPAWN_EGG'
+    Name: '#1EE220&lRANGER&f Rank &7[Permanent]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: ''
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group add ranger server=lifesteal-ruby'
+      - 'lp user %Player% group add ranger server=hub'
+      - 'lp user %Player% group add ranger server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #1EE220Ranger&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Green, lime'
+  RangerRank7d:
+    Item: 'CREEPER_SPAWN_EGG'
+    Name: '#1EE220&lRANGER&f Rank &7[7 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp ranger 7d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp ranger 7d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp ranger 7d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #1EE220Ranger&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Green, lime'
+  ShamanRank7d:
+    Item: 'HOGLIN_SPAWN_EGG'
+    Name: '#EF9B44&lSHAMAN&f Rank &7[7 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp shaman 7d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp shaman 7d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp shaman 7d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #EF9B44Shaman&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Orange, Red'
+        
+        
+  ShamanRank:
+    Item: 'HOGLIN_SPAWN_EGG'
+    Name: '#EF9B44&lSHAMAN&f Rank &7[Permanent]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group add shaman server=lifesteal-ruby'
+      - 'lp user %Player% group add shaman server=hub'
+      - 'lp user %Player% group add shaman server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #EF9B44Shaman&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Orange, Red'
+        
+        
+  SageRank:
+    Item: 'OCELOT_SPAWN_EGG'
+    Name: '#FFCC31&lSAGE&f Rank &7[Permanent]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group add sage server=lifesteal-ruby'
+      - 'lp user %Player% group add sage server=hub'
+      - 'lp user %Player% group add sage server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FFCC31Sage&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Yellow, Orange'
+        
+        
+  SageRank7d:
+    Item: 'OCELOT_SPAWN_EGG'
+    Name: '#FFCC31&lSAGE&f Rank &7[7 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp sage 7d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp sage 7d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp sage 7d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FFCC31Sage&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Yellow, Orange'
+        
+        
+  NobleRank7d:
+    Item: 'ALLAY_SPAWN_EGG'
+    Name: '#43D6FD&lNOBLE&f Rank &7[7 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp noble 7d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp noble 7d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp noble 7d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #43D6FDNoble&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Teal, Aqua'
+        
+        
+  NobleRank:
+    Item: 'ALLAY_SPAWN_EGG'
+    Name: '#43D6FD&lNOBLE&f Rank &7[Permanent]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group add noble server=lifesteal-ruby'
+      - 'lp user %Player% group add noble server=hub'
+      - 'lp user %Player% group add noble server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #43D6FDNoble&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Teal, Aqua'
+        
+        
+  WizardRank30d:
+    Item: 'STRIDER_SPAWN_EGG'
+    Name: '#FD3939&lWIZARD&f Rank &7[30 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp wizard 30d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp wizard 30d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp wizard 30d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FD3939Wizard&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Red, Maroon'
+        
+        
+  WizardRank:
+    Item: 'STRIDER_SPAWN_EGG'
+    Name: '#FD3939&lWIZARD&f Rank &7[Permanent]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group add wizard server=lifesteal-ruby'
+      - 'lp user %Player% group add wizard server=hub'
+      - 'lp user %Player% group add wizard server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FD3939Wizard&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Red, Maroon'
+        
+        
+  WizardRank7d:
+    Item: 'STRIDER_SPAWN_EGG'
+    Name: '#FD3939&lWIZARD&f Rank &7[7 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp wizard 7d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp wizard 7d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp wizard 7d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FD3939Wizard&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Red, Maroon'
+        
+        
+  SorcererRank:
+    Item: 'WARDEN_SPAWN_EGG'
+    Name: '#069ffb&lS#0797fc&lO#0890fc&lR#0988fd&lC#0b81fd&lE#0c79fe&lR#0d72fe&lE#0e6aff&lR&f Rank &7[Permanent]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group add sorcerer server=lifesteal-ruby'
+      - 'lp user %Player% group add sorcerer server=lifesteal-gold'
+      - 'lp user %Player% group add sorcerer server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #069ffb&lS#0797fc&lo#0890fc&lr#0988fd&lc#0b81fd&le#0c79fe&lr#0d72fe&le#0e6aff&lr
+&7Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Blue, Teal, Silver'        
+  SellCommand:
+    Item: 'CHEST'
+    Name: '#13ce03&l/#14d903&lS#15e504&lE#16f004&lL#17fb04&lL&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set sellgui.use server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #13CE03Sell &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Yellow'
+        
+  CraftCommand:
+    Item: 'CRAFTING_TABLE'
+    Name: '#CE7D2E&l/CRAFT&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set essentials.workbench server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #CE7D2ECraft &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Maroon'
+        
+        
+  AnvilCommand:
+    Item: 'ANVIL'
+    Name: '#B7B7B7&l/ANVIL&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set essentials.anvil server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #B7B7B7Anvil &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Silver'
+        
+        
+  EnderchestCommand:
+    Item: 'ENDER_CHEST'
+    Name: '#07828C&l/ENDERCHEST&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set essentials.enderchest server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #07828CEnder Chest &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'teal'
+  FeedCommand:
+    Item: 'CARROT'
+    Name: '#FBAA1F&l/FEED&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set essentials.feed server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FBAA1FFeed &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'teal'
+  EndCommand:
+    Item: 'END_PORTAL_FRAME'
+    Name: '#8601FB&l/WARP END&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set essentials.warp.end server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #8601FBWarp End &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'teal'       
+  RenameCommand:
+    Item: 'DISPENSER'
+    Name: '#F009FF&l/ITEMRENAME&f Command &7[Permanent]'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set essentials.itemname server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #F009FFItem Rename &7Command&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'purple'
+        
+  SummerTag:
+    Item: 'NAME_TAG'
+    Name: '#FBF500&lS#FBE30B&lu#FCD016&lm#FCBE20&lm#FDAB2B&le#FD9936&lr&f Tag &7[Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.summer server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.summer server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #fbf500S#fbe30bu#fcd016m#fcbe20m#fdab2be#fd9936r
+ &7Tag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'yellow, orange'
+        
+  TropicalTag:
+    Item: 'NAME_TAG'
+    Name: '#6CFF00&lT#67F906&lr#62F20C&lo#5DEC12&lp#57E617&li#52E01D&lc#4DD923&la#48D329&ll&f Tag &7[Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.tropical server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.tropical server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #6CFF00&lT#67F906&lr#62F20C&lo#5DEC12&lp#57E617&li#52E01D&lc#4DD923&la#48D329&ll
+ &7Tag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'green, lime'
+        
+        
+  SnorkelTag:
+    Item: 'NAME_TAG'
+    Name: '#2187EB&lS#359AEC&ln#4AADEC&lo#5EC0ED&lr#72D3EE&lk#87E6EE&le#9BF9EF&ll&f Tag &7[Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.snorkel server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.snorkel server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #2187EBS#359AECn#4AADECo#5EC0EDr#72D3EEk#87E6EEe#9BF9EFl
+ &7Tag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'blue, teal'
+        
+        
+  UnicornTag:
+    Item: 'NAME_TAG'
+    Name: '#00D9FB&lU#2ABFFB&ln#54A5FC&li#7E8CFC&lc#A872FC&lo#D258FD&lr#FC3EFD&ln&f Tag &7[Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.unicorn server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.unicorn server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #00D9FBU#2ABFFBn#54A5FCi#7E8CFCc#A872FCo#D258FDr#FC3EFDn
+ &7Tag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'purple, aqua'       
+  ScaryTag:
+    Item: 'NAME_TAG'
+    Name: '#ff1010S#fc1d1dc#f82929a#f53636r#f14242y&f Tag &7[Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.scary server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.scary server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #ff1010S#fc1d1dc#f82929a#f53636r#f14242y&f &7Tag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'purple, aqua'  
+  ScreemTag:
+    Item: 'NAME_TAG'
+    Name: '#fb0e0eS#fb1616c#fc1d1dr#fc2525e#fd2c2ca#fd3434m &fTag &7[Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.screem server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.screem server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #fb0e0eS#fb1616c#fc1d1dr#fc2525e#fd2c2ca#fd3434m &7Tag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'purple, aqua'      
+  KothStarter:
+    Item: 'NETHER_STAR'
+    Name: '#5BD6FD&lK#61D7FC&lO#67D8FC&lT#6DD9FB&lH&f Starter'
+    Lore:
+      - '&8Official Command Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Random-Commands: #The commands that are ran when redeemed.
+      - "zkoth now redkoth"
+      - "zkoth now bluekoth"
+      - "zkoth now yellowkoth"
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #5BD6FD&lK#61D7FC&lO#67D8FC&lT#6DD9FB&lH&f Starter.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Silver'
+
+####################################################################################
+####################################################################################
+####################################################################################
+####################################################################################
+
+  RangerRank30d:
+    Item: 'CREEPER_SPAWN_EGG'
+    Name: '#1EE220&lRANGER&f Rank &7[30 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp ranger 30d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp ranger 30d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp ranger 30d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #1EE220Ranger&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Green, lime'
+  ShamanRank30d:
+    Item: 'HOGLIN_SPAWN_EGG'
+    Name: '#EF9B44&lSHAMAN&f Rank &7[30 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp shaman 30d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp shaman 30d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp shaman 30d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #EF9B44Shaman&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Orange, Red'      
+        
+  SageRank30d:
+    Item: 'OCELOT_SPAWN_EGG'
+    Name: '#FFCC31&lSAGE&f Rank &7[30 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp sage 30d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp sage 30d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp sage 30d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FFCC31Sage&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Yellow, Orange'
+        
+        
+  NobleRank30d:
+    Item: 'ALLAY_SPAWN_EGG'
+    Name: '#43D6FD&lNOBLE&f Rank &7[30 Days]'
+    Lore:
+      - '&8Official Rank Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% group addtemp noble 30d server=lifesteal-ruby'
+      - 'lp user %Player% group addtemp noble 30d server=lifesteal-gold'
+      - 'lp user %Player% group addtemp noble 30d server=hub'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #43D6FDNoble&7 Rank&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'Teal, Aqua'
+
+
+  SniperTag:
+    Item: 'NAME_TAG'
+    Name: '#FF4343Sniper &fTag &7[Ranger Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.sniper server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.sniper server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FF4343Sniper &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, white'
+  PvPTag:
+    Item: 'NAME_TAG'
+    Name: '#FFCB39PvP &fTag &7[Shaman Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.pvp server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.pvp server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FFCB39PvP &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'yellow, gray'
+  NPCTag:
+    Item: 'NAME_TAG'
+    Name: '#27A1FFNPC &fTag &7[Sage Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.npc server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.npc server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #27A1FFNPC &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'aqua, blue'
+  NoLifeTag:
+    Item: 'NAME_TAG'
+    Name: '#FF1DF2NoLife &fTag &7[Noble Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.nolife server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.nolife server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FF1DF2NoLife &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'purple, pink'
+  MagicianTag:
+    Item: 'NAME_TAG'
+    Name: '#FF3737Magician &fTag &7[Wizard Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.magician server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.magician server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FF3737Magician &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, gray'
+  TopGTag:
+    Item: 'NAME_TAG'
+    Name: '#DD8738TopG &fTag &7[Sorcerer Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.topg server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.topg server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #DD8738TopG &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+
+  KeyVoucher1:
+    Item: 'MAP'
+    Name: '#FB0000&lKeys &fVoucher &7[1x Keys]'
+    Lore:
+      - '&8Official Keys Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'crate key give %Player% prime 1'
+      - 'crate key give %Player% epic 1'
+      - 'crate key give %Player% rival 1'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FB0000&lKeys &fVoucher&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+  KeyVoucher2:
+    Item: 'MAP'
+    Name: '#FB0000&lKeys &fVoucher &7[2x Keys]'
+    Lore:
+      - '&8Official Keys Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'crate key give %Player% prime 2'
+      - 'crate key give %Player% epic 2'
+      - 'crate key give %Player% rival 2'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FB0000&lKeys &fVoucher&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+
+
+
+  NovemberTag:
+    Item: 'NAME_TAG'
+    Name: '#FFA100N#FEA700o#FEAD00v#FDB300e#FDB900m#FCBF00b#FCC500e#FBCB00r &fTag &7[Monthly Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.november server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.november server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FFA100N#FEA700o#FEAD00v#FDB300e#FDB900m#FCBF00b#FCC500e#FBCB00r &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+  TurkeyTag:
+    Item: 'NAME_TAG'
+    Name: '#FFB000T#FFB000u#FFB000r#FFB000k#FFB000e#FFB000y &fTag &7[Monthly Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.turkey server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.turkey server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FFB000T#FFB000u#FFB000r#FFB000k#FFB000e#FFB000y &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+  BananaTag:
+    Item: 'NAME_TAG'
+    Name: '#FBD300B#FBD704a#FCDB08n#FCDE0Ba#FDE20Fn#FDE613a &fTag &7[Monthly Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.banana server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.banana server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #FBD300B#FBD704a#FCDB08n#FCDE0Ba#FDE20Fn#FDE613a &fTag&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+
+
+  Level30:
+    Item: 'EXPERIENCE_BOTTLE'
+    Name: '&aLevels Voucher &7[30 Levels]'
+    Lore:
+      - '&8Official EXP Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'exp give %Player% 30L'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a &aLevels Voucher &7[30 Levels]'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+  Level60:
+    Item: 'EXPERIENCE_BOTTLE'
+    Name: '&aLevels Voucher &7[60 Levels]'
+    Lore:
+      - '&8Official EXP Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'exp give %Player% 60L'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a &aLevels Voucher &7[60 Levels]'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+  Level90:
+    Item: 'EXPERIENCE_BOTTLE'
+    Name: '&aLevels Voucher &7[90 Levels]'
+    Lore:
+      - '&8Official EXP Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'exp give %Player% 90L'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a &aLevels Voucher &7[90 Levels]'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+      Two-Step-Authentication:
+        Toggle: true
+      Sound:
+        Toggle: true
+        Sounds:
+          - 'CLICK'
+      Firework:
+        Toggle: true
+        Colors: 'red, black'
+
+
+
+
+
+  BallerTag:
+    Item: 'NAME_TAG'
+    Name: '#22FF3CBaller &fTag &7[Voting Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.baller server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.baller server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #22FF3CBaller &fTag &7[Voting Exclusive]&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+  GenZTag:
+    Item: 'NAME_TAG'
+    Name: '#06DDFFGenZ &fTag &7[Voting Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.genz server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.genz server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #06DDFFGenZ &fTag &7[Voting Exclusive]&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10
+  BotTag:
+    Item: 'NAME_TAG'
+    Name: '#A94EFFBot &fTag &7[Voting Exclusive]'
+    Lore:
+      - '&8Official Tag Voucher'
+      - ''
+      - '&e➥ &lCLICK TO REDEEM'
+    Player: '%Player%'
+    Glowing: true
+    Commands:
+      - 'lp user %Player% permission set tag.bot server=lifesteal-ruby'
+      - 'lp user %Player% permission set tag.bot server=lifesteal-gold'
+    Options:
+      Message: '&7Congratulations! You have just redeemed a #A94EFFBot &fTag &7[Voting Exclusive]&7.'
+      Whitelist-Worlds:
+        Toggle: false
+        Message: '&cYou can not use that voucher here as you are not in a whitelisted world for this voucher.'
+        Worlds:
+          - 'world'
+      Permission:
+        Whitelist-Permission:
+          Toggle: false
+          Permissions:
+            - 'voucher.rankup'
+        Blacklist-Permissions:
+          Toggle: false
+          Message: '&cYou already have this rank and can''t use this voucher.'
+          Permissions:
+            - 'voucher.blacklist.rankup'
+      Limiter:
+        Toggle: false
+        Limit: 10

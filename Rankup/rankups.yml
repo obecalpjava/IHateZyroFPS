@@ -1,0 +1,976 @@
+I:
+  rank: 0
+  next: 1
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 1'
+  commands:
+  - 'lp user {PLAYER} parent add 1 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l1&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 750'
+  - 'coins give {PLAYER} 10'
+II:
+  rank: 1
+  next: 2
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 3'
+  commands:
+  - 'lp user {PLAYER} parent remove 1 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 2 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l2&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 1250'
+  - 'coins give {PLAYER} 20'
+III:
+  rank: 2
+  next: 3
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 6'
+  commands:
+  - 'lp user {PLAYER} parent remove 2 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 3 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l3&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 1750'
+  - 'coins give {PLAYER} 30'
+  - 'excellentcrates key give {PLAYER} prime 1'
+IV:
+  rank: 3
+  next: 4
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 12'
+  commands:
+  - 'lp user {PLAYER} parent remove 3 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 4 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l4&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 2500'
+  - 'coins give {PLAYER} 40'
+V:
+  rank: 4
+  next: 5
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 24'
+  commands:
+  - 'lp user {PLAYER} parent remove 4 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 5 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l5&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 5000'
+  - 'coins give {PLAYER} 50'
+VI:
+  rank: 5
+  next: 6
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 32'
+  commands:
+  - 'lp user {PLAYER} parent remove 5 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 6 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l6&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 7500'
+  - 'coins give {PLAYER} 60'
+  - 'exp give {PLAYER} 5L'
+VII:
+  rank: 6
+  next: 7
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 48'
+  commands:
+  - 'lp user {PLAYER} parent remove 6 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 7 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l7&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 70'
+  - 'exp give {PLAYER} 10L'
+VIII:
+  rank: 7
+  next: 8
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 56'
+  commands:
+  - 'lp user {PLAYER} parent remove 7 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 8 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l8&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 12500'
+  - 'coins give {PLAYER} 80'
+  - 'exp give {PLAYER} 15L'
+  - 'excellentcrates key give {PLAYER} rival 1'
+IX:
+  rank: 8
+  next: 9
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 64'
+  commands:
+  - 'lp user {PLAYER} parent remove 8 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 9 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l9&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 15000'
+  - 'coins give {PLAYER} 90'
+  - 'exp give {PLAYER} 20L'
+X:
+  rank: 9
+  next: 10
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 72'
+  commands:
+  - 'lp user {PLAYER} parent remove 9 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 10 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l10&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 5'
+  - 'eco give {PLAYER} 20000'
+  - 'coins give {PLAYER} 100'
+  - 'exp give {PLAYER} 25L'
+  - 'excellentcrates key give {PLAYER} prime 2'
+XI:
+  rank: 10
+  next: 11
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 90'
+  commands:
+  - 'lp user {PLAYER} parent remove 10 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 11 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l11&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 25000'
+  - 'coins give {PLAYER} 110'
+  - 'exp give {PLAYER} 30L'
+XII:
+  rank: 11
+  next: 12
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 100'
+  commands:
+  - 'lp user {PLAYER} parent remove 11 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 12 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l12&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 30000'
+  - 'coins give {PLAYER} 120'
+  - 'exp give {PLAYER} 35L'
+XIII:
+  rank: 12
+  next: 13
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 112'
+  commands:
+  - 'lp user {PLAYER} parent remove 12 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 13 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l13&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 5'
+  - 'eco give {PLAYER} 35000'
+  - 'coins give {PLAYER} 130'
+  - 'exp give {PLAYER} 40L'
+  - 'excellentcrates key give {PLAYER} rival 2'
+XIV:
+  rank: 13
+  next: 14
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 124'
+  commands:
+  - 'lp user {PLAYER} parent remove 13 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 14 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l14&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 40000'
+  - 'coins give {PLAYER} 140'
+  - 'exp give {PLAYER} 45L'
+XV:
+  rank: 14
+  next: 15
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 150'
+  commands:
+  - 'lp user {PLAYER} parent remove 14 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 15 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l15&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 10'
+  - 'eco give {PLAYER} 50000'
+  - 'coins give {PLAYER} 150'
+  - 'exp give {PLAYER} 50L'
+  - 'excellentcrates key give {PLAYER} prime 3'
+  - 'excellentcrates key give {PLAYER} epic 3'
+  - 'excellentcrates key give {PLAYER} rival 3'
+XVI:
+  rank: 15
+  next: 16
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 160'
+  commands:
+  - 'lp user {PLAYER} parent remove 15 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 16 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l16&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 30'
+  - 'excellentcrates key give {PLAYER} prime 2'
+  - 'excellentcrates key give {PLAYER} epic 2'
+XVII:
+  rank: 16
+  next: 17
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 172'
+  commands:
+  - 'lp user {PLAYER} parent remove 16 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 17 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l17&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 15000'
+  - 'coins give {PLAYER} 30'
+XVIII:
+  rank: 17
+  next: 18
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 180'
+  commands:
+  - 'lp user {PLAYER} parent remove 17 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 18 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l18&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 20000'
+  - 'coins give {PLAYER} 30'
+XIX:
+  rank: 18
+  next: 19
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 195'
+  commands:
+  - 'lp user {PLAYER} parent remove 18 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 19 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l19&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 25000'
+  - 'coins give {PLAYER} 30'
+XX:
+  rank: 19
+  next: 20
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 200'
+  commands:
+  - 'lp user {PLAYER} parent remove 19 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 20 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l20&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 28500'
+  - 'coins give {PLAYER} 150'
+  - 'excellentcrates key give {PLAYER} rival 1'
+XXI:
+  rank: 20
+  next: 21
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 210'
+  commands:
+  - 'lp user {PLAYER} parent remove 20 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 21 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l21&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 30000'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 55L'
+XXII:
+  rank: 21
+  next: 22
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 220'
+  commands:
+  - 'lp user {PLAYER} parent remove 21 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 22 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l22&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 32500'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 60L'
+XXIII:
+  rank: 22
+  next: 23
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 225'
+  commands:
+  - 'lp user {PLAYER} parent remove 22 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 23 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l23&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 33000'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 65L'
+XXIV:
+  rank: 23
+  next: 24
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 230'
+  commands:
+  - 'lp user {PLAYER} parent remove 23 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 24 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l24&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 35000'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 70L'
+XXV:
+  rank: 24
+  next: 25
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 235'
+  commands:
+  - 'lp user {PLAYER} parent remove 24 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 25 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l25&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 37500'
+  - 'coins give {PLAYER} 100'
+  - 'exp give {PLAYER} 75L'
+  - 'excellentcrates key give {PLAYER} epic 1'
+  - 'excellentcrates key give {PLAYER} rival 2'
+XXVI:
+  rank: 25
+  next: 26
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 240'
+  commands:
+  - 'lp user {PLAYER} parent remove 25 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 26 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l26&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 40000'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 80L'
+XXVII:
+  rank: 26
+  next: 27
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 250'
+  commands:
+  - 'lp user {PLAYER} parent remove 26 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 27 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l27&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 42500'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 85L'
+XXVIII:
+  rank: 27
+  next: 28
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 265'
+  commands:
+  - 'lp user {PLAYER} parent remove 27 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 28 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l28&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 45000'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 90L'
+  - 'excellentcrates key give {PLAYER} epic 2'
+  - 'excellentcrates key give {PLAYER} prime 2'
+XXIX:
+  rank: 28
+  next: 29
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 275'
+  commands:
+  - 'lp user {PLAYER} parent remove 28 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 29 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l29&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 50000'
+  - 'coins give {PLAYER} 30'
+  - 'exp give {PLAYER} 95L'
+XXX:
+  rank: 29
+  next: 30
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 300'
+  commands:
+  - 'lp user {PLAYER} parent remove 29 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 30 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l30&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'lootbox give {PLAYER} Armory 1'
+  - 'eco give {PLAYER} 100000'
+  - 'coins give {PLAYER} 150'
+  - 'exp give {PLAYER} 100L'
+  - 'excellentcrates key give {PLAYER} rival 2'
+XXXI:
+  rank: 30
+  next: 31
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 308'
+  commands:
+  - 'lp user {PLAYER} parent remove 30 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 31 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l31&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 50'
+  - 'exp give {PLAYER} 105L'
+XXXII:
+  rank: 31
+  next: 32
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 316'
+  commands:
+  - 'lp user {PLAYER} parent remove 31 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 32 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l32&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 60'
+  - 'exp give {PLAYER} 110L'
+  - 'excellentcrates key give {PLAYER} epic 1'
+XXXIII:
+  rank: 32
+  next: 33
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 324'
+  commands:
+  - 'lp user {PLAYER} parent remove 32 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 33 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l33&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 65'
+  - 'exp give {PLAYER} 115L'
+XXXIV:
+  rank: 33
+  next: 34
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 332'
+  commands:
+  - 'lp user {PLAYER} parent remove 33 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 34 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l34&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 70'
+  - 'exp give {PLAYER} 120L'
+XXXV:
+  rank: 34
+  next: 35
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 340'
+  commands:
+  - 'lp user {PLAYER} parent remove 34 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 35 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l35&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 75'
+  - 'exp give {PLAYER} 125L'
+XXXVI:
+  rank: 35
+  next: 36
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 348'
+  commands:
+  - 'lp user {PLAYER} parent remove 35 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 36 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l36&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 80'
+  - 'exp give {PLAYER} 130L'
+XXXVII:
+  rank: 36
+  next: 37
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 356'
+  commands:
+  - 'lp user {PLAYER} parent remove 36 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 37 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l37&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 85'
+  - 'exp give {PLAYER} 135L'
+XXXVIII:
+  rank: 37
+  next: 38
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 364'
+  commands:
+  - 'lp user {PLAYER} parent remove 37 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 38 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l38&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 90'
+  - 'exp give {PLAYER} 140L'
+XXXIX:
+  rank: 38
+  next: 39
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 372'
+  commands:
+  - 'lp user {PLAYER} parent remove 38 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 39 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l39&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 95'
+  - 'exp give {PLAYER} 145L'
+XXXX:
+  rank: 39
+  next: 40
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 380'
+  commands:
+  - 'lp user {PLAYER} parent remove 38 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 39 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l40&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 100'
+  - 'exp give {PLAYER} 150L'
+  - 'excellentcrates key give {PLAYER} prime 2'
+XXXXI:
+  rank: 40
+  next: 41
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 392'
+  commands:
+  - 'lp user {PLAYER} parent remove 40 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 41 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l41&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 120'
+  - 'exp give {PLAYER} 170L'
+XXXXII:
+  rank: 41
+  next: 42
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 404'
+  commands:
+  - 'lp user {PLAYER} parent remove 41 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 42 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l42&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 130'
+  - 'exp give {PLAYER} 175L'
+XXXXIII:
+  rank: 42
+  next: 43
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 416'
+  commands:
+  - 'lp user {PLAYER} parent remove 42 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 43 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l43&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 140'
+  - 'exp give {PLAYER} 180L'
+XXXXIV:
+  rank: 43
+  next: 44
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 428'
+  commands:
+  - 'lp user {PLAYER} parent remove 43 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 44 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l44&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 150'
+  - 'exp give {PLAYER} 190L'
+XXXXV:
+  rank: 44
+  next: 45
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 440'
+  commands:
+  - 'lp user {PLAYER} parent remove 44 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 45 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l45&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 4'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 300'
+  - 'exp give {PLAYER} 200L'
+  - 'excellentcrates key give {PLAYER} rival 2'
+  - 'excellentcrates key give {PLAYER} epic 2'
+XXXXVI:
+  rank: 45
+  next: 46
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 448'
+  commands:
+  - 'lp user {PLAYER} parent remove 45 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 46 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l46&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 175'
+  - 'exp give {PLAYER} 205L'
+XXXXVII:
+  rank: 46
+  next: 47
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 456'
+  commands:
+  - 'lp user {PLAYER} parent remove 46 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 47 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l47&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 180'
+  - 'exp give {PLAYER} 210L'
+XXXXVIII:
+  rank: 47
+  next: 48
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 464'
+  commands:
+  - 'lp user {PLAYER} parent remove 47 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 48 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l48&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 4'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 185'
+  - 'exp give {PLAYER} 215L'
+XXXXIX:
+  rank: 48
+  next: 49
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 472'
+  commands:
+  - 'lp user {PLAYER} parent remove 48 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 49 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l49&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 190'
+  - 'exp give {PLAYER} 220L'
+  - 'crate key give {PLAYER} epic 1'
+XXXXX:
+  rank: 49
+  next: 50
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 480'
+  commands:
+  - 'lp user {PLAYER} parent remove 49 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 50 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l50&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 195'
+  - 'exp give {PLAYER} 225L'
+XXXXXI:
+  rank: 50
+  next: 51
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 488'
+  commands:
+  - 'lp user {PLAYER} parent remove 50 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 51 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l51&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 200'
+  - 'exp give {PLAYER} 230L'
+XXXXXII:
+  rank: 51
+  next: 52
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 496'
+  commands:
+  - 'lp user {PLAYER} parent remove 51 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 52 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l52&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 210'
+  - 'exp give {PLAYER} 240L'
+XXXXXIII:
+  rank: 52
+  next: 53
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 504'
+  commands:
+  - 'lp user {PLAYER} parent remove 52 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 53 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l53&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 220'
+  - 'exp give {PLAYER} 250L'
+  - 'crate key give {PLAYER} epic 3'
+XXXXXIV:
+  rank: 53
+  next: 54
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 512'
+  commands:
+  - 'lp user {PLAYER} parent remove 53 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 54 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l54&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 230'
+  - 'exp give {PLAYER} 260L'
+XXXXXV:
+  rank: 54
+  next: 55
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 520'
+  commands:
+  - 'lp user {PLAYER} parent remove 54 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 55 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l55&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 240'
+  - 'exp give {PLAYER} 270L'
+XXXXXVI:
+  rank: 55
+  next: 56
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 528'
+  commands:
+  - 'lp user {PLAYER} parent remove 55 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 56 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l56&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 250'
+  - 'exp give {PLAYER} 280L'
+XXXXXVII:
+  rank: 56
+  next: 57
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 536'
+  commands:
+  - 'lp user {PLAYER} parent remove 56 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 57 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l57&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 2'
+  - 'eco give {PLAYER} 10000'
+  - 'coins give {PLAYER} 255'
+  - 'exp give {PLAYER} 285L'
+  - 'crate key give {PLAYER} prime 3'
+  - 'crate key give {PLAYER} rival 1'
+XXXXXVIII:
+  rank: 57
+  next: 58
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 544'
+  commands:
+  - 'lp user {PLAYER} parent remove 57 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 58 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l58&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 275'
+  - 'exp give {PLAYER} 300L'
+XXXXXIX:
+  rank: 58
+  next: 59
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 552'
+  commands:
+  - 'lp user {PLAYER} parent remove 58 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 59 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l59&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 1'
+  - 'eco give {PLAYER} 8000'
+  - 'coins give {PLAYER} 300'
+  - 'exp give {PLAYER} 325L'
+XXXXXX:
+  rank: 59
+  next: 60
+  requirements:
+  - 'placeholder %statistic_hours_played% >= 560'
+  commands:
+  - 'lp user {PLAYER} parent remove 59 server=lifesteal-gold'
+  - 'lp user {PLAYER} parent add 60 server=lifesteal-gold'
+  - 'playsound minecraft:ui.toast.challenge_complete master {PLAYER} ~ ~ ~ 1 0.75 1'
+  - 'ebc &f'
+  - 'ebc &#18B549&lLevels &8➟ &a{PLAYER} &#1FE15Bhas leveled up to rank &a&l60&a! &#1FE15BCongratulations!'
+  - 'ebc &f'
+  - 'hearts heartcapsule {PLAYER} 5'
+  - 'eco give {PLAYER} 150000'
+  - 'coins give {PLAYER} 750'
+  - 'exp give {PLAYER} 350L'
+  - 'crate key give {PLAYER} prime 3'
+  - 'crate key give {PLAYER} epic 3'
+  - 'crate key give {PLAYER} rival 3'
+  - 'lootbox give {PLAYER} Armory 1'

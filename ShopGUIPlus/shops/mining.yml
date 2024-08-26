@@ -1,0 +1,99 @@
+mining:
+  name: "&8Ore Shop"
+  size: 27
+  fillItem:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item: 
+        material: netherite_ingot
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 100
+      slot: 10
+    2:
+      type: item
+      item: 
+        material: diamond
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 35
+      slot: 11
+    3:
+      type: item
+      item: 
+        material: emerald
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 30
+      slot: 12
+    4:
+      type: item
+      item: 
+        material: gold_ingot
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 13.5
+      slot: 13
+    5:
+      type: item
+      item: 
+        material: iron_ingot
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 5
+      slot: 14
+    6:
+      type: item
+      item: 
+        material: redstone
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 3
+      slot: 15
+    7:
+      type: item
+      item: 
+        material: lapis_lazuli
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 2
+      slot: 16
+    8:
+      type: item
+      item: 
+        material: coal
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 3
+      slot: 11
+      page: 2
+    9:
+      type: item
+      item: 
+        material: copper_ingot
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 3
+      slot: 12
+      page: 2
+    10:
+      type: item
+      item: 
+        material: amethyst_shard
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 14
+      page: 2
+    11:
+      type: item
+      item: 
+        material: quartz
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 0.5
+      slot: 15
+      page: 2

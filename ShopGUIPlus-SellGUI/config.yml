@@ -1,0 +1,98 @@
+#
+#     ____  _____ _     _     ____ _   _ ___
+#    / ___|| ____| |   | |   / ___| | | |_ _|
+#    \___ \|  _| | |   | |  | |  _| | | || |
+#     ___) | |___| |___| |__| |_| | |_| || |
+#    |____/|_____|_____|_____\____|\___/|___|
+#           ( By Mackenzie Molloy )
+
+# Support Discord | https://mackenziemolloy.net/discord
+
+#
+# Permissions:
+#   - sellgui.use | Access to /sellgui (opens the sellgui)
+#   - sellgui.reload | Access to /sellgui reload (reloads configuration)
+#   - sellgui.debug | Access to /sellgui dump (dumps server information to a paste)
+#
+
+options:
+  #
+  # 0 - None
+  # 1 - Hover message (Adds "receipt_text" to the end of the message)
+  #
+  receipt_type: 0
+  sell_titles: true
+
+  #
+  # Whether prices should be rounded to 2 decimal places, or not.
+  # This also formats prices with comma separation. IE: 1800 -> 1,800
+  #
+
+  rounded_pricing: false
+
+  #
+  # Whether trailing zero decimals should be removed (28.0, 28.00, etc --> 28)
+  #
+
+  remove_trailing_zeros: false
+
+  #
+  # Sounds that are played during certain events
+  #
+
+  sounds:
+    enabled: false
+    error_notifcation: true # Whether there should be a console output notifying you that a sound is invalid
+    pitch: 1
+    volume: 1
+    events:
+      # If you don't want a certain event to have a sound, just set to an invalid value
+      # NOTE: THESE DEFAULT VALUES ARE FOR 1.13+
+      open: BLOCK_CHEST_OPEN
+      success: ENTITY_VILLAGER_CELEBRATE
+      failed: ENTITY_VILLAGER_HURT
+  action_bar_msgs: true
+  show_item_damage: true
+  rows: 3
+  decorations: []
+
+
+
+
+messages:
+  no_permission: '&b&lShop &8➟ &7You do not have permission'
+  sellgui_title: '&8Sell Menu | Drop Items Here'
+  reloaded_config: '&b&lShop &8➟ &7Reloaded configuration files.'
+  no_items_sold: '&b&lShop &8➟ &7You didn''t have anything sellable.'
+  no_items_in_gui: '&b&lShop &8➟ &7You didn''t place any items in the menu.'
+  #
+  # {list} - returns a list of sold items
+  # {earning} - returns the total amount made
+  # {amount} - returns amount of items sold
+  #
+  items_sold: '&b&lShop &8➟ &7You sold &a{list}&7 for &a{earning}&7.'
+  receipt_text: ''
+  receipt_title: |+
+    &7&nReceipt for sell
+
+  #
+  # {amount} - returns amount of item
+  # {item} - returns item name
+  # {price} - returns the selling price of the item
+  #
+  receipt_item_layout: '&a{amount}x {item} &ffor &a{price}'
+  #
+  # {amount} - returns amount of items sold
+  # {earning} - returns the total amount made
+  #
+  sell_title: '&a&l+ {earning}'
+  sell_subtitle: '&7You sold &a&n{amount}&7 items!'
+  gamemode_not_allowed: '&b&lShop &8➟ &7You are not allowed to use the Sell GUI in
+    &A&l{gamemode} &7mode.'
+  inventory_full: '&b&lShop &8➟ &7Your inventory is currently full, so excess items
+    have been dropped on the ground.'
+  #
+  # {amount} - returns amount of items sold
+  # {earning} - returns the total amount made
+  #
+  action_bar_items_sold: ''

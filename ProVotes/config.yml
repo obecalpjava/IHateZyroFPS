@@ -1,0 +1,142 @@
+# ======================================================
+#
+# ProVotes Version: 1.12.1 build: 363272
+# Created by: JC_Plays_MC
+#
+# ======================================================
+#
+# This is the ProVotes configuration file where all general settings
+# and other plugin toggles will be found. If you have any questions feel free
+# to ask me by PM on spigot. Also if you have any feature suggestions
+# or anything like that i'm always open to new ideas.
+#
+# Thank you for supporting this project!
+#
+# ======================================================
+#
+# Settings Configuration
+#
+# ##Whether or not to allow reward claiming on this server
+# allow_claiming: true
+#
+# ##Whether or not to use cumulative rewards
+# use_cumulative: true
+#
+# ##Whether or not to use permission rewards
+# use_permission: true
+#
+# ##Whether or not to use chance rewards
+# use_chance: true
+#
+# ##Whether or not to use weekly rewards
+# use_weekly: true
+#
+# ##Whether or not to use monthly rewards
+# use_monthly: true
+#
+# ##Whether or not to use reminder actions
+# use_reminder_actions: true
+#
+# Whether or not you want to automatically backup your player data
+# use_automatic_backups: false
+#
+# The delay in seconds between data backups
+# backup_interval: 60
+#
+# ##Whether or not to automatically reset vote counts in a new month
+# auto_reset_month: true
+#
+# ##Whether or not to have a running timer that will update online players
+# update_database_timer: true
+#
+# ##Whether or not to send the reminder actions on join if the player hasnt voted
+# remind_on_join: true
+#
+# ##Whether or not to add votes exceeding the max to the players stats
+# count_after_max: true
+#
+# ##The amount of votes the player must accumulate to dismiss the reminder
+# reminder_daily_votes: 1
+#
+# ##The time in seconds between MySQL database force updates for online players
+# database_timer_delay: 300
+#
+# ##The time in seconds between player reminder messages
+# reminder_delay: 300
+#
+# ##The maximum amount of times a player can be rewarded in a day
+# max_daily_votes: 0
+#
+# ##The actions to execute when the player executes the /vote command with no arguments
+# vote_command_type: <info / links / rewards>
+#
+# ##The placeholder format for when the player can vote
+# vote_now_format: 'vote now!'
+#
+# ##The actions to be executed when the player hasnt voted
+# reminder_actions:
+# - <action>
+#
+# ##The actions to be executed when a player enters the info command
+# info_command_actions:
+# - <action>
+#
+# ##The actions to be executed when a player enters the rewards command
+# rewards_command_actions:
+# - <action>
+#
+# ##The actions to be executed when a player enters the links command
+# links_command_actions:
+# - <action>
+#
+# ##The only sites that votes will be counted from (optional and requires service name)
+# allowed_sites:
+# - <service name>
+#
+# ##The top voters specifc settings
+# top_voters:
+#
+#   ##The amount of top voters to be displayed and cached
+#   amount: 10
+#
+#   ##The time in seconds before the top voters should be updated
+#   update_delay: 600
+#
+# ======================================================
+
+use_mysql: false
+host: localhost
+port: 3306
+database: database
+username: user
+password: pass
+
+allow_claiming: true
+use_cumulative: false
+use_permission: false
+use_chance: false
+use_weekly: false
+use_monthly: false
+use_reminder_actions: false
+use_automatic_backups: false
+backup_interval: 86400
+auto_reset_month: false
+update_database_timer: false
+remind_on_join: false
+count_over_max: false
+reminder_daily_votes: 0
+database_timer_delay: 300
+reminder_delay: 300
+max_daily_votes: 0
+vote_command_type: ''
+vote_now_format: ''
+
+reminder_actions: []
+
+info_command_actions: []
+
+rewards_command_actions: []
+
+links_command_actions: []
+
+allowed_sites: []

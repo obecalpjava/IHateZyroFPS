@@ -1,0 +1,145 @@
+PREFIX: '&b&lShop &8➟ '
+LANG:
+  CONSOLE: Console
+MSG:
+  AND: ' and '
+  ERROR: '&cAn error occurred.'
+  INGAMEONLY: '&cThis command can only be used in-game.'
+  NOACCESS: '&cYou don''t have access to do this.'
+  NOTLOADED: '&cShops haven''t been loaded yet, please try again later.'
+  RELOADED: '&aConfiguration reloaded!'
+  USAGE:
+    SUBCOMMAND: '&cInvalid command usage. Correct usage: &7%usage%'
+  CMD:
+    SHOP:
+      ADDMODIFIER:
+        ITEM:
+          USAGE: /shop addmodifier item <player> <shop> <item> <value> [buy|sell]
+          ADDED: '&aYou set &7%player%''s %type% &aprice modifier for the &7%item%
+            &aitem in &7%shop% &ashop to &7%modifier%&a.'
+          ADDEDBY: '&fYour &7%type% &fprice modifier for the item &7%item% &fin shop
+            &7%shop% &fwas set to &7%modifier%&f by &7%player%&f.'
+        SHOP:
+          USAGE: /shop addmodifier shop <player> <shop> <value> [buy|sell]
+          ADDED: '&aYou set &7%player%''s %type% &aprice modifier for all items in
+            shop &7%shop% &ato &7%modifier%&a.'
+          ADDEDBY: '&fYour &7%type% &fprice modifier for all items in shop &7%shop%
+            &fwas set to &7%modifier%&f by &7%player%&f.'
+        GLOBAL:
+          USAGE: /shop addmodifier global <player> <value> [buy|sell]
+          ADDED: '&aYou set &7%player%''s %type% &aprice modifier to &7%modifier%&a.'
+          ADDEDBY: '&fYour &7%type% &fprice modifier was set to &7%modifier%&f by
+            &7%player%&f.'
+      CHECK:
+        ITEM: '&fThis item''s type is &7%material%&f with damage &7%damage%&f.'
+        NOITEM: '&cYou have to hold an item in your hand in order to check its type.'
+      CHECKMODIFIERS:
+        VIEW:
+          VIEW: |-
+            &c%player%&f's modifiers:
+            Global modifiers:
+            %global%
+            Shop modifiers:
+            %shop%
+            Item modifiers:
+            %item%
+          ENTRY:
+            ITEM: '&fItem: &7%item%&f, shop: &7%shop%&f, buy: &7%buy%&f, sell: &7%sell%&f'
+            SHOP: '&fShop: &7%shop%&f, buy: &7%buy%&f, sell: &7%sell%&f'
+            GLOBAL: '&fBuy: &7%buy%&f, sell: &7%sell%&f'
+      RESETMODIFIER:
+        ITEM:
+          USAGE: /shop resetmodifier item <player> <shop> <item> [buy|sell]
+          RESET: '&aYou reset &7%player%''s %type% &aprice modifier for the item &7%item%
+            &ain shop &7%shop%&a.'
+          RESETBY: '&fYour &7%type% &fprice modifier for the item &7item &fin shop
+            &7%shop% &fwas reset by &7%player%&f.'
+        SHOP:
+          USAGE: /shop resetmodifier shop <player> <shop> [buy|sell]
+          RESET: '&aYou reset &7%player%''s %type% &aprice modifier for all items
+            in shop &7%shop%&a.'
+          RESETBY: '&fYour &7%type% &fprice modifier for all items in shop &7%shop%
+            &fwas reset by &7%player%&f.'
+        GLOBAL:
+          USAGE: /shop resetmodifier global <player> [buy|sell]
+          RESET: '&aYou reset &7%player%''s %type% &aprice modifier.'
+          RESETBY: '&fYour &7%type% &fprice modifier was set to &7%modifier%&f by
+            &7%player%&f.'
+  MODIFIER:
+    INVALIDAMOUNT: '&cInvalid modifier value specified. Valid values are for instance
+      0.50 which is 50%, 2.0 which is 200% etc.'
+    INVALIDTYPE: '&cInvalid modifier type specified. Valid values are buy, sell and
+      both.'
+    BUY: buy
+    SELL: sell
+    BOTH: buy & sell
+  INVALIDPLAYER: '&cInvalid player name specified.'
+  INVALIDSHOP: '&cShop with ID &7%shop%&c not found.'
+  INVALIDITEM: '&cItem with ID &7%item%&c not found in &7%shop%&c.'
+  NOACCESSTOSHOP: '&cYou don''t have access to &7%shop%&c shop.'
+  NODIRECTACCESSTOSHOP: '&cYou can''t access the &7%shop%&c shop.'
+  MAINMENUDISABLED: '&cYou can''t use this command. Please use &7/shop <id> &cinstead.'
+  WORLDBLACKLISTED: '&cYou can''t access &7%shop% &cin this world.'
+  WORLDBANNED: '&cYou can''t access the shop in this world.'
+  WORLDBANNEDTARGET: '&7%player% &ccan''t access the shop in that world.'
+  GAMEMODEBANNED: '&cYou can''t access the shop when in gamemode &7%gamemode%&c.'
+  GAMEMODEBANNEDTARGET: '&7%player% &ccan''t access the shop when in gamemode &7%gamemode%&c.'
+  ITEM:
+    FULLINVENTORY: '&cYou don''t have enough free space in your inventory.'
+    CANNOTAFFORD: '&cYou need &7%price%&c to buy &7%amount% &cof &7%item%&c.'
+    CANNOTBUY: '&cYou can''t buy this item.'
+    CANNOTSELL: '&cYou can''t sell this item.'
+    BOUGHT: '&aYou bought &7%amount% &aof &7%item%&a for &7%price%&a.'
+    BOUGHTFREE: '&aYou received &7%amount% &aof &7%item%&a.'
+    NOTENOUGH: '&cYou don''t have &7%amount% &cof &7%item%&c to sell.'
+    SOLD: '&aYou sold &7%amount% &aof &7%item%&a for &7%price%&a.'
+    SOLDFREE: '&aYou gave away &7%amount% &aof &7%item%&a.'
+    SOLDALL: '&aYou sold all &7%item%&a &8(&7%amount% &aof &7%item%&8) &afor &7%price%&a.'
+    SOLDALLFREE: '&aYou gave away all &7%item% &8(&7%amount% &aof &7%item%&8)&a.'
+    NOACCESS: '&cYou don''t have access to this item.'
+  ENCHANT:
+    CANNOTAPPLY: '&cEnchantment &7%enchantment%&c cannot be applied to the item you''re
+      holding.'
+    ALREADYAPPLIED: '&cThis item already has &7%enchantment%&c applied.'
+    LEVELDIFF: '&cYou need an item with at least &7%enchantment% %level%&c applied.'
+    CANNOTAFFORD: '&cYou need &7%price%&c to buy &7%enchantment%&c.'
+    MAX: '&cThis item already has the maximum amount of enchantments &8(&7%amount%&8)&c.'
+    TOOMANY: '&cYou can''t enchant more than &7%amount% &citems at once.'
+    BOUGHT: '&aYou bought &7%enchantment%&a enchantment for &7%price%&a.'
+    BOUGHTFREE: '&aYou received &7%enchantment%&a.'
+  PERMISSION:
+    PERMISSIONSDISABLED: '&cPermissions are disabled.'
+    ALREADYHAVE: '&cYou already have the permission &7%permission%&c.'
+    CANNOTAFFORD: '&cYou need &7%price%&c to buy &7%permission%&c.'
+    BOUGHT: '&aYou bought &7%permission%&a permission for &7%price%&a.'
+    BOUGHTFREE: '&aYou received &7%permission%&a.'
+  COMMAND:
+    BOUGHT: '&aYou bought &7%command%&a for &7%price%&a.'
+    BOUGHTFREE: '&aYou received &7%command%&a.'
+    CANNOTAFFORD: '&cYou need &7%price%&c to buy this command.'
+  SELLHAND:
+    NOITEM: '&cYou have to hold an item in your hand in order to sell it.'
+    INVALIDQUANTITY: '&cInvalid quantity specified. Must be between 1 and %max%.'
+    CANNOTSELL: '&cYou can''t sell this item.'
+    MULTIPLEQUANTITYONLY: '&cYou can''t sell that quantity. Only multiples of &7%quantity%
+      are allowed for this item.'
+  SELLHANDALL:
+    SOLD: '&aYou sold &7%quantity% &aof &7%item%&a for a total of &7%price%&a.'
+  SELLALL:
+    NOITEMS: '&cYou don''t have any items you can sell.'
+    SOLD: '&aYou sold &7%quantity% items&a for a total of &7%price%&a.'
+    INVALIDSHOP: '&cInvalid shop specified.'
+DIALOG:
+  AMOUNTSELECTION:
+    BUY:
+      NAME: '&2Buying %item%'
+    SELL:
+      NAME: '&cSelling %item%'
+    BULKBUY:
+      NAME: '&cBuying stacks of %item%'
+    BULKSELL:
+      NAME: '&cSelling stacks of %item%'
+SHOP:
+  PERMISSION:
+    ALREADYOWNED: '&4(Already owned)'
+    NOTOWNED: '&a(Not owned)'

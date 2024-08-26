@@ -1,0 +1,23 @@
+# Period in milliseconds to block activations (Per block)
+block_period: 3000
+
+# Times redstone has to be activated to start the blocking period
+block_threshold: 3
+
+# Max blocks a piston can push
+max_piston_push: 3
+
+block_effect: "SMOKE"
+block_effect_data: 4
+
+no_permission: "&cNo permission to use RedstoneLimiter!"
+reload: "&aRedstoneLimiter was reloaded!"
+argument_not_found: "&cArgument '%argument%' not found!"
+
+statistics: |-
+  &c&lRedstoneLimiter Information&7 (By LinsaFTW)
+  &7 ■ Total Redstone Activated:&b %total_redstone%
+  &7 ■ Total Redstone Blocked:&e %blocked_redstone%
+  &7 
+  &7 ■ Current Period:&a %current_period%ms/%block_period%ms
+  &7 ■ Current Threshold:&d %block_threshold%

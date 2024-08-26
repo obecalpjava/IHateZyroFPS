@@ -1,0 +1,118 @@
+﻿  money# the messages in this section can be customised for each rankup in rankups.yml.
+rankup:
+  requirements-not-met: "&cNo satisfaces los requisitos para seguir al siguiente rango."
+  no-rankup: "&eEstás en el último rango."
+  # set to an empty string, ie: success-public: ""
+  # to hide that message.
+  success-public: "&a{{player}} &eha subido de rango a: &d{{next.rank}}"
+  success-private: ""
+  # used for the text confirmation
+  confirmation: |-
+    &e¿Estás seguro de que quires subir de rango a &a{{next.rank}}&e?
+    &eEscribe /rankup para confirmar.
+
+  must-prestige: "&c¡Tienes que prestigiar para seguir subiendo de rango!"
+
+  gui:
+    rows: 1
+    title: "Subir de rango a {{next.rank}}"
+    rankup:
+      material: EMERALD_BLOCK
+      # index can be separated by spaces to show in multiple groups
+      # for example: 0-3 9-12 18-21
+      # you can also just use a single number instead of a range.
+      index: 0-3
+      name: '&a&lConfirmar'
+      # lore is optional
+      lore: '&6Subir de rango a {{next.rank}}'
+    cancel:
+        material: REDSTONE_BLOCK
+        index: 5-8         
+        name: '&c&lCancelar'
+    fill:
+      name: ' '
+      # if you are using a 1.8-1.12 and you want to change this
+      # you can use MATERIAL:data, for example STAINED_GLASS_PANE:8
+      # this works for both the rankup and cancel blocks as well
+      material: BLACK_STAINED_GLASS_PANE
+
+  ranksgui:
+    title: "Rangos"
+    rows: 3
+    offset: 10
+    width: 7
+    complete:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aRango &7{{next.rank}} &a(completado)"
+    current:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: "&dSubir a &7{{next.rank}}"
+    incomplete:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cRango &7{{next.rank}} &c(requiere ascenso)"
+    fill:
+      material: BLACK_STAINED_GLASS_PANE
+      name: ' '
+  # you can (and probably should) you override these in rankups.yml
+  # to show the specific requirements for each rank.
+  # however if you are just using money or don't need to change the message per rank, you can use any combination of:
+  # {{rank.requirement('money').total | simple}} {MONEY_NEEDED} {PERCENT_DONE <requirement>} {PERCENT_LEFT <requirement>} {AMOUNT <requirement>} {AMOUNT_NEEDED <requirement>}
+  # {{rank.requirement('money').total | simple}} and {MONEY_NEEDED} are different from {AMOUNT money} and {AMOUNT_NEEDED money} in that they use a different format.
+  # here is an example of showing the requirements for just money:
+  #list:
+  #  complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}} &efor &7${{rank.requirement('money').total | simple}}"
+  #  current: "&c{{rank.rank}} &e\xbb &c{{next.rank}} &efor &a${{rank.requirement('money').total | simple}} &e{PERCENT_DONE money}%"
+  #  incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}} &efor &a${{rank.requirement('money').total | simple}}"
+  list:
+    complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}}"
+    current: "&c{{rank.rank}} &e\xbb &c{{next.rank}}"
+    incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}}"
+    # an empty string disables the header/footer
+    header: ""
+    footer: ""
+  # sent when a player tries to rankup when they are on cooldown
+  cooldown:
+    singular: "&cTienes que esperar {{seconds_left}} segundo más para subir de rango otra vez."
+    plural: "&cTienes que esperar {{seconds_left}} segundos más para subir de rango otra vez."
+# prestige messages can also be customised
+prestige:
+  requirements-not-met: "&cNecesitas {{rank.requirement('money').total | simple}} más dinero para prestigiar."
+  no-prestige: "&eYa estás en el prestigio más alto."
+
+  success-public: "&a{{player}} &eha prestigiado a: &d{{next.rank}}"
+  success-private: ""
+
+  confirmation: |-
+    &eEstás seguro de que quieres prestigiar a &a{{next.rank}}&e?
+    &eEscribe &c/prestige &otra vez para confirmar.
+
+  gui:
+    title: "Prestigiar a {{next.rank}}"
+    rankup:
+      material: GOLD_BLOCK
+      index: 0-3
+      name: '&a&lConfirmar'
+      lore: '&6Prestigiar a &b{{next.rank}}'
+    cancel:
+      material: REDSTONE_BLOCK
+      index: 5-8
+      name: '&c&lCancelar'
+    fill:
+      name: ' '
+      # if you are using a 1.8-1.12 and you want to change this
+      # you can use MATERIAL:data, for example STAINED_GLASS_PANE:8
+      # this works for both the rankup and cancel blocks as well
+      material: BLACK_STAINED_GLASS_PANE
+
+  list:
+    complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}}"
+    current: "&c{{rank.rank}} &e\xbb &c{{next.rank}}"
+    incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}}"
+    header: ""
+    footer: ""
+  cooldown:
+    singular: "&cTienes que esperar {{seconds_left}} segundo más para prestigiar otra vez."
+    plural: "&cTienes que esperar {{seconds_left}} segundos más para prestigiar otra vez."
+
+not-high-enough: "&c¡No puedes prestigiar a tu rango!"
+not-in-ladder: "&cPerdón, pero no hemos podido encontrar rangos en los grupos que perteneces. Usa /ranks para ver los rangos."

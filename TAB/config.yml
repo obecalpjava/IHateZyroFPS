@@ -1,0 +1,169 @@
+# Detailed explanation of all options available at https://github.com/NEZNAMY/TAB/wiki/config.yml
+header-footer:
+  enabled: true
+  disable-in-worlds:
+  - disabledworld
+  header:
+  - ''
+  - '&#fbe204&lM&#fbe409&lI&#fbe60d&lN&#fbe812&lE&#fbeb17&lR&#fbed1b&lI&#fbef20&lV&#fbf124&lA&#fbf329&lL'
+  - ''
+  footer:
+  - ''
+  - '&#FBF568%redisbungee_Lifesteal-G% &#CDCDCDplayers are connected with you on &#FBE204Lifesteal
+    Gold&#CDCDCD.'
+  - '&#FBF568%redisbungee_total% &#CDCDCDtotal players across the network.'
+  - ''
+  - '&#FBF568Ranks + Goodies for Purchase at &#FBE204&nstore.minerival.org'
+tablist-name-formatting:
+  enabled: true
+  align-tabsuffix-on-the-right: false
+  character-width-overrides: {}
+  anti-override: true
+  disable-in-worlds:
+  - disabledworld
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  anti-override: true
+  sorting-types:
+  - GROUPS:owner,manager,developer,sr-admin,admin,sr-moderator,mod+,moderator,helper,famous,media,sorcerer,wizard,noble,sage,shaman,ranger,default
+  - PLACEHOLDER_A_TO_Z:%player%
+  case-sensitive-sorting: true
+  disable-in-worlds:
+  - disabledworld
+  unlimited-nametag-mode:
+    enabled: false
+    use-marker-tag-for-1-8-x-clients: false
+    disable-on-boats: true
+    space-between-lines: 0.22
+    disable-in-worlds:
+    - disabledworld
+    dynamic-lines:
+    - abovename
+    - nametag
+    - belowname
+    - another
+    static-lines:
+      myCustomLine: 0.66
+    disable-in-servers: []
+  can-see-friendly-invisibles: false
+yellow-number-in-tablist:
+  enabled: false
+  value: '%math_0:_{player_max_health_rounded}/2%'
+  disable-in-worlds:
+  - disabledworld
+belowname-objective:
+  enabled: true
+  number: '%math_0:_{player_health}/2%'
+  text: '&c❤'
+  disable-in-worlds:
+  - disabledworld
+prevent-spectator-effect:
+  enabled: false
+bossbar:
+  enabled: false
+  toggle-command: /bossbar
+  remember-toggle-choice: false
+  hidden-by-default: false
+  disable-in-worlds:
+  - disabledworld
+  bars:
+    ServerInfo:
+      style: PROGRESS
+      color: '%animation:barcolors%'
+      progress: '100'
+      text: '&fWebsite: &bwww.domain.com'
+per-world-playerlist:
+  enabled: false
+  allow-bypass-permission: false
+  ignore-effect-in-worlds:
+  - ignoredworld
+  - build
+  shared-playerlist-world-groups:
+    lobby:
+    - lobby1
+    - lobby2
+    minigames:
+    - paintball
+    - bedwars
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: false
+  hidden-by-default: false
+  use-numbers: true
+  static-number: 0
+  delay-on-join-milliseconds: 0
+  respect-other-plugins: true
+  disable-in-worlds:
+  - disabledworld
+  scoreboards:
+    scoreboard:
+      title: '&#fbe204&lM&#fbe409&lI&#fbe60d&lN&#fbe812&lE&#fbeb17&lR&#fbed1b&lI&#fbef20&lV&#fbf124&lA&#fbf329&lL'
+      lines:
+      - '&r &r &r &r &r &#AFAFAF⌚ %date%'
+      - '&r'
+      - '#fbe204%player%'
+      - '#7ae15b☄ &fMoney#d7d7d7: #3e9f21$#7ae15b%vault_eco_balance_formatted%'
+      - '#fca939☀ &fCoins#d7d7d7: #fcff5a%playerpoints_points_formatted%'
+      - '#C060FB✉ &fLevel#d7d7d7: #C060FB%rankup_current_rank%'
+      - '#f44336❤ &fHearts#d7d7d7: #f5695f%math_0:_{player_max_health_rounded}/2%'
+      - '#29c5ff🗡 &fKills#d7d7d7: #29c5ff%statistic_player_kills%'
+      - '&r'
+      - '#fbe204Lifesteal'
+      - '#ff8200⚑ &fOnline#d7d7d7: #ff8200%redisbungee_Lifesteal-G%'
+      - '#FB3DF9⚓ &fVote Party#d7d7d7: #FB3DF9%provotes_votes_until_party%'
+      - '&r'
+      - '#CDCDCD⛏ play.minerival.org'
+ping-spoof:
+  enabled: false
+  value: 0
+fix-pet-names:
+  enabled: false
+placeholders:
+  date-format: MMM d, yyyy
+  time-format: '[HH:mm:ss / h:mm a]'
+  time-offset: -5
+  register-tab-expansion: true
+placeholder-output-replacements:
+  '%advancedvanish_is_vanished%':
+    'Yes': ' &7&o[V]&r'
+    'No': ''
+placeholderapi-refresh-intervals:
+  default-refresh-interval: 10000
+  server:
+    '%server_uptime%': 1000
+    '%server_tps_1_colored%': 1000
+    '%server_unique_joins%': 5000
+  player:
+    '%player_health%': 200
+    '%player_ping%': 1000
+    '%vault_prefix%': 1000
+  relational:
+    '%rel_factionsuuid_relation_color%': 1000
+assign-groups-by-permissions: false
+primary-group-finding-list:
+- owner
+- manager
+- developer
+- sr-admin
+- admin
+- sr-moderator
+- moderator
+- helper
+- media
+- wizard
+- noble
+- sage
+- shaman
+- ranger
+- default
+debug: false
+mysql:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: tab
+  username: user
+  password: password

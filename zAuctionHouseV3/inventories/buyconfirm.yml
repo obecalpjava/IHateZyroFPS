@@ -1,0 +1,116 @@
+name: "&8Auction Confirmation"
+size: 27
+type: BUY_CONFIRM
+items:
+  buy:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 0
+  buy1:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 1
+  buy2:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 2
+  buy3:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 9
+  buy4:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 10
+  buy5:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 11
+  buy6:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 18
+  buy7:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 19
+  buy8:
+    type: BUY_ITEM
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aBuy"
+    slot: 20
+  deny:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      data: 14
+      name: "&cBack"
+    slot: 6
+  deny2:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 7
+  deny3:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 8
+  deny4:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 15
+  deny5:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 16
+  deny6:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 17
+  deny7:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 24
+  deny8:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 25
+  deny9:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 26
+  show:
+    type: SHOW_ITEM
+    slot: 13

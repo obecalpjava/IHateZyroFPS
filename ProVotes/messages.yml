@@ -1,0 +1,74 @@
+# ======================================================
+#
+# ProVotes Version: 1.12.1 build: 363272
+# Created by: JC_Plays_MC
+#
+# ======================================================
+#
+# Messages File
+#
+# This file will store all of the messages that the plugin will use.
+# You can change any of them from here, a reload will be required for
+# any changes to take effect.
+#
+# ======================================================
+
+messages:
+  no_permission: '&cYou do not have permission to use this command'
+  invalid_command: '&cThe command you have specified does not exist, /vote help'
+  invalid_number: '&cYou did not enter a valid number'
+  never_joined: '&cThe player specified has never joined the server'
+  reached_daily_limit: '&cYou have already voted &7%provotes_max_daily_votes% &ctimes
+    today, and cannot vote until tomorrow'
+  party_counter: '&aA VoteParty will begin after &7%provotes_votes_until_party% &amore
+    votes!'
+  party_counter_set: '&aThe party counter has been updated'
+  reminders_on: '&aYou have enabled vote reminders'
+  reminders_off: '&cYou have disabled vote reminders'
+  reminders_on_other: '&aYou have enabled vote reminders for the player'
+  reminders_off_other: '&cYou have disabled vote reminders for the player'
+  saved_backup: '&aYou have saved a backup of the player data'
+  updated_top_voters: '&aThe top voters have been updated'
+  updated_votes: '&aYou have updated the players votes'
+  week_force_update: '&aYou have successfully force updated the week counts'
+  month_force_update: '&aYou have successfully force updated the month counts'
+  empty_leaderboard_weekly: '&cThere are no top players'
+  header_leaderboard_weekly: '&8&m-----------&r &bTop Weekly Players &8&m-----------'
+  format_leaderboard_weekly: '&e%place%. &f%name% &7%weekly_votes% votes'
+  footer_leaderboard_weekly: '&8&m----------------------------------------'
+  empty_leaderboard_monthly: '&cThere are no top players'
+  header_leaderboard_monthly: '&8&m-----------&r &bTop Monthly Players &8&m-----------'
+  format_leaderboard_monthly: '&e%place%. &f%name% &7%monthly_votes% votes'
+  footer_leaderboard_monthly: '&8&m----------------------------------------'
+  empty_leaderboard_lifetime: '&cThere are no top players'
+  header_leaderboard_lifetime: '&8&m-----------&r &bTop Lifetime Players &8&m-----------'
+  format_leaderboard_lifetime: '&e%place%. &f%name% &7%total_votes% votes'
+  footer_leaderboard_lifetime: '&8&m----------------------------------------'
+  test_vote_sent: '&aYou have successfully sent a test vote to %vote_username% from
+    %vote_service_name%'
+  plugin_help:
+  - '&8&m----------------------------'
+  - '&bProVotes Help'
+  - '&a/provotes reload &f- Reloads the plugin'
+  - '&a/provotes info &f- Displays the players info'
+  - '&a/provotes links &f- Displays the voting links'
+  - '&a/provotes rewards &f- Displays the rewards'
+  - '&a/provotes backup &f- Saves a backup of player data'
+  - '&a/provotes updatetop &f- Updates top 10 voters'
+  - '&a/provotes forcemonth &f- Forecfully updates the month'
+  - '&a/provotes forceweek &f- Forecfully updates the week'
+  - '&a/provotes party &f- Displays the amount required for a party'
+  - '&a/provotes party set <amount> &f- Sets the party counter'
+  - '&a/provotes reminder toggle &f- Toggles vote reminders'
+  - '&a/provotes reminder <on/off> &f- Toggles vote reminders on/off'
+  - '&a/provotes reminder <player> <on/off> &f- Toggles vote reminders on/off'
+  - '&a/provotes leaderboard &7(-p) &f- Displays the monthly voter leaderboard'
+  - '&a/provotes leaderboard week &7(-p) &f- Displays the weekly voter leaderboard'
+  - '&a/provotes leaderboard lifetime &f- Displays the lifetime voter leaderboard'
+  - '&a/provotes testvote <player> &f- Sends a test vote'
+  - '&a/provotes testvote <player> <service> &f- Sends a test vote'
+  - '&a/provotes setdaily <player> <amounts> &f- Sets the players daily votes'
+  - '&a/provotes setweekly <player> <amounts> &f- Sets the players weekly votes'
+  - '&a/provotes setmonthly <player> <amounts> &f- Sets the players monthly votes'
+  - '&a/provotes setvotes <player> <amounts> &f- Sets the players total votes'
+  - '&8&m----------------------------'

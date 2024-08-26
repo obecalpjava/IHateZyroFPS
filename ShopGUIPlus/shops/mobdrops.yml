@@ -1,0 +1,135 @@
+mobdrops:
+  name: "&8Mob Drop Sell Shop"
+  size: 27
+  fillItem:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item: 
+        material: bone
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 0
+    2:
+      type: item
+      item: 
+        material: rotten_flesh
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 1
+    3:
+      type: item
+      item: 
+        material: spider_eye
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 2
+    4:
+      type: item
+      item: 
+        material: blaze_rod
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 3
+      slot: 4
+    5:
+      type: item
+      item: 
+        material: string
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 3
+    6:
+      type: item
+      item: 
+        material: gunpowder
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 2
+      slot: 5
+    7:
+      type: item
+      item: 
+        material: slime_ball
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 6
+    8:
+      type: item
+      item: 
+        material: phantom_membrane
+        quantity: 1
+      buyPrice: 300
+      sellPrice: 4
+      slot: 7
+    9:
+      type: item
+      item: 
+        material: ghast_tear
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 8
+      slot: 8
+    10:
+      type: item
+      item: 
+        material: sugar
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 6
+      slot: 9
+    11:
+      type: item
+      item: 
+        material: magma_cream
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 3
+      slot: 10
+    12:
+      type: item
+      item: 
+        material: glow_ink_sac
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 2
+      slot: 11
+    13:
+      type: item
+      item: 
+        material: bow
+        quantity: 1
+      buyPrice: 100
+      sellPrice: 2
+      slot: 12
+    14:
+      type: item
+      item: 
+        material: arrow
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 1
+      slot: 13
+    15:
+      type: item
+      item: 
+        material: leather
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 14
+    16:
+      type: item
+      item: 
+        material: feather
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 15

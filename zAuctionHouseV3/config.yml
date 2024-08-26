@@ -1,0 +1,94 @@
+customInventories:
+
+
+#Monde d�sactiv�
+disableWorlds:
+  - PvP
+  
+bannedItems:
+  barrier:
+    material: BARRIER
+  SHULKER_BOX:
+    material: SHULKER_BOX
+  WHITE_SHULKER_BOX:
+    material: WHITE_SHULKER_BOX
+  ORANGE_SHULKER_BOX:
+    material: ORANGE_SHULKER_BOX
+  MAGENTA_SHULKER_BOX:
+    material: MAGENTA_SHULKER_BOX
+  LIGHT_BLUE_SHULKER_BOX:
+    material: LIGHT_BLUE_SHULKER_BOX
+  YELLOW_SHULKER_BOX:
+    material: YELLOW_SHULKER_BOX
+  LIME_SHULKER_BOX:
+    material: LIME_SHULKER_BOX
+  PINK_SHULKER_BOX:
+    material: PINK_SHULKER_BOX
+  GRAY_SHULKER_BOX:
+    material: GRAY_SHULKER_BOX
+  LIGHT_GRAY_SHULKER_BOX:
+    material: LIGHT_GRAY_SHULKER_BOX
+  CYAN_SHULKER_BOX:
+    material: CYAN_SHULKER_BOX
+  PURPLE_SHULKER_BOX:
+    material: PURPLE_SHULKER_BOX
+  BLUE_SHULKER_BOX:
+    material: BLUE_SHULKER_BOX
+  BROWN_SHULKER_BOX:
+    material: BROWN_SHULKER_BOX
+  GREEN_SHULKER_BOX:
+    material: GREEN_SHULKER_BOX
+  RED_SHULKER_BOX:
+    material: RED_SHULKER_BOX
+  BLACK_SHULKER_BOX:
+    material: BLACK_SHULKER_BOX
+    
+bannedItemsWithMaterial:
+  - BEDROCK
+  - BARRIER
+  - SHULKER_BOX
+  - WHITE_SHULKER_BOX
+  - ORANGE_SHULKER_BOX
+  - MAGENTA_SHULKER_BOX
+  - LIGHT_BLUE_SHULKER_BOX
+  - YELLOW_SHULKER_BOX
+  - LIME_SHULKER_BOX
+  - PINK_SHULKER_BOX
+  - GRAY_SHULKER_BOX
+  - LIGHT_GRAY_SHULKER_BOX
+  - CYAN_SHULKER_BOX
+  - PURPLE_SHULKER_BOX
+  - BLUE_SHULKER_BOX
+  - BROWN_SHULKER_BOX
+  - GREEN_SHULKER_BOX
+  - RED_SHULKER_BOX
+  - BLACK_SHULKER_BOX
+  - RED_DYE
+  - YELLOW_DYE
+  - LIGHT_BLUE_DYE
+  - LIME_DYE
+  - REDSTONE
+  - SUNFLOWER
+  - ENDER_CHEST
+
+    
+permissions:
+  zauctionhouse_max_2: 2
+  zauctionhouse_max_4: 4
+  zauctionhouse_max_6: 6
+  zauctionhouse_max_8: 8
+  zauctionhouse_max_10: 10
+  zauctionhouse_max_12: 12
+  
+#SQL
+sql:
+  user: "ls-zauctionhouse-g"
+  password: "S0rB2!3w4*zE"
+  port: 3306
+  host: "10.0.0.1"
+  database: "ls-zauctionhouse-g" 
+  
+citizen:
+  1:
+    name: "Auction"
+    inventory: "auction"  

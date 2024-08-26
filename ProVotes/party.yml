@@ -1,0 +1,113 @@
+# ======================================================
+#
+# ProVotes Version: 1.12.1 build: 363272
+# Created by: JC_Plays_MC
+#
+# ======================================================
+#
+# Party File
+#
+# This is the party file where all party data will be saved and stored. You can
+# edit all of the settings pertaining to the parties here such as the required votes,
+# actions, and other party related settings.
+#
+# ======================================================
+#
+# Settings:
+#
+# Whether or not you want to use the party system
+# use_party: true
+#
+# Whether or not to count votes if the player is offline, if false the vote
+# will only be counted once the player joins the server
+# count_offline: false
+#
+# The current counter for amount of votes
+# global_counter: 0
+#
+# The amount of votes required for the party to start
+# required_for_party: 10
+#
+# The delay between party reward actions in ticks (20 ticks = 1 second)
+# delay_between_actions: 20
+#
+# The amount of times to cycle through the chance rewards for each player
+# chance_attempts: 5
+#
+# The maximum amount of chance rewards a player can receive from a party
+# max_chance_rewards: 20
+#
+# The delay before the start of the party in seconds
+# start_delay: 10
+#
+# The list of actions to execute once the required votes has been reached
+# pre_party_actions: []
+#
+# The list of actions to excute after the start delay
+# start_party_actions: []
+#
+# The list of actions to execute once the party has ended
+# end_party_actions: []
+#
+# ======================================================
+#
+# Party Reward Actions:
+#
+# The party reward actions use the same format as regular actions however
+# chance actions require a chance to be specified at the start of the string.
+# Guaranteed actions will be executed at the start of the party no matter what
+# wheras chance actions give players a chance to have the action executed.
+#
+# The actions that will always be executed for each player
+# guaranteed_actions:
+# - '[give-item] DIAMOND|64'
+#
+#
+# The actions that players have a chance of being executed for them.
+# chance_actions:
+# - '[chance=50][give-item] EMERALD|64'
+#
+# ======================================================
+#
+# Placeholders:
+# There are a bunch of placeholders built into the plugin that can be used in messages or
+# item names, lore etc. These can all be found on the plugin page.
+#
+# ======================================================
+
+settings:
+  use_party: true
+  count_offline: true
+  global_counter: 116
+  required_for_party: 150
+  delay_between_actions: 20
+  chance_attempts: 5
+  max_chance_rewards: 5
+  start_delay: 15
+pre_party_actions:
+- '[console-command] broadcast &f\n&#F240A6&lA Vote Party will begin in 15 seconds!\n&7Make
+  sure to stay online to receive rewards!\n&f'
+# - '[title-broadcast] &aVoteParty|&7A VoteParty will begin in 10 seconds!'
+# - '[broadcast] &8&m----------------------------------'
+# - '[broadcast] &aA VoteParty will begin in &710 &aseconds!'
+# - '[broadcast] &8&m----------------------------------'
+start_party_actions:
+- '[console-command] broadcast &f\n&#F240A6&lVote Party reward activated!\n&7Type
+  &f/lootbox &7to receive a VoteParty lootbox!\n&f\n&c➟ Next Vote Party is in 150
+  votes.\n&f'
+# - '[title-broadcast] &aVoteParty|&7The VoteParty has started!'
+# - '[broadcast] &8&m----------------------------------'
+# - '[broadcast] &aA VoteParty has begun!'
+# - '[broadcast] &8&m----------------------------------'
+end_party_actions:
+- '[console-command] broadcast &f\n&#F240A6&lVote Party reward activated!\n&7Type
+  &f/lootbox &7to receive a VoteParty lootbox!\n&f\n&c➟ Next Vote Party is in 150
+  votes.\n&f'
+# - '[title-broadcast] &aVoteParty|&7The VoteParty has ended!'
+# - '[broadcast] &8&m----------------------------------'
+# - '[broadcast] &cThe VoteParty has ended!'
+# - '[broadcast] &8&m----------------------------------'
+guaranteed_actions:
+- '[console-command] lootbox give %player_name% VoteParty 1'
+chance_actions: []
+# - '[5%][give-item] EMERALD_BLOCK|16'

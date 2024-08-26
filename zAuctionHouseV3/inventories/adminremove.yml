@@ -1,0 +1,62 @@
+name: "&8Admin Remove"
+size: 54
+type: ADMIN_REMOVE
+items:
+  show:
+    type: SHOW_ITEM
+    slot: 22
+  back:
+    type: BACK
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cBack"
+    slot: 49
+  removeSilent:
+    type: ADMIN_REMOVE
+    item:
+      material: GREEN_TERRACOTTA 
+      name: "&fRemove silent and give item to player"
+      lore:
+        - ""
+        - "&a❖ &7Is silent&7: &atrue"
+        - "&c❖ &7Forced removal&7: &cfalse"
+    isSilent: true
+    isForceRemove: false
+    slot: 30
+  remove:
+    type: ADMIN_REMOVE
+    item:
+      material: LIME_TERRACOTTA 
+      name: "&fRemove and give item to player"
+      lore:
+        - ""
+        - "&c❖ &7Is silent&7: &cfalse"
+        - "&c❖ &7Forced removal&7: &cfalse"
+    isSilent: false
+    isForceRemove: false
+    slot: 29
+  removeSilentForce:
+    type: ADMIN_REMOVE
+    item:
+      material: RED_TERRACOTTA 
+      name: "&fRemove silent and remove item form player"
+      lore:
+        - ""
+        - "&a❖ &7Is silent&7: &atrue"
+        - "&a❖ &7Forced removal&7: &atrue"
+    isSilent: true
+    isForceRemove: true
+    slot: 32
+  removeForce:
+    type: ADMIN_REMOVE
+    item:
+      material: ORANGE_TERRACOTTA 
+
+      name: "&fRemove without give item to player"
+      lore:
+        - ""
+        - "&c❖ &7Is silent&7: &cfalse"
+        - "&a❖ &7Forced removal&7: &atrue"
+    isSilent: false
+    isForceRemove: true
+    slot: 33     

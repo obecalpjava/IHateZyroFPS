@@ -1,0 +1,115 @@
+#traduzione italiana del locale per rankup
+rankup:
+  requirements-not-met: "&cHai bisogno di {{rank.requirement('money').total | simple}} soldi per avanzare di rank."
+  no-rankup: "&eSei al rank più alto."
+  # imposta stringa vuota per nascondere il messaggio
+  success-public: "&a{{player}} &e\u00E8 avanzato di rank a: &d{{next.rank}}"
+  success-private: "&aHai avanzato di rank a: &d{{next.rank}}"
+  # conferma testuale
+  confirmation: |-
+    &eSei sicuro di voler avanzare di rank a &a{{next.rank}}&e?
+    &eScrivi &c/rankup &edi nuovo per confermare.
+
+  must-prestige: "&cDevi effettuare un prestige prima di avanzare di rank!"
+
+  gui:
+    title: "Avanzamento di rank a {{next.rank}}"
+    rankup:
+      material: EMERALD_BLOCK
+      # l'indice può essere separato da spazi per mostrarlo in più gruppi
+      # per esempio: 0-3 9-12 18-21
+      # puoi anche inserire numeri al posto di range
+      index: 0-3
+      name: '&a&lConferma'
+      # lore opzionale
+      lore: '&6Avanzamento a &b{{next.rank}}'
+    cancel:
+      material: REDSTONE_BLOCK
+      index: 5-8
+      name: '&c&lAnnulla'
+    fill:
+      name: ' '
+      # se stai usando la 1.8 fino alla 1.12.2 per cambiarlo puoi usare
+      # MATERIAL:data, per esempio STAINED_GLASS_PANE:8
+      # funziona per i bloccchi rankup e cancel
+      material: BLACK_STAINED_GLASS_PANE
+
+  ranksgui:
+    title: "Ranks"
+    rows: 3
+    offset: 10
+    width: 7
+    complete:
+      material: GREEN_STAINED_GLASS_PANE
+      name: "&aRank &7{{next.rank}} &a(completed)"
+    current:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: "&dRankup to &7{{next.rank}}"
+    incomplete:
+      material: RED_STAINED_GLASS_PANE
+      name: "&cRank &7{{next.rank}} &c(requires rankup)"
+    fill:
+      material: BLACK_STAINED_GLASS_PANE
+      name: ' '
+
+  # potresti e dovresti configurare questi in rankup.yml
+  # per visualizzare i requisiti di ogni rank
+  # ma se stai usando solo i soldi e non ti serve modificare il mesaggio puoi usapre questi
+  # {{rank.requirement('money').total | simple}} {MONEY_NEEDED} {PERCENT_DONE <requirement>} {PERCENT_LEFT <requirement>} {AMOUNT <requirement>} {AMOUNT_NEEDED <requirement>}
+  # {{rank.requirement('money').total | simple}} e {MONEY_NEEDED} sono diversi da {AMOUNT money} e {AMOUNT_NEEDED money}, usano un formato diverso
+  # ESEMPIO:
+  
+  #list:
+  #  complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}} &efor &7${{rank.requirement('money').total | simple}}"
+  #  current: "&c{{rank.rank}} &e\xbb &c{{next.rank}} &efor &a${{rank.requirement('money').total | simple}} &e{PERCENT_DONE money}%"
+  #  incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}} &efor &a${{rank.requirement('money').total | simple}}"
+  list:
+    complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}}"
+    current: "&c{{rank.rank}} &e\xbb &c{{next.rank}}"
+    incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}}"
+    # stringa vuota per disattivare
+    header: ""
+    footer: ""
+  # messaggi cooldown
+  cooldown:
+    singular: "&cDevi aspettare ancora {{seconds_left}} secondo per avanzare di rank."
+    plural: "&cDevi aspettare ancora {{seconds_left}} secondi per avanzare di rank."
+# messaggi prestige
+prestige:
+  requirements-not-met: "&cHai bisogno di {{rank.requirement('money').total | simple}} soldi per effettuare un prestige."
+  no-prestige: "&eSei al prestige più alto."
+
+  success-public: "&a{{player}} &eha effettuato un prestige a: &d{{next.rank}}"
+  success-private: "&aHai effettuato un prestige a: &d{{next.rank}}"
+
+  confirmation: |-
+    &eSei sicuro di voler effettuare un prestige a &a{{next.rank}}&e?
+    &eScrivi &c/prestige &edi nuovo per confermare.
+  gui:
+    title: "Prestige a {{next.rank}}"
+    rankup:
+      material: GOLD_BLOCK
+      index: 0-3
+      name: '&a&lConferma'
+      lore: '&6Prestige a &b{{next.rank}}'
+    cancel:
+      material: REDSTONE_BLOCK
+      index: 5-8
+      name: '&c&lAnnulla'
+    fill:
+      name: ' '
+      # riferirsi a commento riga 34
+      material: BLACK_STAINED_GLASS_PANE
+
+  list:
+    complete: "&7{{rank.rank}} &8\xbb &7{{next.rank}}"
+    current: "&c{{rank.rank}} &e\xbb &c{{next.rank}}"
+    incomplete: "&r{{rank.rank}} &e\xbb &r{{next.rank}}"
+    header: ""
+    footer: ""
+  cooldown:
+    singular: "&cDevi aspettare {{seconds_left}} secondo per effettuare un altro prestige."
+    plural: "&cDevi aspettare {{seconds_left}} secondi per effettuare un altro prestige."
+
+not-high-enough: "&cNon puoi effettuare un prestige al tuo rank!"
+not-in-ladder: "&cNon riusciamo a trovare nessun avanzamento di rank per il tuo gruppo. Scrivi /ranks per ottenere una lista degli avanzamenti disponibili."

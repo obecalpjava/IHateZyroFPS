@@ -1,0 +1,280 @@
+# ======================================================
+#
+# ProVotes Version: 1.12.1 build: 363272
+# Created by: JC_Plays_MC
+#
+# ======================================================
+#
+# Leaderboard File
+#
+# This is the leaderboard file where all leaderboard data will be saved and stored. You can
+# edit all of the settings pertaining to the leaderboards here such as the total amount
+# or leaders to track and the format how to display them.
+#
+# ======================================================
+#
+# Settings:
+#
+# The amount of players to track in the leaderboard
+# total: 10
+#
+# The delay in seconds between updates of the leaderboard
+# update_delay: 600
+#
+# Whether or not you want the monthly stats to automatically reset
+# reset_on_month: true
+#
+# Whether or not you want to use the menu or chat based leaderboard display
+# use_menu: true
+#
+# ======================================================
+#
+# Menu Example:
+#
+# menu:
+#   size: 27
+#   name: '&8Vote Leaders'
+#   leader_slots:
+#   - 11
+#   - 12
+#   - 13
+#   - 14
+#   - 15
+#   valid_name: '&a%position%. &7%player%'
+#   valid_lore:
+#   - '&bWeekly Votes: &7%provotes_player_weekly_votes%
+#   - '&bMonthly Votes: &7%provotes_player_monthly_votes%
+#   - '&bTotal Votes: &7%provotes_player_total_votes%
+#   invalid_name: '&cUnavailable'
+#   invalid_lore:
+#   - '&7You could be here!
+#
+# ======================================================
+#
+# Leaders Section:
+#
+# The leaders section is a way for the plugin to cache the top users without
+# actually having to cache the player data. This is only used for users who have MySQL
+# enabled. What this does is store the top players UUID's so that on a server restart
+# it won't have to wait for the players to join to update their data, so the top
+# players will always be listed.
+#
+# ======================================================
+#
+# Placeholders:
+# There are a bunch of placeholders built into the plugin that can be used in messages or
+# item names, lore etc. These can all be found on the plugin page.
+#
+# ======================================================
+
+settings:
+  total: 10
+  update_delay: 600
+  reset_on_month: true
+  use_menu: true
+  global_counter: 0
+menu:
+  size: 36
+  name: '&8Vote Leaders'
+  leader_slots:
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  valid:
+    name: '&a%position%. &7%offline_player_name%'
+    lore:
+    - '&bWeekly Votes: &7%provotes_player_weekly_votes%'
+    - '&bMonthly Votes: &7%provotes_player_monthly_votes%'
+    - '&bTotal Votes: &7%provotes_player_total_votes%'
+  invalid:
+    name: '&cUnavailable'
+    lore:
+    - '&7You could be here!'
+  placeholder_items:
+    top_weekly:
+      slot: 30
+      item: GOLD_INGOT;1;0
+      name: '&aTop Weekly Players'
+      lore:
+      - '&7Click to view the players'
+      - '&7with the most votes this week'
+      glow: false
+      actions:
+      - '[player-command] provotes leaderboard weekly'
+    top_monthly:
+      slot: 31
+      item: DIAMOND;1;0
+      name: '&aTop Monthly Players'
+      lore:
+      - '&7Click to view the players'
+      - '&7with the most votes this month'
+      glow: false
+      actions:
+      - '[player-command] provotes leaderboard monthly'
+    top_lifetime:
+      slot: 32
+      item: EMERALD;1;0
+      name: '&aTop Lifetime Players'
+      lore:
+      - '&7Click to view the players'
+      - '&7with the most lifetime votes'
+      glow: false
+      actions:
+      - '[player-command] provotes leaderboard lifetime'
+leaders:
+  weekly:
+  - b17e6c27-a6d0-4134-a0ab-7c63c7509029
+  - e86ffef4-c5e4-4d7d-bc44-29e6dd626598
+  - f54c19b1-e8cd-4e41-8045-5689640f5d71
+  - 4f06e8f6-703a-43c5-a2d7-9225f292a009
+  - 36735171-94f0-4478-a4e4-973c5751b175
+  - 5cf58bef-d8ca-46e6-a912-336ff1b3e8e4
+  - c0acae6e-d648-4667-8624-45c88436ad5b
+  - 0302210f-f55a-4240-92de-1cf522f30208
+  - c0f06b7b-9342-448d-b983-cd6ce3b644e0
+  - 695ef9e8-bd23-4731-9362-c1ad1f85ecb7
+  monthly:
+  - b17e6c27-a6d0-4134-a0ab-7c63c7509029
+  - 695ef9e8-bd23-4731-9362-c1ad1f85ecb7
+  - c0af8ea1-c1a3-4edc-a634-9c85b78c520c
+  - f4b3d610-4e01-4d73-af34-56d273f570f5
+  - 97bb1ed7-c71f-4b3b-8bc9-087ee22c2b96
+  - 1b8478a9-859f-4e47-8697-3c56b2f82010
+  - b96dc6b7-0622-4f6b-8517-d137245e0a33
+  - 0a0a4757-ce3a-4733-a2c6-035ab43b3866
+  - 84fa8ef7-8dcc-4435-8121-fd96fc764290
+  - a525b154-1e55-4f6c-91ce-c4094f72413c
+  lifetime:
+  - b17e6c27-a6d0-4134-a0ab-7c63c7509029
+  - 00000000-0000-0000-0009-01f28fa6646f
+  - d7a5d010-fb18-4581-8d02-e3e1870bb41d
+  - 67ad2e2b-7746-4add-b5c0-16a524a734f1
+  - 495956b8-715a-4514-a2e0-da34e0e21b6d
+  - 2be56bf0-42e8-4275-82c1-fbcdcfa99aa8
+  - 015f4356-00a9-4176-81cb-ead00ad2a7cf
+  - fe045873-ba4b-4517-86f6-0bd0fb256a75
+  - 00000000-0000-0000-0009-01fafa34413e
+  - c0c1878d-4450-4ceb-9e82-dd7fd52d8be6
+previous_leaders:
+  weekly:
+  - fe9aa3f8-9f69-42ca-97da-1d8d86019987
+  - a99d7a47-5ce0-4e9f-8ca1-575c3196a9dd
+  - e598da07-3f41-41f6-905a-9181f90586e4
+  - de757745-a342-4716-b1c7-ee3a1e12f2de
+  - 1ac3399f-2291-4dff-8bc0-b399343b8650
+  - 2769cd2d-49ef-4218-8ffb-2a9922db5a93
+  - fce57c90-0b01-4547-95f3-adb82d255500
+  - a418c5ae-ee26-4734-8cf5-3059405804e9
+  - 79456fe5-6e1f-4798-ad8c-7857388c69c3
+  - 0d1f6810-9ab7-4722-9017-95da116625c7
+  - 43b42aad-0a68-4d22-84e0-ce622f4ec14d
+  - dc74134f-a58d-427a-b598-17a8ace4b73c
+  - 7399ff90-5cce-4929-b24e-7f88058a9660
+  - af1894d9-1023-4d4f-9406-1767317e47f9
+  - 4d151576-aa77-4e30-b642-9e9dc0eca7f9
+  - 10be8c88-ea24-4f23-bb80-2d59760c05c5
+  - a4619269-d10d-4cb1-98d4-c44ff3e84c1e
+  - f2f22273-508a-4be6-a634-0f300ab8fcf6
+  - 93a7851c-fa2b-46cd-8da9-7c34747b286c
+  - a418c5ae-ee26-4734-8cf5-3059405804e9
+  - dba1a03a-13f8-485a-b8c6-9918ce8a0582
+  - b1e01c3c-73d4-439c-9a1f-3cb0c07f435d
+  - cb180551-70d9-4843-952d-89c18451bf21
+  - c80e18a2-312c-4292-8916-2c350d84f02a
+  - a16fb3ba-eec5-4dc9-b024-bda447bd1a23
+  - 695087a0-5b9b-4872-8e1c-dac2c6db4215
+  - 93e30ae8-c39c-42cd-8132-8ff15ad8060e
+  - c5ad6622-c6bd-4ebb-9e38-83aa2e93fa7e
+  - b0e5d210-a347-4b1f-b3a7-e6a8ac4a3121
+  - 7399ff90-5cce-4929-b24e-7f88058a9660
+  - fc72fbec-122a-432d-a45d-f33f66cd6c0d
+  - 0f2440ce-5fe2-4abf-9a01-833304fce9b3
+  - f73b6e17-2ec6-4fe3-a1d5-daa095917e6f
+  - 329ff25b-0c00-4068-8afe-5fd96fb1da21
+  - bb6ffbf7-044b-4bdf-b6bd-8683d1e6bf85
+  - 19fa0b41-7ed7-48d0-b498-5701ab083256
+  - 015f4356-00a9-4176-81cb-ead00ad2a7cf
+  - 47adf259-a14a-4e73-bc4f-5b162cf6146d
+  - a0c5917a-b616-4d82-acfe-b6fd4487a30a
+  - 41066522-6bd0-4728-bc6a-3593989fbc37
+  - 00000000-0000-0000-0009-01fbc0a1d0b0
+  - 23aef7dd-3846-4055-a1f6-bc7b3845f535
+  - bc7cb3eb-8517-4c6e-a8bc-4ca2467c1772
+  - 2f5cc94a-24f0-4aab-9efc-f198c5d22631
+  - d547e0dd-1c6f-49d7-a241-d89c88c0c778
+  - b2ddbba2-d414-477f-b681-ad2f02f61f51
+  - fae2c60a-cf2a-42d1-9e97-5a656cef0057
+  - e2fffee4-914d-4d29-a5f6-158083136513
+  - 63c31f8b-7a77-4365-8f5a-775829913adf
+  - 78e00bdf-fe27-43d4-95a3-cd305406a903
+  - 99caf6b0-c931-4d55-a083-d9e1762e04b2
+  - a634ad5f-5c6c-46cc-9a0c-12782b5ef1b5
+  - 3b0f4719-2ecd-401d-ae1f-d5e67c9090d6
+  - 04f5de4f-f8f7-45e1-bbbc-627f950cd050
+  - c6c72f24-9c30-456f-af2e-51a6b84a87d2
+  - 24c88e3a-72be-447f-85b8-3a23115792b9
+  - 432bfcbb-ffbc-493e-8b46-a66608bfeb7b
+  - 0b31fe34-8dc6-41dc-968b-a7db425ccd23
+  - 388fe9c2-54a3-45c8-a3cb-284fec9a0eac
+  - 96e1bb68-0585-46a4-9798-2f28b6b76bfe
+  - 73549688-649b-4bed-9b3e-e7e4b87fa499
+  - 24f5ce59-143e-48a6-ab97-3c907fa55454
+  - 00000000-0000-0000-0009-01f801713a58
+  - ab78d077-ba15-45a0-992b-bde486360a9d
+  - 77539d9b-cd0b-43c0-b569-b62d52287ef6
+  - 9bb53c4a-a443-4fda-a804-3bbc94dc8368
+  - d9515bcc-2e21-40f0-8fca-d018229146de
+  - 1dc5762d-7ede-4dda-9395-31ed885271fd
+  - 00000000-0000-0000-0009-01f28fa6646f
+  - b1053f42-1805-44fe-a4e9-a3c08cb6d987
+  - 2bfcf780-07a6-4e97-ab42-a3e028408a4f
+  - 925826ea-958e-46f6-ab68-216ccbb9b7de
+  - a9660199-f96a-4398-a42d-52b47d0bb55c
+  - a8f67e89-19ea-43d9-bbba-00d4a1488e02
+  - 00000000-0000-0000-0009-01f28fa6646f
+  - 2fcdb9c1-874d-4a62-908c-d3a4ebd38eeb
+  - 50c8e287-e7b0-44aa-8a3e-20c2598b9235
+  - 8029c07f-1b0d-4763-b46d-175032dc2ba6
+  - 5176244d-6fa0-4067-9c26-94a1fe5a2764
+  - 14da7a00-751f-459a-88d7-4c955db9fcba
+  - 738e9ac5-7e98-49cc-ba89-6fc3bc5d3b82
+  - 1dadf606-4482-454b-8877-3a42b3b8bc9f
+  - d7a5d010-fb18-4581-8d02-e3e1870bb41d
+  - 0e8de1de-4345-4dc6-b294-48281f43cf65
+  - 210b567f-afc0-4818-90d8-3027275f468c
+  - a3d62474-7a8c-4a76-a0d0-0b883d2e94c7
+  - 653bb064-799a-4bc7-9835-83cce16ddd83
+  - 98c01698-b095-4b07-80ed-e090423d9c67
+  - d2e76b9f-8f6f-4184-a2cd-83c9c65a8dd1
+  - 473a05c9-0dca-49ba-ba84-78a74a4c10c1
+  monthly:
+  - 7399ff90-5cce-4929-b24e-7f88058a9660
+  - 015f4356-00a9-4176-81cb-ead00ad2a7cf
+  - 00000000-0000-0000-0009-01f28fa6646f
+  - 0f2440ce-5fe2-4abf-9a01-833304fce9b3
+  - 19fa0b41-7ed7-48d0-b498-5701ab083256
+  - 495956b8-715a-4514-a2e0-da34e0e21b6d
+  - 93a7851c-fa2b-46cd-8da9-7c34747b286c
+  - b97acd68-7423-48af-825c-eac977e30f0c
+  - d0679c74-5c0b-4202-b1b0-4596f2705c3f
+  - 00000000-0000-0000-0009-01f28fa6646f
+  - d7a5d010-fb18-4581-8d02-e3e1870bb41d
+  - ab78d077-ba15-45a0-992b-bde486360a9d
+  - 2fcdb9c1-874d-4a62-908c-d3a4ebd38eeb
+  - 00000000-0000-0000-0009-01f4375fef9d
+  - 0e8de1de-4345-4dc6-b294-48281f43cf65
+  - c6c72f24-9c30-456f-af2e-51a6b84a87d2
+  - fe045873-ba4b-4517-86f6-0bd0fb256a75
+  - 2be56bf0-42e8-4275-82c1-fbcdcfa99aa8
+  - 1dadf606-4482-454b-8877-3a42b3b8bc9f
+  - d7a5d010-fb18-4581-8d02-e3e1870bb41d
+  - 210b567f-afc0-4818-90d8-3027275f468c
+  - 473a05c9-0dca-49ba-ba84-78a74a4c10c1
+  - 0e8de1de-4345-4dc6-b294-48281f43cf65
+  - 462a6c21-8506-445a-8008-350a8719019e
+  - 7780da83-6c35-4778-9dd6-c8367ed37752
+  - d2e76b9f-8f6f-4184-a2cd-83c9c65a8dd1
+  - 42424b58-d2f6-4f1e-b53e-c24b92730514
+  lifetime: []

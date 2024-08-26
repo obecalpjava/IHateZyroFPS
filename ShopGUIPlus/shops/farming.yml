@@ -1,0 +1,183 @@
+farming:
+  name: "&8Farming Shop"
+  size: 27
+  fillItem:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item: 
+        material: Sugar_cane
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 6
+      slot: 0
+    2:
+      type: item
+      item: 
+        material: Wheat
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 7
+      slot: 3
+    3:
+      type: item
+      item: 
+        material: Melon_Slice
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 2
+    4:
+      type: item
+      item: 
+        material: Beetroot
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 3
+      slot: 4
+    5:
+      type: item
+      item: 
+        material: Glow_Berries
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 8
+      slot: 5
+    14:
+      type: item
+      item: 
+        material: cactus
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 3
+      slot: 1
+    17:
+      type: item
+      item: 
+        material: potato
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 6
+      slot: 6
+    19:
+      type: item
+      item: 
+        material: carrot
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 5
+      slot: 7
+    20:
+      type: item
+      item: 
+        material: pumpkin
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 8
+    21:
+      type: item
+      item: 
+        material: bamboo
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 1
+      slot: 9
+    22:
+      type: item
+      item: 
+        material: gold_nugget
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 1
+      slot: 19
+    24:
+      type: item
+      item: 
+        material: nether_wart
+        quantity: 1
+      buyPrice: 95
+      sellPrice: 5
+      slot: 11
+    26:
+      type: item
+      item: 
+        material: tropical_fish
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 8
+      slot: 12
+    27:
+      type: item
+      item: 
+        material: pufferfish
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 8
+      slot: 13
+    28:
+      type: item
+      item: 
+        material: wheat_seeds
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 2
+      slot: 14
+    29:
+      type: item
+      item: 
+        material: pumpkin_seeds
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 2
+      slot: 15
+    30:
+      type: item
+      item: 
+        material: melon_seeds
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 2
+      slot: 16
+    31:
+      type: item
+      item: 
+        material: beetroot_seeds
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 2
+      slot: 17
+    32:
+      type: item
+      item: 
+        material: kelp
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 2
+      slot: 20
+    33:
+      type: item
+      item: 
+        material: cocoa_beans
+        quantity: 1
+      buyPrice: 30
+      sellPrice: 2
+      slot: 18
+    34:
+      type: item
+      item: 
+        material: sweet_berries
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 4
+      slot: 10
+    35:
+      type: item
+      item: 
+        material: poppy
+        quantity: 1
+      buyPrice: -1
+      sellPrice: 0.5
+      slot: 21

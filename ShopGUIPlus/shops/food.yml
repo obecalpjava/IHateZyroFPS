@@ -1,0 +1,31 @@
+food:
+  name: "&8Food Shop"
+  size: 27
+  fillItem:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item: 
+        material: Cooked_Beef
+        quantity: 16
+      buyPrice: 800
+      sellPrice: 2
+      slot: 12
+    2:
+      type: item
+      item: 
+        material: Golden_Carrot
+        quantity: 16
+      buyPrice: 1500
+      sellPrice: -1
+      slot: 13
+    3:
+      type: item
+      item: 
+        material: Golden_Apple
+        quantity: 16
+      buyPrice: 4000
+      sellPrice: -1
+      slot: 14

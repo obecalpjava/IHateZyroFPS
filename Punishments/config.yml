@@ -1,0 +1,2441 @@
+mongo:
+  auth-db: admin
+  hostname: 10.0.0.1
+  port: 27017
+  username: admin
+  password: Gk6M9FhjEZJeREcU
+  database: training
+  collection: punishments
+
+messages:
+  no-punishments:
+    message: '&cThis user has no punishments!'
+  removed-punishment:
+    message: '&aGreenuced punishments, they now have %severities% severities'
+  no-permission:
+    message: '&cNo permission!'
+
+options:
+  # Animation Type:
+  #    LIGHTNING,
+  #    EXPLOSION,
+  #    BLACK_HOLE,
+  #    VILLAGER_DEATH,
+  #    FLAME,
+  #    TELEPORT,
+  #    BAT,
+  #    NONE
+  animation-type: BLACK_HOLE
+  defaultMenu: mainMenu
+  default-item:
+    material: LIME_DYE
+    lore:
+    - ''
+
+menus:
+  mainMenu:
+    title: Select a punishment type
+    rows: 3
+    pages:
+      '1':
+        filler:
+          name: '&f'
+          material: GRAY_STAINED_GLASS_PANE
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+        chatOffenses:
+          name: '&aChat Offenses'
+          slots:
+          - 11
+          material: LIME_DYE
+          custom-menu: chatOffenses
+        playerOffenses:
+          name: '&6Player Offenses'
+          slots:
+          - 13
+          material: ORANGE_DYE
+          custom-menu: playeroffenses
+        serverOffenses:
+          name: '&cServer Offenses'
+          slots:
+          - 15
+          material: RED_DYE
+          custom-menu: serveroffenses
+  
+  # ##########################################################################################################
+  #            CHATOFFENSENS                                                                              #
+  # ##########################################################################################################
+
+  chatOffenses:
+    title: Punishing %player%
+    rows: 6
+    pages:
+      '1':
+        filler2:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        filler3:
+          material: LIME_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 10
+          - 12
+          - 14
+          - 16
+          - 19
+          - 21
+          - 23
+          - 25
+          - 28
+          - 30
+          - 32
+          - 34
+          - 37
+          - 39
+          - 41
+          - 43
+        forwardButton:
+          slots:
+          - 53
+          material: ARROW
+          name: Next Page
+        generalspam:
+          slots:
+          - 10
+          punishment-id: generalspam
+        messagespam:
+          slots:
+          - 19
+          punishment-id: messagespam
+        promotingspam:
+          slots:
+          - 28
+          punishment-id: promotingspam
+        excessiveswearing:
+          slots:
+          - 37
+          punishment-id: excessiveswearing
+        englishonly:
+          slots:
+          - 12
+          punishment-id: englishonly
+        filterbypass:
+          slots:
+          - 21
+          punishment-id: filterbypass
+        discrimination:
+          slots:
+          - 30
+          punishment-id: discrimination
+        suicideencouragement:
+          slots:
+          - 39
+          punishment-id: suicideencouragement
+        inappropriatelinks:
+          slots:
+          - 14
+          punishment-id: inappropriatelinks
+        inappropriatecomments:
+          slots:
+          - 23
+          punishment-id: inappropriatecomments
+        sexualharassment:
+          slots:
+          - 32
+          punishment-id: sexualharassment
+        advertising:
+          slots:
+          - 41
+          punishment-id: advertising
+        staffdisrespect:
+          slots:
+          - 16
+          punishment-id: staffdisrespect
+        staffimpersonation:
+          slots:
+          - 25
+          punishment-id: staffimpersonation
+        serverdisrespect:
+          slots:
+          - 34
+          punishment-id: serverdisrespect
+        severetoxicity:
+          slots:
+          - 43
+          punishment-id: severetoxicity
+      '2':
+        filler2:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        filler3:
+          material: LIME_STAINED_GLASS_PANE
+          name: '&7&lEMPTY'
+          slots:
+          - 10
+          - 12
+          - 14
+          - 16
+          - 19
+          - 21
+          - 23
+          - 25
+          - 28
+          - 30
+          - 32
+          - 34
+          - 37
+          - 39
+          - 41
+          - 43
+        backButton:
+          slots:
+          - 45
+          material: ARROW
+          name: Back
+        selfadvertising:
+          slots:
+          - 10
+          punishment-id: selfadvertising
+  # ##########################################################################################################
+  #            PLAYEROFFENSENS                                                                              #
+  # ##########################################################################################################
+  playeroffenses:
+    title: Punishing %player%
+    rows: 6
+    pages:
+      '1':
+        filler3:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        forwardButton:
+          slots:
+          - 53
+          material: ARROW
+          name: Next Page
+        irltrading:
+          slots:
+          - 10
+          punishment-id: irltrading
+        muteevading:
+          slots:
+          - 19
+          punishment-id: muteevading
+        inappropriatebuilds:
+          slots:
+          - 28
+          punishment-id: inappropriatebuilds
+        inappropriateteamnames:
+          slots:
+          - 37
+          punishment-id: inappropriateteamnames
+        inappropriateitemnames:
+          slots:
+          - 12
+          punishment-id: inappropriateitemnames
+        cobblemonstering:
+          slots:
+          - 21
+          punishment-id: cobblemonstering
+        netherportaltrapping:
+          slots:
+          - 30
+          punishment-id: netherportaltrapping
+        borderglitching:
+          slots:
+          - 39
+          punishment-id: borderglitching
+        blockglitching:
+          slots:
+          - 14
+          punishment-id: blockglitching
+        freezingminecraft:
+          slots:
+          - 23
+          punishment-id: freezingminecraft
+        buycraftscamming:
+          slots:
+          - 32
+          punishment-id: buycraftscamming
+        bugabuse:
+          slots:
+          - 41
+          punishment-id: bugabuse
+        illegalmodifications:
+          slots:
+          - 25
+          punishment-id: illegalmodifications
+        autofishing/farming:
+          slots:
+          - 34
+          punishment-id: autofishing/farming
+        boosting:
+          slots:
+          - 43
+          punishment-id: Boosting
+        voidtrapping:
+          slots:
+          - 16
+          punishment-id: voidtrapping
+      '2':
+        filler4:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        filler3:
+          material: ORANGE_STAINED_GLASS_PANE
+          name: '&7&lEMPTY'
+          slots:
+          - 10
+          - 12
+          - 14
+          - 16
+          - 19
+          - 21
+          - 23
+          - 25
+          - 28
+          - 30
+          - 32
+          - 34
+          - 37
+          - 39
+          - 41
+          - 43
+        backButton:
+          slots:
+          - 45
+          material: ARROW
+          name: Back
+        forwardButton:
+          slots:
+          - 53
+          material: ARROW
+          name: Next Page
+        inappropriateign:
+          slots:
+          - 10
+          punishment-id: inappropriateign
+        inappropriateskins:
+          slots:
+          - 19
+          punishment-id: inappropriateskins
+        inappropriatecapes:
+          slots:
+          - 28
+          punishment-id: inappropriatecapes
+        falseevidence:
+          slots:
+          - 37
+          punishment-id: falseevidence
+      '3':
+        filler5:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        filler3:
+          material: ORANGE_STAINED_GLASS_PANE
+          name: '&7&lEMPTY'
+          slots:
+          - 10
+          - 12
+          - 14
+          - 16
+          - 19
+          - 21
+          - 23
+          - 25
+          - 28
+          - 30
+          - 32
+          - 34
+          - 37
+          - 39
+          - 41
+          - 43
+        backButton:
+          slots:
+          - 45
+          material: ARROW
+          name: Back
+  # ##########################################################################################################
+  #            SERVEROFFENSENS                                                                              #
+  # ##########################################################################################################
+  serveroffenses:
+    title: Punishing %player%
+    rows: 6
+    pages:
+      '1':
+        filler3:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        filler6:
+          material: RED_STAINED_GLASS_PANE
+          name: '&7&lEMPTY'
+          slots:
+          - 10
+          - 12
+          - 14
+          - 16
+          - 19
+          - 21
+          - 23
+          - 25
+          - 28
+          - 30
+          - 32
+          - 34
+          - 37
+          - 39
+          - 41
+          - 43
+        forwardButton:
+          slots:
+          - 53
+          material: ARROW
+          name: Next Page
+        ddosing-doxing-andswatting:
+          slots:
+          - 19
+          punishment-id: ddosing-doxing-andswatting
+        botting:
+          slots:
+          - 28
+          punishment-id: botting
+        duping:
+          slots:
+          - 37
+          punishment-id: duping
+        lagmachines:
+          slots:
+          - 12
+          punishment-id: lagmachines
+        ipgrabbers:
+          slots:
+          - 21
+          punishment-id: ipgrabbers
+        chargebacks:
+          slots:
+          - 30
+          punishment-id: chargebacks
+        rankabuse:
+          slots:
+          - 39
+          punishment-id: rankabuse
+        blacklistevading:
+          slots:
+          - 10
+          punishment-id: blacklistevading
+      '2':
+        filler5:
+          material: GRAY_STAINED_GLASS_PANE
+          name: ' '
+          slots:
+          - 0
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
+          - 31
+          - 32
+          - 33
+          - 34
+          - 35
+          - 36
+          - 37
+          - 38
+          - 39
+          - 40
+          - 41
+          - 42
+          - 43
+          - 44
+          - 45
+          - 46
+          - 47
+          - 48
+          - 49
+          - 50
+          - 51
+          - 52
+          - 53
+        filler3:
+          material: RED_STAINED_GLASS_PANE
+          name: '&7&lEMPTY'
+          slots:
+          - 10
+          - 12
+          - 14
+          - 16
+          - 19
+          - 21
+          - 23
+          - 25
+          - 28
+          - 30
+          - 32
+          - 34
+          - 37
+          - 39
+          - 41
+          - 43
+        backButton:
+          slots:
+          - 45
+          material: ARROW
+          name: Back
+
+punishments:
+  
+  # ##########################################################################################################
+  #            CHATOFFENSENS                                                                              #
+  # ##########################################################################################################
+
+  generalspam:
+    reduction-time: -1
+    name: '&aGeneral Spam'
+    permissions:
+    - litebans.warn
+    - litebans.mute
+    - litebans.mute
+    
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b30m Mute'
+      - '&f3rd Offense: &b1h Mute'
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b30m Mute'
+      - '&f3rd Offense: &b1h Mute'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - mute %player% 30m %name% | 2 | Green
+    - mute %player% 1h %name% | 3 | Green
+  
+  # Server Advertising
+  messagespam:
+    reduction-time: -1
+    name: '&aMessage Spam'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3h Mute'
+      - '&f2nd Offense: &b6h Mute'
+      - '&f3rd Offense: &b12h Mute'
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3h Mute'
+      - '&f2nd Offense: &b6h Mute'
+      - '&f3rd Offense: &b12h Mute'
+    commands:
+    - mute %player% 3h %name% | 1 | Green
+    - mute %player% 6h %name% | 2 | Green
+    - mute %player% 12h %name% | 3 | Green
+  
+  promotingspam:
+    reduction-time: -1
+    name: '&aPromoting Spam'
+    permissions:
+    - litebans.warn
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1h Mute'
+      - '&f3rd Offense: &b3h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1h Mute'
+      - '&f3rd Offense: &b3h Mute'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - mute %player% 1h %name% | 2 | Green
+    - mute %player% 3h %name% | 3 | Green
+  
+  excessiveswearing:
+    reduction-time: -1
+    name: '&aExcessive Swearing'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1h Mute'
+      - '&f3rd Offense: &b3h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    commands:
+    - mute %player% 1h %name% | 1 | Green
+    - mute %player% 3h %name% | 2 | Green
+    - mute %player% 6h %name% | 3 | Green
+  
+  englishonly:
+    reduction-time: -1
+    name: '&aEnglish Only'
+    permissions:
+    - litebans.warn
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b30m Mute'
+      - '&f3rd Offense: &b1h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b30m Mute'
+      - '&f3rd Offense: &b1h Mute'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - mute %player% 30m %name% | 2 | Green
+    - mute %player% 1h %name% | 3 | Green
+  
+  filterbypass:
+    reduction-time: -1
+    name: '&aFilter Bypass'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    commands:
+    - mute %player% 1h %name% | 1 | Green
+    - mute %player% 3h %name% | 2 | Green
+    - mute %player% 6h %name% | 3 | Green
+  
+  discrimination:
+    reduction-time: -1
+    name: '&aDiscrimination'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3h Mute'
+      - '&f2nd Offense: &b6h Mute'
+      - '&f3rd Offense: &b12h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3h Mute'
+      - '&f2nd Offense: &b6h Mute'
+      - '&f3rd Offense: &b12h Mute'
+    commands:
+    - mute %player% 3h %name% | 1 | Green
+    - mute %player% 6h %name% | 2 | Green
+    - mute %player% 12h %name% | 3 | Green
+  
+  suicideencouragement:
+    reduction-time: -1
+    name: '&aSuicide Encouragement'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b6h Mute'
+      - '&f2nd Offense: &b12h Mute'
+      - '&f3rd Offense: &b1d Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b6h Mute'
+      - '&f2nd Offense: &b12h Mute'
+      - '&f3rd Offense: &b1d Mute'
+    commands:
+    - mute %player% 6h %name% | 1 | Green
+    - mute %player% 12h %name% | 2 | Green
+    - mute %player% 1d %name% | 3 | Green
+  
+  inappropriatelinks:
+    reduction-time: -1
+    name: '&aInappropriate Links'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Mute'
+      - '&f2nd Offense: &b7d Mute'
+      - '&f3rd Offense: &b14d Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Mute'
+      - '&f2nd Offense: &b7d Mute'
+      - '&f3rd Offense: &b14d Mute'
+    commands:
+    - mute %player% 3d %name% | 1 | Green
+    - mute %player% 7d %name% | 2 | Green
+    - mute %player% 14d %name% | 3 | Green
+  
+  inappropriatecomments:
+    reduction-time: -1
+    name: '&aInappropriate Comments'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3h Mute'
+      - '&f2nd Offense: &b6h Mute'
+      - '&f3rd Offense: &b12h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3h Mute'
+      - '&f2nd Offense: &b6h Mute'
+      - '&f3rd Offense: &b12h Mute'
+    commands:
+    - mute %player% 3h %name% | 1 | Green
+    - mute %player% 6h %name% | 2 | Green
+    - mute %player% 12h %name% | 3 | Green
+  
+  sexualharassment:
+    reduction-time: -1
+    name: '&aSexual Harassment'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b6h Mute'
+      - '&f2nd Offense: &b12h Mute'
+      - '&f3rd Offense: &b1d Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b6h Mute'
+      - '&f2nd Offense: &b12h Mute'
+      - '&f3rd Offense: &b1d Mute'
+    commands:
+    - mute %player% 6h %name% | 1 | Green
+    - mute %player% 12h %name% | 2 | Green
+    - mute %player% 1d %name% | 3 | Green
+  
+  advertising:
+    reduction-time: -1
+    name: '&aAdvertising'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b7d Mute'
+      - '&f2nd Offense: &b14d Mute'
+      - '&f3rd Offense: &b21d Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b7d Mute'
+      - '&f2nd Offense: &b14d Mute'
+      - '&f3rd Offense: &b21d Mute'
+    commands:
+    - mute %player% 7d %name% | 1 | Green
+    - mute %player% 14d %name% | 2 | Green
+    - mute %player% 21d %name% | 3 | Green
+  
+  staffdisrespect:
+    reduction-time: -1
+    name: '&aStaff Disrespect'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    commands:
+    - mute %player% 1h %name% | 1 | Green
+    - mute %player% 3h %name% | 2 | Green
+    - mute %player% 6h %name% | 3 | Green
+  
+  staffimpersonation:
+    reduction-time: -1
+    name: '&aStaff Impersonation'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b12h Mute'
+      - '&f2nd Offense: &b1d Mute'
+      - '&f3rd Offense: &b7d Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b12h Mute'
+      - '&f2nd Offense: &b1d Mute'
+      - '&f3rd Offense: &b7d Mute'
+    commands:
+    - mute %player% 12h %name% | 1 | Green
+    - mute %player% 1d %name% | 2 | Green
+    - mute %player% 7d %name% | 3 | Green
+  
+  serverdisrespect:
+    reduction-time: -1
+    name: '&aServer Disrespect'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Mute'
+      - '&f2nd Offense: &b7d Mute'
+      - '&f3rd Offense: &b14d Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Mute'
+      - '&f2nd Offense: &b7d Mute'
+      - '&f3rd Offense: &b14d Mute'
+    commands:
+    - mute %player% 1d %name% | 1 | Green
+    - mute %player% 7d %name% | 2 | Green
+    - mute %player% 14d %name% | 3 | Green
+  
+  severetoxicity:
+    reduction-time: -1
+    name: '&aSevere Toxicity'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1h Mute'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    commands:
+    - mute %player% 1h %name% | 1 | Green
+    - mute %player% 3h %name% | 2 | Green
+    - mute %player% 6h %name% | 3 | Green
+  
+  selfadvertising:
+    reduction-time: -1
+    name: '&aSelf Advertising'
+    permissions:
+    - litebans.warn
+    - litebans.mute
+    - litebans.mute
+    no-permissions:
+      material: LIME_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSIONS'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    
+    item:
+      material: LIME_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b3h Mute'
+      - '&f3rd Offense: &b6h Mute'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - mute %player% 3h %name% | 2 | Green
+    - mute %player% 6h %name% | 3 | Green
+  
+  # ##########################################################################################################
+  #            PLAYEROFFENSENS                                                                              #
+  # ##########################################################################################################
+
+  irltrading:
+    reduction-time: -1
+    name: '&6IRL Trading'
+    permissions:
+    - litebans.mute
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Mute'
+      - '&f2nd Offense: &b12h Ban'
+      - '&f3rd Offense: &b1d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Mute'
+      - '&f2nd Offense: &b12h Ban'
+      - '&f3rd Offense: &b1d Ban'
+    commands:
+    - mute %player% 1d %name% | 1 | Green
+    - tempban %player% 12h %name% | 2 | Green
+    - tempban %player% 1d %name% | 3 | Green
+  
+  muteevading:
+    reduction-time: -1
+    name: '&6Mute Evading'
+    permissions:
+    - litebans.mute
+    - litebans.mute
+    - litebans.mute
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d IPMute'
+      - '&f2nd Offense: &b7d IPMute'
+      - '&f3rd Offense: &b14d IPMute'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d IPMute'
+      - '&f2nd Offense: &b7d IPMute'
+      - '&f3rd Offense: &b14d IPMute'
+    commands:
+    - ipmute %player% 3d %name% | 1 | Green
+    - ipmute %player% 7d %name% | 2 | Green
+    - ipmute %player% 14d %name% | 3 | Green
+  
+  inappropriatebuilds:
+    reduction-time: -1
+    name: '&6Inappropriate Builds'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7d Ban'
+    commands:
+    - tempban %player% 3d %name% | 1 | Green
+    - tempban %player% 7d %name% | 2 | Green
+    - tempban %player% 14d %name% | 3 | Green
+  
+  inappropriateteamnames:
+    reduction-time: -1
+    name: '&6Inappropriate Team Names'
+    permissions:
+    - litebans.warn
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1d Ban'
+      - '&f3rd Offense: &b3d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1d Ban'
+      - '&f3rd Offense: &b3d Ban'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - tempban %player% 1d %name% | 2 | Green
+    - tempban %player% 3d %name% | 3 | Green
+  
+  inappropriateitemnames:
+    reduction-time: -1
+    name: '&6Inappropriate Item Names'
+    permissions:
+    - litebans.warn
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1d Ban'
+      - '&f3rd Offense: &b3d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b1d Ban'
+      - '&f3rd Offense: &b3d Ban'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - tempban %player% 1d %name% | 2 | Green
+    - tempban %player% 3d %name% | 3 | Green
+  
+  cobblemonstering:
+    reduction-time: -1
+    name: '&6Cobble Monstering'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b14d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b14d Ban'
+    commands:
+    - tempban %player% 3d %name% | 1 | Green
+    - tempban %player% 7d %name% | 2 | Green
+    - tempban %player% 14d %name% | 3 | Green
+  
+  netherportaltrapping:
+    reduction-time: -1
+    name: '&6Nether Portal Trapping'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7d Ban'
+    commands:
+    - tempban %player% 1d %name% | 1 | Green
+    - tempban %player% 3d %name% | 2 | Green
+    - tempban %player% 7d %name% | 3 | Green
+  
+  borderglitching:
+    reduction-time: -1
+    name: '&6Border Glitching'
+    permissions:
+    - litebans.warn
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &bStaff Discretion'
+      - '&f3rd Offense: &bStaff Discretion'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b6h Ban'
+      - '&f3rd Offense: &b12h Ban'
+    commands:
+    - warn %player% %name% | 1 | Green
+    - tempban %player% 6h %name% | 2 | Green
+    - tempban %player% 12h %name% | 3 | Green
+  blockglitching:
+    reduction-time: -1
+    name: '&6Block Glitching'
+    permissions:
+    - litebans.warn
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b3h ban'
+      - '&f3rd Offense: &b6h Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bWarning'
+      - '&f2nd Offense: &b3h ban'
+      - '&f3rd Offense: &b6h Ban'
+    commands:
+    - warb %player% %name% | 1 | Green
+    - tempban %player% 3h %name% | 2 | Green
+    - tempban %player% 6h %name% | 3 | Green
+  
+  freezingminecraft:
+    reduction-time: -1
+    name: '&6Freezing Minecraft '
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b12h Ban'
+      - '&f2nd Offense: &b1d Ban'
+      - '&f3rd Offense: &b3d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b12h Ban'
+      - '&f2nd Offense: &b1d Ban'
+      - '&f3rd Offense: &b3d Ban'
+    commands:
+    - tempban %player% 13h %name% | 1 | Green
+    - tempban %player% 1d %name% | 2 | Green
+    - tempban %player% 3d %name% | 3 | Green
+  
+  buycraftscamming:
+    reduction-time: -1
+    name: '&6Buycraft Scamming'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b14d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b14d Ban'
+    commands:
+    - tempban %player% 3d %name% | 1 | Green
+    - tempban %player% 7d %name% | 2 | Green
+    - tempban %player% 14d %name% | 3 | Green
+  
+  bugabuse:
+    reduction-time: -1
+    name: '&6Bug Abuse'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b14d Ban'
+      - '&f2nd Offense: &b30d Ban'
+      - '&f3rd Offense: &b45d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b14d Ban'
+      - '&f2nd Offense: &b30d Ban'
+      - '&f3rd Offense: &b45d Ban'
+    commands:
+    - tempban %player% 14d %name% | 1 | Green
+    - tempban %player% 30d %name% | 2 | Green
+    - tempban %player% 45d %name% | 3 | Green
+  
+  exploitingtheserver:
+    reduction-time: -1
+    name: '&6Exploiting the server'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b14d Ban'
+      - '&f2nd Offense: &b30d Ban'
+      - '&f3rd Offense: &b45d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b14d Ban'
+      - '&f2nd Offense: &b30d Ban'
+      - '&f3rd Offense: &b45d Ban'
+    commands:
+    - tempban %player% 14d %name% | 1 | Green
+    - tempban %player% 30d %name% | 2 | Green
+    - tempban %player% 45d %name% | 3 | Green
+  
+  illegalmodifications:
+    reduction-time: -1
+    name: '&6Illegal Modifications'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b7d Ban'
+      - '&f2nd Offense: &b14d Ban'
+      - '&f3rd Offense: &b30d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b7d Ban'
+      - '&f2nd Offense: &b14d Ban'
+      - '&f3rd Offense: &b30d Ban'
+    commands:
+    - tempban %player% 7d %name% | 1 | Green
+    - tempban %player% 14d %name% | 2 | Green
+    - tempban %player% 30d %name% | 3 | Green
+  
+  autofishing/farming:
+    reduction-time: -1
+    name: '&6Auto Fishing / Farming'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b1d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b14d Ban'
+    commands:
+    - tempban %player% 3d %name% | 1 | Green
+    - tempban %player% 7d %name% | 2 | Green
+    - tempban %player% 14d %name% | 3 | Green
+  
+  boosting:
+    reduction-time: -1
+    name: '&6Boosting'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b3d Ban'
+      - '&f2nd Offense: &b7d Ban'
+      - '&f3rd Offense: &b14d Ban'
+    commands:
+    - tempban %player% 1d %name% | 1 | Green
+    - tempban %player% 3d %name% | 2 | Green
+    - tempban %player% 7d %name% | 3 | Green
+  
+  inappropriateign:
+    reduction-time: -1
+    name: '&6Inappropriate IGN'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bPerm Ban'
+      - '&f2nd Offense: &bPerm Ban'
+      - '&f3rd Offense: &bPerm Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bPerm Ban'
+      - '&f2nd Offense: &bPerm Ban'
+      - '&f3rd Offense: &bPerm Ban'
+    commands:
+    - ban %player% %name% (Change) | 1 | Green
+    - ban %player% %name% (Change) | 2 | Green
+    - ban %player% %name% (Change) | 3 | Green
+  
+  inappropriateskins:
+    reduction-time: -1
+    name: '&6Inappropriate Skins'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bPerm Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bPerm Ban'
+    commands:
+    - ban %player% %name% (Change) | 1 | Green
+    - ban %player% %name% (Change) | 2 | Green
+    - ban %player% %name% (Change) | 3 | Green
+  
+  inappropriatecapes:
+    reduction-time: -1
+    name: '&6Inappropriate Capes'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bPerm Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bPerm Ban'
+    commands:
+    - ban %player% %name% (Change) | 1 | Green
+    - ban %player% %name% (Change) | 2 | Green
+    - ban %player% %name% (Change) | 3 | Green
+  
+  falseevidence:
+    reduction-time: -1
+    name: '&6False Evidence'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b14d Ban'
+      - '&f2nd Offense: &b30d Ban'
+      - '&f3rd Offense: &bPerm Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b14d Ban'
+      - '&f2nd Offense: &b30d Ban'
+      - '&f3rd Offense: &bPerm Ban'
+    commands:
+    - tempban %player% 14d %name% | 1 | Green
+    - tempban %player% 30d %name% | 2 | Green
+    - ban %player% %name% | 3 | Green
+  voidtrapping:
+    reduction-time: -1
+    name: '&6Void Trapping'
+    permissions:
+    - litebans.ban
+    - litebans.ban
+    - litebans.ban
+    
+    no-permissions:
+      material: ORANGE_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7d Ban'
+    item:
+      material: ORANGE_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b1d Ban'
+      - '&f2nd Offense: &b3d Ban'
+      - '&f3rd Offense: &b7 Ban'
+    commands:
+    - tempban %player% 1d %name% | 1 | Green
+    - tempban %player% 3d %name% | 2 | Green
+    - tempban %player% 7d %name% | 3 | Green
+  
+  # ##########################################################################################################
+  #            SERVEROFFENSENS                                                                              #
+  # ##########################################################################################################
+
+  ddosing-doxing-andswatting:
+    reduction-time: -1
+    name: '&cDDoSing, DoXing, and Swatting'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+  
+  botting:
+    reduction-time: -1
+    name: '&cBotting'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+  
+  duping:
+    reduction-time: -1
+    name: '&cDuping'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+  
+  lagmachines:
+    reduction-time: -1
+    name: '&cLag Machines'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+  
+  ipgrabbers:
+    reduction-time: -1
+    name: '&cIP Grabbers'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+    - blacklist %player%
+    - blacklist %player%
+  
+  chargebacks:
+    reduction-time: -1
+    name: '&cChargebacks'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+    - blacklist %player%
+    - blacklist %player%
+  
+  rankabuse:
+    reduction-time: -1
+    name: '&cRank Abuse'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b30d IPBan'
+      - '&f2nd Offense: &bPerm IPBan'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &b30d IPBan'
+      - '&f2nd Offense: &bPerm IPBan'
+    commands:
+    - tempipban %player% 30d %name%
+    - ipban %player% %name%
+    - ipban %player% %name%
+  
+  blacklistevading:
+    reduction-time: -1
+    name: '&cBlacklist evading'
+    permissions:
+    - litebans.ipban
+    - litebans.ipban
+    - litebans.ipban
+    
+    no-permissions:
+      material: RED_STAINED_GLASS_PANE
+      name: '%name%'
+      lore:
+      - '&c&lNO PERMISSION'
+      - '&f'
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    item:
+      material: RED_DYE
+      name: '%name%'
+      lore:
+      - '&7Click to apply this punishment'
+      - '&7according to this ladder:'
+      - '&f'
+      - '&f1st Offense: &bBlacklist'
+    commands:
+    - blacklist %player%
+    - blacklist %player%
+    - blacklist %player%
